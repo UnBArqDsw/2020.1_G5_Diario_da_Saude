@@ -1,22 +1,17 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-Demais diretrizes sobre a organização da wiki constam no Moodle Aprender 3.
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto). !!** 
+# Diário da Saúde
 
-**!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: 2020.1_G1_ProjetoPandora!!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número do Grupo**: XX<br>
+**Número do Grupo**: Grupo 05<br>
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 16/0112028  |  André Goretti |
+| 17/0103471  | Gabriel Marques Tiveron |
+| 16/0007780  | Gustavo Barbosa Carvalho |
+| 16/0124778 | Ian Pereira de Sousa Rocha |
+| 17/0163571 | Murilo Loiola Dantas |
+| 15/0064535 | Rodrigo Dadamos Lopes da Silva |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
