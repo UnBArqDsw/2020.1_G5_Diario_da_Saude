@@ -1,10 +1,10 @@
 site_name: Diário da Saúde - Documentação
 theme:
-  name: material
+  name: minty
   language: pt
 pages:
   - Home: index.md
-  - Planejamento: planejamento.md
-  - Pré-rastreabilidade:
-    - Argumentação: argumentacao.md
-    - RichPicture: rich_picture.md
+  - Desenho de Software (Base):
+    - Brainstorm: brainstorm.md
+    - 5W2H: 5w2h.md
+    - RichPictures: rich_pictures.md
