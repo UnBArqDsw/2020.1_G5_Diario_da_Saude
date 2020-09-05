@@ -1,4 +1,4 @@
-site_name: Diário da Saúde - Documentação
+site_name: Diário da Saúde
 theme:
   name: minty
   language: pt
@@ -7,4 +7,4 @@ pages:
   - Desenho de Software (Base):
     - Brainstorm: brainstorm.md
     - 5W2H: 5w2h.md
-    - RichPictures: rich_pictures.md
+    - RichPictures: rich_picture.md
