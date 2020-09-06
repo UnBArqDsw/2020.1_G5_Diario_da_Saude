@@ -1,0 +1,11 @@
+site_name: Diário da Saúde
+theme:
+  name: minty
+  language: pt
+pages:
+  - Home: index.md
+  - Desenho de Software (Base):
+    - Brainstorm: brainstorm.md
+    - 5W2H: 5w2h.md
+    - RichPictures: rich_picture.md
+    - Plano de Análise Esforço/Tempo: plano_esforco_tempo.md
