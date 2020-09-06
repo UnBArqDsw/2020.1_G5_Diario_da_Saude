@@ -4,6 +4,7 @@
 |:----:|:------:|:---------:|:---------:|
 | 06/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 06/09/2020 | 0.2 | Adicionando rich picture de paciente | [Murilo Loiola](https://github.com/murilo-dan) |
+| 06/09/2020 | 0.3 | Adição do Rich Picture de aplicativo | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Definição
 
@@ -18,7 +19,8 @@
 ## Rich pictures
 ### Contexto
 ### Profissional saúde
-![rich_picutre_profissional](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/docs/docs/img/rich_picutre_profissional.png)
+![rich_picutre_profissional](./img/rich_picutre_profissional.png)
 ### Paciente
-![rich_picutre_paciente](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/docs/docs/img/rp_paciente.png)
+![rich_picutre_paciente](./img/rp_paciente.png)
 ### Aplicativo 
+![rich_picture_aplicativo](./img/RP_app.png)
