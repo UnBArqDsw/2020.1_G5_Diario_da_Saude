@@ -1,8 +1,8 @@
 site_name: Diário da Saúde
 theme:
-  name: minty
+  name: windmill
   language: pt
-pages:
+nav:
   - Home: index.md
   - Desenho de Software (Base):
     - Brainstorm: brainstorm.md
@@ -11,3 +11,5 @@ pages:
     - Plano de Análise Esforço/Tempo: plano_esforco_tempo.md
     - Plano de Análise de Risco: analise_risco.md
     - Mapa Mental: mapa_mental.md
+  - Atas das reuniões:
+    - 
