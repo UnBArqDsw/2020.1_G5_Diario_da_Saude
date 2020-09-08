@@ -9,7 +9,7 @@
 <p align="justify">&emsp;&emsp;Diagramas de causa e efeito (ou diagrama de Ishikawa) são diagramas causais que mostram as causas potenciais de um evento específico. Seu uso é muito comum para a prevenção de defeitos de qualidade e para identificar fatores potenciais que contribuam para um efeito geral. Cada causa ou motivo de imperfeição é uma fonte de variação. As causas geralmente são agrupadas em categorias principais para identificar e classificar essas fontes de variação.</p>
 
 ## Diagrama de causa e efeito
-### **Defeitos no software**
+#### **Defeitos no software**
 ![diagrama_de_causa_efeito_1](./img/diagrama_de_causa_efeito_1.png)
-### **Software de baixa qualidade**
+#### **Software de baixa qualidade**
 ![diagrama_de_causa_efeito_2](./img/diagrama_de_causa_efeito_2.png)
