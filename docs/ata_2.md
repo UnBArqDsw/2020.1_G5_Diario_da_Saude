@@ -1,8 +1,6 @@
-**
-
 # ATA DE REUNIÃO
 
-**Data:** 02/08/20  
+**Data:** 02/08/2020  
 **Hora:** 08:00 até 10:00
 
 ## Participantes
@@ -15,21 +13,23 @@
 6. Rodrigo Dadamos Lopes da Silva
 
 ## Assunto 1
- **Tópico:** Definição dos artefator de pré-elicitação a serem feitos
 
- **Decições/conclusões:** Fazer os seguintes artefatos:
+**Tópico:** Definição dos artefator de pré-elicitação a serem feitos
+
+**Decisões/conclusões:** Fazer os seguintes artefatos:
 - 5w2h
-- Mapa mental 
+- Mapa mental
 - Diagrama causa e efeito
 - Plano de custo
 - Plano de risco
 - Plano de tempo
 
 
-## Assunto 1
- **Tópico:** Validação dos artefatos
+## Assunto 2
 
- **Decições/conclusões:** Iremos validar o que produzido atráves de questionários com os profissionais da UBS.
+**Tópico:** Validação dos artefatos
+
+**Decisões/conclusões:** Iremos validar o que produzido atráves de questionários com os profissionais da UBS.
 
 
 

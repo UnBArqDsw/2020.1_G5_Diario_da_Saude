@@ -19,8 +19,11 @@
 ## Rich pictures
 ### Contexto
 ### Profissional saúde
+##### Autor: Gustavo Carvalho
 ![rich_picutre_profissional](./img/rich_picutre_profissional.png)
 ### Paciente
+##### Autor: Murilo Loiola
 ![rich_picutre_paciente](./img/rp_paciente.png)
 ### Aplicativo 
+##### Autor: Gabriel Tiveron
 ![rich_picture_aplicativo](./img/RP_app.png)

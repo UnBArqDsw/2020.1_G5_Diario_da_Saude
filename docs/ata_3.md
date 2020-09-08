@@ -1,5 +1,8 @@
 ﻿# ATA DE REUNIÃO - GRUPO 5
 
+**Data:** 04/09/2020  
+**Horário:** 14h30 até as 18h00
+
 ### Participantes:
 
  1. André Goretti Motta
@@ -9,19 +12,20 @@
  5. Murilo Loiola Dantas
  6. Rodrigo Dadamos Lopes da Silva
 
-**Data:** 04/09/2020
-**Horário:** 14h30 até as 18h00
+## Assunto1
 
-## Assuntos da Reunião
+**Tópico:** Auxilio no processo de confecção dos Planos de Risco/Tempo
 
-**TÓPICO/ASSUNTO:** Auxilio no processo de confecção dos Planos de Risco/Tempo
-**DECISÕES OU CONCLUSÕES:**
+ **Decisões/conclusões:**
 
  - Primeira versão da tabela de direcionamento de custo.
  - Levantamento de prioridades para matrizes de impacto
 
-**TÓPICO/ASSUNTO:** Design Sprint
-**DECISÕES OU CONCLUSÕES:**
+## Assunto 2
+
+**Tópico:** Design Sprint
+
+ **Decisões/conclusões:**
 
  - Reunião para Brainstorming.
  - Levantamento de Requisitos Funcionais/Não Funcionais pelo Brainstorming.

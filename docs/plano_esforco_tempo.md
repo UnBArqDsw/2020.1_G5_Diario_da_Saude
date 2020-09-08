@@ -1,10 +1,10 @@
-# Plano de Análise Esforço e Tempo
+# Plano de Análise de Esforço e Tempo
 
 ## Histórico de Revisão
 
 | Data | Versão | Descrição | Autor(es) |
 |----| ---- | ------- | ------- |
-| 03/09/2020 | 1.0 | Construção do documento a partir do template recomendado<sup>[1]</sup> | Murilo Loiola |
+| 03/09/2020 | 0.1 | Construção do documento a partir do template recomendado<sup>[1]</sup> | Murilo Loiola |
 
 ## Introdução
 

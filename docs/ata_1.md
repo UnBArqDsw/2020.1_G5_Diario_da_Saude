@@ -1,8 +1,6 @@
-**
-
 # ATA DE REUNIÃO
 
-**Data:** 31/08/20  
+**Data:** 31/08/2020  
 **Hora:** 08:00 até 10:00
 
 ## Participantes
@@ -17,7 +15,7 @@
 ## Assunto 1
  **Tópico:** Definição Inicial do Projeto
 
- **Decições/conclusões:**
+ **Decisões/conclusões:**
 
  - Entrar em contato com a professora apresentando escopo inicial do projeto.
  - Metodologias escolhidas: Scrum, Kanban, XP e Lean.
@@ -27,7 +25,7 @@
 ## Assunto 2
  **Tópico:** Organização dos artefatos de documentação.
 
- **Decições/conclusões:**
+ **Decisões/conclusões:**
 - Foi decidido manter todos os documentos em uma github pages, que vai ter como base uma branch [docs](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/tree/docs) do repositório.
 
 

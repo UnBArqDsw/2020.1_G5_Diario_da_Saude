@@ -7,17 +7,13 @@
 
 ## Definição
 
-<p align="justify">&emsp;&emsp; Mapa mental é um processo simples e pessoal de fragmentar alguns conceitos dentro do seu projeto que detalham mais o escopo, podendo assim melhorar a analise e ter uma visão mais completa e palpável do projeto sabendo das relações de causa e efeito entres esse objetos. Alguns dos objetivos do mapa mentals são: </p>
+<p align="justify">&emsp;&emsp; A construção de um mapa mental é um processo simples e pessoal de fragmentar alguns conceitos dentro do seu projeto que detalham mais o escopo, podendo assim melhorar a análise e ter uma visão mais completa e palpável do projeto, esclarecendo das relações de causa e efeito entres esse objetos. Alguns dos objetivos do mapa mental são: </p>
 
 - Memorização e aprendizado.
 - Gestão de informações e conhecimento.
-- Como uma ferramenta de brainstorm.
+- Como uma ferramenta para auxiliar o brainstorm.
 - Compreensão e soluções de problemas.
 - Entender composições e similaridades do projeto.
-
-
-
-
 
 ## Mapas Mentais
 ### Mapa mental Aplicativo
