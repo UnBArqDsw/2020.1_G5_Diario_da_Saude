@@ -10,6 +10,7 @@ nav:
     - Mapa Mental: mapa_mental.md
     - Diagrama Causa-Efeito: diagrama_de_causa_e_efeito.md
     - Plano de Análise de Risco: plano_risco.md
-    - Plano de Análise Esforço/Tempo: plano_esforco_tempo.md
+    - Plano de Análise de Esforço e Tempo: plano_esforco_tempo.md
+    - Plano de Análise de Custo: plano_custo.md
     - Brainstorm: brainstorm.md
     - Storyboard: story_board.md
