@@ -20,10 +20,15 @@
 ### Participar dos grupos de Acompanhamento
 ##### Autor: Rodrigo Dadamos
 [![argumentacao_participar_grupos_v0.1](./img/argumentacao_participar_grupos_v0.1.png)](./img/argumentacao_participar_grupos_v0.1.png)
+
 * i(p1): O paciente precisa ir na UBS participar da reunião do grupo de acompanhamento para medir e informar sua condição atual e receber orientações.
+
 * i(p2): Devido a pandemia, doentes crônicos e grupos de riscos devem evitar sair de casa.
+
 * i(p3): O risco de contrair COVID-19 afasta pacientes dos grupos de de acompanhamentos.
+
 * i(p4): O paciente pode participar do grupo a distância enviando informações de sua condição atual e recebendo orientações também a distância.
+
 ## Referências
 
 1. [https://bdm.unb.br/bitstream/10483/9267/1/2014_AndreCruzAlvesCavalcante.pdf](https://bdm.unb.br/bitstream/10483/9267/1/2014_AndreCruzAlvesCavalcante.pdf).
