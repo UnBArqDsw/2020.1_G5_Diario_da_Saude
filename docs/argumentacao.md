@@ -10,10 +10,11 @@
 <p align="justify">&emsp;&emsp;O modelo de argumentação do Framework ACE é uma ferramenta que oferece maneiras de modelar e pensar sobre os requisitos com o objetivo de verificar a validação dos artefatos da solução. O ACE disponibiliza uma vocabulário para representar as informações e decisões levantadas durante uma discussão. Para representar as informações extraidas, utiliza uma linguagem própria.</p>
 
 <p align="justify">&emsp;&emsp;Basicamente, os modelos de argumentação são grafos que possuem direcionamentos com rótulos. Os rótulos são:</p>
-* **i** -  servem de entrada ou saída para inferências representando vértices de informação;
-* **I** - representam a aplicação de inferências para obtenção de determinadas saídas;
-* **C** - representam os conflito entre dois ou mais vértices;
-* **P** - representam a preferência entre dois ou mais vértices.
+
+* <strong>i</strong> -  servem de entrada ou saída para inferências representando vértices de informação;
+* <strong>I</strong> - representam a aplicação de inferências para obtenção de determinadas saídas;
+* <strong>C</strong> - representam os conflito entre dois ou mais vértices;
+* <strong>P</strong> - representam a preferência entre dois ou mais vértices.
 
 ## Argumentação
 ### Participar dos grupos de Acompanhamento
