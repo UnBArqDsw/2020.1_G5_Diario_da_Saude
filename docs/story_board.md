@@ -1,4 +1,4 @@
-# Rich Picture
+# Storyboard
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|

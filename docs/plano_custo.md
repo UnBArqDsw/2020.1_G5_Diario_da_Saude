@@ -1,6 +1,6 @@
 # Plano de Análise de Custos
 
-## Histórico de Revisão
+## Versionamento
 
 | Data | Versão | Descrição | Autor(es) |
 |----| ---- | ------- | ------- |
