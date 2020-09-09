@@ -29,14 +29,14 @@
 
 <p align="justify">&emsp;&emsp;Durante a primeira etapa, o grupo optou pela técnica de <em>brainstorm</em> como forma de levantar o escopo que se esperava do projeto. As ideias discutidas e selecionadas foram então aplicadas no desenvolvimento de um mapa mental. Os artefatos elaborados nessa etapa foram:</p>
 
-* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#brainstorm/"><em>Brainstorm</em></a>
-* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#mapa_mental/">Mapa mental</a>
+* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/brainstorm/"><em>Brainstorm</em></a>
+* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/mapa_mental/">Mapa mental</a>
 
 ### Esboçar
 
 <p align="justify">&emsp;&emsp;Para o esboço das ideias levantadas na fase anterior, o grupo elaborou <em>rich pictures</em>. Os artefatos elaborados nessa etapa foram:</p>
 
-* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#rich_picture/"><em>Rich Picture</em></a>
+* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/rich_picture/"><em>Rich Picture</em></a>
 
 ### Decidir
 

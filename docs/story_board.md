@@ -5,7 +5,7 @@
 | 05/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
 | 08/09/2020 | 0.2 | Adição de definição e adicionando caminho no índice| [Murilo Loiola](https://github.com/murilo-dan) |
 
-Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#design_sprint/">Design Sprint</a>.
+Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/design_sprint/">Design Sprint</a>.
 
 ## Definição
 
