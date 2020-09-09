@@ -11,7 +11,7 @@
 ### Must have               
 <p align="justify">&emsp;&emsp;Os requisitos rotulados como Must have são críticos para que a entrega atual seja um sucesso. Se nem um requisito de Must have for incluído, a entrega do projeto deve ser considerada uma falha (nota: os requisitos podem ser rebaixados de Must have, de acordo com todas as partes interessadas; por exemplo, quando novos requisitos são considerados mais importantes).</p>
 ### Should have               
-<p align="justify">&emsp;&emsp;Os requisitos rotulados como Should são importantes, mas não são necessários para entrega atual. Embora Could possua requisitos que podem ser tão importantes quanto Must, eles geralmente não são tão críticos quanto ao tempo ou pode haver outra maneira de satisfazer o requisito, para que ele possa ser retido até uma futura entrega.</p>
+<p align="justify">&emsp;&emsp;Os requisitos rotulados como Should são importantes, mas não são necessários para entrega atual. Embora Should possua requisitos que podem ser tão importantes quanto Must, eles geralmente não são tão críticos quanto ao tempo ou pode haver outra maneira de satisfazer o requisito, para que ele possa ser retido até uma futura entrega.</p>
 ### Could have              
 <p align="justify">&emsp;&emsp;Os requisitos rotulados como Could são desejáveis, mas não necessários, e podem melhorar a experiência do usuário ou a satisfação do cliente por um baixo custo de desenvolvimento. Estes serão normalmente incluídos se o tempo e os recursos permitirem.</p>
 ### Would have               

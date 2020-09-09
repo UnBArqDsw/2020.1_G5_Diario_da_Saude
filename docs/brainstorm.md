@@ -16,7 +16,7 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 | Data | 10/09/2020 |
 | Local | Remoto - MS Teams |
 | Objetivo | Armazenar o máximo de ideias chaves para o levantamento de requisitos da aplicação |
-| Descrição | Todos os membro do grupo se reuniram e discutiram ideias sobre o tema. O tempo limite de duração do brainstorm foi de 30 minutos, respeitando o <a href="">Design Sprint</a>. |
+| Descrição | Todos os membro do grupo se reuniram e discutiram ideias sobre o tema. O tempo limite de duração do brainstorm foi de 30 minutos, respeitando o [Design Sprint](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#design_sprint/). |
 
 ## Participantes</h3>
 <ul>
@@ -52,27 +52,27 @@ Abaixo segue uma transcrição das principais ideias levantadas por cada integra
 ### Requisitos Funcionais
 | Código | Descrição | Prioridade |
 | -- | -- | -- |
-| RF01 | Tanto profissional quanto médico podem criar conta de usuário | -- |
-| RF02 | Usuário pode atualizar seus dados | -- |
-| RF03 | Usuário deve logar utilizando CPF e senha | -- |
-| RF04 | Profissionais da saúde podem criar grupos | -- |
-| RF05 | Profissional da saúde pode adicionar pacientes ao grupo pelo CPF | -- |
-| RF06 | Profissional da saúde pode adicionar outro profissional como administrador do grupo | -- |
-| RF07 | Profissional da saúde pode remover pacientes do grupo | -- |
-| RF08 | Profissional da saúde pode visualizar os pacientes do grupo | -- |
-| RF09 | Aplicativo deve fornecer um questionário específico para cada quadro clínico | -- |
-| RF10 | Profissional da saúde tem que associar um questionário ao grupo | -- |
-| RF11 | O médico pode visualizar um relátorio do grupo | -- |
-| RF12 | O médico pode visualizar um relátorio específico do paciente | -- |
-| RF13 | Aplicativo deve fornecer uma lista de pacientes prioritários por grupo de acordo com seus quadros clínicos | -- |
-| RF14 | Aplicativo deve armazenar as credenciais do paciente para não precisar repetir o login | -- |
-| RF15 | Aplicativo deve enviar notificações para os pacientes responderem o questionário| -- |
-| RF16 | Paciente não pode responder o mesmo questionário mais de uma vez no dia| -- |
+| RF01 | Tanto profissional quanto médico podem criar conta de usuário | Must |
+| RF02 | Usuário pode atualizar seus dados | Should |
+| RF03 | Usuário deve logar utilizando CPF e senha | Must |
+| RF04 | Profissionais da saúde podem criar grupos | Must |
+| RF05 | Profissional da saúde pode adicionar pacientes ao grupo pelo CPF | Must |
+| RF06 | Profissional da saúde pode adicionar outro profissional como administrador do grupo | Should |
+| RF07 | Profissional da saúde pode remover pacientes do grupo | Must |
+| RF08 | Profissional da saúde pode visualizar os pacientes do grupo | Must |
+| RF09 | Aplicativo deve fornecer um questionário específico para cada quadro clínico | Must |
+| RF10 | Profissional da saúde tem que associar um questionário ao grupo | Must |
+| RF11 | O médico pode visualizar um relátorio do grupo | Must |
+| RF12 | O médico pode visualizar um relátorio específico do paciente | Must |
+| RF13 | Aplicativo deve fornecer uma lista de pacientes prioritários por grupo de acordo com seus quadros clínicos | Must |
+| RF14 | Aplicativo deve armazenar as credenciais do paciente para não precisar repetir o login | Could |
+| RF15 | Aplicativo deve enviar notificações para os pacientes responderem o questionário| Should |
+| RF16 | Paciente não pode responder o mesmo questionário mais de uma vez no dia| Must |
 
 
 ### Requisitos Não Funcionais
 | Código | Descrição | Prioridade |
 | -- | -- | -- |
-| RNF01 | Ter uma aba de FAQ (Dúvidas Frequentes) | -- |
-| RNF02 | Ter uma versão WEB | -- |
-| RNF03 | O aplicativo pode armazenar uma por perfil de usuário | -- |
+| RNF01 | Ter uma aba de FAQ (Dúvidas Frequentes) | Could |
+| RNF02 | Ter uma versão WEB | Would |
+| RNF03 | O aplicativo pode armazenar uma foto por perfil de usuário | Could |
