@@ -1,6 +1,6 @@
 # Plano de Análise de Esforço e Tempo
 
-## Histórico de Revisão
+## Versionamento
 
 | Data | Versão | Descrição | Autor(es) |
 |----| ---- | ------- | ------- |

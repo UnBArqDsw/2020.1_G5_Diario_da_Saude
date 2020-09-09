@@ -5,6 +5,8 @@
 | 04/09/2020 | 0.1 | Criação do Documento | [André Goretti](https://github.com/AGoretti) |
 | 06/09/2020 | 0.2 | Correções de texto e formatação | [André Goretti](https://github.com/AGoretti) |
 
+Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#design_sprint/">Design Sprint</a>.
+
 ## Definição
 
 <p align="justify">&emsp;&emsp; A construção de um mapa mental é um processo simples e pessoal de fragmentar alguns conceitos dentro do seu projeto que detalham mais o escopo, podendo assim melhorar a análise e ter uma visão mais completa e palpável do projeto, esclarecendo das relações de causa e efeito entres esse objetos. Alguns dos objetivos do mapa mental são: </p>
