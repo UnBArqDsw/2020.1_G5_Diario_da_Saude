@@ -4,6 +4,7 @@
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
 | 08/09/2020 | 0.1 | Criação do documento | [Murilo Loiola](https://github.com/murilo-dan) |
+| 09/09/2020 | 0.2 | Adicionando storyboard | [Murilo Loiola](https://github.com/murilo-dan) |
 
 # Introdução
 
@@ -46,7 +47,11 @@
 * Profissional da saúde: o segundo tipo de usuário;
 * Aplicação: o aplicativo em si, foco de desenvolvimento do projeto.
 
-<p align="justify">&emsp;&emsp;Com foco nessas três partes essenciais para o desenvolvimento do projeto, o grupo então confeccionou os <em>rich pictures</em> citados.</p>
+<p align="justify">&emsp;&emsp;Com foco nessas três partes essenciais para o desenvolvimento do projeto, o grupo então confeccionou os <em>rich pictures</em> citados e, a partir deles, elaborou <em>storyboards</em>.</p>
+
+Os artefatos elaborados nessa etapa foram:</p>
+
+* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/story_board/"><em>Storyboard</em></a>
 
 ### Protitipar
 
