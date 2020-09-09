@@ -5,6 +5,8 @@
 | 06/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 06/09/2020 | 0.2 | Adicionando rich picture de paciente | [Murilo Loiola](https://github.com/murilo-dan) |
 | 06/09/2020 | 0.3 | Adição do Rich Picture de aplicativo | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 09/09/2020 | 0.4 | Adição do Rich Picture de cenário atual | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 09/09/2020 | 0.5 | Evolução do Rich Picture de cenário atual | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/design_sprint/">Design Sprint</a>.
 
@@ -20,9 +22,12 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 
 ## Rich pictures
 ### Contexto
-#### Cenário atual
+#### Cenário atual - versão 0.1
 ##### Autor: Rodrigo Dadamos
-![rp_cenario_atual](./img/RP_cenario_atual.png)
+![rp_cenario_atual](./img/RP_cenario_atual_v0.1.png)
+#### Cenário atual - versão 0.2
+##### Autor: Rodrigo Dadamos
+![rp_cenario_atual](./img/RP_cenario_atual_v0.2.png)
 ### Profissional saúde
 ##### Autor: Gustavo Carvalho
 ![rich_picutre_profissional](./img/rich_picutre_profissional.png)
