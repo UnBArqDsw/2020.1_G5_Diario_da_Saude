@@ -9,9 +9,10 @@ nav:
     - RichPictures: rich_picture.md
     - Mapa Mental: mapa_mental.md
     - Diagrama Causa-Efeito: diagrama_de_causa_e_efeito.md
-    - Plano de Análise de Risco: plano_risco.md
-    - Plano de Análise de Esforço e Tempo: plano_esforco_tempo.md
-    - Plano de Análise de Custo: plano_custo.md
+    - Plano de Análise:
+      - Risco: plano_risco.md
+      - Esforço e Tempo: plano_esforco_tempo.md
+      - Custo: plano_custo.md
     - Priorização: priorizacao.md
     - Brainstorm: brainstorm.md
     - Storyboard: story_board.md
