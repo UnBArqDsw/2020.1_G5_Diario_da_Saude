@@ -20,12 +20,15 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 
 ## Rich pictures
 ### Contexto
+#### Cenário atual
+##### Autor: Rodrigo Dadamos
+![rp_cenario_atual](./img/RP_cenario_atual.png)
 ### Profissional saúde
 ##### Autor: Gustavo Carvalho
 ![rich_picutre_profissional](./img/rich_picutre_profissional.png)
 ### Paciente
 ##### Autor: Murilo Loiola
 ![rich_picutre_paciente](./img/rp_paciente.png)
-### Aplicativo 
+### Aplicativo
 ##### Autor: Gabriel Tiveron
 ![rich_picture_aplicativo](./img/RP_app.png)

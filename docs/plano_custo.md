@@ -24,13 +24,16 @@
 
 | &nbsp; | Quantidade | Valor (R$) | Total (R$) |
 | --- | --- | --- | --- |
-| Membros da equipe | 468 horas<sup>[1]</sup> | 15,53/hora<sup>[2]</sup> | 7.268,04 |
+| Membros da equipe | 468 horas<sup>*</sup> | 15,53/hora<sup>[1]</sup> | 7.268,04 |
 | Notebooks | 6 | 2.652,44 | 15.914,64 |
-| Planos de internet | 6 | 130,00 (mês) | 3.120,00<sup>[3]</sup> |
-| **Total** | &nbsp;| &nbsp; | **26.302,68** |  
+| Planos de internet | 6 | 130,00 (mês) | 3.120,00<sup>**</sup> |
+| **Total** | &nbsp;| &nbsp; | **26.302,68** |
+
+*** 6 membros x 6 horas por semana x 13 semanas = 468 horas
+
+** 6 planos por 4 meses (agosto, setembro, outubro, novembro)
 
 ## Referências
 
-1. 6 membros x 6 horas por semana x 13 semanas = 468 horas;
-2. Considerando um salário médio mensal de junior em pequena empresa (https://www.educamaisbrasil.com.br/cursos-e-faculdades/engenharia-de-software/salario-de-engenheiro-de-software-carreira);
-3. 6 planos por 4 meses (agosto, setembro, outubro, novembro).
+1. [https://www.educamaisbrasil.com.br/cursos-e-faculdades/engenharia-de-software/salario-de-engenheiro-de-software-carreira](https://www.educamaisbrasil.com.br/cursos-e-faculdades/engenharia-de-software/salario-de-engenheiro-de-software-carreira).
+(Considerando um salário médio mensal de junior em pequena empresa)
