@@ -25,15 +25,20 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 #### Cenário atual - versão 0.1
 ##### Autor: Rodrigo Dadamos
 ![rp_cenario_atual](./img/RP_cenario_atual_v0.1.png)
+[ver imagem](./img/RP_cenario_atual_v0.1.png)
 #### Cenário atual - versão 0.2
 ##### Autor: Rodrigo Dadamos
 ![rp_cenario_atual](./img/RP_cenario_atual_v0.2.png)
+[ver imagem](./img/RP_cenario_atual_v0.2.png)
 ### Profissional saúde
 ##### Autor: Gustavo Carvalho
 ![rich_picutre_profissional](./img/rich_picutre_profissional.png)
+[ver imagem](./img/rich_picutre_profissional.png)
 ### Paciente
 ##### Autor: Murilo Loiola
 ![rich_picutre_paciente](./img/rp_paciente.png)
+[ver imagem](./img/rp_paciente.png)
 ### Aplicativo
 ##### Autor: Gabriel Tiveron
 ![rich_picture_aplicativo](./img/RP_app.png)
+[ver imagem](./img/RP_app.png)
