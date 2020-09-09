@@ -25,7 +25,7 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 #### Cenário atual - versão 0.1
 ##### Autor: Rodrigo Dadamos
 ![rp_cenario_atual](./img/RP_cenario_atual_v0.1.png)
-[ver imagem](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/img/RP_cenario_atual_v0.1.png)
+<a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/img/RP_cenario_atual_v0.1.png" target="_blank">ver imagem</a>
 #### Cenário atual - versão 0.2
 ##### Autor: Rodrigo Dadamos
 ![rp_cenario_atual](./img/RP_cenario_atual_v0.2.png)
