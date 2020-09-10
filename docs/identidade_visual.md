@@ -4,6 +4,7 @@
 | Data | Versão | Descrição | Autores |
 | :---: | :---: | :---: | :---: |
 | 04/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti) |
+| 04/09/2020 | 0.2 | Formatações e correções | [AndréGoretti](https://github.com/AGoretti)
 
 ## Introdução
 
@@ -18,9 +19,10 @@
 
 ## Motivos para escolha das cores
 <ul>
-    <li><p align="justify">Azul (#0124A2): Uma cor calma e coerente para poder passar a ideia de uma coisa mais rotineira e tranquila, precisa e fácil.</p>
-    <li><p align="justify">Cinza (#CCCCCC) Preto(000000) Branco(FFFFFF): Manter um padrão mais minimalista para diminuir qualquer dificuldade de uso, tendo em vista que a maior parte do nosso publico alvo é de idade mais avançada.</p>
+    <li><p align="justify">Azul (#0124A2): Uma cor calma e coerente para poder passar a ideia de uma coisa mais rotineira e tranquila, precisa e fácil.</p></li>
+    <li><p align="justify">Cinza (#CCCCCC) Preto(000000) Branco(FFFFFF): Manter um padrão mais minimalista para diminuir qualquer dificuldade de uso, tendo em vista que a maior parte do nosso publico alvo é de idade mais avançada.</p></li>
 </ul>
+
 ## Fonte 
 
 Utilizaremos de uma fonte simples para manter a rapida compreenção do usuário que vai acessar o aplicativo diariamente.
