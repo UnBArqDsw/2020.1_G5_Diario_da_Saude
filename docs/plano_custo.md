@@ -29,9 +29,9 @@
 | Planos de internet | 6 | 130,00 (mês) | 3.120,00<sup>**</sup> |
 | **Total** | &nbsp;| &nbsp; | **26.302,68** |
 
-*** 6 membros x 6 horas por semana x 13 semanas = 468 horas
+\* 6 membros x 6 horas por semana x 13 semanas = 468 horas
 
-** 6 planos por 4 meses (agosto, setembro, outubro, novembro)
+\** 6 planos por 4 meses (agosto, setembro, outubro, novembro)
 
 ## Referências
 
