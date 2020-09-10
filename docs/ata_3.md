@@ -12,7 +12,7 @@
  5. Murilo Loiola Dantas
  6. Rodrigo Dadamos Lopes da Silva
 
-## Assunto1
+## Assunto 1
 
 **Tópico:** Auxilio no processo de confecção dos Planos de Risco/Tempo
 
@@ -23,10 +23,10 @@
 
 ## Assunto 2
 
-**Tópico:** Design Sprint
+**Tópico:** [Design Sprint](./design_sprint.md)
 
  **Decisões/conclusões:**
 
  - Reunião para Brainstorming.
  - Levantamento de Requisitos Funcionais/Não Funcionais pelo Brainstorming.
- - Divisão de RichPictures para serem feitos até próxima reunião.
+ - Divisão de [RichPictures](./rich_picture.md) para serem feitos até próxima reunião.
