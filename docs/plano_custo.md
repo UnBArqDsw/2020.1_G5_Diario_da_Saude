@@ -7,6 +7,7 @@
 | 08/09/2020 | 0.1 | Elaboração da estimativa de custo inicial | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 08/09/2020 | 0.2 | Correção da conta dos planos de internet | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 08/09/2020 | 0.3 | Ajuste no custo médio de cada membro da equipe | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 09/09/2020 | 0.4 | Ajuste da legenda da tabela | [André Goretti](https://github.com/Agoretti) |
 
 ## Introdução
 
