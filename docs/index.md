@@ -2,39 +2,17 @@
 
 # Sobre
 
-<img src="./img/logo.png" alt="Logo" class="center" />
+<img align="center" src="./img/logo.png" alt="Logo" >
 
 <p align="justify">&emsp;&emsp;O Diário da Saúde é uma aplicação que busca auxiliar Unidades Básicas de Saúde (UBS) que possuam grupos de risco (diabéticos, hipertensos, etc). A aplicação permite que os profissionais da unidade possam acompanhar a condição do paciente à distância, através de medições realizadas de casa pelo próprio paciente.</p>
 
 # Equipe
 
-<div style="float:left;margin:0 110px 110px 0">
-    <img align="left" width="125" height="125" src="https://avatars2.githubusercontent.com/u/40605515?s=460&v=4">
-    <h4> <a href="https://github.com/AGoretti">André Goretti</a> </h4>
-     andremotta96@gmail.com
-</div>
-<div style="float:left;margin:0 110px 110px 0">
-    <img align="left" width="125" height="125" src="https://avatars3.githubusercontent.com/u/38288533?s=400&u=e35ada40392695b7a1fa060fc187d97245ad394e&v=4">
-    <h4> <a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a> </h4>
-     gabrielmtiveron@gmail.com
-</div>
-<div style="float:left;margin:0 110px 110px 0">
-    <img align="left" width="125" height="125" src="https://avatars2.githubusercontent.com/u/42422835?s=460&v=4">
-    <h4> <a href="https://github.com/gustavocarvalho1002">Gustavo Carvalho</a> </h4>
-     gustavocarvalho1002@gmail.com
-</div>
-<div style="float:left;margin:0 110px 110px 0">
-    <img align="left" width="125" height="125" src="https://avatars2.githubusercontent.com/u/42422835?s=460&v=4">
-    <h4> <a href="https://github.com/IanPSRocha">Ian Rocha</a> </h4>
-     ianrocha.df@gmail.com
-</div>
-<div style="float:left;margin:0 110px 110px 0">
-    <img align="left" width="125" height="125" src="https://avatars2.githubusercontent.com/u/48605413?s=460&v=4">
-    <h4> <a href="https://github.com/murilo-dan">Murilo Loiola</a> </h4>
-     murilo.loiola.dan@gmail.com
-</div>
-<div style="float:left;margin:0 110px 110px 0">
-    <img align="left" width="125" height="125" src="https://avatars0.githubusercontent.com/u/17864231?s=460&v=4">
-    <h4> <a href="https://github.com/Rdadamos">Rodrigo Dadamos</a> </h4>
-     rodrigodadamos@gmail.com
-</div>
+|| Nome |	Email |	GitHub |
+|---- | ---- | ------ | ------ |
+|<img align="left" width="125" height="100" src="https://avatars2.githubusercontent.com/u/40605515?s=460&v=4">| André Goretti |	andremotta96@gmail.com |	@Agoretti |
+|<img align="left" width="125" height="100" src="https://avatars3.githubusercontent.com/u/38288533?s=400&u=e35ada40392695b7a1fa060fc187d97245ad394e&v=4">| Gabriel Tiveron |	gabrielmtiveron@gmail.com |	@GabrielTiveron |
+|<img align="left" width="125" height="100" src="https://avatars1.githubusercontent.com/u/23438547?s=400&u=cc927734d57a99e6e1a4c72cfe371617ef52ffc0&v=4">| Gustavo Carvalho |	gustavocarvalho1002@gmail.com |	@gustavocarvalho1002 |
+|<img align="left" width="125" height="100" src="https://avatars2.githubusercontent.com/u/42422835?s=460&v=4">| Ian Rocha |	ianrocha.df@gmail.com |	@IanPSRocha |
+|<img align="left" width="125" height="100" src="https://avatars2.githubusercontent.com/u/48605413?s=460&v=4">| Murilo Loiola |	murilo.loiola.dan@gmail.com |	@murilo-dan |
+|<img align="left" width="125" height="100" src="https://avatars0.githubusercontent.com/u/17864231?s=460&v=4">| Rodrigo Dadamos |	rodrigodadamos@gmail.com |	@Rdadamos |
