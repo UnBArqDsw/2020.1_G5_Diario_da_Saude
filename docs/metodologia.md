@@ -3,7 +3,7 @@
 ## Versionamento
 | Data | Versão | Descrição | Autores |
 | :---: | :---: | :---: | :---: |
-| 09/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti), [Gabriel Tiveron](https://github.com/GabrielTiveron), [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Ian Rocha](https://github.com/IanPSRocha), [Murilo Loiola](https://github.com/murilo-dan), [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 09/09/2020 | 0.1 | Criação do documento |  [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 
 ## Introdução
@@ -45,7 +45,7 @@ Algumas das práticas:
  * Integração contínua: Todo código deve ser integrado diariamente e todos testes devem passar antes e depois da integração. Se algum problema é encontra do ele deve ser corrigido imediatamente.
  * Semana de 40 horas: O XP preconiza que não se pode trabalhar horas extras por mais de uma semana, pois trabalho extra é sintoma de que algo está errado. Devemos manter um ritmo sustentável.
 
-## Lean
+### Lean
 
 <p align="justify">&emsp;&emsp;&emsp;&emsp;A metodologia Lean foca na agregação de valor e, portanto, busca reduzir os custos ao cortar atividades desnecessárias. Assim sendo, os princípios do Lean tendem a buscar otimização do processo de desenvolvimento.</p>
 
@@ -73,7 +73,7 @@ Algumas das práticas:
 
 ### Velocity
 
-<p align="justify">&emsp;&emsp;Velocity é uma medida da quantidade de trabalho que um time pode realizar durante uma única Sprint e é a métrica chave no Scrum. O velocity é calculado no final da Sprint somando os pontos de todas as [histórias de usuário](./backlog.md) totalmente concluídas.</p>
+<p align="justify">&emsp;&emsp;Velocity é uma medida da quantidade de trabalho que um time pode realizar durante uma única Sprint e é a métrica chave no Scrum. O velocity é calculado no final da Sprint somando os pontos de todas as <a href="./backlog.md">histórias de usuário</a> totalmente concluídas.</p>
 
 ### Quadro de Conhecimento
 
@@ -117,7 +117,7 @@ O quadro kanban será constituido pelas seguintes colunas:
 
  * Programação em pares  
  * Coding stantard
- * Integração contínua:
+ * Integração contínua
 
 ### Lean no projeto
 
