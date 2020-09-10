@@ -4,6 +4,9 @@ theme:
   language: pt
 nav:
   - Home: index.md
+  - Reuniões:
+    - Ata 1 (31/08/2020): ata_1.md
+    - Ata 2 (02/08/2020): ata_2.md 
   - Desenho de Software (Base):
     - 5W2H: 5w2h.md
     - RichPictures: rich_picture.md

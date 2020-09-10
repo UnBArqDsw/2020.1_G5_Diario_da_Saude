@@ -17,19 +17,19 @@
 **Tópico:** Definição dos artefator de pré-elicitação a serem feitos
 
 **Decisões/conclusões:** Fazer os seguintes artefatos:
-- 5w2h
-- Mapa mental
-- Diagrama causa e efeito
-- Plano de custo
-- Plano de risco
-- Plano de tempo
+- [5w2h](./5w2h.md)
+- [Mapa mental](./mapa_mental.md)
+- [Diagrama causa e efeito](./diagrama_de_causa_e_efeito.md)
+- [Plano de custo](./plano_custo.md)
+- [Plano de risco](./plano_risco.md)
+- [Plano de tempo](./plano_esforco_tempo.md)
 
 
 ## Assunto 2
 
 **Tópico:** Validação dos artefatos
 
-**Decisões/conclusões:** Iremos validar o que produzido atráves de questionários com os profissionais da UBS.
+**Decisões/conclusões:** Iremos validar o que foi produzido atráves de [questionários](./questionario.md) com os profissionais da UBS.
 
 
 
