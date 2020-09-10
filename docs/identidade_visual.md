@@ -7,20 +7,20 @@
 
 ## Introdução
 
-<p align="justify">&emsp;&emsp; A identidade visual tem como objetivo criar o padrão de cores para uma melhor familiarização com o aplicativo, influênciando nos sentimentos do usuário.
+<p align="justify">&emsp;&emsp; A identidade visual tem como objetivo criar o padrão de cores para uma melhor familiarização com o aplicativo, influênciando nos sentimentos do usuário.</p>
 
 ## Paleta de Cores
 
-<p align="justify">&emsp;&emsp; As cores foram escolhidas utilizando da plataforma <a href="https://coolors.co/" target="_blank"> Coolors </a>. Nessa ferramenta podemos mudar as cores que não agradam para chegar na combinação certa.
+<p align="justify">&emsp;&emsp; As cores foram escolhidas utilizando da plataforma <a href="https://coolors.co/" target="_blank"> Coolors </a>. Nessa ferramenta podemos mudar as cores que não agradam para chegar na combinação certa. </p>
 
 [![paleta_cores_v1](./img/paleta_cores.jpg)](./img/paleta_cores.jpg)
 
 
 ## Motivos para escolha das cores
-
-* Azul (#0124A2): Uma cor calma e coerente para poder passar a ideia de uma coisa mais rotineira e tranquila, precisa e fácil.
-* Cinza (#CCCCCC) Preto(000000) Branco(FFFFFF): Manter um padrão mais minimalista para diminuir qualquer dificuldade de uso, tendo em vista que a maior parte do nosso publico alvo é de idade mais avançada.
-
+<ul>
+    <li><p align="justify">Azul (#0124A2): Uma cor calma e coerente para poder passar a ideia de uma coisa mais rotineira e tranquila, precisa e fácil.</p>
+    <li><p align="justify">Cinza (#CCCCCC) Preto(000000) Branco(FFFFFF): Manter um padrão mais minimalista para diminuir qualquer dificuldade de uso, tendo em vista que a maior parte do nosso publico alvo é de idade mais avançada.</p>
+</ul>
 ## Fonte 
 
 Utilizaremos de uma fonte simples para manter a rapida compreenção do usuário que vai acessar o aplicativo diariamente.
