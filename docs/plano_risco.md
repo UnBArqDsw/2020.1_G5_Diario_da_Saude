@@ -6,6 +6,7 @@
 | 03/08/2020 | 0.1 | Criação do Documento | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 03/08/2020 | 0.2 | Padronização do documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 09/09/2020 | 0.3 | Complementação nas descrições da EAR | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
+| 09/09/2020 | 0.4 | Atualização da imagem de EAR | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
 
 ## Introdução
 
@@ -85,22 +86,49 @@
 
 #### **Prioridade**
 
+| P/I | Muito Baixo  | Baixo | Médio | Alto | Muito Alto |
+| :-: | :----------: | :---: | :---: | :--: | :--------: |
+| Muito Baixa |	1 | 2 | 3 | 4 | 5 |
+| Baixa	| 2 | 4 | 6 | 8 | 10 |
+| Média | 3 | 6 | 9 | 12 | 15 |
+| Alta | 4 | 8 | 12 | 16 | 20 |
+| Muito Alta | 5 | 10 | 15 | 20 | 25 |
+
 
 ## Matrizes de Impacto
 
 #### **Riscos organizacionais**
 | Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
 | :---: | :-----: | :-----------: | :-------: | :------: | :--------: |
-|Falta de comprometimento ou desistência da disciplina por algum integrante da equipe|Muito Alto|Baixa|Reuniões informais|Realocação da carga de trabalho para os membros restantes||
-|Priorização de atividades pouco relevantes|Alto|Baixa|Manter um bom planejamento|Reforçar o empenho nas tarefas mais necessárias||
-|Falta de comunicação entre os membros da equipe|Muito Alto|Muito Baixa|Padronização dos meios de comunicação|Aumentar o engajamento entre os membros||
+|Falta de comprometimento ou desistência da disciplina por algum integrante da equipe|Muito Alto|Baixa|Reuniões informais|Realocação da carga de trabalho para os membros restantes|10|
+|Priorização de atividades pouco relevantes|Alto|Baixa|Manter um bom planejamento|Reforçar o empenho nas tarefas mais necessárias|8|
+|Falta de comunicação entre os membros da equipe|Muito Alto|Muito Baixa|Padronização dos meios de comunicação|Aumentar o engajamento entre os membros|5|
 
 #### **Riscos técnicos**
 | Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
 | :---: | :-----: | :-----------: | :-------: | :------: | :--------: |
-|Dificuldade de identificar requisitos|Muito Alto|Baixa|Fazer uma boa elicitação de requisitos|Revisitar os artefatos de elicitação||
-|Baixo domínio das tecnologias|Alto|Média|Estudar individualmente as tecnologias utilizadas|Pareamento entre pessoas com maior domínio||
-|Atraso na conclusão das atividades|Alto|Média|
+|Dificuldade de identificar requisitos|Muito Alto|Baixa|Fazer uma boa elicitação de requisitos|Revisitar os artefatos de elicitação|10|
+|Baixo domínio das tecnologias|Alto|Média|Estudar individualmente as tecnologias utilizadas|Pareamento entre pessoas com maior domínio|12|
+|Atraso na conclusão das atividades|Alto|Média|Seguir o cronograma proposto cumprindo o backlog de cada sprint|Rever o planejamento do backlog para que seja alcançada a entrega prevista|12|
+
+#### **Riscos Externos**
+| Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
+| :---: | :-----: | :-----------: | :-------: | :------: | :--------: |
+| Não conseguir atender as expectativas dos usuários| Alto| Baixa| Realizar questionários e validações das funcionalidades do projeto | Rever as formas de validação e verificar se requisitos elicitados foram realmente satisfeitos | 8 |
+| Não assegurar os dados do usuário | Muito Alto| Baixa | Ter um banco de dados consistente para armazenar de forma segura os dados | Rever as requisições e armazenamento interno para previnir possíveis falhas de segurança | 10 |
+| Dados da saúde do paciente serem acessiveis por terceiros | Alto | Baixo | Definir que apenas os responsáveis por cada grupo possam acessar tais informações | Rever a forma de como são manipuladas as informações em cada grupo | 8 |
+
+#### **Gerência de Projeto**
+| Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
+| :---: | :-----: | :-----------: | :-------: | :------: | :--------: |
+| Erro no planejamento do sprint backlog | Alto | Baixa | Analisar a capacidade de desenvolvimento de cada integrante para não sobrecarregar e nem criar folgas desnecessárias | Revisar o planejamento e utilizar metodologias para melhoria do desempenho, como pareamento e XP | 8 |
+| Falha na estimativa de entrega de funcionalidades | Alto | Média | Ter o conhecimento da experiência dos desenvolvedores com as tecnologias e frameworks que serão utilizadas | Recalcular as datas de entrega e aumento no empenho | 12 |
+
+#### **Qualidade**
+| Risco | Impacto | Probabilidade | Prevenção | Resposta | Prioridade |
+| :---: | :-----: | :-----------: | :-------: | :------: | :--------: |
+| Não manter uma padronização de código no projeto seguindo folha de estilo | Muito Alto | Muito  Baixa | Utilização de folhas de estilos para que sejam aceitas apenas contribuições de acordo com a folha de estilo | Refatorar todo o código que não está de acordo com o padrão do projeto | 5 |
+| Não dar feedback das ações de usuário | Alto | Média | Verificar funcionalidades com análises de usuário | Refatorar tarefas feitas por usuários para melhorar sua experiência | 12 |
 
 ## Caminho Crítico com PERT/CPM
 
