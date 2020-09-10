@@ -7,6 +7,7 @@
 | 03/08/2020 | 0.2 | Padronização do documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 09/09/2020 | 0.3 | Complementação nas descrições da EAR | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
 | 09/09/2020 | 0.4 | Atualização da imagem de EAR | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
+| 09/09/2020 | 0.5 | Adição nas matrizes de impacto |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Introdução
 
