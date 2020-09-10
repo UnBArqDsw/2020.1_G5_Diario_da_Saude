@@ -5,6 +5,7 @@
 |:----:|:------:|:---------:|:---------:|
 | 03/08/2020 | 0.1 | Criação do Documento | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 03/08/2020 | 0.2 | Padronização do documento | [Murilo Loiola](https://github.com/murilo-dan) |
+| 09/09/2020 | 0.3 | Complementação nas descrições da EAR | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
 
 ## Introdução
 
@@ -36,7 +37,7 @@
 
 #### **Externo**
 
-* **Regulamento:**
+* **Regulamento:** Deve seguir a regulamentação necessária para o porte de dados dos usuários.
 
 * **Cliente:** usuários do produto podem ou não aprovar sua utilidade e eficiência.
 
@@ -44,9 +45,9 @@
 
 #### **Organizacional**
 
-* **Priorização:** 
+* **Priorização:** A priorização deve visar a entrega primeiramente daquilo que é necessário para o funcionamento do produto.
 
-* **Dependências do projeto:**
+* **Dependências do projeto:** Visa o gerenciamento dos integrantes da equipe de desenvolvimento do projeto.
 
 #### **Qualidade**
 
@@ -54,12 +55,11 @@
 
 * **Confiabilidade:** trazer segurança para os dados armazenados e manipulados.
 
-* **Manutenabilidade:** 
+* **Manutenabilidade:** Deve haver uma preocupação em manter uma padronização para melhor futura     manutenção do produto.
 
-* **Eficiência:**
+* **Eficiencia:** O produto deve atender as expectativas nas quais foi fundada sua ideia.
 
-* **Usabilidade:**
-
+* **Usabilidade:** Deve ter uma boa interação e experiência com o usuário.
 
 ## Análise quantitativa dos riscos
 
