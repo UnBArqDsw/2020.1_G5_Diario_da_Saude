@@ -16,7 +16,7 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 | Data | 10/09/2020 |
 | Local | Remoto - MS Teams |
 | Objetivo | Armazenar o máximo de ideias chaves para o levantamento de requisitos da aplicação |
-| Descrição | Todos os membro do grupo se reuniram e discutiram ideias sobre o tema. O tempo limite de duração do brainstorm foi de 30 minutos, respeitando o [Design Sprint](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#design_sprint/). |
+| Descrição | Todos os membro do grupo se reuniram e discutiram ideias sobre o tema. O tempo estipulado para a duração do brainstorm foi de 30 minutos inicialmente, respeitando o [Design Sprint](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#design_sprint/). No entanto, logo percebeu-se que esse tempo não seria suficiente e o grupo decidiu por não limitar a duração. |
 
 ## Participantes</h3>
 <ul>
