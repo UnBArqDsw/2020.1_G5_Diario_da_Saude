@@ -5,6 +5,7 @@
 |:----:|:------:|:---------:|:---------:|
 | 08/09/2020 | 0.1 | Criação do documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 09/09/2020 | 0.2 | Adicionando storyboard | [Murilo Loiola](https://github.com/murilo-dan) |
+| 09/09/2020 | 0.3 | Modificando metodologia e desenvolvimento | [Murilo Loiola](https://github.com/murilo-dan) |
 
 # Introdução
 
@@ -24,7 +25,7 @@
 
 ## Metodologia e desenvolvimento
 
-<p align="justify">&emsp;&emsp;Ao iniciar o Design Sprint, o grupo já havia decidido o tema do projeto. Dessa forma, optou-se por utilizar o Design Sprint como uma ferramenta para equalizar o entendimento de todos os membros acerca do objetivo do tema escolhido e confeccionar alguns artefatos iniciais. O processo foi realizado no dia 04/</p>
+<p align="justify">&emsp;&emsp;Ao iniciar o Design Sprint, o grupo já havia decidido o tema do projeto. Dessa forma, optou-se por utilizar o Design Sprint como uma ferramenta para equalizar o entendimento de todos os membros acerca do objetivo do tema escolhido e confeccionar alguns artefatos iniciais.</br>&emsp;&emsp;O processo de Design Sprint foi realizado do dia 04/09 ao dia 06/09. Apesar do grupo ter tentado se ater ao tempo proposto no Design Sprint adaptado, logo percebeu-se que 30 minutos não seria suficiente para as etapas. Dessa forma, no primeiro dia, o grupo passou pelas etapas de Entender e Esboçar. No segundo dia, tivemos a etapa de Decidir e iniciamos a etapa de Prototipar. No terceiro dia, finalizamos a etapa de Prototipar e realizamos a etapa de Testar.</p>
 
 ### Entender
 
