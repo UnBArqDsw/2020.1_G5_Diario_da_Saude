@@ -146,8 +146,8 @@
 | H | Protótipo | - | 1 |
 | I | Escolha das Frameworks | - | 1 |
 | J | Modelagem do Banco de Dados | - | 1 |
-| K | Conectar o Banco de Dados à aplicação | J | 1 |
-| L | Criação da API Node | - | 2 |
+| K | Conectar o Banco de Dados à aplicação | J, A | 1 |
+| L | Criação da API Node | A | 2 |
 | M | Coletar as informações de cadastro do usuário | A, K | 1 |
 | N | Criação de papeis de usuário na aplicação | A, K | 1 |
 | O | Criação de grupo entre usuários pacientes | N | 2 |
@@ -159,7 +159,7 @@
 | U | Tela de Estatísticas | H, Q | 2 |
 | V | Tela de FAQ | H | 1 |
 | X | Menu lateral | H | 1 |
-| W | Administradores poderem adicionar participantes para grupos | O, N | 1 |
+| W | Administradores poderem adicionar participantes para grupos | O | 1 |
 | Y | Criar sistemas de notificação para lembrar os usuários | P | 2 |
 | Z | Revisar Artefatos desenvolvidos | F | 1 |
 
