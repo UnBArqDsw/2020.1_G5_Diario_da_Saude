@@ -21,7 +21,7 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 - Fácil de modelar e pode ser feito com o cliente.
 
 ## Rich pictures
-### Contexto
+#### Contexto
 #### Cenário atual - versão 0.1
 ##### Autor: Rodrigo Dadamos
 [![rp_cenario_atual_v0.1](./img/RP_cenario_atual_v0.1.png)](./img/RP_cenario_atual_v0.1.png)

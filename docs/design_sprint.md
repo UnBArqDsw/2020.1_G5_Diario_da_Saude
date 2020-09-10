@@ -63,4 +63,4 @@ Os artefatos elaborados nessa etapa foram:</p>
 
 <p align="justify">&emsp;&emsp;Apesar de essa etapa ter sido designada como opcional no Design Sprint adaptado, o grupo optou pela realização de um questionário como forma de não só validar os artefatos confeccionados, como também uma possível fonte de novas ideias. Os artefatos elaborados nessa etapa foram:</p>
 
-* <a href="">Questionário</a>
+* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/questionario/">Questionário</a>

@@ -1,6 +1,6 @@
 # Brainstorm
 ## Versionamento
-| Data | Versão | Modificação | Autores |
+| Data | Versão | Descrição | Autores |
 | :---: | :---: | :---: | :---: |
 | 04/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti), [Gabriel Tiveron](https://github.com/GabrielTiveron), [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Ian Rocha](https://github.com/IanPSRocha), [Murilo Loiola](https://github.com/murilo-dan), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 06/09/2020 | 0.2 | Formatação e algumas correções ortográficas | [Murilo Loiola](https://github.com/murilo-dan) |

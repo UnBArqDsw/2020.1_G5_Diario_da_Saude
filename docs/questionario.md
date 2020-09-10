@@ -1,10 +1,13 @@
-# Plano de Análise de Custos
+# Questionário
 
 ## Versionamento
 
 | Data | Versão | Descrição | Autor(es) |
 |----| ---- | ------- | ------- |
-| 09/09/2020 | 0.1 | Versão inicial | Rodrigo Dadamos |
+| 09/09/2020 | 0.1 | Versão inicial | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 09/09/2020 | 0.2 | Corrigindo título e adicionando hyperlink | [Murilo Loiola](https://github.com/murilo-dan) |
+
+Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/design_sprint/">Design Sprint</a>.
 
 ## Introdução
 
