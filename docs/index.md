@@ -10,6 +10,7 @@
 
 
 <div class="table_middle_align">
+  
 || Nome |	Email |	GitHub |
 |---- | ---- | ------ | ------ |
 |<img width="125" height="125" style="border-radius: 50%" src="https://avatars2.githubusercontent.com/u/40605515?s=460&v=4">| André Goretti |	andremotta96@gmail.com |	[@Agoretti](https://github.com/Agoretti) |
@@ -18,4 +19,5 @@
 |<img width="125" height="125" style="border-radius: 50%" src="https://avatars2.githubusercontent.com/u/42422835?s=460&v=4">| Ian Rocha |	ianrocha.df@gmail.com |	[@IanPSRocha](https://github.com/IanPSRocha) |
 |<img width="125" height="125" style="border-radius: 50%" src="https://avatars2.githubusercontent.com/u/48605413?s=460&v=4">| Murilo Loiola |	murilo.loiola.dan@gmail.com |	[@murilo-dan](https://github.com/murilo-dan) |
 |<img width="125" height="125" style="border-radius: 50%" src="https://avatars0.githubusercontent.com/u/17864231?s=460&v=4">| Rodrigo Dadamos |	rodrigodadamos@gmail.com |	[@Rdadamos](https://github.com/Rdadamos) |
+
 </div>
