@@ -4,6 +4,7 @@
 |11/09/2020|0.1|Criação do documento|[Gabriel Tiveron](https://github.com/GabrielTiveron)|
 |11/09/2020|0.2|Adicionando introdução|[Murilo Loiola](https://github.com/murilo-dan)|
 |11/09/2020|0.3|Adicionando segunda versão dos BPMN|[Murilo Loiola](https://github.com/murilo-dan)|
+|11/09/2020|0.4|Adicionando áudio explicativo da metodologia|[Murilo Loiola](https://github.com/murilo-dan)|
 
 ## Introdução
 
