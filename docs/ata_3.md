@@ -27,6 +27,6 @@
 
  **Decisões/conclusões:**
 
- - Reunião para Brainstorming.
+ - Reunião para [Brainstorming](./brainstorm.md).
  - Levantamento de Requisitos Funcionais/Não Funcionais pelo Brainstorming.
  - Divisão de [RichPictures](./rich_picture.md) para serem feitos até próxima reunião.

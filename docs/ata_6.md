@@ -16,29 +16,29 @@
 
 **Tópico:** [Diagrama BPMN](./BPMN.md).
 
- - Detalhar o [Diagrama BPMN](./BPMN.md) das [metodologias](./metodologia.md) escolhidas em outras reuniões.
+ - Detalhar o Diagrama BPMN das [metodologias](./metodologia.md) escolhidas em outras reuniões.
 
  **Decisões/conclusões:**
 
- - Fazer [BPMN](./BPMN.md).
+ - Fazer BPMN.
 
 ## Assunto 2
 
 **Tópico:** [Backlog do Produto](./backlog_produto.md).
 
- - Detalhar o [Backlog do Produto](./backlog_produto.md) de acordo com as funcionalidades e requisitos levantados
+ - Detalhar o Backlog do Produto de acordo com as funcionalidades e requisitos levantados
 
  **Decisões/conclusões:**
 
- - Fazer [Backlog do Produto](./backlog_produto.md).
+ - Fazer Backlog do Produto.
 
  ## Assunto 3
 
 **Tópico:** Versionamento [Rich Pictures](./rich_picture.md).
 
- - Analisar detalhes passado por feedback em uma nova versão dos [Rich Pictures](./rich_picture.md) do paciente, profissional e do aplicativo
+ - Analisar detalhes passados por feedback acerca dos Rich Pictures do paciente, profissional e do aplicativo.
  
  **Decisões/conclusões:**
 
- - Criar Versão dos [Rich Pictures](./rich_picture.md) do paciente, profissional e do aplicativo.
+ - Criar nova versão dos Rich Pictures do paciente, profissional e do aplicativo.
  

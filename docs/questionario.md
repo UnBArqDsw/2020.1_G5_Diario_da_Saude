@@ -13,7 +13,7 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 
 ## Introdução
 
-<p align="justify">&emsp;&emsp;O objetivo deste questionário é ampliar o conhecimento sobre grupos de acompanhamentos de pacientes das UBS e entender a necessidade de um software para gerenciar esses grupos e contrubuir com a prevenção e promoção da saúde, ainda mais considerando o cenário atual de pandemia.</p>
+<p align="justify">&emsp;&emsp;O objetivo deste questionário é ampliar o conhecimento sobre grupos de acompanhamentos de pacientes das UBS e entender a necessidade de um software para gerenciar esses grupos e contrubuir com a prevenção e promoção da saúde, levando em consideração o cenário atual de pandemia.</p>
 
 ## Aplicação
 
@@ -73,9 +73,9 @@ Funcionalidades que seriam úteis para o aplicativo dos pacientes:
 | Código | Descrição | Prioridade |
 | -- | -- | -- |
 | RF01 | Chamada para controle de participação. | Should |
-| RF02 | Push Notifications para lembretes de consultas, remédios, orientações...| Could |
+| RF02 | Push notifications para lembretes de consultas, remédios, orientações. | Could |
 | RF03 | Geração de relatório e forma de exportação dos dados em planilha. | Must |
-| RF04 | Colocar uma aba para se realizou ou nao e qual a atividade fisica. | Could |
+| RF04 | Aba para declarar se realizou (ou não) alguma atividade fisica (qual?). | Could |
 | RF05 | Lista de medicações a serem tomadas diariamente. | Should |
 | RF06 | Local para anotar dúvidas, curiosidades. | Would |
 | RF07 | Possibilidade de o profissional criar alertas para os dados inseridos pelos participantes | Could |
@@ -86,6 +86,6 @@ Funcionalidades que seriam úteis para o aplicativo dos pacientes:
 
 | Código | Descrição | Prioridade |
 | -- | -- | -- |
-| RNF01 | Machine learning para prioridades de internações e exames. | Would |
+| RNF01 | Machine learning para identificação e priorização de pacientes em estado de risco. | Would |
 | RNF02 | Busca ativa dos participantes que se ausentarem. | Would |
 | RNF03 | Controle dos exames dos pacientes | Could |

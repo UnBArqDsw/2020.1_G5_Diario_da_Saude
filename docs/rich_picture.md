@@ -29,7 +29,7 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 
 ##### *versão 0.2*
 [![rp_cenario_atual_v0.2](./img/RP_cenario_atual_v0.2.png)](./img/RP_cenario_atual_v0.2.png)
-### Profissional saúde
+### Profissional da saúde
 ##### *versão 0.1*
 [![rich_picutre_profissional_v0.1](./img/rich_picutre_profissional_v0.1.png)](./img/rich_picutre_profissional_v0.1.png)
 ##### *versão 0.2*

@@ -12,22 +12,27 @@ nav:
     - Ata 5 (09/09/2020): ata_5.md
     - Ata 6 (10/09/2020): ata_6.md
   - Desenho de Software (Base):
-    - 5W2H: 5w2h.md
-    - RichPictures: rich_picture.md
-    - Argumentação: argumentacao.md
-    - Questionário: questionario.md
-    - Mapa Mental: mapa_mental.md
-    - Diagrama Causa-Efeito: diagrama_de_causa_e_efeito.md
-    - Plano de Análise:
-      - Risco: plano_risco.md
-      - Esforço e Tempo: plano_esforco_tempo.md
-      - Custo: plano_custo.md
-    - Priorização: priorizacao.md
-    - Brainstorm: brainstorm.md
-    - Storyboard: story_board.md
-    - Metodologia: metodologia.md
-    - Design Sprint: design_sprint.md
-    - Identidade Visual: identidade_visual.md
-    - Protótipo: prototipo.md
-    - Backlog: backlog_produto.md
-    - BPMN: BPMN.md
+    - Módulo Projeto não Orientado a Abordagens Específicas:
+      - 5W2H: 5w2h.md
+      - Diagrama Causa-Efeito: diagrama_de_causa_e_efeito.md
+      - Plano de Análise:
+        - Risco: plano_risco.md
+        - Esforço e Tempo: plano_esforco_tempo.md
+        - Custo: plano_custo.md
+      - Design Sprint:
+        - Design Sprint: design_sprint.md
+        - Brainstorm: brainstorm.md
+        - Mapa Mental: mapa_mental.md
+        - RichPictures: rich_picture.md
+        - Storyboard: story_board.md
+        - Protótipo: prototipo.md
+        - Questionário: questionario.md
+    - Módulo Processos/Metodologia/Abordagens (Apresentação):
+      - Metodologia: metodologia.md
+    - Módulo Processos/Metodologia/Abordagens (Modelagem):
+      - BPMN: BPMN.md
+    - Iniciativas extras:
+      - Argumentação: argumentacao.md
+      - Priorização: priorizacao.md
+      - Backlog: backlog_produto.md
+      - Identidade Visual: identidade_visual.md
