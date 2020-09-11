@@ -3,7 +3,7 @@
 | Data | Versão | Descrição | Autores |
 | :---: | :---: | :---: | :---: |
 | 09/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti)|
-| 10/09/2020 | 0.2 | Criação do documento | [André Goretti](https://github.com/AGoretti)|
+| 10/09/2020 | 0.2 | Colocando slides no lugar das imagens | [André Goretti](https://github.com/AGoretti)|
 
 ## Introdução
 
