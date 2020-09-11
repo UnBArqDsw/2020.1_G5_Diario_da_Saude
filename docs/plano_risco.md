@@ -10,6 +10,7 @@
 | 09/09/2020 | 0.5 | Adição nas matrizes de impacto |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 10/09/2020 | 0.6 | Criação da Tabela do PERT/CPM |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 11/09/2020 | 0.7 | Adição do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 11/09/2020 | 0.8 | Adição da segunda versão do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) | 
 
 ## Introdução
 
@@ -141,29 +142,33 @@
 | B | Diagrama BPMN | - | 1 |
 | C | Modelos UML  | B | 2 |
 | D | Padrões Emergentes | C | 1 |
-| E | Padrões GoFs | D | 4 |
-| F | Documento de Arquitetura | E | 3 |
+| E | Padrões GoFs | D | 3 |
+| F | Documento de Arquitetura | E | 2 |
 | G | Documento de visão | - | 1 |
 | H | Protótipo | - | 1 |
 | I | Escolha das Frameworks | - | 1 |
 | J | Modelagem do Banco de Dados | - | 1 |
 | K | Conectar o Banco de Dados à aplicação | J, A | 1 |
-| L | Criação da API Node | A | 2 |
-| M | Coletar as informações de cadastro do usuário | A, K | 1 |
-| N | Criação de papeis de usuário na aplicação | A, K | 1 |
+| L | Criação da API | A | 2 |
+| M | Coletar as informações de cadastro do usuário | K | 1 |
+| N | Criação de papeis de usuário na aplicação | K | 1 |
 | O | Criação de grupo entre usuários pacientes | N | 2 |
 | P | Coletar informações frequentemente | N | 2 |
-| Q | Criação de estatísticas para administradores do grupo| P | 2 |
-| R | Tela de Login | H | 1 |
+| Q | Criação de estatísticas para administradores do grupo| P | 3 |
+| R | Tela de Login | H, I | 1 |
 | S | Tela de coleta de informações | H | 2 |
-| T | Tela de Grupos | H | 1 |
-| U | Tela de Estatísticas | H, Q | 2 |
-| V | Tela de FAQ | H | 1 |
-| X | Menu lateral | H | 1 |
+| T | Tela de Grupos | H, I | 1 |
+| U | Tela de Estatísticas | H, I, Q | 4 |
+| V | Tela de FAQ | H, I | 1 |
+| X | Menu lateral | H, I | 1 |
 | W | Administradores poderem adicionar participantes para grupos | O | 1 |
 | Y | Criar sistemas de notificação para lembrar os usuários | P | 2 |
-| Z | Revisar Artefatos desenvolvidos | F | 1 |
+| Z | Revisar Artefatos desenvolvidos | F | 2 |
 
 ## Diagrama PERT
 
-![PERT](./img/PERT-1.png)
+#### v.1
+![PERT-v1](./img/PERT-1.png)
+
+#### v.2
+![PERT-v2](./img/PERT-2.png)

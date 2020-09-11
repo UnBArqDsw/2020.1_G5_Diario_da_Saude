@@ -1,6 +1,8 @@
-# Diário da Saúde
+<p align="center">
+    <img src="docs/img/logo.png" alt="Logo">
+</p>
 
-<img src="docs/img/logo.png" alt="Logo" style="margin: 0 auto; display:block; border-radius: 50%">
+# Diário da Saúde
 
 **Número do Grupo**: 05<br>
 **Código da Disciplina**: FGA0208-T01<br>

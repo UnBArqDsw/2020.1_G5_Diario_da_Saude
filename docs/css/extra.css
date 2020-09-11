@@ -17,3 +17,8 @@ nav li {
 .wm-toc-pane {
  max-width: 250px;
 }
+
+.table_middle_align {
+	vertical-align: middle;
+	text-align: center;
+}

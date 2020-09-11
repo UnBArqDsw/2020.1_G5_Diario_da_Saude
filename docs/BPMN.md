@@ -9,7 +9,7 @@
 
 <p align="justify">&emsp;&emsp;O BPMN (Business Process Model and Notation) é um padrão que utiliza uma representação gráfica para especificação de processos de negócio. Esta ferramenta foi desenvolvida para fornecer uma notação padrão facilmente compreendida para todos os envolvidos. Neste projeto, o BPMN será utilizado para detalhar a metodologia que será utilizada durante o desenvolvimento.</p>
 
-### Diagrama de Metodologia
+## Diagrama de Metodologia
 
 #### Versão 0.1
 
@@ -19,7 +19,7 @@
 
 ![BPMN_Metodologia](./img/geral_bpmn.png)
 
-### Diagrama da Sprint
+## Diagrama da Sprint
 
 #### Versão 0.1
 
