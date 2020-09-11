@@ -4,7 +4,7 @@
 | Data | Versão | Descrição | Autor |
 | :---: | :---: | :---: | :---: |
 | 09/09/2020 | 0.1 | Adição da priorização | [Ian Rocha](https://github.com/IanPSRocha) |
-| 09/09/2020 | 0.2 | Revisão do documento | [Murilo Loiola](https://github.com/murilo-dan) |
+| 09/09/2020 | 1.0 | Revisão do documento | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 <p align="justify">&emsp;&emsp;Conforme os requisitos são levantados, é necessário agregar valor a cada requisito para determinar um ponto de partida para o desenvolvimento. Para isso existem várias técnicas de priorização.</p><p align="justify">&emsp;&emsp;Após uma reunião com todos os integrantes do grupo, foi decidido que usaremos uma técnica bastante conhecida e que atende todas as nossas necessidades, denominada MoSCoW.</p>

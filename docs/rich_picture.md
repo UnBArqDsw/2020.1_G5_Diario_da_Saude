@@ -8,7 +8,7 @@
 | 09/09/2020 | 0.4 | Adição do Rich Picture de cenário atual | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 09/09/2020 | 0.5 | Evolução do Rich Picture de cenário atual | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 10/09/2020 | 0.6 | Evolução do rich picture profissional da saúde | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
-| 10/09/2020 | 0.7 | Evolução do rich picture do paciente | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 10/09/2020 | 1.0 | Evolução do rich picture do paciente | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/design_sprint/">Design Sprint</a>.
 

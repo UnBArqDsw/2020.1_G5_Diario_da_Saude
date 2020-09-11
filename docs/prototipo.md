@@ -3,7 +3,7 @@
 | Data | Versão | Descrição | Autores |
 | :---: | :---: | :---: | :---: |
 | 09/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti)|
-| 10/09/2020 | 0.2 | Colocando slides no lugar das imagens | [André Goretti](https://github.com/AGoretti)|
+| 10/09/2020 | 1.0 | Colocando slides no lugar das imagens | [André Goretti](https://github.com/AGoretti)|
 
 Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/design_sprint/">Design Sprint</a>.
 

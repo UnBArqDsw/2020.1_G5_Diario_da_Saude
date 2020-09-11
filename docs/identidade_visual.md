@@ -4,7 +4,7 @@
 | Data | Versão | Descrição | Autores |
 | :---: | :---: | :---: | :---: |
 | 04/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti) |
-| 04/09/2020 | 0.2 | Formatações e correções | [AndréGoretti](https://github.com/AGoretti) |
+| 04/09/2020 | 1.0 | Formatações e correções | [AndréGoretti](https://github.com/AGoretti) |
 
 ## Introdução
 

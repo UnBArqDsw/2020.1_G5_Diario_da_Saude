@@ -7,7 +7,7 @@
 | 09/09/2020 | 0.1 | Versão inicial | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 09/09/2020 | 0.2 | Corrigindo título e adicionando hyperlink | [Murilo Loiola](https://github.com/murilo-dan) |
 | 09/09/2020 | 0.3 | Adicionando tabelas de requisitos | [André Goretti](https://github.com/AGoretti) |
-| 10/09/2020 | 0.4 | Adição das respostas | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 10/09/2020 | 1.0 | Adição das respostas | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/design_sprint/">Design Sprint</a>.
 

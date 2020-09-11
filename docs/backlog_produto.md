@@ -6,7 +6,7 @@
 | 10/09/2020 | 0.1 | Criação do Backlog do Produto | [Ian Rocha](https://github.com/IanPSRocha) |
 | 11/09/2020 | 0.2 | Formatação da Planilha | [Ian Rocha](https://github.com/IanPSRocha) |
 | 11/09/2020 | 0.3 | Adicionando Critérios de Aceitação e Rastreabilidade por US  | [Ian Rocha](https://github.com/IanPSRocha) |
-| 11/09/2020 | 0.4 | Adicionando US da introspecção e formatações | [André Goretti](https://github.com/AGoretti)|
+| 11/09/2020 | 1.0 | Adicionando US da introspecção e formatações | [André Goretti](https://github.com/AGoretti)|
 
 ## Introdução
 <p align="justify">&emsp;&emsp;Em termos gerais, o Product Backlog é uma listagem de todos os afazeres pendentes no projeto. Ele substitui o modelo tradicional de especificação de artefatos. Cada elemento da listagem é elicitado por meio de interação da equipe de desenvolvimento com o cliente, podendo ser apenas um representante, o que torna os elementos levantados muito arbitrários; ou podendo ser uma equipe representante do cliente, representando as diversas áreas que utilizarão o produto.

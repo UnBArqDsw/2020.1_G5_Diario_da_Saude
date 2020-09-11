@@ -4,7 +4,7 @@
 | :---: | :---: | :---: | :---: |
 | 04/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti), [Gabriel Tiveron](https://github.com/GabrielTiveron), [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Ian Rocha](https://github.com/IanPSRocha), [Murilo Loiola](https://github.com/murilo-dan), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 06/09/2020 | 0.2 | Formatação e algumas correções ortográficas | [Murilo Loiola](https://github.com/murilo-dan) |
-| 06/09/2020 | 0.3 | Levantando Requisitos do Brainstorm | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/AGoretti), [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
+| 06/09/2020 | 1.0 | Levantando Requisitos do Brainstorm | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/AGoretti), [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 
 Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/design_sprint/">Design Sprint</a>.
 

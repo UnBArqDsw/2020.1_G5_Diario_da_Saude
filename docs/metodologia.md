@@ -4,7 +4,7 @@
 | Data | Versão | Descrição | Autores |
 | :---: | :---: | :---: | :---: |
 | 09/09/2020 | 0.1 | Criação do documento |  [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan), [Rodrigo Dadamos](https://github.com/Rdadamos) |
-| 11/09/2020 | 0.2 | Adicionando tópico Lean no projeto e revisando documento | [Murilo Loiola](https://github.com/murilo-dan) |
+| 11/09/2020 | 1.0 | Adicionando tópico Lean no projeto e revisando documento | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 

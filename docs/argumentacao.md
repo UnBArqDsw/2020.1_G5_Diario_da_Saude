@@ -3,7 +3,7 @@
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
 | 09/09/2020 | 0.1 | Criação do Documento | [Rodrigo Dadamos](https://github.com/Rdadamos) |
-| 09/09/2020 | 0.2 | Adição da argumentação sobre participar do grupo | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 09/09/2020 | 1.0 | Adição da argumentação sobre participar do grupo | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Definição
 

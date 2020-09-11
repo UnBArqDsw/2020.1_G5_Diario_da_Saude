@@ -10,7 +10,7 @@
 | 09/09/2020 | 0.5 | Adição nas matrizes de impacto |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 10/09/2020 | 0.6 | Criação da Tabela do PERT/CPM |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 11/09/2020 | 0.7 | Adição do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
-| 11/09/2020 | 0.8 | Adição da segunda versão do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 11/09/2020 | 1.0 | Adição da segunda versão do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Introdução
 
