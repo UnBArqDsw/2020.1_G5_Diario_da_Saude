@@ -70,6 +70,14 @@ Eu, como um usuário, desejo atualizar meus dados para que eu consiga sempre man
 - Botão para editar o perfil quando o usuário estiver logado
 - Atualizar os dados no banco de dados
 
+#### US06: Excluir meu Perfil
+##### Origem: [Introspecção](./introspeccao.md)
+Eu como um usuário, desejo remover meu perfil para que eu consiga retirar meus dados da aplicação
+##### Critérios de Aceitação:
+- Botão para usuário remover conta na página de perfil
+- Botão de confirmação para remover a conta
+- Retirar os dados do usuário do banco de dados
+
 ### EP04: Grupo
 #### US06: Criar grupo
 ##### Origem: [Brainstorm](./brainstorm.md)
@@ -271,3 +279,5 @@ Eu, como paciente, desejo visualizar uma página com as dúvidas mais frequentes
 - Botão na SideBar para acessar a página
 - Página contendo as dúvidas mais frequentes e suas respostas
 - Validação de um profissional para cada resposta
+
+### EP10: Usabilidde
