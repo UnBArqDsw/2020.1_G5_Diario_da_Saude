@@ -14,15 +14,15 @@ o protótipo se encontra nesse [link](https://www.figma.com/file/d0icSO7UVLvEIMh
 
 ## Versão 1:
 
-<img src="img/prototipo/Cadastro_Medico.png"  width="150" height="325" />
-<img src="img/prototipo/Cadastro_Paciente.png"  width="150" height="325" />
-<img src="img/prototipo/Detalhes_Medico.png"  width="150" height="325" />
-<img src="img/prototipo/Graficos.png"  width="150" height="325" />
-<img src="img/prototipo/Home_Medico.png"  width="150" height="325" />
-<img src="img/prototipo/Home_Pacientes.png"  width="150" height="325" />
-<img src="img/prototipo/Landing.png"  width="150" height="325" />
-<img src="img/prototipo/Log_in.png"  width="150" height="325" />
-<img src="img/prototipo/Popup_Cadastro.png"  width="150" height="325" />
-<img src="img/prototipo/Questionário_Pacientes.png"  width="150" height="325" />
-<img src="img/prototipo/Sidebar_Medico.png"  width="150" height="325" />
-<img src="img/prototipo/Sidebar_Pacientes.png"  width="150" height="325" />
+<img src="./img/prototipo/Cadastro_Medico.png"  width="150" height="325">
+<img src="./img/prototipo/Cadastro_Paciente.png"  width="150" height="325">
+<img src="./img/prototipo/Detalhes_Medico.png"  width="150" height="325">
+<img src="./img/prototipo/Graficos.png"  width="150" height="325">
+<img src="./img/prototipo/Home_Medico.png"  width="150" height="325">
+<img src="./img/prototipo/Home_Pacientes.png"  width="150" height="325">
+<img src="./img/prototipo/Landing.png"  width="150" height="325">
+<img src="./img/prototipo/Log_in.png"  width="150" height="325">
+<img src="./img/prototipo/Popup_Cadastro.png"  width="150" height="325">
+<img src="./img/prototipo/Questionário_Pacientes.png"  width="150" height="325">
+<img src="./img/prototipo/Sidebar_Medico.png"  width="150" height="325">
+<img src="./img/prototipo/Sidebar_Pacientes.png"  width="150" height="325">
