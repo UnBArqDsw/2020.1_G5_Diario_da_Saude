@@ -5,3 +5,7 @@
 .wm-toctree a, .wm-toctree a:visited, .wm-toctree a:hover, .wm-toctree a:focus {
 	color: #0124A2;
 }
+
+.wm-toc-li.wm-current a{
+  color:white;
+}
