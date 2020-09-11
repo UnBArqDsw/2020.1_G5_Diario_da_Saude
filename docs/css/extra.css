@@ -19,6 +19,6 @@ nav li {
 }
 
 .table_middle_align td, .table_middle_align th {
-	vertical-align: middle;
+	vertical-align: middle !important;
 	text-align: center;
 }
