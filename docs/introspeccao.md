@@ -32,4 +32,11 @@ Através da criação de **personas**, é possível até mesmo descrever um cont
 |História de contexto| Aroldo tem muita dificuldade em lembra senha e números, e frequentemente acaba esquecendo até mesmo da senha do seu cartão do banco.|
 |O que ele(a) acha que poderia mudar:| Eu queria poder ter um jeito de recuperar minha senha de acesso ao aplicativo através de um jeito fácil e rápido, pois não tenho muito domínio em tecnologia. |
 
+## Requisitos Elicitados
+### Requisitos Funcionais
+| Código | Descrição | Prioridade |
+| -- | -- | -- |
+|RF01|Deve existir a opção de fazer logout da conta do aplicativo|Must|
+|RF02|Deve existir um meio de excluir conta de usuário|Would|
+|RF03|Sistema deve disponalizar questionário de preenchimento diário para os pacientes de um grupo.|Should|
 
