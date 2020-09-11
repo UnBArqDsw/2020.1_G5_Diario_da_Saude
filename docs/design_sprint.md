@@ -4,8 +4,9 @@
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
 | 08/09/2020 | 0.1 | Criação do documento | [Murilo Loiola](https://github.com/murilo-dan) |
-| 09/09/2020 | 0.2 | Adicionando storyboard | [Murilo Loiola](https://github.com/murilo-dan) |
+| 09/09/2020 | 0.2 | Adicionando link para storyboard | [Murilo Loiola](https://github.com/murilo-dan) |
 | 09/09/2020 | 0.3 | Modificando metodologia e desenvolvimento | [Murilo Loiola](https://github.com/murilo-dan) |
+| 11/09/2020 | 0.4 | Adicionando link para protótipo | [Murilo Loiola](https://github.com/murilo-dan) |
 
 # Introdução
 
@@ -58,7 +59,7 @@ Os artefatos elaborados nessa etapa foram:</p>
 
 <p align="justify">&emsp;&emsp;Nesta etapa, o grupo montou um protótipo utilizando a ferramenta Figma. Os artefatos elaborados nessa etapa foram:</p>
 
-* <a href="">Protótipo</a>
+* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/prototipo/">Protótipo</a>
 
 ### Testar
 

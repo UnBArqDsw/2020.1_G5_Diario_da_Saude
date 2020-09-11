@@ -21,5 +21,6 @@
  **Decisões/conclusões:**
 
  - Fazer [documento de metodologia](./metodologia.md).
+ - Fazer [documento de identidade visual](./identidade_visual.md)
 
 

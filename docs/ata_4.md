@@ -21,6 +21,6 @@
  **Decisões/conclusões:**
 
  - Fazer [prótotipo](./prototipo.md)
- - Fazer [questionário](./questinario.md)
+ - Fazer [questionário](./questionario.md)
 
 

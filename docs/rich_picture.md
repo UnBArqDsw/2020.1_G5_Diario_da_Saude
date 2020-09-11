@@ -7,6 +7,8 @@
 | 06/09/2020 | 0.3 | Adição do Rich Picture de aplicativo | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 09/09/2020 | 0.4 | Adição do Rich Picture de cenário atual | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 09/09/2020 | 0.5 | Evolução do Rich Picture de cenário atual | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 10/09/2020 | 0.6 | Evolução do rich picture profissional da saúde | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 10/09/2020 | 0.7 | Evolução do rich picture do paciente | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 Observação: este artefato foi elaborado durante a realização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/design_sprint/">Design Sprint</a>.
 
@@ -21,19 +23,22 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 - Fácil de modelar e pode ser feito com o cliente.
 
 ## Rich pictures
-#### Contexto
-#### Cenário atual - versão 0.1
-##### Autor: Rodrigo Dadamos
+### Cenário atual 
+##### *versão 0.1*
 [![rp_cenario_atual_v0.1](./img/RP_cenario_atual_v0.1.png)](./img/RP_cenario_atual_v0.1.png)
-#### Cenário atual - versão 0.2
-##### Autor: Rodrigo Dadamos
+
+##### *versão 0.2*
 [![rp_cenario_atual_v0.2](./img/RP_cenario_atual_v0.2.png)](./img/RP_cenario_atual_v0.2.png)
-### Profissional saúde
-##### Autor: Gustavo Carvalho
-[![rich_picutre_profissional](./img/rich_picutre_profissional.png)](./img/rich_picutre_profissional.png)
+### Profissional da saúde
+##### *versão 0.1*
+[![rich_picutre_profissional_v0.1](./img/rich_picutre_profissional_v0.1.png)](./img/rich_picutre_profissional_v0.1.png)
+##### *versão 0.2*
+[![rich_picutre_profissional_v0.2](./img/rich_picutre_profissional_v0.2.png)](./img/rich_picutre_profissional_v0.2.png)
 ### Paciente
-##### Autor: Murilo Loiola
-[![rich_picutre_paciente](./img/rp_paciente.png)](./img/rp_paciente.png)
+##### *versão 0.1*
+[![rich_picutre_paciente_v0.1](./img/rich_picutre_paciente_v0.1.png)](./img/rich_picutre_paciente_v0.1.png)
+##### *versão 0.2*
+[![rich_picutre_paciente_v0.2](./img/rich_picutre_paciente_v0.2.png)](./img/rich_picutre_paciente_v0.2.png)
 ### Aplicativo
-##### Autor: Gabriel Tiveron
-[![rich_picture_aplicativo](./img/RP_app.png)](./img/RP_app.png)
+##### *versão 0.1*
+[![rich_picutre_aplicativo_v0.1](./img/rich_picutre_aplicativo_v0.1.png)](./img/rich_picutre_aplicativo_v0.1.png)

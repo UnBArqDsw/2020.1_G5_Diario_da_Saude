@@ -26,6 +26,7 @@
  **Tópico:** Organização dos artefatos de documentação.
 
  **Decisões/conclusões:**
+ 
 - Foi decidido manter todos os documentos em uma github pages, que vai ter como base uma branch [docs](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/tree/docs) do repositório.
 
 
