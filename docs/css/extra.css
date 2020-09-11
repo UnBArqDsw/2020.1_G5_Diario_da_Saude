@@ -9,3 +9,11 @@
 .wm-toc-li.wm-current a{
   color:white;
 }
+
+li.wm-toc-li.wm-toc-lev2.wm-toc-opener.wm-toc-open {
+ word-break: break-word;
+}
+
+.wm-toc-pane {
+ max-width: 250px;
+}
