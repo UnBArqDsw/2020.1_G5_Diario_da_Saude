@@ -30,7 +30,7 @@
 
 <p align="justify">&emsp;&emsp;Criamos uma logo que repassa a idéia do aplicativo</p>
 
-<img src="./img/logo.png" alt="Logo" style="margin: 0 auto; display:block; border-radius: 50%">
+<img src="../img/logo.png" alt="Logo" style="margin: 0 auto; display:block; border-radius: 50%">
 
 <p align="justify">&emsp;&emsp;A logo é uma junção de duas imagens que unem a ideia do aplicativo: o coração, representando saúde, é posicionado dentro de um diário, sugerindo a atividade rotineira do aplicativo.
 As cores correspondem ao padrão escolhido para o projeto.</p>
