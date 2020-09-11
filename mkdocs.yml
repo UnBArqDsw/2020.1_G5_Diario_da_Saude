@@ -33,6 +33,7 @@ nav:
       - BPMN: BPMN.md
     - Iniciativas extras:
       - Argumentação: argumentacao.md
+      - Introspecção: introspeccao.md
       - Priorização: priorizacao.md
       - Backlog: backlog_produto.md
       - Identidade Visual: identidade_visual.md
