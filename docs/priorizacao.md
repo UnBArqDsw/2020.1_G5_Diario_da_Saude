@@ -26,5 +26,6 @@
 
 ### Documentos com priorização
 
-* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/brainstorm/"><em>Brainstorm</em></a>
-* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/questionario/">Questionário</a>
+[Brainstorm](./brainstorm.md)
+[Introspecção](./introspeccao.md)
+[Questionario](./questionario.md)
