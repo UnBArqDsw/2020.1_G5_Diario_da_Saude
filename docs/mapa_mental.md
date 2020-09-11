@@ -20,4 +20,4 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 ## Mapas Mentais
 ### Mapa mental Aplicativo
 
-![mapa_mental](./img/mapa_mental.png)
+[![mapa_mental](./img/mapa_mental.png)](./img/mapa_mental.png)

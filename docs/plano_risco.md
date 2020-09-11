@@ -10,7 +10,7 @@
 | 09/09/2020 | 0.5 | Adição nas matrizes de impacto |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 10/09/2020 | 0.6 | Criação da Tabela do PERT/CPM |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 11/09/2020 | 0.7 | Adição do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
-| 11/09/2020 | 0.8 | Adição da segunda versão do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) | 
+| 11/09/2020 | 0.8 | Adição da segunda versão do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Introdução
 
@@ -18,7 +18,7 @@
 
 ## Estrutura Analítica de Riscos
 
-![EAR](./img/EAR.png)
+[![EAR](./img/EAR.png)](./img/EAR.png)
 
 ### Descrição da Estrutura Analítica de Risco
 
@@ -30,7 +30,7 @@
 
 * **Comunicação:** estar a par com toda a equipe de desenvolvimento para ter sempre um acompanhamento do desenvolvimento. Falhas na comunicação podem trazer desmotivação dos membros resultando em queda de desempenho.
 
-* **Controle:** controlar as atividades que estão sendo desenvolvidas e dividir o backlog de forma parelha. Um controle feito de forma errônea pode sobrecarregar algum membro fazendo com que os prazos não sejam cumpridos. 
+* **Controle:** controlar as atividades que estão sendo desenvolvidas e dividir o backlog de forma parelha. Um controle feito de forma errônea pode sobrecarregar algum membro fazendo com que os prazos não sejam cumpridos.
 
 #### **Técnico**
 
@@ -168,7 +168,7 @@
 ## Diagrama PERT
 
 #### v.1
-![PERT-v1](./img/PERT-1.png)
+[![PERT-v1](./img/PERT-1.png)](./img/PERT-1.png)
 
 #### v.2
-![PERT-v2](./img/PERT-2.png)
+[![PERT-v2](./img/PERT-2.png)]((./img/PERT-2.png

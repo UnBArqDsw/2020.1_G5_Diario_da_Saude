@@ -10,6 +10,6 @@
 
 ## Diagrama de causa e efeito
 #### **Defeitos no software**
-![diagrama_de_causa_efeito_1](./img/diagrama_de_causa_efeito_1.png)
+[![diagrama_de_causa_efeito_1](./img/diagrama_de_causa_efeito_1.png)](./img/diagrama_de_causa_efeito_1.png)
 #### **Software de baixa qualidade**
-![diagrama_de_causa_efeito_2](./img/diagrama_de_causa_efeito_2.png)
+[![diagrama_de_causa_efeito_2](./img/diagrama_de_causa_efeito_2.png)](./img/diagrama_de_causa_efeito_2.png)

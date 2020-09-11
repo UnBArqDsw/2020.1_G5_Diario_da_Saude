@@ -22,18 +22,18 @@
 
 #### Versão 0.1
 
-![BPMN_Metodologia](./img/Metodologia_BPMN.png)
+[![BPMN_Metodologia](./img/Metodologia_BPMN.png)](./img/Metodologia_BPMN.png)
 
 #### Versão 0.2
 
-![BPMN_Metodologia](./img/geral_bpmn.png)
+[![BPMN_Metodologia](./img/geral_bpmn.png)](./img/geral_bpmn.png)
 
 ## Diagrama da Sprint
 
 #### Versão 0.1
 
-![BPMN_Sprint](./img/Sprint_BPMN.png)
+[![BPMN_Sprint](./img/Sprint_BPMN.png)](./img/Sprint_BPMN.png)
 
 #### Versão 0.2
 
-![BPMN_Sprint](./img/sprint_bpmn.png)
+[![BPMN_Sprint](./img/sprint_bpmn.png)](./img/sprint_bpmn.png)

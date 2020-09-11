@@ -13,7 +13,7 @@ Observação: este artefato foi elaborado durante a realização do <a href="htt
 
 ## Story board
 ### Paciente
-![story_board_1](./img/story_board_1.png)
+[![story_board_1](./img/story_board_1.png)](./img/story_board_1.png)
 
 ### Profissional da saúde
-![story_board_2](./img/story_board_2.png)
+[![story_board_2](./img/story_board_2.png)](./img/story_board_2.png)
