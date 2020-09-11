@@ -10,7 +10,7 @@
   color:white;
 }
 
-li.wm-toc-li.wm-toc-lev2.wm-toc-opener.wm-toc-open {
+nav li {
  word-break: break-word;
 }
 
