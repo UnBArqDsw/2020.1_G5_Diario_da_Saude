@@ -9,6 +9,7 @@
 | 09/09/2020 | 0.4 | Atualização da imagem de EAR | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
 | 09/09/2020 | 0.5 | Adição nas matrizes de impacto |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 10/09/2020 | 0.6 | Criação da Tabela do PERT/CPM |[Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 11/09/2020 | 0.7 | Adição do diagrama PERT | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Introdução
 
@@ -163,3 +164,6 @@
 | Y | Criar sistemas de notificação para lembrar os usuários | P | 2 |
 | Z | Revisar Artefatos desenvolvidos | F | 1 |
 
+## Diagrama PERT
+
+![PERT](./img/PERT-1.png)
