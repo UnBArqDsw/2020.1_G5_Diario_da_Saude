@@ -2,7 +2,8 @@
 ## Versionamento
 | Data | Versão | Descrição | Autores |
 | :---: | :---: | :---: | :---: |
-| 04/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti)|
+| 09/09/2020 | 0.1 | Criação do documento | [André Goretti](https://github.com/AGoretti)|
+| 10/09/2020 | 0.2 | Colocando slides no lugar das imagens | [André Goretti](https://github.com/AGoretti)|
 
 ## Introdução
 
@@ -14,15 +15,7 @@ o protótipo se encontra nesse [link](https://www.figma.com/file/d0icSO7UVLvEIMh
 
 ## Versão 1:
 
-<img src="./img/prototipo/Cadastro_Medico.png"  width="150" height="325">
-<img src="./img/prototipo/Cadastro_Paciente.png"  width="150" height="325">
-<img src="./img/prototipo/Detalhes_Medico.png"  width="150" height="325">
-<img src="./img/prototipo/Graficos.png"  width="150" height="325">
-<img src="./img/prototipo/Home_Medico.png"  width="150" height="325">
-<img src="./img/prototipo/Home_Pacientes.png"  width="150" height="325">
-<img src="./img/prototipo/Landing.png"  width="150" height="325">
-<img src="./img/prototipo/Log_in.png"  width="150" height="325">
-<img src="./img/prototipo/Popup_Cadastro.png"  width="150" height="325">
-<img src="./img/prototipo/Questionário_Pacientes.png"  width="150" height="325">
-<img src="./img/prototipo/Sidebar_Medico.png"  width="150" height="325">
-<img src="./img/prototipo/Sidebar_Pacientes.png"  width="150" height="325">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRZM7nf_pORi6kT8M_OO7gaWorIyUQSTyDK2Vs06bCOTQDqUh1S85rj3mWGxjZbzdHnZdHrd7XetE4j/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
