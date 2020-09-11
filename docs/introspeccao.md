@@ -3,6 +3,8 @@
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
 | 11/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 11/09/2020 | 0.2 | Adição de introspecção | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 11/09/2020 | 0.3 | Listagem dos requisitos levantandos | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 ## Introdução
 
