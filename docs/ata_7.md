@@ -1,4 +1,4 @@
-# ATA DE REUNIÃO - GRUPO 6
+# ATA DE REUNIÃO
 
 **Data:** 11/09/2020  
 **Horário:** 18h00 até as 22h30

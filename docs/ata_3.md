@@ -1,4 +1,4 @@
-﻿# ATA DE REUNIÃO - GRUPO 5
+﻿# ATA DE REUNIÃO
 
 **Data:** 04/09/2020  
 **Horário:** 14h30 até as 18h00
