@@ -28,3 +28,4 @@
 
 * <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/brainstorm/"><em>Brainstorm</em></a>
 * <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/questionario/">Questionário</a>
+* <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/introspeccao/">Introspecção</a>
