@@ -15,7 +15,7 @@ o protótipo se encontra nesse [link](https://www.figma.com/file/d0icSO7UVLvEIMh
 
 ## Versão 1:
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRZM7nf_pORi6kT8M_OO7gaWorIyUQSTyDK2Vs06bCOTQDqUh1S85rj3mWGxjZbzdHnZdHrd7XetE4j/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRZM7nf_pORi6kT8M_OO7gaWorIyUQSTyDK2Vs06bCOTQDqUh1S85rj3mWGxjZbzdHnZdHrd7XetE4j/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 
