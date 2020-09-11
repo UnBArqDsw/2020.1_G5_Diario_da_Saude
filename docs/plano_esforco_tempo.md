@@ -4,7 +4,7 @@
 
 | Data | Versão | Descrição | Autor(es) |
 |----| ---- | ------- | ------- |
-| 03/09/2020 | 0.1 | Construção do documento a partir do template recomendado<sup>[1]</sup> | Murilo Loiola |
+| 03/09/2020 | 0.1 | Construção do documento a partir do template recomendado<sup>[1]</sup> | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 

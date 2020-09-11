@@ -32,7 +32,7 @@
 
  - Fazer Backlog do Produto.
 
- ## Assunto 3
+## Assunto 3
 
 **Tópico:** Versionamento [Rich Pictures](./rich_picture.md).
 
