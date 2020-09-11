@@ -11,9 +11,25 @@ Introspecção consiste em entender o que o sistema deve possuir atráves do pro
 Através da criação de **personas**, é possível até mesmo descrever um contexto para enriquecer o processo, tornando o levantamenti de requisitos menos subjetivo e mais direcionado.
 
 ## Instrospecção
-
-| Persona | >>NomeDaPersona<< |
+### instrospecção 1
+| Persona | Ana Maria |
 |:----:|:------:|
-|Profissão||
-|História de contexto||
-|O que ele(a) acha que poderia mudar:||
+|Profissão| Dona de casa|
+|História de contexto| Ana Maria, é hipertensa, participa do grupo de hipertensos da UBS próxima de sua casa. Todo dia, ela afere sua pressão e toma seus remédios diariamente.|
+|O que ele(a) acha que poderia mudar:| Eu gostaria de poder anotar minha pressão arterial em algum lugar para que eu possa saber se durante a semana ela variou muito, e talvez quem sabe anotar também outros aspectos da minha condição|
+
+### introspecção 2
+| Persona | João Guilherme |
+|:----:|:------:|
+|Profissão| Médico Generalista|
+|História de contexto| João atende na UBS 07 da região administrativa de taguatinga. Usa o aplicativo Diário da Saúde para acompanhar seus pacientes diabéticos, mas está mudando de trabalho e indo para um hospital na rede privada.|
+|O que ele(a) acha que poderia mudar:| Eu queria poder excluir minha conta, uma vez que não vou estar mais acompanhando os pacientes da UBS 07. |
+
+### introspecção 3
+| Persona | Aroldo Silva|
+|:----:|:------:|
+|Profissão| Aposentado |
+|História de contexto| Aroldo tem muita dificuldade em lembra senha e números, e frequentemente acaba esquecendo até mesmo da senha do seu cartão do banco.|
+|O que ele(a) acha que poderia mudar:| Eu queria poder ter um jeito de recuperar minha senha de acesso ao aplicativo através de um jeito fácil e rápido, pois não tenho muito domínio em tecnologia. |
+
+
