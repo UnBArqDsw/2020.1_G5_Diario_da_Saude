@@ -40,4 +40,5 @@ nav:
 repo_url: https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude
 extra:
   logo: docs/img/logo.png
-extra_css: docs/css/extra.css
+extra_css:
+  - docs/css/extra.css
