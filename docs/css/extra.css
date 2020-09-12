@@ -1,0 +1,24 @@
+.navbar, .wm-toc-li.wm-current, .wm-toc-li.wm-current:hover {
+	background-color: #0124A2;
+}
+
+.wm-toctree a, .wm-toctree a:visited, .wm-toctree a:hover, .wm-toctree a:focus {
+	color: #0124A2;
+}
+
+.wm-toc-li.wm-current a{
+  color:white;
+}
+
+nav li {
+ word-break: break-word;
+}
+
+.wm-toc-pane {
+ max-width: 250px;
+}
+
+.table_middle_align td, .table_middle_align th {
+	vertical-align: middle !important;
+	text-align: center;
+}

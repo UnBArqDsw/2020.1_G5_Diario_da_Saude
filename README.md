@@ -1,6 +1,10 @@
+<p align="center">
+    <img src="docs/img/logo.png" alt="Logo">
+</p>
+
 # Diário da Saúde
 
-**Número do Grupo**: Grupo 05<br>
+**Número do Grupo**: 05<br>
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
@@ -14,7 +18,7 @@
 | 15/0064535 | Rodrigo Dadamos Lopes da Silva |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+O **Diário da Saúde** é uma aplicação que busca auxiliar Unidades Básicas de Saúde (UBS) que possuam grupos de risco (diabéticos, hipertensos, etc). A aplicação permite que os profissionais da unidade possam acompanhar a condição do paciente à distância, através de medições realizadas de casa pelo próprio paciente.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
