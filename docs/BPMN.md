@@ -32,8 +32,8 @@
 
 #### Versão 0.1
 
-[![BPMN_Sprint](./img/Sprint_BPMN.png)](./img/Sprint_BPMN.png)
+[![BPMN_Sprint](./img/sprint_bpmn_v0.1.png)](./img/sprint_bpmn_v0.1.png)
 
 #### Versão 0.2
 
-[![BPMN_Sprint](./img/sprint_bpmn.png)](./img/sprint_bpmn.png)
+[![BPMN_Sprint](./img/sprint_bpmn_v0.2.png)](./img/sprint_bpmn_v0.2.png)

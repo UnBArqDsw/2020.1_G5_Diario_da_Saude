@@ -171,4 +171,4 @@
 [![PERT-v1](./img/PERT-1.png)](./img/PERT-1.png)
 
 #### v.2
-[![PERT-v2](./img/PERT-2.png)]((./img/PERT-2.png
+[![PERT-v2](./img/PERT-2.png)]((./img/PERT-2.png)
