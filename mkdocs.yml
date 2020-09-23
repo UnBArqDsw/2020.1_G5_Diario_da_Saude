@@ -40,15 +40,16 @@ nav:
       - Identidade Visual: identidade_visual.md
   - Desenho de Software (Modelagem):
     - Notação UML - Diagramas Estáticos:
-      - Diagrama de Classes:
-      - Diagrama de Pacotes:
-      - Diagrama de Componentes:
+      - Diagrama de Classes: diagrama_de_classes.md
+      - Diagrama de Pacotes: diagrama_de_pacotes.md
+      - Diagrama de Componentes: diagrama_de_componentes.md
     - Notação UML - Diagramas Dinâmicos:
-      - Diagrama de Sequência:
-      - Diagrama de Comunicação:
+      - Diagrama de Sequência: diagrama_de_sequencia.md
+      - Diagrama de Comunicação: diagrama_de_comunicacao.md
       - Diagrama de Atividades: diagrama_de_atividades.md
-      - Diagrama de Estados:
+      - Diagrama de Estados: diagrama_de_estado.md
     - Iniciativas extras:
+      - Backlog: backlog_produto.md
 
 repo_url: https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude
 extra:
