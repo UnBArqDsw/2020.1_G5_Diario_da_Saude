@@ -3,6 +3,9 @@
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
 | 23/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 23/09/2020 | 0.2 | Adição do diagrama de cadastro | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Gabriel Tiveron](https://github.com/GabrielTiveron), [Rodrigo Dadamos](https://github.com/Rdadamos), [Murilo Loiola](https://github.com/murilo-dan) |
+| 23/09/2020 | 0.3 | Adição do diagrama de login | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 23/09/2020 | 0.4 | Adição do diagrama de recuperar senha | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 ## Definição
 
@@ -11,8 +14,10 @@ Os diagramas de atividades são representações gráficas de fluxos de trabalho
 ## Diagrama de atividade
 ### Cadastrar usuário
 ##### *versão 0.1*
+[![diagrama_de_atividade_cadastrar](./img/diagrama_de_atividade_cadastrar.jpg)](./img/diagrama_de_atividade_cadastrar.jpg)
 ### Login 
 ##### *versão 0.1*
+[![diagrama_de_atividade_login](./img/diagrama_de_atividade_login.jpg)](./img/diagrama_de_atividade_login.jpg)
 ### Criar grupo 
 ##### *versão 0.1*
 ### Adcionar pessoas grupo 
@@ -23,3 +28,4 @@ Os diagramas de atividades são representações gráficas de fluxos de trabalho
 ##### *versão 0.1*
 ### Recuperar Senha
 ##### *versão 0.1*
+[![diagrama_de_atividade_recuperar_senha](./img/diagrama_de_atividade_recuperar_senha.jpg)](./img/diagrama_de_atividade_recuperar_senha.jpg)
