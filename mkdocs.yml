@@ -6,7 +6,7 @@ nav:
   - Home: index.md
   - Reuniões:
     - Ata 1 (31/08/2020): ata_1.md
-    - Ata 2 (02/09/2020): ata_2.md 
+    - Ata 2 (02/09/2020): ata_2.md
     - Ata 3 (04/09/2020): ata_3.md
     - Ata 4 (06/09/2020): ata_4.md
     - Ata 5 (09/09/2020): ata_5.md
@@ -14,6 +14,7 @@ nav:
     - Ata 7 (11/09/2020): ata_7.md
     - Ata 8 (23/09/2020): ata_8.md
     - Ata 9 (25/09/2020): ata_9.md
+    - Ata 10 (26/09/2020): ata_10.md
   - Desenho de Software (Base):
     - Módulo Projeto não Orientado a Abordagens Específicas:
       - 5W2H: 5w2h.md
