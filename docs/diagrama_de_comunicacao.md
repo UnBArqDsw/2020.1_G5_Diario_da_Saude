@@ -13,7 +13,7 @@
 ## Diagrama de comunicação
 
 ### Interação Grupo
-[![diagrama_comunicação](./img/diagrama_comunicação.jpg)](./img/diagrama_comunicação.jpg)
+[![diagrama_comunicação](./img/diagrama_comunicacao.jpg)](./img/diagrama_comunicacao.jpg)
 
 ## Referência
 
