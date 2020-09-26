@@ -4,6 +4,7 @@
 |:----:|:------:|:---------:|:---------:|
 | 23/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 26/09/2020 | 0.2 | Adição do diagrama de estados geral | [Murilo Loiola](https://github.com/murilo-dan) |
+| 26/09/2020 | 0.3 | Adição do diagrama de estados mostrar grupo | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Definição
 
@@ -13,3 +14,6 @@
 ### Geral
 #### versão 0.1
 [![diagrama_de_estados_geral](./img/diagrama_de_estados_geral.jpg)](./img/diagrama_de_estados_geral.jpg)
+
+### Mostrar membros do grupo
+[![diagrama_de_estado_membros](./img/diagrama_de_estados_membros.jpg)](./img/diagrama_de_estados_membros.jpg)
