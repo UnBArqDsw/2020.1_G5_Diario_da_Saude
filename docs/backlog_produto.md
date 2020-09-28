@@ -7,6 +7,7 @@
 | 11/09/2020 | 0.2 | Formatação da Planilha | [Ian Rocha](https://github.com/IanPSRocha) |
 | 11/09/2020 | 0.3 | Adicionando Critérios de Aceitação e Rastreabilidade por US  | [Ian Rocha](https://github.com/IanPSRocha) |
 | 11/09/2020 | 1.0 | Adicionando US da introspecção e formatações | [André Goretti](https://github.com/AGoretti)|
+| 27/09/2020 | 1.1 | Removendo antiga US15 e atualizando US07 | [Ian Rocha](https://github.com/IanPSRocha) |
 
 ## Introdução
 <p align="justify">&emsp;&emsp;Em termos gerais, o Product Backlog é uma listagem de todos os afazeres pendentes no projeto. Ele substitui o modelo tradicional de especificação de artefatos. Cada elemento da listagem é elicitado por meio de interação da equipe de desenvolvimento com o cliente, podendo ser apenas um representante, o que torna os elementos levantados muito arbitrários; ou podendo ser uma equipe representante do cliente, representando as diversas áreas que utilizarão o produto.
@@ -89,6 +90,7 @@ Eu, como um profissional da saúde, desejo criar grupos para que eu consiga gere
     - Nome do Grupo
     - UBS
 - Associar o grupo à algum quadro clínico
+- Associar um Questionário referente ao quadro clínico do grupo
 - Armazenar as informações do grupo no banco de dados
 
 #### US08: Adicionar pacientes ao grupo
@@ -147,22 +149,14 @@ Eu, como profissional da saúde, desejo fornecer um questionário que seja coere
 - Lista de questionários específicos
 - Validação de cada questionário por um profissional da saúde
 
-#### US15: Associar um questionário ao grupo
-##### Origem: [Brainstorm](./brainstorm.md)
-Eu, como profissional da saúde, desejo associar um questionário ao grupo para que eu consiga ver como anda a saúde dos meus pacientes
-##### Critérios de Aceitação:
-- Botão para associar um questionário ao grupo
-- Listar todos os questionários disponíveis
-- Impedir a adição de pacientes ao grupo caso não exista questionário associado
-
-#### US16: Não responder ao mesmo questionário mais de 1 vez por dia
+#### US15: Não responder ao mesmo questionário mais de 1 vez por dia
 ##### Origem: [Brainstorm](./brainstorm.md)
 Eu, como paciente, desejo não responder ao questionário correspondente do grupo mais de uma vez por dia, para que eu consiga não poluir os dados
 ##### Critérios de Aceitação:
 - Bloquear o botão de responder o questionário caso ele ja tenha sido respondido
 - Adicionar timer no botão para que ele reinicie e aceite novas respostas após 00h
 
-#### US17: Aba de atividade física no questionário
+#### US16: Aba de atividade física no questionário
 ##### Origem: [Questionário](./questionario.md)
 Eu, como profissional da saúde, desejo visualizar uma aba de atividade física por questionário para que eu consiga saber se meus pacientes estão sedentários ou não
 ##### Critérios de Aceitação:
@@ -172,7 +166,7 @@ Eu, como profissional da saúde, desejo visualizar uma aba de atividade física 
     - Duração de cada exercício por dia
 
 ### EP06: Relatório
-#### US18: Relatório geral por grupo
+#### US17: Relatório geral por grupo
 ##### Origem: [Brainstorm](./brainstorm.md)
 Eu, como profissional da saúde, desejo visualizar os dados dos pacientes de maneira geral por forma de um relatório para que eu consiga entender como anda a saúde do grupo todo
 ##### Critérios de Aceitação:
@@ -180,7 +174,7 @@ Eu, como profissional da saúde, desejo visualizar os dados dos pacientes de man
 - Botão para visualizar relatório
 - Armazenar um relatório geral por grupo no banco de dados
 
-#### US19: Relatório específico do paciente
+#### US18: Relatório específico do paciente
 ##### Origem: [Brainstorm](./brainstorm.md)
 Eu, como profissional da saúde, desejo visualizar os dados de um único paciente da minha escolha para que eu consiga saber de maneira mais específica como anda a saúde dele
 ##### Critérios de Aceitação:
@@ -188,7 +182,7 @@ Eu, como profissional da saúde, desejo visualizar os dados de um único pacient
 - Botão para visualizar relatório específico do paciente
 - Armazenar um relatório por grupo para cada paciente no banco de dados
 
-#### US20: Exportar dados dos Relatórios
+#### US19: Exportar dados dos Relatórios
 ##### Origem: [Questionário](./questionario.md)
 Eu, como profissional da saúde, desejo exportar os dados obtidos dos relatórios para que eu consiga salvar em outro lugar de minha preferência
 ##### Critérios de Aceitação:
@@ -196,7 +190,7 @@ Eu, como profissional da saúde, desejo exportar os dados obtidos dos relatório
 - Botão para exportar relatório específico de cada paciente
 - Disponibilizar exportação no formato PDF
 
-#### US21: Relatórios personalizados criados após processo de Machine Learning
+#### US20: Relatórios personalizados criados após processo de Machine Learning
 ##### Origem: [Questionário](./questionario.md)
 Eu, como profissional da saúde, desejo visualizar relatórios que foram criados após Machine Learning para que eu consiga ver informações mais precisas sobre a saúde dos meus pacientes
 ##### Critérios de Aceitação:
@@ -206,7 +200,7 @@ Eu, como profissional da saúde, desejo visualizar relatórios que foram criados
     - Fornecer relatórios mais precisos
 
 ### EP07: Notificação
-#### US22: Notificação sobre consultas, remédios e orientações
+#### US21: Notificação sobre consultas, remédios e orientações
 ##### Origem: [Questionário](./questionario.md)
 Eu, como paciente, desejo receber notificações sobre minhas consultas, remédios a serem tomados e orientações médicos para que eu consiga seguir de maneira correta a instrução do profissional da saúde
 ##### Critérios de Aceitação:
@@ -215,14 +209,14 @@ Eu, como paciente, desejo receber notificações sobre minhas consultas, remédi
 - Botão para o profissional excluir uma notificação
 - Botão para o paciente ativar/desativar uma notificação
 
-#### US23: Notificações personalizadas
+#### US22: Notificações personalizadas
 ##### Origem: [Questionário](./questionario.md)
 Eu, como profissional da saúde, desejo enviar notificações com base nas respostas dos meus pacientes em seus questionários para que eu consiga automatizar certas mensagens de alerta
 ##### Critérios de Aceitação:
 - Botão para o profissional ativar notificações para cada resposta
 - Fornecer uma lista de respostas que podem ativar a notificação
 
-#### US24: Notificação por Questionário
+#### US23: Notificação por Questionário
 ##### Origem: [Brainstorm](./brainstorm.md)
 Eu, como paciente, desejo receber uma notificação cada vez que for necessário que eu responda meu questionário para que eu consiga me lembrar de respondê-lo frequentemente
 ##### Critérios de Aceitação:
@@ -231,7 +225,7 @@ Eu, como paciente, desejo receber uma notificação cada vez que for necessário
 - Permitir personalização do horário da notificação pelo usuário
 
 ### EP08: Controle de pacientes
-#### US25: Lista de pacientes prioritários
+#### US24: Lista de pacientes prioritários
 ##### Origem: [Brainstorm](./brainstorm.md)
 Eu, como profissional da saúde, desejo visualizar uma lista de pacientes prioritários por grupo para que eu consiga dar atenção primeiro a quem mais precisa
 ##### Critérios de Aceitação:
@@ -239,14 +233,14 @@ Eu, como profissional da saúde, desejo visualizar uma lista de pacientes priori
 - Botão para visualizar a lista na página do grupo
 - Atualizar a lista sempre que receber uma nova resposta de questionário
 
-#### US26: Exames dos pacientes
+#### US25: Exames dos pacientes
 ##### Origem: [Questionário](./questionario.md)
 Eu, como profissional da saúde, desejo ter controle sobre os exames e seus resultados dos meus pacientes para que eu consiga dar uma atendimento melhor e mais específico.
 ##### Critérios de Aceitação:
 - Botão para adicionar exames a serem feitos na página de detalhes de cada paciente
 - Botão para visualizar resultados de exames já feitos na página de detalhes de cada paciente
 
-#### US27: Buscar pacientes que se ausentarem
+#### US26: Buscar pacientes que se ausentarem
 ##### Origem: [Questionário](./questionario.md)
 Eu, como profissional da saúde, desejo poder buscar por grupo os pacientes que se ausentarem nas reuniões presenciais ou não responderam seus questionários recentemente para que eu consiga entrar em contato com eles
 ##### Critérios de Aceitação:
@@ -255,7 +249,7 @@ Eu, como profissional da saúde, desejo poder buscar por grupo os pacientes que 
 - Resgatar a chamada no banco de dados
 - Marcar pacientes que não estiveram na chamada
 
-#### US28: Medicações a serem tomadas diariamente
+#### US27: Medicações a serem tomadas diariamente
 ##### Origem: [Questionário](./questionario.md)
 Eu, como paciente, desejo poder visualizar quais foram os medicamentos prescritos pelo profissional da saúde para que eu consiga lembrar sempre que eu precisar
 ##### Critérios de Aceitação:
@@ -263,7 +257,7 @@ Eu, como paciente, desejo poder visualizar quais foram os medicamentos prescrito
 - Armazenar os medicamentos no banco de dados
 - Botão para o paciente visualizar os medicamentos
 
-#### US29: Aplicação WEB
+#### US28: Aplicação WEB
 ##### Origem: [Brainstorm](./brainstorm.md)
 Eu, como profissional da saúde, desejo ter acesso a todos os dados por meio da WEB, para que eu consiga vê-los de maneira maior e mais clara.
 ##### Critérios de Aceitação:
@@ -272,7 +266,7 @@ Eu, como profissional da saúde, desejo ter acesso a todos os dados por meio da 
 - Ter todas as funcionalidades já listadas para os profissionais
 
 ### EP09: FAQ
-#### US30: Local para dúvidas e sugestões
+#### US29: Local para dúvidas e sugestões
 ##### Origem: [Questionário](./questionario.md)
 Eu, como paciente, desejo ter uma página na qual eu possa poder anotar minhas dúvidas e sugestões para que eu consiga esclarecer algum assunto que não tinha ficado claro
 ##### Critérios de Aceitação:
@@ -281,7 +275,7 @@ Eu, como paciente, desejo ter uma página na qual eu possa poder anotar minhas d
 - Campo para paciente falar qual é sua dúvida/sugestão
 - Enviar dúvida/sugestão para os profissionais na UBS
 
-#### US31: Aba de dúvidas frequentes
+#### US30: Aba de dúvidas frequentes
 ##### Origem: [Brainstorm](./brainstorm.md)
 Eu, como paciente, desejo visualizar uma página com as dúvidas mais frequentes de outros pacientes para que eu consiga ver se minha própria dúvida ja foi respondida
 ##### Critérios de Aceitação:
@@ -290,14 +284,14 @@ Eu, como paciente, desejo visualizar uma página com as dúvidas mais frequentes
 - Validação de um profissional para cada resposta
 
 ### EP10: Usabilidde
-#### US32: Realizar o Logout
+#### US31: Realizar o Logout
 ##### Origem: [Introspecção](./introspeccao.md)
 Eu, como um usuário, desejo sair da minha conta por questões de segurança e para mais de uma pessoa pode usar o celular.
 ##### Critérios de Aceitação:
 - Botão de Sair da conta
 - Voltar a pagina inicial ao sair
 
-#### US33: Recuperar Senha
+#### US32: Recuperar Senha
 ##### Origem: [Introspecção](./introspeccao.md)
 Eu, como usuário, desejo recuperar minha senha que esqueci, recebendo por email ou sms para conseguir entrar de novo.
 ##### Critérios de Aceitação:
@@ -305,14 +299,14 @@ Eu, como usuário, desejo recuperar minha senha que esqueci, recebendo por email
 - Criar e informar uma senha nova prar o usuário
 - Conseguir logar logo depois
 
-#### US34: Acessar uma Sidebar
+#### US33: Acessar uma Sidebar
 ##### Origem: [Introspecção](./introspeccao.md)
 Eu, como usuário, quero acessar funcionalidades por uma sidebar para facilitar o uso.
 ##### Critérios de Aceitação:
 - Ter uma sidebar
 - Ter Funcionalidades na sidebar
 
-#### US35: Entrar em contato com os desenvolvedores
+#### US34: Entrar em contato com os desenvolvedores
 ##### Origem: [Introspecção](./introspeccao.md)
 Eu, como usuário, quero entrar em contato com os desenvolvedores do aplicativo para sugerir melhorias e poder tirar dúvidas.
 ##### Critérios de Aceitação:
