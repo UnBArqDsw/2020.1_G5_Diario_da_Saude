@@ -6,6 +6,6 @@
 
 ## Definição
 
-Os diagramas de pacote são diagramas estruturais usados ​​para mostrar a organização e a disposição de vários elementos do modelo na forma de pacotes. Um pacote é um agrupamento de elementos UML relacionados, como diagramas, documentos, classes ou até mesmo outros pacotes.
+<p align="justify">&emsp;&emsp;Os diagramas de pacote são diagramas estruturais usados ​​para mostrar a organização e a disposição de vários elementos do modelo na forma de pacotes. Um pacote é um agrupamento de elementos UML relacionados, como diagramas, documentos, classes ou até mesmo outros pacotes.</p>
 
 ## Diagrama de pacotes

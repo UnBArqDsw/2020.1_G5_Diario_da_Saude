@@ -7,6 +7,7 @@
 | 23/09/2020 | 0.3 | Adição do diagrama de login e diagrama de recuperação de senha | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 23/09/2020 | 0.4 | Adição do diagrama de relatório | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 23/09/2020 | 0.5 | Adição do diagrama de criação de grupo | [Murilo Loiola](https://github.com/murilo-dan) |
+| 23/09/2020 | 0.6 | Adição da segunda versão do diagrama de login | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Definição
 
@@ -19,10 +20,12 @@
 ### Login 
 ##### *versão 0.1*
 [![diagrama_de_atividade_login](./img/diagrama_de_atividade_login.jpg)](./img/diagrama_de_atividade_login.jpg)
+##### *versão 0.2*
+[![diagrama_de_atividade_login_v1](./img/diagrama_de_atividade_login_v1.jpg)](./img/diagrama_de_atividade_login_v1.jpg)
 ### Criar grupo 
 ##### *versão 0.1*
 [![diagrama_de_atividade_criar_grupo](./img/diagrama_de_atividade_criar_grupo.jpg)](./img/diagrama_de_atividade_criar_grupo.jpg)
-### Adcionar pessoas grupo 
+### Adicionar pessoas grupo 
 ##### *versão 0.1*
 ### Responder questionário 
 ##### *versão 0.1*
@@ -32,3 +35,7 @@
 ### Recuperar Senha
 ##### *versão 0.1*
 [![diagrama_de_atividade_recuperar_senha](./img/diagrama_de_atividade_recuperar_senha.jpg)](./img/diagrama_de_atividade_recuperar_senha.jpg)
+
+## Referências
+
+1. Documentação de diagramas UML, Diagrama de Atividades. Disponível em: [uml-diagrams.org](https://www.uml-diagrams.org/activity-diagrams.html). Acesso em: 23/09/2020.

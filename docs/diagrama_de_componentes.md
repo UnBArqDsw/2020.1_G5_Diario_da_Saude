@@ -15,4 +15,4 @@
 
 ## Referências
 
-1. [https://www.uml-diagrams.org/component-diagrams.html](https://www.uml-diagrams.org/component-diagrams.html).
+1. Documentação de diagramas UML, Diagrama de Componentes. Disponível em: [uml-diagrams.org](https://www.uml-diagrams.org/component-diagrams.html). Acesso em: 25/09/2020.

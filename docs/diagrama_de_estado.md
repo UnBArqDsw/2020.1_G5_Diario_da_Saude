@@ -16,4 +16,9 @@
 [![diagrama_de_estados_geral](./img/diagrama_de_estados_geral.jpg)](./img/diagrama_de_estados_geral.jpg)
 
 ### Mostrar membros do grupo
+#### versão 0.1
 [![diagrama_de_estado_membros](./img/diagrama_de_estados_membros.jpg)](./img/diagrama_de_estados_membros.jpg)
+
+## Referências
+
+1. Documentação de diagramas UML, Diagrama de Estados. Disponível em: [uml-diagrams.org](https://www.uml-diagrams.org/state-machine-diagrams.html). Acesso em: 23/09/2020.

@@ -12,3 +12,7 @@
 ## Diagrama de classes
 ##### *versão 0.1*
 [![diagrama_de_classes](./img/diagrama_de_classes.jpg)](./img/diagrama_de_classes.jpg)
+
+## Referências
+
+1. Documentação de diagramas UML, Diagrama de Classes. Disponível em: [uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html). Acesso em: 23/09/2020.
