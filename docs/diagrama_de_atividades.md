@@ -8,6 +8,7 @@
 | 23/09/2020 | 0.4 | Adição do diagrama de relatório | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 23/09/2020 | 0.5 | Adição do diagrama de criação de grupo | [Murilo Loiola](https://github.com/murilo-dan) |
 | 23/09/2020 | 0.6 | Adição da segunda versão do diagrama de login | [Murilo Loiola](https://github.com/murilo-dan) |
+| 28/09/2020 | 0.7 | Adição do diagrama de responder questionário | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Definição
 
@@ -17,18 +18,19 @@
 ### Cadastrar usuário
 ##### *versão 0.1*
 [![diagrama_de_atividade_cadastrar](./img/diagrama_de_atividade_cadastrar.jpg)](./img/diagrama_de_atividade_cadastrar.jpg)
-### Login 
+### Login
 ##### *versão 0.1*
 [![diagrama_de_atividade_login](./img/diagrama_de_atividade_login.jpg)](./img/diagrama_de_atividade_login.jpg)
 ##### *versão 0.2*
 [![diagrama_de_atividade_login_v1](./img/diagrama_de_atividade_login_v1.jpg)](./img/diagrama_de_atividade_login_v1.jpg)
-### Criar grupo 
+### Criar grupo
 ##### *versão 0.1*
 [![diagrama_de_atividade_criar_grupo](./img/diagrama_de_atividade_criar_grupo.jpg)](./img/diagrama_de_atividade_criar_grupo.jpg)
-### Adicionar pessoas grupo 
+### Adicionar pessoas grupo
 ##### *versão 0.1*
-### Responder questionário 
+### Responder questionário
 ##### *versão 0.1*
+[![diagrama_de_atividade_responder_questionario](./img/diagrama_de_atividade_responder_questionario.png)](./img/diagrama_de_atividade_responder_questionario.png)
 ### Relatório geral por grupo
 ##### *versão 0.1*
 [![diagrama_de_atividade_relatorio](./img/diagrama_de_atividade_relatorio.jpg)](./img/diagrama_de_atividade_relatorio.jpg)
