@@ -5,6 +5,7 @@
 | 23/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 26/09/2020 | 0.2 | Adição do diagrama de estados geral | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/09/2020 | 0.3 | Adição do diagrama de estados mostrar grupo | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 27/09/2020 | 0.3 | Adição do diagrama de estados mostrar grupo | [Ian Rocha](https://github.com/IanPSRocha) |
 
 ## Definição
 
@@ -18,6 +19,10 @@
 ### Mostrar membros do grupo
 #### versão 0.1
 [![diagrama_de_estado_membros](./img/diagrama_de_estados_membros.jpg)](./img/diagrama_de_estados_membros.jpg)
+
+### Criar grupo
+#### versão 0.1
+[![diagrama_de_estados_criar_grupo](./img/diagrama_de_estados_criar_grupo.jpg)](./img/diagrama_de_estados_criar_grupo.jpg)
 
 ## Referências
 
