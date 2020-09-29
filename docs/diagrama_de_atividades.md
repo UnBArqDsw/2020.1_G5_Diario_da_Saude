@@ -9,6 +9,7 @@
 | 23/09/2020 | 0.5 | Adição do diagrama de criação de grupo | [Murilo Loiola](https://github.com/murilo-dan) |
 | 23/09/2020 | 0.6 | Adição da segunda versão do diagrama de login | [Murilo Loiola](https://github.com/murilo-dan) |
 | 28/09/2020 | 0.7 | Adição do diagrama de responder questionário | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 28/09/2020 | 0.8 | Adição do diagrama de responder questionário | [Ian Rocha](https://github.com/IanPSRocha) |
 
 ## Definição
 
@@ -26,8 +27,9 @@
 ### Criar grupo
 ##### *versão 0.1*
 [![diagrama_de_atividade_criar_grupo](./img/diagrama_de_atividade_criar_grupo.jpg)](./img/diagrama_de_atividade_criar_grupo.jpg)
-### Adicionar pessoas grupo
+### Adicionar pessoas ao grupo
 ##### *versão 0.1*
+[![diagrama_de_atividade_adicionar_pessoas](./img/diagrama_de_atividades_adicionar_pessoas.jpg)](./img/diagrama_de_atividades_adicionar_pessoas.jpg)
 ### Responder questionário
 ##### *versão 0.1*
 [![diagrama_de_atividade_responder_questionario](./img/diagrama_de_atividade_responder_questionario.png)](./img/diagrama_de_atividade_responder_questionario.png)
