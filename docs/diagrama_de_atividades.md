@@ -9,7 +9,8 @@
 | 23/09/2020 | 0.5 | Adição do diagrama de criação de grupo | [Murilo Loiola](https://github.com/murilo-dan) |
 | 23/09/2020 | 0.6 | Adição da segunda versão do diagrama de login | [Murilo Loiola](https://github.com/murilo-dan) |
 | 28/09/2020 | 0.7 | Adição do diagrama de responder questionário | [Rodrigo Dadamos](https://github.com/Rdadamos) |
-| 28/09/2020 | 0.8 | Adição do diagrama de responder questionário | [Ian Rocha](https://github.com/IanPSRocha) |
+| 28/09/2020 | 0.8 | Adição do diagrama de adicionar pessoas ao grupo | [Ian Rocha](https://github.com/IanPSRocha) |
+| 28/09/2020 | 1.0 | Adição da segunda versão do diagrama de responder questionário| [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Definição
 
@@ -33,6 +34,8 @@
 ### Responder questionário
 ##### *versão 0.1*
 [![diagrama_de_atividade_responder_questionario](./img/diagrama_de_atividade_responder_questionario.png)](./img/diagrama_de_atividade_responder_questionario.png)
+##### *versão 0.2*
+[![diagrama_de_atividade_responder_questionario_v0.2](./img/diagrama_de_atividade_responder_questionario_v0.2.png)](./img/diagrama_de_atividade_responder_questionario_v0.2.png)
 ### Relatório geral por grupo
 ##### *versão 0.1*
 [![diagrama_de_atividade_relatorio](./img/diagrama_de_atividade_relatorio.jpg)](./img/diagrama_de_atividade_relatorio.jpg)

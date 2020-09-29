@@ -5,7 +5,7 @@
 | 23/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 26/09/2020 | 0.2 | Adição do diagrama visualizar grupo | [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 | 26/09/2020 | 0.3 | Adição do diagrama criar grupo | [Rodrigo Dadamos](https://github.com/Rdadamos)|
-| 27/09/2020 | 0.4 | Adição do diagrama responder questionário | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/AGoretti)|
+| 27/09/2020 | 1.0 | Adição do diagrama responder questionário | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/AGoretti)|
 
 ## Definição
 

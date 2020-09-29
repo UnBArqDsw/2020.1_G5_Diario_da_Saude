@@ -6,7 +6,7 @@
 | 26/09/2020 | 0.2 | Adição do diagrama de estados geral | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/09/2020 | 0.3 | Adição do diagrama de estados mostrar grupo | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 27/09/2020 | 0.4 | Adição do diagrama de estados criar grupo | [Ian Rocha](https://github.com/IanPSRocha) |
-| 27/09/2020 | 0.5 | Adição do diagrama de estados questionário | [André Goretti](https://github.com/Agoretti) |
+| 27/09/2020 | 1.0 | Adição do diagrama de estados questionário | [André Goretti](https://github.com/Agoretti) |
 
 ## Definição
 

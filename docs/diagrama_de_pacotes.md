@@ -4,7 +4,7 @@
 |:----:|:------:|:---------:|:---------:|
 | 23/09/2020 | 0.1 | Criação do Documento | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 28/09/2020 | 0.2 | Adição do Diagrama do FrontEnd | [Ian Rocha](https://github.com/IanPSRocha) |
-| 28/09/2020 | 0.3 | Adição do diagrama do backend | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 28/09/2020 | 1.0 | Adição do diagrama do backend | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 ## Definição
 
@@ -19,3 +19,7 @@
 
 ##### *versão 0.1*
 [![diagrama_de_pacotes_backend](./img/diagrama_de_pacotes_backend.jpg)](./img/diagrama_de_pacotes_backend.jpg)
+
+## Referência
+
+1. Documentação de diagramas UML, Diagrama de Pacotes. Disponível em: [uml-diagrams.org](https://www.uml-diagrams.org/package-diagrams-overview.html). Acesso em: 26/09/2020.
