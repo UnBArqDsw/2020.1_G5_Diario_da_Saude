@@ -6,7 +6,7 @@
 
 ## Definição
 
-<p align="justify">&emsp;&emsp;O Diagrama Lógico é, em grande parte, utilizado para definir as regras de negócios entre cada tabela armazenada no bancode dados, esse diagrama foi derivado do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/DE-R/">DE-R</a>.
+<p align="justify">&emsp;&emsp;O Diagrama Lógico é, em grande parte, utilizado para definir as regras de negócios entre cada tabela armazenada no bancode dados, esse diagrama foi derivado do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/der/">DE-R</a>.</p>
 ## Diagrama Entidade - Relacionamento
 
 ##### *versão 0.1*
