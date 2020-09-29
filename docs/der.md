@@ -1,0 +1,15 @@
+# Diagrama Entidade - Relacionamento
+## Versionamento
+| Data | Versão | Descrição | Autor(es) |
+|:----:|:------:|:---------:|:---------:|
+| 28/09/2020 | 0.1 | Criação do Documento | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+
+## Definição
+
+<p align="justify">&emsp;&emsp;O Diagrama Entidade - Relacionamento descreve como as entidades dos projetos se comportam entre si, evidenciando as relações existentes entre cada componente do banco de dados.</p>
+
+## Diagrama Entidade - Relacionamento
+
+##### *versão 0.1*
+[![diagrama_entidade_relacionamento](./img/diagrama_entidade_relacionamento.png)](./img/diagrama_entidade_relacionamento.png)
+
