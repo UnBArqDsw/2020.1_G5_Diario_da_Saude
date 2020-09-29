@@ -5,6 +5,7 @@
 | :---: | :---: | :---: | :---: |
 | 09/09/2020 | 0.1 | Criação do documento |  [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 11/09/2020 | 1.0 | Adicionando tópico Lean no projeto e revisando documento | [Murilo Loiola](https://github.com/murilo-dan) |
+| 28/09/2020 | 1.1 | Adicionando referência | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Introdução
 
@@ -129,3 +130,8 @@ O quadro kanban será constituido pelas seguintes colunas:
     * Google sheets: utilizado para quadro de conhecimento
     * PokerPlanning: utilizado para pontuação das histórias de usuário. 
 
+## Referências
+
+* Scrum, A Better Way Of Building Products. Disponível em: [https://www.scrum.org/resources/what-is-scrum](https://www.scrum.org/resources/what-is-scrum). Acesso em: 28 de set. 2020.
+* Kanban, Explained for Beginners. Disponível em: [https://kanbanize.com/kanban-resources/getting-started/what-is-kanban](https://kanbanize.com/kanban-resources/getting-started/what-is-kanban). Acesso em: 28 de set. 2020.
+* Introdução ao Extreme Programing. Disponível em: [https://www.devmedia.com.br/introducao-ao-extreme-programming-xp/29249](https://www.devmedia.com.br/introducao-ao-extreme-programming-xp/29249). Acesso em: 28 de set. 2020.
