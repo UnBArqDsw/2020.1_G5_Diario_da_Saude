@@ -7,6 +7,10 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
 
+  darkBackground: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)'
+  },
+
   buttonsContainer: {
     justifyContent: "space-between"
   },

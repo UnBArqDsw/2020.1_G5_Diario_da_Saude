@@ -9,13 +9,13 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { RectButton } from "react-native-gesture-handler";
-import logo_1 from "../../assets/logo_1.png";
+import logo from "../../assets/logo.png";
 import styles from "./styles";
 
 function Landing() {
   const [modalVisible, setModalVisible] = useState(false);
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, modalVisible ? styles.darkBackground : {}]}>
       <Modal
         animationType="fade"
         transparent={true}
@@ -27,7 +27,6 @@ function Landing() {
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
             <Text style={styles.modalText}>Quem você é?</Text>
-
             <TouchableHighlight
               style={styles.openButtonMedico}
               onPress={() => {
@@ -47,7 +46,7 @@ function Landing() {
           </View>
         </View>
       </Modal>
-      <Image source={logo_1} style={styles.logo} />
+      <Image source={logo} style={styles.logo} />
       <View style={styles.buttonsContainer}>
         <RectButton style={styles.buttonEntrar}>
           <Text style={styles.textButton}>Entrar</Text>
