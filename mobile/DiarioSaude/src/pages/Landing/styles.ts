@@ -37,7 +37,9 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    marginBottom: 80
+    marginBottom: 80,
+    width: 260,
+    height: 245
   }
 });
 
