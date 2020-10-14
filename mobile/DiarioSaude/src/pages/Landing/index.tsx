@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { View, Image, Text, Modal, Alert, TouchableHighlight } from "react-native";
+import {
+  View,
+  Image,
+  Text,
+  Modal,
+  Alert,
+  TouchableHighlight
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { RectButton } from "react-native-gesture-handler";
 import logo_1 from "../../assets/logo_1.png";
 import styles from "./styles";
 
 function Landing() {
-  const [modalVisible, setModalVisible] = useState(false)
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.container}>
       <Modal
@@ -14,7 +21,7 @@ function Landing() {
         transparent={true}
         visible={modalVisible}
         onRequestClose={() => {
-          Alert.alert("Modal has been closed.");
+          setModalVisible(false);
         }}
       >
         <View style={styles.centeredView}>
@@ -22,7 +29,7 @@ function Landing() {
             <Text style={styles.modalText}>Quem você é?</Text>
 
             <TouchableHighlight
-              style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+              style={styles.openButtonMedico}
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}
@@ -30,7 +37,7 @@ function Landing() {
               <Text style={styles.textStyle}>Cadastre-se como Médico</Text>
             </TouchableHighlight>
             <TouchableHighlight
-              style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+              style={styles.openButtonPaciente}
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}
@@ -45,7 +52,12 @@ function Landing() {
         <RectButton style={styles.buttonEntrar}>
           <Text style={styles.textButton}>Entrar</Text>
         </RectButton>
-        <RectButton style={styles.buttonCadastrar}  onPress={() => { setModalVisible(true); }}>
+        <RectButton
+          style={styles.buttonCadastrar}
+          onPress={() => {
+            setModalVisible(true);
+          }}
+        >
           <Text style={styles.textButton}>Cadastrar</Text>
         </RectButton>
       </View>

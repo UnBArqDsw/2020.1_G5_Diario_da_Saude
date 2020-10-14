@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     marginBottom: 60,
     height: 40,
     width: 300,
-    borderRadius: 8,
+    borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
     textAlignVertical: "center"
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   buttonCadastrar: {
     backgroundColor: "#0124A2",
     height: 40,
-    borderRadius: 8,
+    borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
     textAlignVertical: "center"
@@ -62,11 +62,20 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5
   },
-  openButton: {
-    backgroundColor: "#F194FF",
+  openButtonMedico: {
+    backgroundColor: "#0124A2",
     borderRadius: 20,
     padding: 10,
-    elevation: 2
+    elevation: 2,
+    marginBottom: 10,
+    width: 200
+  },
+  openButtonPaciente: {
+    backgroundColor: "#0124A2",
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+    width: 200
   },
   textStyle: {
     color: "white",
