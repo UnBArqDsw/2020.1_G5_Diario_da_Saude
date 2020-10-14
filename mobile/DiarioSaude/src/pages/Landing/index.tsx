@@ -8,13 +8,15 @@ import styles from "./styles";
 function Landing() {
   return (
     <View style={styles.container}>
-      <Image source={logo} />
-      <RectButton style={styles.Button}>
-        <Text>Entrar</Text>
-      </RectButton>
-      <RectButton style={styles.Button}>
-        <Text>Entrar</Text>
-      </RectButton>
+      <Image source={logo} style={styles.logo} />
+      <View style={styles.buttonsContainer}>
+        <RectButton style={styles.buttonEntrar}>
+          <Text style={styles.textButton}>Entrar</Text>
+        </RectButton>
+        <RectButton style={styles.buttonCadastrar}>
+          <Text style={styles.textButton}>Cadastrar</Text>
+        </RectButton>
+      </View>
     </View>
   );
 }
