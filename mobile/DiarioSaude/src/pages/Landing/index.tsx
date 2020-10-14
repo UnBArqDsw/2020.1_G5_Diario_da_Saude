@@ -12,8 +12,11 @@ import { RectButton } from "react-native-gesture-handler";
 import logo from "../../assets/logo.png";
 import styles from "./styles";
 
-function Landing() {
+function Login() {
   const [modalVisible, setModalVisible] = useState(false);
+
+  const { navigate } = useNavigation();
+
   return (
     <View style={[styles.container, modalVisible ? styles.darkBackground : {}]}>
       <Modal
@@ -48,7 +51,12 @@ function Landing() {
       </Modal>
       <Image source={logo} style={styles.logo} />
       <View style={styles.buttonsContainer}>
-        <RectButton style={styles.buttonEntrar}>
+        <RectButton
+          style={styles.buttonEntrar}
+          onPress={() => {
+            navigate("login");
+          }}
+        >
           <Text style={styles.textButton}>Entrar</Text>
         </RectButton>
         <RectButton
@@ -64,4 +72,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default Login;
