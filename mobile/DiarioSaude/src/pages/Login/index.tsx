@@ -9,19 +9,33 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { RectButton, TextInput } from "react-native-gesture-handler";
-import logo_1 from "../../assets/logo.png";
+import logo from "../../assets/logo.png";
 import styles from "./styles";
 
-function Landing() {
+function Login() {
   const [modalVisible, setModalVisible] = useState(false);
+  const [CPF, setCPF] = useState("");
+
+  useEffect(() => {
+    if (CPF.length === 3 || CPF.length === 7) {
+      setCPF(CPF + ".");
+    }
+    else if(CPF.length === 11) {
+      setCPF(CPF + "-")
+    }
+  }, [CPF])
+
   return (
     <View style={styles.container}>
-      <Image source={logo_1} style={styles.logo} />
+      <Image source={logo} style={styles.logo} />
       <View style={styles.textContainer}>
         <TextInput
+          value={CPF}
           style={styles.textInputUsuario}
           placeholder="CPF"
-          maxLength={11}
+          maxLength={14}
+          keyboardType="number-pad"
+          onChangeText={value => setCPF(value)}
         ></TextInput>
         <TextInput
           style={styles.textInputSenha}
@@ -43,4 +57,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default Login;
