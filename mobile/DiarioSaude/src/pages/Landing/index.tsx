@@ -4,11 +4,11 @@ import {
   Image,
   Text,
   Modal,
-  Alert,
-  TouchableHighlight
+  TouchableHighlight,
+  TouchableWithoutFeedback,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { RectButton } from "react-native-gesture-handler";
+import { RectButton, TouchableOpacity } from "react-native-gesture-handler";
 import logo from "../../assets/logo.png";
 import styles from "./styles";
 
@@ -27,27 +27,29 @@ function Login() {
           setModalVisible(false);
         }}
       >
-        <View style={styles.centeredView}>
-          <View style={styles.modalView}>
-            <Text style={styles.modalText}>Quem você é?</Text>
-            <TouchableHighlight
-              style={styles.openButtonMedico}
-              onPress={() => {
-                setModalVisible(!modalVisible);
-              }}
-            >
-              <Text style={styles.textStyle}>Cadastre-se como Médico</Text>
-            </TouchableHighlight>
-            <TouchableHighlight
-              style={styles.openButtonPaciente}
-              onPress={() => {
-                setModalVisible(!modalVisible);
-              }}
-            >
-              <Text style={styles.textStyle}>Cadastre-se como Paciente</Text>
-            </TouchableHighlight>
-          </View>
-        </View>
+        <TouchableHighlight style={styles.centeredView} underlayColor="none" onPressOut={() => { setModalVisible(!modalVisible) }}>
+          <TouchableWithoutFeedback>
+            <View style={styles.modalView}>
+              <Text style={styles.modalText}>Quem você é?</Text>
+              <TouchableHighlight
+                style={styles.openButtonMedico}
+                onPress={() => {
+                  setModalVisible(!modalVisible);
+                }}
+              >
+                <Text style={styles.textStyle}>Cadastre-se como Médico</Text>
+              </TouchableHighlight>
+              <TouchableHighlight
+                style={styles.openButtonPaciente}
+                onPress={() => {
+                  setModalVisible(!modalVisible);
+                }}
+              >
+                <Text style={styles.textStyle}>Cadastre-se como Paciente</Text>
+              </TouchableHighlight>
+            </View>
+          </TouchableWithoutFeedback>
+        </TouchableHighlight>
       </Modal>
       <Image source={logo} style={styles.logo} />
       <View style={styles.buttonsContainer}>
