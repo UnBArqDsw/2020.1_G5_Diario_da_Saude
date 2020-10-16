@@ -5,7 +5,8 @@ import {
   Text,
   Modal,
   Alert,
-  TouchableHighlight, PlatformColor
+  TouchableHighlight,
+  PlatformColor
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { RectButton, TextInput } from "react-native-gesture-handler";
@@ -14,6 +15,8 @@ import styles from "./styles";
 
 function Login() {
   const [modalVisible, setModalVisible] = useState(false);
+
+  const { navigate } = useNavigation();
 
   return (
     <View style={styles.container}>
@@ -35,7 +38,7 @@ function Login() {
         <RectButton
           style={styles.buttonCadastrar}
           onPress={() => {
-            setModalVisible(true);
+            navigate("Medico");
           }}
         >
           <Text style={styles.textButton}>Login</Text>
