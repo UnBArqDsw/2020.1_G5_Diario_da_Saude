@@ -35,6 +35,7 @@ function Login() {
                 style={styles.openButtonMedico}
                 onPress={() => {
                   setModalVisible(!modalVisible);
+                  navigate("signupMedic")
                 }}
               >
                 <Text style={styles.textStyle}>Cadastre-se como Médico</Text>
