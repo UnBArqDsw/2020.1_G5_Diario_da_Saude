@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Landing from "../pages/Landing";
 import Login from "../pages/Login";
+import SignupMedic from "../pages/SignupMedic";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -12,6 +13,7 @@ function AppStack() {
       <Navigator screenOptions={{ headerShown: false }}>
         <Screen name="Landing" component={Landing} />
         <Screen name="login" component={Login} />
+        <Screen name="signupMedic" component={SignupMedic} />
       </Navigator>
     </NavigationContainer>
   );
