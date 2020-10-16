@@ -39,10 +39,24 @@ const styles = StyleSheet.create({
 
   textInputUsuario: {
     backgroundColor: "#e8e8e8",
-    marginBottom: 20,
+    marginBottom: 15,
     width: 300,
     height: 40,
     borderRadius: 8
+  },
+  upperDivision: {
+    backgroundColor: "#0124A2",
+    marginBottom: 60,
+    width: 400,
+    height: 200,
+  },
+  picture: {
+    marginLeft: 110,
+    marginTop: 50,
+    borderRadius: 100,
+    backgroundColor: "#FFFFFF",
+    width: 180,
+    height: 180,
   },
 });
 

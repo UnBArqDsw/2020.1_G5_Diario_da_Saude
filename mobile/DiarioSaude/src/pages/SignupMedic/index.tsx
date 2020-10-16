@@ -1,24 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   View,
-  Image,
   Text,
-  Modal,
-  Alert,
-  TouchableHighlight, PlatformColor
+  Image,
 } from "react-native";
+import {
+  RectButton,
+  TextInput,
+  TouchableHighlight
+} from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
-import { RectButton, TextInput } from "react-native-gesture-handler";
-import logo from "../../assets/logo.png";
 import styles from "./styles";
+import picture from "../../assets/camera.png";
 
 function SignupMedic() {
   const [modalVisible, setModalVisible] = useState(false);
+  const { navigate } = useNavigation();
 
   return (
     <View style={styles.container}>
+      <View style={styles.upperDivision}>
+        <TouchableHighlight underlayColor="none">
+          <Image source={picture} style={styles.picture}/>
+        </TouchableHighlight>
+      </View>
       <View style={styles.textContainer}>
-      <TextInput
+        <TextInput
           style={styles.textInputUsuario}
           placeholder="CPF"
           maxLength={11}
@@ -51,7 +58,7 @@ function SignupMedic() {
         <RectButton
           style={styles.buttonCadastrar}
           onPress={() => {
-            setModalVisible(true);
+            navigate("Landing");
           }}
         >
           <Text style={styles.textButton}>Cadastrar</Text>
