@@ -28,9 +28,31 @@ services:
     ports:
       - 8080:8080
     depends_on:
-      - db
-  db:
-    container_name: diariosaude-db
+      - mongo
+  mongo:
     image: mongo
+    container_name: diariosaude-db
+    env_file: .envdb
     ports:
       - 27017:27017
+    volumes:
+      - ./backend/MongoDBData:/data/db
+    networks:
+      - db-diariosaude-network
+  admin:
+    image: mongo-express
+    container_name: diariosaude-db_admin
+    ports:
+      - 8081:8081
+    env_file: .envdb
+    environment:
+      ME_CONFIG_MONGODB_PORT: 27017
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    networks:
+      - db-diariosaude-network
+networks:
+    db-diariosaude-network:
+      driver: bridge
