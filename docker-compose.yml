@@ -5,16 +5,18 @@ services:
       build: ./mobile/DiarioSaude
       env_file: .env
       volumes:
-         - ./mobile/DiarioSaude:/usr/src/app
-         - /usr/src/app/node_modules
+        - ./mobile/DiarioSaude:/usr/src/app
+        - /usr/src/app/node_modules
       expose:
         - 19000
         - 19001
         - 19002
       ports:
-         - 19000:19000
-         - 19001:19001
-         - 19002:19002
+        - 19000:19000
+        - 19001:19001
+        - 19002:19002
       environment:
-         - EXPO_DEVTOOLS_LISTEN_ADDRESS=0.0.0.0
-         - EXPO_DEBUG=true
+        # - REACT_NATIVE_PACKAGER_HOSTNAME=0.0.0.0
+        - EXPO_DEVTOOLS_LISTEN_ADDRESS=0.0.0.0
+        - EXPO_DEBUG=true
+        - CHOKIDAR_USEPOLLING=true
