@@ -23,6 +23,9 @@ services:
   backend:
     container_name: diariosaude-back
     build: ./backend/DiarioSaude
+    volumes:
+      - ./backend/DiarioSaude:/usr/src/app
+      - /usr/src/app/node_modules
     expose:
       - 8080
     ports:
