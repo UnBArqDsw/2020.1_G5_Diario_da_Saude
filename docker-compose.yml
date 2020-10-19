@@ -20,6 +20,8 @@ services:
       - EXPO_DEVTOOLS_LISTEN_ADDRESS=0.0.0.0
       - EXPO_DEBUG=true
       - CHOKIDAR_USEPOLLING=true
+    networks:
+      - db-diariosaude-network
   backend:
     container_name: diariosaude-back
     build: ./backend/DiarioSaude
@@ -32,12 +34,13 @@ services:
       - 8080:8080
     depends_on:
       - mongo
+    networks:
+      - db-diariosaude-network
   mongo:
     image: mongo
     container_name: diariosaude-db
     env_file: .envdb
-    ports:
-      - 27017:27017
+    restart: always
     volumes:
       - ./backend/MongoDBData:/data/db
     networks:
@@ -45,6 +48,7 @@ services:
   admin:
     image: mongo-express
     container_name: diariosaude-db_admin
+    restart: always
     ports:
       - 8081:8081
     env_file: .envdb
