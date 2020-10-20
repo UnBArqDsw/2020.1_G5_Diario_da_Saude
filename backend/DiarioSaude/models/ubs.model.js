@@ -5,8 +5,6 @@ const UbsSchema = mongoose.Schema({
     city : {type: String, required: true},
     state : {type: String, required: true},
     cep : {type: Number, required: true}
-}, {
-    timestamps: true
 });
 
 module.exports = mongoose.model('Ubs', UbsSchema);
