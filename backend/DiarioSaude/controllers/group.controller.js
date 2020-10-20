@@ -66,10 +66,55 @@ exports.findOne = (req, res) => {
 
 // Update a group identified by the groupId in the request
 exports.update = (req, res) => {
+    // Validate Request
+    if(!req.body.content) {
+        return res.status(400).send({
+            message: "Conteúdo de grupo não pode estar vazio"
+        });
+    }
 
+    // Find note and update it with the request body
+    Group.findByIdAndUpdate(req.params.groupId, {
+        groupName: req.body.groupName,
+        idUBS: req.body.idUBS
+    }, {new: true})
+    .then(group => {
+        if(!group) {
+            return res.status(404).send({
+                message: "Nenhum grupo foi encontrado com o id: " + req.params.groupId
+            });
+        }
+        res.send(group);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Nenhum grupo foi encontrado com o id: " + req.params.groupId
+            });                
+        }
+        return res.status(500).send({
+            message: "Um erro ocorreu na atualização do grupo de id: " + req.params.groupId
+        });
+    });
 };
 
 // Delete a group with the specified groupId in the request
 exports.delete = (req, res) => {
-
+    Group.findByIdAndRemove(req.params.groupId)
+    .then(group => {
+        if(!group) {
+            return res.status(404).send({
+                message: "Nenhum grupo foi encontrado com o id: " + req.params.groupId
+            });
+        }
+        res.send({message: "group deleted successfully!"});
+    }).catch(err => {
+        if(err.kind === 'ObjectId' || err.name === 'NotFound') {
+            return res.status(404).send({
+                message: "Nenhum grupo foi encontrado com o id: " + req.params.groupId
+            });                
+        }
+        return res.status(500).send({
+            message: "Não foi possível deletar o grupo de id: " + req.params.groupId
+        });
+    });
 };
