@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const GroupSchema = mongoose.Schema({
-    groupId: new mongoose.Types.ObjectId,
     groupName: String,
     idForm : String,
     idUBS : String,
