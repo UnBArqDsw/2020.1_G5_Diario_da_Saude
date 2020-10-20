@@ -1,21 +1,24 @@
-var User = require('../models/user.model');
+var HealthProfessional = require('../models/healthProfessional.model');
 
 exports.create = function (req, res, next) {
-  let user = new User(
+  let healthProfessional = new HealthProfessional(
     {
-      nome: req.body.nome
+      name: req.body.name,
+      cpf: req.body.cpf,
+      password: req.body.password,
+      role: req.body.role
     }
   );
-  user.save(function (err) {
+  healthProfessional.save(function (err) {
     if (err) {
       return next(err);
     }
-    res.send('Registo de User criado com sucesso')
+    res.send('Registo de User criado com sucesso.')
   })
 };
 
 exports.details = function (req, res, next) {
-  User.findById(req.params.id, function (err, user) {
+  HealthProfessional.findById(req.params.cpf, function (err, user) {
     if (err) return next(err);
     res.send(user);
   })

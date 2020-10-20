@@ -7,7 +7,7 @@ const app = express();
 const mongoose = require('mongoose');
 let url = 'mongodb://root:DiarioSaude!@mongo:27017/diariosaude?authSource=admin';
 let mongoDB = process.env.MONGODB_URI || url;
-mongoose.connect(mongoDB,{useNewUrlParser: true });
+mongoose.connect(mongoDB,{useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Erro na Ligação ao MongoDB'));
