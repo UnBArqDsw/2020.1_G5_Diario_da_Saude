@@ -19,7 +19,7 @@ exports.create = (req, res) => {
         idUBS: req.body.idUBS
     });
 
-    // Save Note in the database
+    // Save Group in the database
     group.save()
     .then(data => {
         res.send(data);
@@ -32,12 +32,36 @@ exports.create = (req, res) => {
 
 // Retrieve and return all groups from the database.
 exports.findAll = (req, res) => {
-
+    Group.find()
+    .then(groups => {
+        res.send(groups);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Algum erro ocorreu ao carregar os grupos."
+        });
+    });
 };
 
 // Find a single group with a groupId
 exports.findOne = (req, res) => {
-
+    Group.findById(req.params.groupId)
+    .then(group => {
+        if(!group) {
+            return res.status(404).send({
+                message: "Nenhum grupo encontrado com o id: " + req.params.groupId
+            });            
+        }
+        res.send(group);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Nenhum grupo encontrado com o id:" + req.params.groupId
+            });                
+        }
+        return res.status(500).send({
+            message: "Erro ao carregar groupo com id: " + req.params.groupId
+        });
+    });
 };
 
 // Update a group identified by the groupId in the request
