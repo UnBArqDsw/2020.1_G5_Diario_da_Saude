@@ -16,7 +16,9 @@ exports.create = (req, res) => {
     // Create a Group
     const group = new Group({
         groupName: req.body.groupName,
-        idUBS: req.body.idUBS
+        idUBS: req.body.idUBS,
+        idForm: req.body.idForm,
+        users: req.body.users
     });
 
     // Save Group in the database
@@ -76,7 +78,9 @@ exports.update = (req, res) => {
     // Find note and update it with the request body
     Group.findByIdAndUpdate(req.params.groupId, {
         groupName: req.body.groupName,
-        idUBS: req.body.idUBS
+        idUBS: req.body.idUBS,
+        idForm: req.body.idForm,
+        users: req.body.users
     }, {new: true})
     .then(group => {
         if(!group) {
