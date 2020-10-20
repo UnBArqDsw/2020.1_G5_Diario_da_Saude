@@ -22,6 +22,10 @@ app.use('/', users);
 //Servidor
 const PORT = 8080;
 const HOST = '0.0.0.0';
+
+//Routes
+require('./app/routes/note.routes.js')(app);
+
 app.listen(PORT, HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);
 });
