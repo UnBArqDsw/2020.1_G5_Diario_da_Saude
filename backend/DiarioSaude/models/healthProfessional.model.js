@@ -1,5 +1,4 @@
 const mongoose  = require('mongoose'),
-      bcrypt    = require('bcrypt'),
       Schema    = mongoose.Schema;
       Person    = require('./Person.model.js')
 
@@ -9,7 +8,7 @@ var healthProfessionalSchema = new Schema({
   password: {type: String, required: true},
   role: {type: String, required:true},
 })
-
+/*
 healthProfessionalSchema.pre("save", (next) => {
   var user = this;
 
@@ -32,5 +31,5 @@ healthProfessionalSchema.methods.comparePassword = function(candidatePassword, c
         cb(null, isMatch);
     });
 };
-
+*/
 module.exports = mongoose.model('HealthProfessional', healthProfessionalSchema);

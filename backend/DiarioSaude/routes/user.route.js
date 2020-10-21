@@ -1,9 +1,7 @@
-const express = require('express');
-const router = express.Router();
+module.exports = (app) => {
+  const hp = require('../controllers/healthProfessional.controller.js');
 
-const user_controller = require('../controllers/user.controller');
+  app.get('/hp/:id', hp.details);
+  app.post('/hp', hp.create);
 
-router.get('/:id', user_controller.details);
-router.post('/create', user_controller.create);
-
-module.exports = router;
+}

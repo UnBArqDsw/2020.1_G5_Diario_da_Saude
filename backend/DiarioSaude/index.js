@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //Routes
 require('./routes/group.route')(app);
+require('./routes/user.route')(app)
 require('./routes/ubs.route')(app);
 
 app.get('/', (req, res) => {

@@ -1,7 +1,7 @@
-var HealthProfessional = require('../models/healthProfessional.model');
+const HealthProfessional = require('../models/healthProfessional.model.js');
 
 exports.create = function (req, res, next) {
-  let healthProfessional = new HealthProfessional(
+  const healthProfessional = new HealthProfessional(
     {
       name: req.body.name,
       cpf: req.body.cpf,
