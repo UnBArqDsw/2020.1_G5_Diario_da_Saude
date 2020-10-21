@@ -6,7 +6,7 @@ exports.create = function (req, res, next) {
       name: req.body.name,
       cpf: req.body.cpf,
       password: req.body.password,
-      role: req.body.role
+      role: req.body.role,
     }
   );
   healthProfessional.save(function (err) {
