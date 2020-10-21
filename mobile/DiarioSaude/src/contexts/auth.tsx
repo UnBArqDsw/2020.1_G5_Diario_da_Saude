@@ -5,6 +5,7 @@ interface AuthContextData {
   singed: boolean;
   user: object | null;
   singIn(): Promise<void>;
+  singOut(): void;
 }
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
@@ -18,8 +19,12 @@ export const AuthProvider: React.FC = ({ children }) => {
     setUser(response.user);
   }
 
+  function singOut() {
+    setUser(null);
+  }
+
   return (
-    <AuthContext.Provider value={{ singed: !!user, user, singIn }}>
+    <AuthContext.Provider value={{ singed: !!user, user, singIn, singOut }}>
       {children}
     </AuthContext.Provider>
   );
