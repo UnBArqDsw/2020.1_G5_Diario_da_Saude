@@ -1,15 +1,16 @@
-var HealthProfessional = require('../models/healthProfessional.model');
+const Patient = require('../models/patient.model.js');
 
 exports.create = function (req, res, next) {
-  let healthProfessional = new HealthProfessional(
+  const patient = new Patient(
     {
       name: req.body.name,
       cpf: req.body.cpf,
       password: req.body.password,
-      role: req.body.role
+      gender: req.body.gender,
+      birthDate: req.body.birthDate
     }
   );
-  healthProfessional.save(function (err) {
+  patient.save(function (err) {
     if (err) {
       return next(err);
     }
@@ -18,7 +19,7 @@ exports.create = function (req, res, next) {
 };
 
 exports.details = function (req, res, next) {
-  HealthProfessional.findById(req.params.cpf, function (err, user) {
+  patient.findById(req.params.cpf, function (err, user) {
     if (err) return next(err);
     res.send(user);
   })
