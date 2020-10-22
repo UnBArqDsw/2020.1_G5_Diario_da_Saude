@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from "react";
-import { View, ActivityIndicator } from "react-native";
 import * as auth from "../services/auth";
 import AsyncStorage from "@react-native-community/async-storage";
 
@@ -15,7 +14,7 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 export const AuthProvider: React.FC = ({ children }) => {
   const [user, setUser] = useState<object | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function loadStorageData() {

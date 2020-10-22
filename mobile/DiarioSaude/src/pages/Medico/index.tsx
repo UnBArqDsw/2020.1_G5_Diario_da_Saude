@@ -5,16 +5,10 @@ import { RectButton } from "react-native-gesture-handler";
 import AuthContext from "../../contexts/auth";
 
 function Medico() {
-  const { singOut } = useContext(AuthContext);
-
-  function handleSingOut() {
-    singOut();
-  }
-
   return (
     <View style={styles.container}>
       <Text>Medico</Text>
-      <RectButton onPress={handleSingOut}>
+      <RectButton>
         <Text>Sair</Text>
       </RectButton>
     </View>
