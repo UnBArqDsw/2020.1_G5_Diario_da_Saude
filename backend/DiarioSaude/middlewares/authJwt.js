@@ -1,4 +1,4 @@
-const jwt     = require("jasonwebtoken"),
+const jwt     = require("jsonwebtoken"),
       config  = require("../config/auth.config.js"),
       db      = require("../index"),
       healthProfessional = db.healthProfessional;

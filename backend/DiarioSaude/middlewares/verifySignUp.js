@@ -1,13 +1,13 @@
 const db = require("../models");
 const ROLES = db.ROLES;
 const healthProfessional = db.healthProfessional;
-const patient = {}
+const patient = db.patient
 
 checkDuplicateUsernameOrEmail = (req, res, next) => {
-    const User = req.body.roles === "patient" ? patient : healthProfessional;
+    const User = req.body.roles[0] === "patient" ? patient : healthProfessional;
     // Email
     User.findOne({
-      email: req.body.email
+      cpf: req.body.cpf
     }).exec((err, user) => {
       if (err) {
         res.status(500).send({ message: err });
@@ -21,7 +21,6 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
 
       next();
     });
-  });
 };
 
 checkRolesExisted = (req, res, next) => {

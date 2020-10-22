@@ -6,6 +6,7 @@ const db = {};
 db.mongoose = mongoose;
 
 db.healthProfessional = require("./healthProfessional.model");
+db.patient = require("./patient.model")
 db.role = require("./role.model");
 db.group = require("./group.model")
 

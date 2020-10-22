@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 require('./routes/group.route')(app);
 require('./routes/user.route')(app)
 require('./routes/ubs.route')(app);
+require('./routes/auth.route')(app);
 
 app.get('/', (req, res) => {
   res.json({"message": "API is online!"});
