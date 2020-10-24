@@ -1,7 +1,7 @@
 const HealthProfessional = require('../models/healthProfessional.model.js');
 
 exports.create = function (req, res, next) {
-  const healthProfessional = new HealthProfessional(
+  const healthProfessional = new mongoose.model('healthProfessional')(
     {
       name: req.body.name,
       cpf: req.body.cpf,
@@ -18,8 +18,15 @@ exports.create = function (req, res, next) {
 };
 
 exports.details = function (req, res, next) {
-  HealthProfessional.findById(req.params.cpf, function (err, user) {
+  console.log(`DETAILS: ${req.params.cpf}`)
+  HealthProfessional.getPerson({cpf:req.params.cpf}, function (err, user) {
     if (err) return next(err);
     res.send(user);
   })
 };
+
+exports.getByRole = function (req, res, next) {
+  HealthProfessional.getByRole(req.params.wanted, (user) => {
+    res.send(user)
+  })
+}

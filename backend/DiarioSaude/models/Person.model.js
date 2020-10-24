@@ -5,7 +5,26 @@ const PersonSchema = new Schema({
   name: {type: String, required: true, max: 100},
   password: {type: String, required: true},
   cpf: {type: Number, required: true, unique: true},
-  roles: [{type: Schema.Types.ObjectId, ref: "Role"}]
 });
+
+class PersonClass{
+
+  static getPerson(cpf, callback){
+    return this.findOne({cpf:cpf}, (err, user) => {
+      if(err) throw err;
+
+      callback(err, user)
+    });
+  }
+
+  static getByRoles(role){
+    return this.findAll({roles:[role]})
+  }
   
-module.exports = mongoose.model('Person', PersonSchema)
+}
+
+PersonSchema.loadClass(PersonClass)
+
+const PersonModel = mongoose.model('person', PersonSchema)
+  
+module.exports = {PersonClass, PersonSchema, PersonModel}
