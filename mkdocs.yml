@@ -56,6 +56,13 @@ nav:
       - DE-R: der.md
       - Diagrama Lógico: dl.md
       - Atualizações: iniciativas_extras_entrega2.md
+  - Desenho de Software (Padrões de Projeto):
+    - Módulo Padrões de Projeto GRASPs: grasps.md
+    - Módulo Padrões de Projeto GoFs Criacionais: gofs_criacionais.md
+    - Módulo Padrões de Projeto GoFs Estruturais: gofs_estruturais.md
+    - Módulo Padrões de Projeto GoFs Comportamentais: gofs_comportamentais.md
+    - Módulo Padrões de Projeto Extras:
+      - Middleware: middleware.md
 
 repo_url: https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude
 extra:

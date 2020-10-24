@@ -3,11 +3,13 @@
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
-| 22/10/2020 | 0.2 | Adição do tópico Definição | [Murilo Loiola](https://github.com/murilo-dan) |
+| 22/10/2020 | 0.2 | Adição do tópico Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
 
-## Definição
+## Introdução
 
-<p align="justify">&emsp;&emsp;O <b>GRASP</b> (Padrões de Software para Atribuição de Responsabilidades Gerais, em tradução livre) consiste de diretrizes que ajudam na atribuição de responsabilidades para classes e objetos em <i>design</i> orientado a objeto.</p>
+<p align="justify">&emsp;&emsp;O <b>GRASP</b> (Padrões de Software para Atribuição de Responsabilidades Gerais, em tradução livre) consiste de diretrizes que ajudam na atribuição de responsabilidades para classes e objetos em <i>design</i> orientado a objeto. O GRASP é constituído por nove padrões ou princípios, sendo eles:</p>
+
+* Controller;
 
 ## Criador
 
