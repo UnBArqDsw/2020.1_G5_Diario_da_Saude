@@ -5,6 +5,7 @@
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 24/10/2020 | 0.2 | Adição do tópico Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
 | 24/10/2020 | 0.3 | Adição do tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
+| 25/10/2020 | 0.4 | Adição do diagrama e hyperlinks no tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -18,6 +19,8 @@
 * Flyweight;
 * Proxy;
 
+<p align="justify">&emsp;&emsp;A seguir, estão descritos somente os padrões aplicados no projeto, escolhidos pelo grupo quanto a contribuição que a aplicação do padrão traria para o desenvolvimento do projeto.</p>
+
 ## Composite
 
 #### Definição
@@ -26,7 +29,18 @@
 
 #### Aplicação no projeto
 
-<p align="justify">&emsp;&emsp;Para o projeto, foi decidido aplicar o padrão Composite na relação Pergunta-Formulário. Nessa relação, os objetos Pergunta são considerados objetos individuais, enquanto o objeto Formulário é uma coleção de Perguntas. Dessa forma, essa estrutura encaixa-se perfeitamente no padrão Composite.</p>
+<p align="justify">&emsp;&emsp;Para o projeto, foi decidido aplicar o padrão Composite na relação Pergunta-Formulário. Nessa relação, os objetos Pergunta são considerados objetos individuais, enquanto o objeto Formulário é uma coleção de Perguntas. Dessa forma, essa estrutura encaixa-se perfeitamente no padrão Composite. Segue o diagrama representando a estrutura Composite Pergunta-Formulário e hyperlinks para os arquivos de código onde o padrão Composite foi implementado:</p>
+
+**Diagrama**
+[![composite_diagram](./img/composite_diagram.png)](./img/composite_diagram.png)
+
+**Hyperlinks**
+
+* [Interface - Question](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/Question.model.js)
+* [Leaf - BloodPressure](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/BloodPressure.model.js)
+* [Leaf - Glucose](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/Glucose.model.js)
+* [Leaf - WellBeing](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/WellBeing.model.js)
+* [Composite - Form](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/Form.model.js)
 
 #### Motivação
 
