@@ -6,6 +6,7 @@
 | 24/10/2020 | 0.2 | Adição do tópico Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
 | 24/10/2020 | 0.3 | Adição do tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
 | 25/10/2020 | 0.4 | Adição do diagrama e hyperlinks no tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
+| 25/10/2020 | 0.5 | Adição de referências em relação ao padrão da tecnologia utilizada | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
 
 ## Introdução
 
@@ -50,4 +51,6 @@
 
 1. Craig, L. <b>Utilizando UML e Padrões</b>. Grupo A, 2011. 9788577800476. Disponível em: <a>https://integrada.minhabiblioteca.com.br/#/books/9788577800476/</a>. Acesso em: 22 Outubro 2020.
 2. Composite pattern - Wikipedia. Disponível em: <a>https://en.wikipedia.org/wiki/Composite_pattern</a>. Acesso em: 24 Outubro 2020.
-2. Composite pattern - dofactory. Disponível em: <a>https://www.dofactory.com/javascript/design-patterns/composite</a>. Acesso em: 24 Outubro 2020.
+3. Composite pattern - dofactory. Disponível em: <a>https://www.dofactory.com/javascript/design-patterns/composite</a>. Acesso em: 24 Outubro 2020.
+4. Inheritance Pattern with Mongoose - Disponível em: <a>https://mongoosejs.com/docs/discriminators.html#the-model-discriminator-function</a>. Acesso em: 25 Outubro 2020.
+5. Using ES6 Class with Mongoose Schema - Disponível em: <a>https://mongoosejs.com/docs/advanced_schemas.html#creating-from-es6-classes-using-loadclass</a> Acesso em: 25 Outubro 2020.
