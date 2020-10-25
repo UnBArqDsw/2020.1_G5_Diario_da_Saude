@@ -25,6 +25,8 @@ require('./routes/group.route')(app);
 require('./routes/user.route')(app)
 require('./routes/ubs.route')(app);
 require('./routes/auth.route')(app);
+require('./routes/Question.route')(app);
+require('./routes/Form.route')(app);
 
 app.get('/', (req, res) => {
   res.json({"message": "API is online!"});
