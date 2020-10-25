@@ -4,6 +4,7 @@
 |:----:|:------:|:---------:|:---------:|
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 24/10/2020 | 0.2 | Adição do tópico Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
+| 24/10/2020 | 0.3 | Adição do tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -16,3 +17,23 @@
 * Facade;
 * Flyweight;
 * Proxy;
+
+## Composite
+
+#### Definição
+
+<p align="justify">&emsp;&emsp;O padrão Composite permite a criação de objetos com propriedades que são de itens primitivos ou de uma coleção de objetos. Cada item da coleção pode conter outras coleções, gerando estruturas profundamente aninhadas. Uma árvore é o exemplo perfeito de um padrão Composite. Os nós da árvore representam ou um único objeto (nós folha) ou um grupo de objeto (sub-árvores de nós).</p>
+
+#### Aplicação no projeto
+
+<p align="justify">&emsp;&emsp;Para o projeto, foi decidido aplicar o padrão Composite na relação Pergunta-Formulário. Nessa relação, os objetos Pergunta são considerados objetos individuais, enquanto o objeto Formulário é uma coleção de Perguntas. Dessa forma, essa estrutura encaixa-se perfeitamente no padrão Composite.</p>
+
+#### Motivação
+
+<p align="justify">&emsp;&emsp;O padrão Composite foi aplicado na relação Pergunta-Formulário devido ao fato de que o Formulário é uma coleção de Perguntas. Essa estrutura nos permite dar ao Profissional da Saúde a capacidade de personalizar o Formulário com o conjunto de perguntas que ele julgar necessário para o grupo em questão, ao mesmo tempo que oferece a facilidade de tratar ambos os objetos de maneira uniforme.</p>
+
+## Referência
+
+1. Craig, L. <b>Utilizando UML e Padrões</b>. Grupo A, 2011. 9788577800476. Disponível em: <a>https://integrada.minhabiblioteca.com.br/#/books/9788577800476/</a>. Acesso em: 22 Outubro 2020.
+2. Composite pattern - Wikipedia. Disponível em: <a>https://en.wikipedia.org/wiki/Composite_pattern</a>. Acesso em: 24 Outubro 2020.
+2. Composite pattern - dofactory. Disponível em: <a>https://www.dofactory.com/javascript/design-patterns/composite</a>. Acesso em: 24 Outubro 2020.
