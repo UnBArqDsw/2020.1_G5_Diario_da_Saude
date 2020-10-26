@@ -33,6 +33,8 @@ export const AuthProvider: React.FC = ({ children }) => {
   async function singIn() {
     const response = await auth.singIn();
 
+    console.log(response);
+
     setUser(response.user);
 
     await AsyncStorage.setItem(
