@@ -5,6 +5,8 @@
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.2 | Adição do tópico Introdução e Aplicação no projeto | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.3 | Adição de hyperlinks | [Murilo Loiola](https://github.com/murilo-dan) |
+| 26/10/2020 | 0.4 | Adição de Detalhe | [Gabriel Tiveron](https://github.com/GabrielTiveron)
+| 26/10/2020 | 0.5 | Adição de Referência | [Gabriel Tiveron](https://github.com/GabrielTiveron)
 
 ## Introdução
 
@@ -14,7 +16,15 @@
 
 <p align="justify">&emsp;&emsp;No projeto, o Middleware está sendo utilizado como autenticador de requisições. Ele foi implementado como responsável por fazer a autenticação de usuário, realizando a comunicação entre banco e aplicação através de funções de requisição/resposta em cadeia. Dessa forma, os middlewares controlam o fluxo de comunicação, barrando requisições inválidas. Seguem hyperlinks para os arquivos de código onde o Middleware foi implementado:</p>
 
+### Detalhes
+
+<p align="justify">&emsp;&emsp;O Middleware implementado tem como principal objetivo o controle de acesso as rotas predefinida, onde cada tipo de usuário, no contexto do projeto "Patient" e "HealthProfessional", tem permissões para enviar ou receber informações, para isso é utilizado um token JWT para a identificação da sessão do usuário e de sua função na aplicação, dessa forma, em toda requisição feita pelo usuário é necessária a presença do header "access-control", para que assim possa ser dada ou não a permissão de acesso à rota desejada.</p>
+
 #### Hyperlinks
 
 * [Autenticação JWT](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/middlewares/authJwt.js);
 * [Autenticação Cadastro](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/middlewares/verifySignUp.js)
+
+### Referência
+
+1. Mongoose Token Based Authentication. Disponível em: <a>https://bezkoder.com/node-js-mongodb-auth-jwt/</a>. Acesso em: 26/10/2020.
