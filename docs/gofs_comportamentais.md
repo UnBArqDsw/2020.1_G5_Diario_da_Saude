@@ -5,6 +5,7 @@
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.2 | Adição da Introdução | [Ian Rocha](https://github.com/IanPSRocha) |
 | 26/10/2020 | 0.2 | Adição do Template Method | [Ian Rocha](https://github.com/IanPSRocha) |
+| 26/10/2020 | 0.2 | Remoção do Template Method e adição do Observer | [Ian Rocha](https://github.com/IanPSRocha) |
 
 ## Introdução
 
@@ -25,17 +26,14 @@ dado um contexto. Auxiliam também alterando o tempo de execução que certo alg
 
 <p align="justify">&emsp;&emsp;A seguir, estão descritos somente os padrões aplicados no projeto, escolhidos pelo grupo quanto a contribuição que a aplicação do padrão traria para o desenvolvimento do projeto.</p>
 
-## Template Method
+## Observer
 
 #### Definição
-<p align="justify">&emsp;&emsp;Definir a ordem na qual determinados passos devem ser realizados na resolução de um problema e permitir que
-esses passos possam ser realizados de formas diferentes de acordo com a situação. Template Method possui estes participantes:</p>
+<p align="justify">&emsp;&emsp;O padrão Observer oferece um modelo no qual os objetos tem um evento e são notificados quando o evento ocorre. Esse padrão é a base da programação orientada a eventos, incluindo JavaScript. O padrão Observer facilita um bom design orientado a objetos e promove uma fácil integração. O paradigma de eventos e do manipulador de eventos em JavaScript é a manifestação do Observer.</p>
 
-* <p align="justify">&emsp;&emsp;AbstractClass - Classe abstrata que define o template method, com a ordem de execução das operações. As operações primárias permanecem como métodos abstratos, sendo concretizadas nas ConcreteClasses.</p>
-* <p align="justify">&emsp;&emsp;ConcreteClass - Classes concretas que implementam os métodos abstratos – i.e. operações primárias que possuem comportamentos dependentes do objeto específico - especificados na AbstractClass.</p>
 
 
 ## Referências
 
-Template Method - dofactory. Disponível em: https://www.dofactory.com/javascript/design-patterns/template-method. Acesso em: 26 Outubro 2020.
-Template Method Design Pattern - SourceMaking. Disponível em: https://sourcemaking.com/design_patterns/template_method. Acesso em: 26 Outubro 2020.
+Observer - dofactory. Disponível em: https://www.dofactory.com/javascript/design-patterns/observer. Acesso em: 26 Outubro 2020.
+Observer Design Pattern. Disponível em: https://sourcemaking.com/design_patterns/observer. Acesso em: 26 Outubro 2020.
