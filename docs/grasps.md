@@ -5,6 +5,7 @@
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 22/10/2020 | 0.2 | Adição do tópico Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.3 | Adição de hyperlink para Factory Method | [Murilo Loiola](https://github.com/murilo-dan) |
+| 26/10/2020 | 0.4 | Adição do Especialista | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 
 ## Introdução
