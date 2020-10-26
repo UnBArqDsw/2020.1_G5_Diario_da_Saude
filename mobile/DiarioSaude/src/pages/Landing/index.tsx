@@ -5,7 +5,7 @@ import {
   Text,
   Modal,
   TouchableHighlight,
-  TouchableWithoutFeedback,
+  TouchableWithoutFeedback
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { RectButton, TouchableOpacity } from "react-native-gesture-handler";
@@ -27,7 +27,13 @@ function Login() {
           setModalVisible(false);
         }}
       >
-        <TouchableHighlight style={styles.centeredView} underlayColor="none" onPressOut={() => { setModalVisible(!modalVisible) }}>
+        <TouchableHighlight
+          style={styles.centeredView}
+          underlayColor="none"
+          onPressOut={() => {
+            setModalVisible(!modalVisible);
+          }}
+        >
           <TouchableWithoutFeedback>
             <View style={styles.modalView}>
               <Text style={styles.modalText}>Quem você é?</Text>
@@ -35,7 +41,7 @@ function Login() {
                 style={styles.openButtonMedico}
                 onPress={() => {
                   setModalVisible(!modalVisible);
-                  navigate("signupMedic")
+                  navigate("signupMedic");
                 }}
               >
                 <Text style={styles.textStyle}>Cadastre-se como Médico</Text>

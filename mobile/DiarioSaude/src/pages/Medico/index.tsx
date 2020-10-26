@@ -1,8 +1,18 @@
-import React from "react";
-import { Text } from "react-native";
+import React, { useContext } from "react";
+import { Text, View, Button } from "react-native";
+import styles from "../SignupMedic/styles";
+import { RectButton } from "react-native-gesture-handler";
+import AuthContext from "../../contexts/auth";
 
 function Medico() {
-  return <Text>Tela Medico</Text>;
+  return (
+    <View style={styles.container}>
+      <Text>Medico</Text>
+      <RectButton>
+        <Text>Sair</Text>
+      </RectButton>
+    </View>
+  );
 }
 
 export default Medico;
