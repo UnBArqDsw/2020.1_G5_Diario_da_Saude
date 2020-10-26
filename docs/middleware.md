@@ -18,7 +18,7 @@
 
 ### Detalhes
 
-<p align="justify">&emsp;&emsp;O Middleware implementado tem como principal objetivo o controle de acesso as rotas predefinida, onde cada tipo de usuário, no contexto do projeto "Patient" e "HealthProfessional", tem permissões para enviar ou receber informações, para isso é utilizado um token JWT para a identificação da sessão do usuário e de sua função na aplicação, dessa forma, em toda requisição feita pelo usuário é necessária a presença do header "access-control", para que assim possa ser dada ou não a permissão de acesso à rota desejada.</p>
+<p align="justify">&emsp;&emsp;O Middleware implementado tem como principal objetivo o controle de acesso as rotas predefinida, onde cada tipo de usuário, no contexto do projeto "Patient" e "HealthProfessional", tem permissões para enviar ou receber informações. Para isso é utilizado um token JWT para a identificação da sessão do usuário e de sua função na aplicação. Dessa forma, em toda requisição feita pelo usuário é necessária a presença do header "access-control", para que assim possa ser dada ou não a permissão de acesso à rota desejada.</p>
 
 #### Hyperlinks
 
