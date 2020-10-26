@@ -5,7 +5,8 @@
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.2 | Adição da Introdução | [Ian Rocha](https://github.com/IanPSRocha) |
 | 26/10/2020 | 0.2 | Adição do Template Method | [Ian Rocha](https://github.com/IanPSRocha) |
-| 26/10/2020 | 0.2 | Remoção do Template Method e adição do Observer | [Ian Rocha](https://github.com/IanPSRocha) |
+| 26/10/2020 | 0.3 | Remoção do Template Method e adição do Observer | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
+| 26/10/2020 | 0.4 | Adicionando Hyperlinks | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
 
 ## Introdução
 
@@ -33,6 +34,11 @@ dado um contexto. Auxiliam também alterando o tempo de execução que certo alg
 
 #### Aplicação no Projeto
 <p align="justify">&emsp;&emsp;A aplicação Diário da Saúde é completamente feita em javascript, linguagem que mais se beneficia do padrão comportamental Observer. Precisamos mudar as views de acordo com o usuário estar ou não logado, e caso esteje logado, identificar qual usuário.</p>
+
+#### Hyperlinks
+
+* [Observer - Subject](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/contexts/auth.tsx)
+* [Observer - Controller](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/routes/index.tsx)
 
 ## Referências
 
