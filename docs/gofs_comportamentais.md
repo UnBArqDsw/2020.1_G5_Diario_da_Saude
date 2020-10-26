@@ -4,7 +4,7 @@
 |:----:|:------:|:---------:|:---------:|
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.2 | Adição da Introdução | [Ian Rocha](https://github.com/IanPSRocha) |
-<!-- | 26/10/2020 | 0.2 | Adição do Template Method | [Ian Rocha](https://github.com/IanPSRocha) | -->
+| 26/10/2020 | 0.2 | Adição do Template Method | [Ian Rocha](https://github.com/IanPSRocha) |
 
 ## Introdução
 
@@ -25,7 +25,7 @@ dado um contexto. Auxiliam também alterando o tempo de execução que certo alg
 
 <p align="justify">&emsp;&emsp;A seguir, estão descritos somente os padrões aplicados no projeto, escolhidos pelo grupo quanto a contribuição que a aplicação do padrão traria para o desenvolvimento do projeto.</p>
 
-<!-- ## Template Method
+## Template Method
 
 #### Definição
 <p align="justify">&emsp;&emsp;Definir a ordem na qual determinados passos devem ser realizados na resolução de um problema e permitir que
@@ -38,4 +38,4 @@ esses passos possam ser realizados de formas diferentes de acordo com a situaç�
 ## Referências
 
 Template Method - dofactory. Disponível em: https://www.dofactory.com/javascript/design-patterns/template-method. Acesso em: 26 Outubro 2020.
-Template Method Design Pattern - SourceMaking. Disponível em: https://sourcemaking.com/design_patterns/template_method. Acesso em: 26 Outubro 2020. -->
+Template Method Design Pattern - SourceMaking. Disponível em: https://sourcemaking.com/design_patterns/template_method. Acesso em: 26 Outubro 2020.
