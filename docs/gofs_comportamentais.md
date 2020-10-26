@@ -31,7 +31,8 @@ dado um contexto. Auxiliam também alterando o tempo de execução que certo alg
 #### Definição
 <p align="justify">&emsp;&emsp;O padrão Observer oferece um modelo no qual os objetos tem um evento e são notificados quando o evento ocorre. Esse padrão é a base da programação orientada a eventos, incluindo JavaScript. O padrão Observer facilita um bom design orientado a objetos e promove uma fácil integração. O paradigma de eventos e do manipulador de eventos em JavaScript é a manifestação do Observer.</p>
 
-
+#### Aplicação no Projeto
+<p align="justify">&emsp;&emsp;A aplicação Diário da Saúde é completamente feita em javascript, linguagem que mais se beneficia do padrão comportamental Observer. Precisamos mudar as views de acordo com o usuário estar ou não logado, e caso esteje logado, identificar qual usuário.</p>
 
 ## Referências
 
