@@ -25,6 +25,14 @@
 
 <p align="justify">&emsp;&emsp;A criação de objetos é uma das atividades mais comuns em um sistema orientado a objetos. Consequentemente, é útil ter um princípio geral para a atribuição de responsabilidades de criação. Sendo essas responsabilidades bem atribuídas, o projeto apresentará acoplamento baixo, mais clareza, encapsulamento e reutilização.</br>&emsp;&emsp;Dessa forma, o padrão Criador busca determinar quem deve ser responsável pela criação de uma nova instância de uma classe. No projeto, o princípio Creator foi seguido através da aplicação do GoF Criacional <a href='https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#gofs_criacionais/#factory-method'>Factory Method</a>.</p>
 
+## Especialista
+
+<p align="justify">&emsp;&emsp;Quando temos uma relação de composição (todo-parte) entre duas entidades, o padrão criador atribui a responsabilidade de instanciação de partes para a classe todo. Assim, a classe todo é especialista em termos de criação de suas partes. Isso se justifica pois, na relação de composição o todo não existe sem suas partes sendo responsável por intanciar suas partes ao ser ele mesmo instanciado. Ao aplicar o GRASP Criador, o Especialista também foi aplicado no sentido em que o Criador é um Especialista na criação de instâncias.</p>
+
+<p align="justify">&emsp;&emsp;O GRASP Especialista é um padrão que preocupa-se em atribuir responsabilidades para a entidade mais especialista em um dado aspecto do sistema, não apenas na criação de instâncias. Devemos perguntar quem é a melhor entidade para realizar para realizar determinada responsabilidade recorrente no sistema.</p>
+
+<p align="justify">&emsp;&emsp;No Diário da Saúde, podemos observar no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_classes/">Diagrama de Classes</a> uma relação de todo-parte entre as classes Grupo e Forms sendo uma relação de composição, pois os formulários compõem os grupos de acompanhamento que não podem existir sem esses formulários, já que a intenção dos grupos é acompanhar o estado de saúde dos pacientes que respondem seus respectivos formulários para indicar sua condição naquele dia.</p>
+
 ## Referência
 
 1. Craig, L. <b>Utilizando UML e Padrões</b>. Grupo A, 2011. 9788577800476. Disponível em: <a>https://integrada.minhabiblioteca.com.br/#/books/9788577800476/</a>. Acesso em: 22 Outubro 2020.
