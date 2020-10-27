@@ -7,6 +7,7 @@
 | 24/10/2020 | 0.3 | Adição do tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
 | 25/10/2020 | 0.4 | Adição do diagrama e hyperlinks no tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
 | 25/10/2020 | 0.5 | Adição de referências em relação ao padrão da tecnologia utilizada | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
+| 26/10/2020 | 0.6 | Adicionando código | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan)|
 
 ## Introdução
 
@@ -35,13 +36,194 @@
 **Diagrama**
 [![composite_diagram](./img/composite_diagram.png)](./img/composite_diagram.png)
 
-**Hyperlinks**
+**Código**
 
 * [Interface - Question](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/Question.model.js)
+
+```
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
+
+const QuestionSchema = new Schema({
+
+})
+
+class QuestionClass{
+
+  static getAnswer(){}
+
+  setAnswer(){};
+
+}
+
+QuestionSchema.loadClass(QuestionClass)
+
+const QuestionModel = mongoose.model('Question', QuestionSchema);
+
+module.exports = {QuestionModel, QuestionClass} 
+```
+</br>
+
 * [Leaf - BloodPressure](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/BloodPressure.model.js)
+
+```
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const Question = require('../Question.model')
+const Patient = require('../patient.model')
+
+const BloodPressureSchema = new Schema({
+  answer: {type: {diastolic: Number, systolic:Number}},
+  patient: {type: Number, ref: Patient},
+  date: {type:Date, require:true}
+})
+
+class BloodPressureClass extends Question.QuestionClass{
+  getAnswerByPatient(cpf, callback){
+    this.find({patient:cpf}, (err, answers) => {
+      if(err) throw err;
+
+      callback(err, answer)
+    })
+  }
+
+  static setAnswer(glucose, callback){
+    this.save({
+      answer: glucose.answer,
+      patient: glucose.cpf,
+      date: new Date()
+    })
+
+  }
+
+} 
+
+BloodPressureSchema.loadClass(BloodPressureClass);
+
+module.exports = Question.QuestionModel.discriminator('BloodPressure', BloodPressureSchema);
+```
+</br>
+
 * [Leaf - Glucose](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/Glucose.model.js)
+
+```
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const Question = require('../Question.model')
+const Patient = require('../patient.model')
+
+const GlucoseSchema = new Schema({
+  answer: {type: Number},
+  patient: {type: Number, ref: Patient},
+  date: {type:Date, require:true}
+})
+
+class GlucoseClass extends Question.QuestionClass{
+
+  static getAnswer(cpf, callback){
+    this.find({patient:cpf}, (err, answers) => {
+      if(err) throw err;
+
+      callback(err, answers)
+    })
+  }
+
+  static setAnswer(glucose, callback){
+    this.save({
+      answer: glucose.answer,
+      patient: glucose.cpf,
+      type: "GLUCOSE",
+      date: new Date()
+    })
+
+  }
+
+} 
+
+GlucoseSchema.loadClass(GlucoseClass);
+
+module.exports = Question.QuestionModel.discriminator('Glucose', GlucoseSchema);
+```
+</br>
+
 * [Leaf - WellBeing](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/WellBeing.model.js)
+
+```
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const Question = require('../Question.model')
+const Patient = require('../patient.model')
+
+const WellBeingSchema = new Schema({
+  answer: {type: String, enum:["Y", "N", ""]},
+  patient: {type: Number, ref: Patient},
+  date: {type:Date, require:true}
+})
+
+class WellBeingClass extends Question.QuestionClass{
+  getAnswerByPatient(cpf, callback){
+    this.find({patient:cpf}, (err, answers) => {
+      if(err) throw err;
+
+      callback(err, answer)
+    })
+  }
+
+  static setAnswer(glucose, callback){
+    this.save({
+      answer: glucose.answer,
+      patient: glucose.cpf,
+      date: new Date()
+    })
+
+  }
+
+} 
+
+WellBeingSchema.loadClass(WellBeingClass);
+
+module.exports = Question.QuestionModel.discriminator('WellBeing', WellBeingSchema);
+```
+</br>
+
 * [Composite - Form](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/Form.model.js)
+
+```
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
+const Question = require('./Question.model')
+const Group = require('./group.model')
+
+const FormSchema = new Schema({
+  questions: [{type: mongoose.Schema.Types.ObjectId, ref: 'Question'}],
+  groupId: {type: mongoose.Schema.Types.ObjectId, ref: 'Group',require:true}
+})
+
+class FormClass extends Question.QuestionClass{
+
+  static addQuestion(form, callback){
+    console.log("ID: ", form.id)
+    console.log("QUESTION: ", form.question_id)
+    
+    this.update({_id:form.id}, { $addToSet: {questions: [form.question_id]}}, function(err, result) {
+      if(err)throw err
+      callback(err, result)
+    })
+  }
+
+  static rmQuestion(form, callback){
+    this.update({_id: form.id}, { $pullAll: {questions: [form.question_id]}}, (err, result) {
+      if(err) throw err
+
+      callback(err, result)
+    })
+  }
+}
+
+FormSchema.loadClass(FormClass);
+
+module.exports = Question.QuestionModel.discriminator('Form', FormSchema);
+```
 
 #### Motivação
 

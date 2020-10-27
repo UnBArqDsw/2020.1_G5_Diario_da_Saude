@@ -15,8 +15,8 @@
 ## Introdução
 
 <p align="justify">&emsp;&emsp;Padrões de projeto comportamentais
-auxiliam bastante quando é necessário utilizar vários algoritmos diferentes cada um para algum contexto. Permitem, nesse caso, usar mecanismos/recursos para facilitar tanto a incorporação de novos algoritmos para novos contextos quanto a seleção de qual algoritmo usar
-dado um contexto. Auxiliam também alterando o tempo de execução que certo algoritmo tenha. Os principais GOF's estruturais são:</p>
+auxiliam bastante quando é necessário utilizar vários algoritmos diferentes, cada um para algum contexto. Permitem, nesse caso, usar mecanismos/recursos para facilitar tanto a incorporação de novos algoritmos para novos contextos, quanto a seleção de qual algoritmo usar
+dado um contexto. Auxiliam também alterando o tempo de execução que certo algoritmo tenha. Os principais GOF's comportamentais são:</p>
 
 - Command;
 - Iterator;
@@ -39,13 +39,15 @@ dado um contexto. Auxiliam também alterando o tempo de execução que certo alg
 
 #### Aplicação no Projeto
 
-<p align="justify">&emsp;&emsp;A aplicação Diário da Saúde é completamente feita em javascript, linguagem que mais se beneficia do padrão comportamental Observer. Precisamos mudar as views de acordo com o usuário estar ou não logado, e caso esteje logado, identificar qual usuário.</p>
+<p align="justify">&emsp;&emsp;A aplicação Diário da Saúde é completamente feita em javascript, linguagem que mais se beneficia do padrão comportamental Observer. Precisamos mudar as views de acordo com o usuário estar ou não logado e, caso esteje logado, identificar qual usuário.</p>
 
 #### Diagrama
 
 [![Observer_0.1](./img/Observer.png)](./img/Observer.png)
 
-#### Hyperlinks
+#### Código
+
+- [Observer - Subject](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/contexts/auth.tsx)
 
 ```tsx
 import React, { createContext, useState, useEffect } from "react";
@@ -111,8 +113,9 @@ export const AuthProvider: React.FC = ({ children }) => {
 
 export default AuthContext;
 ```
+</br>
 
-- [Observer - Subject](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/contexts/auth.tsx)
+- [Observer - Controller](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/routes/index.tsx)
 
 ```tsx
 import React, { useContext } from "react";
@@ -140,9 +143,7 @@ const Routes: React.FC = () => {
 export default Routes;
 ```
 
-- [Observer - Controller](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/routes/index.tsx)
-
 ## Referências
 
-Observer - dofactory. Disponível em: https://www.dofactory.com/javascript/design-patterns/observer. Acesso em: 26 Outubro 2020.
-Observer Design Pattern. Disponível em: https://sourcemaking.com/design_patterns/observer. Acesso em: 26 Outubro 2020.
+* Observer - dofactory. Disponível em: <a>https://www.dofactory.com/javascript/design-patterns/observer</a>. Acesso em: 26 Outubro 2020.
+* Observer Design Pattern. Disponível em: <a>https://sourcemaking.com/design_patterns/observer</a>. Acesso em: 26 Outubro 2020.

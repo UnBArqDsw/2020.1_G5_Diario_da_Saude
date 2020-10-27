@@ -51,6 +51,7 @@ module.exports = {
   verifyToken
 }
 ```
+</br>
 
 * [Autenticação Cadastro](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/middlewares/verifySignUp.js)
 
