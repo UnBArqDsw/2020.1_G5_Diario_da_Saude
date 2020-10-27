@@ -7,6 +7,7 @@
 | 26/10/2020 | 0.3 | Adição de hyperlink para Factory Method | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.4 | Adição do Especialista | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 26/10/2020 | 0.5 | Consertando hyperlinks | [Murilo Loiola](https://github.com/murilo-dan) |
+| 26/10/2020 | 1.0 | Adição do tópico Controladora | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Introdução
 
@@ -33,6 +34,12 @@
 <p align="justify">&emsp;&emsp;O GRASP Especialista é um padrão que preocupa-se em atribuir responsabilidades para a entidade mais especialista em um dado aspecto do sistema, não apenas na criação de instâncias. Devemos perguntar quem é a melhor entidade para realizar para realizar determinada responsabilidade recorrente no sistema.</p>
 
 <p align="justify">&emsp;&emsp;No Diário da Saúde, podemos observar no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Diagrama de Classes</a> uma relação de todo-parte entre as classes Grupo e Forms, sendo essa uma relação de composição, pois os formulários compõem os grupos de acompanhamento que não podem existir sem esses formulários, já que a intenção dos grupos é acompanhar o estado de saúde dos pacientes que respondem seus respectivos formulários para indicar sua condição naquele dia.</p>
+
+## Controladora
+
+<p align="justify">&emsp;&emsp;Para obter um controle melhor sobre os formulários que contribuem para o funcionamento íntegro do Diário da Saúde, é necessário que haja a recuperação das questões, bem como respostas, referentes a cada formulário como é definido no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Diagrama de Classes</a>. Para isso, implementamos controladoras para distribuir a carga de encontrar resposta do formulário cadastradas no banco de dados, ou seja, cada questão recupera a resposta do formulário relacionada a sí, para então ter o conjunto de respostas do usuário em questão.</p>
+
+<p align="justify">&emsp;&emsp;Essa aplicação de padrão corrobora para uma maior coesão do projeto e uma menor complexidade para o formulário, visto que não terá que fazer buscas em todas as classes de questões. Esse padrão pôde ser realizado pela utilização do [GoF Estrutural](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#gofs_estruturais/) que especializou cada tipo de questão existente no projeto, e, dessa forma, as controladoras poderam ser aplicadas para assistir no desempenho de buscas do formulário</p>
 
 ## Referência
 
