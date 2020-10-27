@@ -6,10 +6,11 @@
 | 25/10/2020 | 0.2 | Adição da Introdução | [Rodrigo Dadamos](https://github.com/Rdadamos)|
 | 26/10/2020 | 0.3 | Adição do Factory Method com definição e motivação | [Rodrigo Dadamos](https://github.com/Rdadamos)|
 | 26/10/2020 | 0.4 | Adição de Referências | [Rodrigo Dadamos](https://github.com/Rdadamos)|
+| 26/10/2020 | 0.4 | Adição do tópico 'Aplicação'| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 
 ## Introdução
 
-<p align="justify">&emsp;&emsp;De acordo com GAMMA et al. no livro <i>Design Patterns: Elements of Reusable Object-Oriented Software</i>, padrões de projeto são soluções consolidadas para um problema recorrente no desenvolvimento e manutenção de softwares orientados a objeto. A proposta é utilizar uma solução padronizada, consolidada, validada e testada pela comunidade para um problema recorrente ao longo do desenvolvimento e manutenção do software. Considerando o princípio de encapsulamento, a complexidade de um sistema deve ser isolada quando possível. Em um sistema orientado a objeto, a criação de objetos não é uma tarefa fácil e lida com dois principais problemas: definir qual classe concreta deve criar o objeto, e definir como os objetos se relacionam com outros objetos do sistema. Dessa maneira, os GOF's criacionais apontam soluções padronizadas para esses problemas. Os principais GOF's estruturais são:</p>
+<p align="justify">&emsp;&emsp;De acordo com GAMMA et al. no livro <i>Design Patterns: Elements of Reusable Object-Oriented Software</i>, padrões de projeto são soluções consolidadas para um problema recorrente no desenvolvimento e manutenção de softwares orientados a objeto. A proposta é utilizar uma solução padronizada, consolidada, validada e testada pela comunidade para um problema recorrente ao longo do desenvolvimento e manutenção do software. Considerando o princípio de encapsulamento, a complexidade de um sistema deve ser isolada quando possível. Em um sistema orientado a objeto, a criação de objetos não é uma tarefa fácil e lida com dois principais problemas: definir qual classe concreta deve criar o objeto, e definir como os objetos se relacionam com outros objetos do sistema. Dessa maneira, os GOF's criacionais apontam soluções padronizadas para esses problemas. Os principais GOF's criacionais são:</p>
 
 * Factory Method;
 * Abstract Factory;
@@ -28,6 +29,10 @@
 #### Motivação
 
 <p align="justify">&emsp;&emsp;O Diário da Saúde permite tanto aos pacientes quanto aos profissionais de saúde gerarem relatórios. Esses relatórios possuem informações sobre o paciente e as respostas aos formulários aplicados em seus grupos. Os pacientes podem gerar somente relatórios individuais sobre eles mesmos, e os profissionais de saúde podem gerar relatórios individuais de pacientes pertencentes aos seus grupos de acompanhamento ou um relatório geral sobre um determinado grupo que ele acompanha. Dessa forma, há uma hierarquia de classes para o Relatório responsável pela instanciação de objetos nas classes filhas relatório individual e relatório do grupo, além de outras responsabilidades necessaŕias para a criação do relatórios, como consultas e outras partes comportamentais. Essa hierarquia é constantemente acessada e requisitada para criação de mais de um tipo de relatório pelas classes do Paciente e do Profissional de Saúde representando um possível gargalo para o sistema. O Factory Method, ao criar um espelho dessa hierarquia, delega a instaciação dos relatórios para essa hierarquia espelho que é dedicada somente a criação de instâncias.</p>
+
+### Aplicação no projeto
+<p align="justify">&emsp;&emsp;Levando em consideração a motivação descrita acima, o padrão foi aplicado com o desenvolvimento de quatro papeis dentro do código:  criador base, criador especializado, produto abstrato e produto concreto. Para o produto abstrato nos temos a classe <i>Report</i>, que define o objeto base para as suas generalizações. Já as classes <i>GroupReport</i> e <i>PatientReport</i> fazem o papel dos produtos concretos, tendo como base a classe <i>Report</i>. Para os criadores foram implementados as classes GrouReportPage e PatientReportPage, que atuam na construção de relatórios de pacientes e grupos, onde essas classes são especializadas e derivam do criador base.</p>
+
 
 ## Referência
 
