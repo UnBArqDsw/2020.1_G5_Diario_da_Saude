@@ -15,6 +15,7 @@ nav:
     - Ata 8 (23/09/2020): ata_8.md
     - Ata 9 (25/09/2020): ata_9.md
     - Ata 10 (26/09/2020): ata_10.md
+    - Ata 11 (28/09/2020): ata_11.md
   - Desenho de Software (Base):
     - Módulo Projeto não Orientado a Abordagens Específicas:
       - 5W2H: 5w2h.md
@@ -55,6 +56,14 @@ nav:
       - DE-R: der.md
       - Diagrama Lógico: dl.md
       - Atualizações: iniciativas_extras_entrega2.md
+  - Desenho de Software (Padrões de Projeto):
+    - Módulo Padrões de Projeto GRASPs: grasps.md
+    - Módulo Padrões de Projeto GoFs Criacionais: gofs_criacionais.md
+    - Módulo Padrões de Projeto GoFs Estruturais: gofs_estruturais.md
+    - Módulo Padrões de Projeto GoFs Comportamentais: gofs_comportamentais.md
+    - Módulo Padrões de Projeto Extras:
+      - Middleware: middleware.md
+      - Atualizações: iniciativas_extras_entrega3.md
 
 repo_url: https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude
 extra:
