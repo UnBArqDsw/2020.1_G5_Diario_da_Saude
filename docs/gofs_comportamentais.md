@@ -10,6 +10,7 @@
 | 26/10/2020 |  0.3   | Remoção do Template Method e adição do Observer | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
 | 26/10/2020 |  0.4   |             Adicionando Hyperlinks              | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
 | 26/10/2020 |  0.5   |          Adicionando Diagrama Observer          | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
+| 26/10/2020 |  0.6   |            Adicionando Código Origem            | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
 
 ## Introdução
 
@@ -46,7 +47,99 @@ dado um contexto. Auxiliam também alterando o tempo de execução que certo alg
 
 #### Hyperlinks
 
+```tsx
+import React, { createContext, useState, useEffect } from "react";
+import * as auth from "../services/auth";
+import AsyncStorage from "@react-native-community/async-storage";
+
+interface AuthContextData {
+  singed: boolean;
+  user: object | null;
+  loading: boolean;
+  singIn(): Promise<void>;
+  singOut(): void;
+}
+
+const AuthContext = createContext<AuthContextData>({} as AuthContextData);
+
+export const AuthProvider: React.FC = ({ children }) => {
+  const [user, setUser] = useState<object | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    async function loadStorageData() {
+      const storagedUser = await AsyncStorage.getItem("@DiarioSaude:user");
+      const storagedToken = await AsyncStorage.getItem("@DiarioSaude:token");
+
+      if (storagedUser && storagedToken) {
+        setUser(JSON.parse(storagedUser));
+        setLoading(false);
+      }
+    }
+
+    loadStorageData();
+  }, []);
+
+  async function singIn() {
+    const response = await auth.singIn();
+
+    console.log(response);
+
+    setUser(response.user);
+
+    await AsyncStorage.setItem(
+      "@DiarioSaude:user",
+      JSON.stringify(response.user)
+    );
+    await AsyncStorage.setItem("@DiarioSaude:token", response.token);
+  }
+
+  function singOut() {
+    AsyncStorage.clear().then(() => {
+      setUser(null);
+    });
+  }
+
+  return (
+    <AuthContext.Provider
+      value={{ singed: !!user, user, loading, singIn, singOut }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export default AuthContext;
+```
+
 - [Observer - Subject](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/contexts/auth.tsx)
+
+```tsx
+import React, { useContext } from "react";
+import { View, ActivityIndicator } from "react-native";
+
+import AuthContext from "../contexts/auth";
+
+import AppRoutes from "./app.routes";
+import AuthRoutes from "./auth.routes";
+
+const Routes: React.FC = () => {
+  const { singed, loading } = useContext(AuthContext);
+
+  if (loading) {
+    return (
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <ActivityIndicator size="large" color="#666" />
+      </View>
+    );
+  }
+
+  return singed ? <AppRoutes /> : <AuthRoutes />;
+};
+
+export default Routes;
+```
+
 - [Observer - Controller](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/routes/index.tsx)
 
 ## Referências
