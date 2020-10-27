@@ -3,9 +3,8 @@ module.exports = (app) => {
   const pt = require('../controllers/patient.controller')
 
   app.get('/hp/:cpf', hp.details);
-  app.post('/hp', hp.create);
+  app.get('/hp/role/:wanted', hp.getByRole);
 
   app.get('/pt/:cpf', pt.details);
-  app.post('/pt', pt.create)
 
 }

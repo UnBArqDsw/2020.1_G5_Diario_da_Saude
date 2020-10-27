@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
   View,
   Image,
@@ -10,11 +10,21 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { RectButton, TextInput } from "react-native-gesture-handler";
+import { singIn } from "../../services/auth";
+import AuthContext from "../../contexts/auth";
+
 import logo from "../../assets/logo.png";
 import styles from "./styles";
 
 function Login() {
-  const [modalVisible, setModalVisible] = useState(false);
+  const { singed, singIn, user } = useContext(AuthContext);
+
+  console.log(singed);
+  console.log(user);
+
+  async function handleSingIn() {
+    singIn();
+  }
 
   const { navigate } = useNavigation();
 
@@ -38,7 +48,7 @@ function Login() {
         <RectButton
           style={styles.buttonCadastrar}
           onPress={() => {
-            navigate("Medico");
+            handleSingIn();
           }}
         >
           <Text style={styles.textButton}>Login</Text>
