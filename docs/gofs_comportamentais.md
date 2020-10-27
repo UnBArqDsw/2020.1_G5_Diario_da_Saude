@@ -10,7 +10,7 @@
 | 26/10/2020 |  0.4   | Remoção do Template Method e adição do Observer | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
 | 26/10/2020 |  0.5   |             Adicionando Hyperlinks              | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
 | 26/10/2020 |  0.6   |          Adicionando Diagrama Observer          | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
-| 26/10/2020 |  0.7   |            Adicionando Código Origem            | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
+| 26/10/2020 |  1.0   |            Adicionando Código Origem            | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
 
 ## Introdução
 

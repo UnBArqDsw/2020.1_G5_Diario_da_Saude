@@ -7,7 +7,7 @@
 | 26/10/2020 | 0.3 | Adição de hyperlinks | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.4 | Adição de Detalhe | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 26/10/2020 | 0.5 | Adição de Referência | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
-| 26/10/2020 | 0.6 | Adicionando código | [Murilo Loiola](https://github.com/murilo-dan), [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 26/10/2020 | 1.0 | Adicionando código | [Murilo Loiola](https://github.com/murilo-dan), [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Introdução
 

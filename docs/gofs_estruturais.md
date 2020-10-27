@@ -7,7 +7,7 @@
 | 24/10/2020 | 0.3 | Adição do tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
 | 25/10/2020 | 0.4 | Adição do diagrama e hyperlinks no tópico Composite | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
 | 25/10/2020 | 0.5 | Adição de referências em relação ao padrão da tecnologia utilizada | [Gabriel Tiveron](https://github.com/GabrielTiveron)|
-| 26/10/2020 | 0.6 | Adicionando código | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan)|
+| 26/10/2020 | 1.0 | Adicionando código | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan)|
 
 ## Introdução
 

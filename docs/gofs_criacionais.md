@@ -10,7 +10,7 @@
 | 26/10/2020 | 0.6 | Adição dos trechos de código das classes de <i>Report</i>, <i>GroupReport</i> e <i>PatientReport</i>| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 | 26/10/2020 | 0.7 | Adição dos trechos de código das classes de <i>GroupReportPage</i>, <i>PatientReportPage</i> e <i>ReportPage</i>| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 | 26/10/2020 | 0.8 | Adição do diagrama de classes | [Rodrigo Dadamos](https://github.com/Rdadamos)|
-| 26/10/2020 | 0.9 | Adição dos links dos códigos e revisão do documento| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
+| 26/10/2020 | 1.0 | Adição dos links dos códigos e revisão do documento| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 
 ## Introdução
 

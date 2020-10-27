@@ -6,7 +6,7 @@
 | 23/09/2020 | 0.2 | Adição da primeira versão do diagrama de classes | [André Goretti](https://github.com/AGoretti), [Gabriel Tiveron](https://github.com/GabrielTiveron), [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Ian Rocha](https://github.com/IanPSRocha), [Murilo Loiola](https://github.com/murilo-dan), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 28/09/2020 | 1.0 | Adição da segunda versão do diagrama de classes | [André Goretti](https://github.com/AGoretti), [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 26/10/2020 | 1.1 | Adição da versão utilizando GoF's Estruturais | [Gabriel Tiveron](https://github.com/GabrielTiveron), [Murilo Loiola](https://github.com/murilo-dan) |
-| 26/10/2020 | 1.2 | Adição da versão utilizando GoF's Criacionais | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 26/10/2020 | 2.0| Adição da versão utilizando GoF's Criacionais | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Definição
 

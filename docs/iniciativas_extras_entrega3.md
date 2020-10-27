@@ -3,7 +3,7 @@
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
-| 26/10/2020 | 0.1 | Criação do documento e adição de link | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 26/10/2020 | 1.0 | Criação do documento e adição de link | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Documentos atualizados
 
