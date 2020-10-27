@@ -3,7 +3,7 @@ const ReportPage = require('./reportPage.js')
 
 class GroupReportPage extends ReportPage{
 
-    static generatePatientReport(cpf){
+    static createPatientReport(cpf){
         var groupReport = GroupReport.getPatientReportByCPF(cpf)
         return groupReport;
     }

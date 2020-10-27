@@ -3,7 +3,7 @@ const ReportPage = require('./reportPage.js')
 
 class PatientReportPage extends ReportPage{
 
-    static generatePatientReport(){
+    static createPatientReport(){
         var patientReport = PatientReport.getReportByDate(req.reportDate)
         return patientReport;
     }
