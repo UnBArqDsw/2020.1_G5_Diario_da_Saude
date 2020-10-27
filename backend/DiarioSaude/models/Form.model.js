@@ -20,7 +20,13 @@ class FormClass extends Question.QuestionClass{
     })
   }
 
-  //rmQuestion()
+  static rmQuestion(form, callback){
+    this.update({_id: form.id}, { $pullAll: {questions: [form.question_id]}}, (err, result) {
+      if(err) throw err
+
+      callback(err, result)
+    })
+  }
 }
 
 FormSchema.loadClass(FormClass);
