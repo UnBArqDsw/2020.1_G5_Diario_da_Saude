@@ -15,11 +15,11 @@
 ## Diagrama de classes
 
 #### *versão 0.4*
-Aplicando o Padrão Factory Method citado em [GoF's Criacionais](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#gofs_criacionais/)
+Aplicando o Padrão Factory Method citado em [GoF's Criacionais](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/gofs_criacionais/)
 [![diagrama_de_classe_v3](./img/class_diagram_gof_2.png)](./img/class_diagram_gof_2.png)
 
 #### *versão 0.3*
-Aplicando o Padrão Composite citado em [GoF's Estruturais](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#gofs_estruturais/)
+Aplicando o Padrão Composite citado em [GoF's Estruturais](https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/gofs_estruturais/)
 [![diagrama_de_classe_v3](./img/class_diagram_gof_1.png)](./img/class_diagram_gof_1.png)
 
 ##### *versão 0.2*
