@@ -1,0 +1,4 @@
+node_modules
+.env
+.envdb
+/backend/MongoDBData

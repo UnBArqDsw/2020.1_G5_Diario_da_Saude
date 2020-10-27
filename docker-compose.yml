@@ -1,0 +1,65 @@
+version: '3.7'
+services:
+  mobile:
+    container_name: diariosaude-front
+    build: ./mobile/DiarioSaude
+    env_file: .env
+    volumes:
+      - ./mobile/DiarioSaude:/usr/src/app
+      - /usr/src/app/node_modules
+    expose:
+      - 19000
+      - 19001
+      - 19002
+    ports:
+      - 19000:19000
+      - 19001:19001
+      - 19002:19002
+    environment:
+      # - REACT_NATIVE_PACKAGER_HOSTNAME=0.0.0.0
+      - EXPO_DEVTOOLS_LISTEN_ADDRESS=0.0.0.0
+      - EXPO_DEBUG=true
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - db-diariosaude-network
+  backend:
+    container_name: diariosaude-back
+    build: ./backend/DiarioSaude
+    volumes:
+      - ./backend/DiarioSaude:/usr/src/app
+      - /usr/src/app/node_modules
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+    networks:
+      - db-diariosaude-network
+  mongo:
+    image: mongo
+    container_name: diariosaude-db
+    env_file: .envdb
+    restart: always
+    volumes:
+      - ./backend/MongoDBData:/data/db
+    networks:
+      - db-diariosaude-network
+  admin:
+    image: mongo-express
+    container_name: diariosaude-db_admin
+    restart: always
+    ports:
+      - 8081:8081
+    env_file: .envdb
+    environment:
+      ME_CONFIG_MONGODB_PORT: 27017
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    networks:
+      - db-diariosaude-network
+networks:
+    db-diariosaude-network:
+      driver: bridge
