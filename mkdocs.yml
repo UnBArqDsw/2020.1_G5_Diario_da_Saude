@@ -63,6 +63,7 @@ nav:
     - Módulo Padrões de Projeto GoFs Comportamentais: gofs_comportamentais.md
     - Módulo Padrões de Projeto Extras:
       - Middleware: middleware.md
+      - Atualizações: iniciativas_extras_entrega3.md
 
 repo_url: https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude
 extra:
