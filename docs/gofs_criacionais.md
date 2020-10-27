@@ -6,7 +6,8 @@
 | 25/10/2020 | 0.2 | Adição da Introdução | [Rodrigo Dadamos](https://github.com/Rdadamos)|
 | 26/10/2020 | 0.3 | Adição do Factory Method com definição e motivação | [Rodrigo Dadamos](https://github.com/Rdadamos)|
 | 26/10/2020 | 0.4 | Adição de Referências | [Rodrigo Dadamos](https://github.com/Rdadamos)|
-| 26/10/2020 | 0.4 | Adição do tópico 'Aplicação'| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
+| 26/10/2020 | 0.5 | Adição do tópico 'Aplicação'| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
+| 26/10/2020 | 0.6 | Adição dos trechos de código das classes de <i>Report</i>, <i>GroupReport</i> e <i>PatientReport</i>| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 
 ## Introdução
 
@@ -33,6 +34,91 @@
 ### Aplicação no projeto
 <p align="justify">&emsp;&emsp;Levando em consideração a motivação descrita acima, o padrão foi aplicado com o desenvolvimento de quatro papeis dentro do código:  criador base, criador especializado, produto abstrato e produto concreto. Para o produto abstrato nos temos a classe <i>Report</i>, que define o objeto base para as suas generalizações. Já as classes <i>GroupReport</i> e <i>PatientReport</i> fazem o papel dos produtos concretos, tendo como base a classe <i>Report</i>. Para os criadores foram implementados as classes GrouReportPage e PatientReportPage, que atuam na construção de relatórios de pacientes e grupos, onde essas classes são especializadas e derivam do criador base.</p>
 
+### Código
+
+- Report (produto abstrato)
+```javascript
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const ReportSchema = new Schema({
+  reportDate: {type: Date, required: true},
+  reportDescription: {type: String, required: true},
+});
+
+
+class ReportClass{
+
+  static getReportById(_id, callback){
+    return this.findOne({_id:_id}, (err, report) => {
+      if(err) throw err;
+
+      callback(err, report)
+    });
+  }
+  
+}
+
+ReportSchema.loadClass(ReportClass)
+
+const ReportModel = mongoose.model('report', ReportSchema)
+  
+module.exports = {ReportClass, ReportSchema, ReportModel}
+```
+
+- GroupReport (produto concreto)
+```javascript
+const mongoose = require('mongoose'),
+  Schema = mongoose.Schema;
+Report = require('./report.model.js')
+
+var groupReportSchema = new Schema({
+  groupId: [{ type: Schema.Types.ObjectId, ref: "group" }]
+});
+
+class GroupReport extends Report.ReportClass {
+
+  static getPatientReportByGroupId(groupId, callback){
+    return this.findOne({groupId:groupId}, (err, report) => {
+      if(err) throw err;
+
+      callback(err, report)
+    });
+  }
+
+}
+
+groupReportSchema.loadClass(GroupReport);
+
+module.exports = Report.ReportModel.discriminator('groupReport', groupReportSchema);
+```
+
+- PatientReport (produto concreto)
+```javascript
+const mongoose = require('mongoose'),
+  Schema = mongoose.Schema;
+Report = require('./report.model.js')
+
+var patientReportSchema = new Schema({
+  cpf:{type: Number, required: true}
+});
+
+class PatientReport extends Report.ReportClass {
+
+  static getPatientReportByCPF(cpf, callback){
+    return this.findOne({cpf:cpf}, (err, report) => {
+      if(err) throw err;
+
+      callback(err, report)
+    });
+  }
+
+}
+
+patientReportSchema.loadClass(PatientReport);
+
+module.exports = Report.ReportModel.discriminator('patientReport', patientReportSchema);
+```
 
 ## Referência
 
