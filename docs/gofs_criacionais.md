@@ -10,6 +10,7 @@
 | 26/10/2020 | 0.6 | Adição dos trechos de código das classes de <i>Report</i>, <i>GroupReport</i> e <i>PatientReport</i>| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 | 26/10/2020 | 0.7 | Adição dos trechos de código das classes de <i>GroupReportPage</i>, <i>PatientReportPage</i> e <i>ReportPage</i>| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 | 26/10/2020 | 0.8 | Adição do diagrama de classes | [Rodrigo Dadamos](https://github.com/Rdadamos)|
+| 26/10/2020 | 0.9 | Adição dos links dos códigos e revisão do documento| [Gustavo Carvalho](https://github.com/gustavocarvalho1002)|
 
 ## Introdução
 
@@ -42,7 +43,7 @@
 
 #### Código
 
-- Report (produto abstrato)
+- [Report (produto abstrato)](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/report.model.js)
 ```javascript
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
@@ -72,7 +73,7 @@ const ReportModel = mongoose.model('report', ReportSchema)
 module.exports = {ReportClass, ReportSchema, ReportModel}
 ```
 
-- GroupReport (produto concreto)
+- [GroupReport (produto concreto)](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/groupReport.model.js)
 ```javascript
 const mongoose = require('mongoose'),
   Schema = mongoose.Schema;
@@ -99,7 +100,7 @@ groupReportSchema.loadClass(GroupReport);
 module.exports = Report.ReportModel.discriminator('groupReport', groupReportSchema);
 ```
 
-- PatientReport (produto concreto)
+- [PatientReport (produto concreto)](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/patientReport.model.js)
 ```javascript
 const mongoose = require('mongoose'),
   Schema = mongoose.Schema;
@@ -125,7 +126,7 @@ patientReportSchema.loadClass(PatientReport);
 
 module.exports = Report.ReportModel.discriminator('patientReport', patientReportSchema);
 ```
-- PatientReportPage (Criador especializado)
+- [PatientReportPage (Criador especializado)](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/patientReportPage.model.js)
 ```javascript
 const PatientReport = require('../models/patientReport.model.js');
 const ReportPage = require('./reportPage.js')
@@ -141,7 +142,7 @@ class PatientReportPage extends ReportPage{
 
 module.exports = PatientReportPage;
 ```
-- GroupReportPage (Criador especializado)
+- [GroupReportPage (Criador especializado)](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/groupReportPage.model.js)
 ```javascript
 const GroupReport = require('../models/groupReport.model.js');
 const ReportPage = require('./reportPage.js')
@@ -157,7 +158,7 @@ class GroupReportPage extends ReportPage{
 
 module.exports = GroupReportPage;
 ```
-- ReportPage (Criador base)
+- [ReportPage (Criador base)](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/reportPage.model.js)
 ```javascript
 const Report = require('../models/report.model.js');
 

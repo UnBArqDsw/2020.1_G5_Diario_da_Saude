@@ -6,11 +6,11 @@
 | :--------: | :----: | :---------------------------------------------: | :--------------------------------------------------------------------------------------: |
 | 22/10/2020 |  0.1   |              Criação do Documento               |                      [Murilo Loiola](https://github.com/murilo-dan)                      |
 | 26/10/2020 |  0.2   |              Adição da Introdução               |                        [Ian Rocha](https://github.com/IanPSRocha)                        |
-| 26/10/2020 |  0.2   |            Adição do Template Method            |                        [Ian Rocha](https://github.com/IanPSRocha)                        |
-| 26/10/2020 |  0.3   | Remoção do Template Method e adição do Observer | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
-| 26/10/2020 |  0.4   |             Adicionando Hyperlinks              | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
-| 26/10/2020 |  0.5   |          Adicionando Diagrama Observer          | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
-| 26/10/2020 |  0.6   |            Adicionando Código Origem            | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
+| 26/10/2020 |  0.3   |            Adição do Template Method            |                        [Ian Rocha](https://github.com/IanPSRocha)                        |
+| 26/10/2020 |  0.4   | Remoção do Template Method e adição do Observer | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
+| 26/10/2020 |  0.5   |             Adicionando Hyperlinks              | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
+| 26/10/2020 |  0.6   |          Adicionando Diagrama Observer          | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
+| 26/10/2020 |  0.7   |            Adicionando Código Origem            | [Ian Rocha](https://github.com/IanPSRocha), [André Goretti](https://github.com/Agoretti) |
 
 ## Introdução
 
