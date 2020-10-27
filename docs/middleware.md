@@ -5,8 +5,9 @@
 | 22/10/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.2 | Adição do tópico Introdução e Aplicação no projeto | [Murilo Loiola](https://github.com/murilo-dan) |
 | 26/10/2020 | 0.3 | Adição de hyperlinks | [Murilo Loiola](https://github.com/murilo-dan) |
-| 26/10/2020 | 0.4 | Adição de Detalhe | [Gabriel Tiveron](https://github.com/GabrielTiveron)
-| 26/10/2020 | 0.5 | Adição de Referência | [Gabriel Tiveron](https://github.com/GabrielTiveron)
+| 26/10/2020 | 0.4 | Adição de Detalhe | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 26/10/2020 | 0.5 | Adição de Referência | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 26/10/2020 | 0.6 | Adicionando imagens | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -23,7 +24,10 @@
 #### Hyperlinks
 
 * [Autenticação JWT](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/middlewares/authJwt.js);
+[![autenticação_jwt](./img/codigo/middleware_autenticacao.png)](./img/codigo/middleware_autenticacao.png)
+
 * [Autenticação Cadastro](https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/middlewares/verifySignUp.js)
+[![cadastro](./img/codigo/middleware_cadastro.png)](./img/codigo/middleware_cadastro.png)
 
 ### Referência
 
