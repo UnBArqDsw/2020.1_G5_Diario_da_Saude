@@ -39,7 +39,7 @@
 
 <p align="justify">&emsp;&emsp;Para obter um controle melhor sobre os formulários que contribuem para o funcionamento íntegro do Diário da Saúde, é necessário que haja a recuperação das questões, bem como respostas, referentes a cada formulário como é definido no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Diagrama de Classes</a>. Para isso, implementamos controladoras para distribuir a carga de encontrar resposta do formulário cadastradas no banco de dados, ou seja, cada questão recupera a resposta do formulário relacionada a sí, para então ter o conjunto de respostas do usuário em questão.</p>
 
-<p align="justify">&emsp;&emsp;Essa aplicação de padrão corrobora para uma maior coesão do projeto e uma menor complexidade para o formulário, visto que não terá que fazer buscas em todas as classes de questões. Esse padrão pôde ser realizado pela utilização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#gofs_estruturais"/>GoF Estrutural</a> que especializou cada tipo de questão existente no projeto, e, dessa forma, as controladoras poderam ser aplicadas para assistir no desempenho de buscas do formulário</p>
+<p align="justify">&emsp;&emsp;Essa aplicação de padrão corrobora para uma maior coesão do projeto e uma menor complexidade para o formulário, visto que não terá que fazer buscas em todas as classes de questões. Esse padrão pôde ser realizado pela utilização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/gofs_estruturais">GoF Estrutural</a> que especializou cada tipo de questão existente no projeto, e, dessa forma, as controladoras poderam ser aplicadas para assistir no desempenho de buscas do formulário</p>
 
 ## Referência
 
