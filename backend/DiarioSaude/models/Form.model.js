@@ -21,7 +21,7 @@ class FormClass extends Question.QuestionClass{
   }
 
   static rmQuestion(form, callback){
-    this.update({_id: form.id}, { $pullAll: {questions: [form.question_id]}}, (err, result) {
+    this.update({_id: form.id}, { $pullAll: {questions: [form.question_id]}}, (err, result)=> {
       if(err) throw err
 
       callback(err, result)
