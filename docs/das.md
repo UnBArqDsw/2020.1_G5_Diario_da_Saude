@@ -10,4 +10,8 @@
 
 ### Propósito
 
-<p align="justify">&emsp;&emsp;Este documento fornece uma visão arquitetural compreensiva do sistema, utilizando-se de um número de diferentes visões arquiteturais para descrever diferentes aspectos do sistema. Seu propósito é capturar e transmitir as decisões arquiteturais mais importantes que foram realizadas para o sistema.</p>
+<p align="justify">&emsp;&emsp;Este documento fornece uma visão arquitetural abrangente do sistema, utilizando-se de um número de diferentes visões arquiteturais para descrever diferentes aspectos do sistema. Seu propósito é capturar e transmitir as decisões arquiteturais mais importantes que foram tomadas em relação ao sistema.</p>
+
+### Escopo
+
+<p align="justify">&emsp;&emsp;
