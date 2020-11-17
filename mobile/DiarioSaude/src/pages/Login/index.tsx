@@ -19,11 +19,14 @@ import styles from "./styles";
 function Login() {
   const { singed, singIn, user } = useContext(AuthContext);
 
+  const [cpf, setCpf] = useState(0);
+  const [password, setPassword] = useState("");
+
   console.log(singed);
   console.log(user);
 
   async function handleSingIn() {
-    singIn();
+    singIn(cpf, password);
   }
 
   const { navigate } = useNavigation();
@@ -33,12 +36,14 @@ function Login() {
       <Image source={logo} style={styles.logo} />
       <View style={styles.textContainer}>
         <TextInput
+          onChangeText={text => setCpf(parseInt(text))}
           style={styles.textInputUsuario}
           placeholder="CPF"
           maxLength={11}
           keyboardType="number-pad"
         ></TextInput>
         <TextInput
+          onChangeText={text => setPassword(text)}
           style={styles.textInputSenha}
           placeholder="Senha"
           secureTextEntry={true}

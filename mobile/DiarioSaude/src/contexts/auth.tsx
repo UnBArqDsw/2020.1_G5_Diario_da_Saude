@@ -6,7 +6,7 @@ interface AuthContextData {
   singed: boolean;
   user: object | null;
   loading: boolean;
-  singIn(): Promise<void>;
+  singIn(cpf: number, password: string): Promise<void>;
   singOut(): void;
 }
 
@@ -30,21 +30,19 @@ export const AuthProvider: React.FC = ({ children }) => {
     loadStorageData();
   }, []);
 
-  async function singIn() {
-    const response = await auth.singIn();
+  async function singIn(cpf: number, password: string) {
+    const response = await auth.singIn(cpf, password);
 
     console.log(response);
 
-    setUser(response.user);
+    setUser(response);
 
-    await AsyncStorage.setItem(
-      "@DiarioSaude:user",
-      JSON.stringify(response.user)
-    );
-    await AsyncStorage.setItem("@DiarioSaude:token", response.token);
+    await AsyncStorage.setItem("@DiarioSaude:user", JSON.stringify(response));
+    await AsyncStorage.setItem("@DiarioSaude:token", response.accessToken);
   }
 
   function singOut() {
+    // console.log(user);
     AsyncStorage.clear().then(() => {
       setUser(null);
     });
