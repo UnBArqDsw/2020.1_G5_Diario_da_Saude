@@ -10,9 +10,10 @@ const PersonSchema = new Schema({
 class PersonClass{
 
   static getPerson(cpf, callback){
-    return this.findOne({cpf:cpf}, (err, user) => {
-      if(err) throw err;
-
+    this.findOne({cpf:cpf}, (err, user) => {
+      console.log("Entrei aqui ", user)
+      if(err) console.log(err);
+      
       callback(err, user)
     });
   }
