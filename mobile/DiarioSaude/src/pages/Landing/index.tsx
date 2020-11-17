@@ -50,6 +50,7 @@ function Login() {
                 style={styles.openButtonPaciente}
                 onPress={() => {
                   setModalVisible(!modalVisible);
+                  navigate("signupPacient");
                 }}
               >
                 <Text style={styles.textStyle}>Cadastre-se como Paciente</Text>
