@@ -17,10 +17,11 @@ exports.create = function (req, res, next) {
   })
 };
 
-exports.details = function (req, res, next) {
+exports.details = (req, res, next) => {
   console.log(`DETAILS: ${req.params.cpf}`)
-  HealthProfessional.getPerson({cpf:req.params.cpf}, function (err, user) {
-    if (err) return next(err);
+  HealthProfessional.getPerson(req.params.cpf, function (err, user) {
+    if (err) res.json({status: 500, message: err});
+    else if (!user) res.json({status: 400, message: "Not Found"})
     res.send(user);
   })
 };
