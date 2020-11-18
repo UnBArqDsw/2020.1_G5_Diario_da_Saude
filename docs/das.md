@@ -11,6 +11,7 @@
 | 18/11/2020 | 0.6 | Adição do tópico de Metas e Restrições Arquiteturais | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.7 | Adição do tópico de Visão de Casos de Uso | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.8 | Adição do tópico de Visão Lógica | [Murilo Loiola](https://github.com/murilo-dan) |
+| 18/11/2020 | 0.9 | Adição do tópico de Visão de Dados | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -26,7 +27,7 @@
 
 ### Visão Geral
 
-<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
+<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica e Visão de Dados. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
 
 ## Representação Arquitetural
 
@@ -40,7 +41,7 @@
 
 #### Front-End
 
-* <p align="justify"><strong>Node.js</strong>: é um ambiente de execução JavaScript <i>server-side</i>, sem dependência com navegadores web. Sua utilização apresenta vantagens como alto fator de escalabilidade, taxa de transferência e flexibilidade</p>
+* <p align="justify"><strong>Node.js</strong>: é um ambiente de execução JavaScript <i>server-side</i>, sem dependência com navegadores web. Sua utilização apresenta vantagens como alto fator de escalabilidade, taxa de transferência e flexibilidade.</p>
 
 #### Back-End
 
@@ -136,6 +137,18 @@
 * <p align="justify"><i><strong>Report</i></strong>: a classe <i>Report</i> representa os relatórios individuais ou gerais.
 
 #### Diagrama de Pacotes
+
+## Visão de Dados
+
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema. Para a descrição do comportamento das entidades do sistema, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a>. Para definir as regras de negócio entre cada tabela armazenada no banco de dados, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.</p>
+
+#### DE-R
+
+[![diagrama_entidade_relacionamento](./img/diagrama_entidade_relacionamento.png)](./img/diagrama_entidade_relacionamento.png)
+
+#### Diagrama Lógico
+
+[![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png)
 
 ## Tamanho e Performance
 
