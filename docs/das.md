@@ -9,6 +9,7 @@
 | 17/11/2020 | 0.4 | Adição do tópico de Visão Geral na Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.5 | Adição do tópico de Tecnologias | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.6 | Adição do tópico de Metas e Restrições Arquiteturais | [Murilo Loiola](https://github.com/murilo-dan) |
+| 18/11/2020 | 0.7 | Adição do tópico de Visão de Casos de Uso | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -77,9 +78,41 @@
 * UC04 - Visualizar informações do grupo
 * **UC05 - Responder formulário**
 * UC06 - Editar perfil
+* **UC07 - Gerenciar pacientes**
+* UC08 - Adicionar pacientes
+* UC09 - Excluir pacientes
+* **UC10 - Gerar relatório**
+* UC11 - Gerar relatório individual
+* UC12 - Gerar relatório geral
+* **UC13 - Criar grupo**
+* **UC14 - Criar formulário**
+* UC15 - Escolher perguntas
 
+</br>
+
+#### Casos de uso - Paciente
 [![diagrama_case_de_uso_paciente](./img/patient_use_case.png)](./img/patient_use_case.png)
-<div align="center">Figura 1: diagrama dos casos de uso para o autor "paciente"</div>
+
+#### Casos de uso - Profissional da Saúde
+[![diagrama_case_de_uso_profissional_da_saude](./img/health_professional_use_case.png)](./img/health_professional_use_case.png)
+
+#### Descrição dos casos de uso significativos
+
+* <p align="justify">UC01: este caso de uso ocorre quando o usuário realiza o cadastro ou login no sistema. Como há permanência de dados, o cadastro precisa ser realizado somente uma vez para cada usuário. É importante notar que o paciente e o profissional da saúde compartilham este caso de uso, sendo necessário a diferenciação (realizada pelo próprio usuário) para qual tipo de ator a conta se refere durante o cadastro.</p>
+
+* <p align="justify">UC02: este caso de uso ocorre assim que o usuário loga no aplicativo. A tela inicial apresenta a lista de grupos aos quais o usuário pertence (no caso de paciente) ou que o usuário possui (no caso de profissional da saúde).
+
+* <p align="justify">UC03: este caso de uso ocorre quando o usuário seleciona algum grupo específico da lista de grupos. Serão apresentadas informações do grupo e diferentes ações a serem tomadas, de acordo com o tipo de usuário.</p>
+
+* <p align="justify">UC05: este caso de uso é exclusivo para o ator paciente e consiste em responder o formulário de determinado grupo. É importante notar que é possível responder o formulário tanto a partir da lista de grupos, quanto a partir da seleção de um grupo específico.</p>
+
+* <p align="justify">UC07: este caso de uso é exclusivo para o ator profissional da saúde e consiste em gerenciar os pacientes de um grupo qualquer. É possível adicionar ou remover pacientes.</p>
+
+* <p align="justify">UC10: este caso de uso é exclusivo para o ator profissional da saúde e consiste em gerar um relatório dos dados obtidos a partir dos formulários. É possível gerar um relatório geral do grupo ou selecionar um paciente específico para obter um reltório individual.</p>
+
+* <p align="justify">UC13: este caso de uso é exclusivo para o ator profissional da saúde e consiste em criar um novo grupo. Não é possível criar um grupo sem adicionar um formulário.</p>
+
+* <p align="justify">UC14: este caso de uso é exclusivo para o ator profissional da saúde e consiste em criar o formulário de um grupo. O formulário é customizável a partir de uma gama de questões pré-existentes.</p>
 
 ## Visão Lógica
 
