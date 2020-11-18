@@ -23,3 +23,25 @@
 ### Visão Geral
 
 <p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
+
+## Representação Arquitetural
+
+<p align="justify">&emsp;&emsp;Este documento apresenta a arquitetura como uma série de visões: Visão de Casos de Uso, Visão Lógica. Essas visões são descritas e detalhadas através de diagramas UML (<i>Unified Modeling Language</i>) acompanhados de descrições curtas.</p>
+
+### Visão Geral
+
+### Teconlogias
+
+#### Front-End
+
+* Javascript:
+
+* Node Js:
+
+#### Back-End
+
+* React Native:
+
+#### Banco de Dados
+
+* 
