@@ -8,6 +8,7 @@
 | 16/11/2020 | 0.3 | Adição do tópico de Escopo | [Murilo Loiola](https://github.com/murilo-dan) |
 | 17/11/2020 | 0.4 | Adição do tópico de Visão Geral na Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.5 | Adição do tópico de Tecnologias | [Murilo Loiola](https://github.com/murilo-dan) |
+| 18/11/2020 | 0.6 | Adição do tópico de Metas e Restrições Arquiteturais | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -31,7 +32,9 @@
 
 ### Visão Geral
 
-### Teconlogias
+*Inserir diagrama representando macro níveis do sistema.*
+
+### Tecnologias
 
 #### Front-End
 
@@ -43,13 +46,26 @@
 
 #### Banco de Dados
 
-* <p align="justify"><strong>MongoDB</strong>: é um programa de banco de dados não relacional. Utiliza documentos semelhantes ao JSON par organizar os dados, oferecendo alta variedade e flexibilidade.</p>
+* <p align="justify"><strong>MongoDB</strong>: é uma ferramenta de banco de dados não relacional. Utiliza documentos semelhantes ao JSON par organizar os dados, oferecendo alta variedade e flexibilidade.</p>
 
 #### Outros
 
 * <p align="justify"><strong>Docker</strong>: é uma ferramenta que utiliza virtualização de SO para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e possuem seus prórpios softwares, bibliotecas e arquivos de configuração. Está sendo utilizado tanto no back-end quanto no front-end, com o objetivo de facilitar o desenvolvimento em grupo.</p>
 
 ## Metas e Restrições Arquiteturais
+
+### Restrições
+
+* É necessário ter conexão com a Internet para utilizar o aplicativo;
+* A aplicação oferecerá suporte para Android e iOS;
+* O escopo proposto deve ser terminado até a data estipulada para entrega;
+* O software deve ser desenvolvido utilizando as tecnologias mencionadas anteriormente;
+
+### Metas
+
+* **Usabilidade**: o software deve ser de fácil utilização, com foco em aprendibilidade e simplicidade, buscando atender ao público (maioria de idade avançada) para o qual o software está sendo desenvolvido;
+* **Segurança**: o software deve garantir a segurança dos dados dos usuários.
+* **Manutenibilidade**: o software deve ser de fácil modificação posterior a finalização do trabalho, facilitando continuação;
 
 ## Visão de Casos de Uso
 
