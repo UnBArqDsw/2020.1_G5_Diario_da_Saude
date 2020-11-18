@@ -69,7 +69,23 @@
 
 ## Visão de Casos de Uso
 
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição da visualização dos casos de uso da arquitetura de software. Aqui são descritos cenários e/ou casos de uso que representam uma funcionalidade significativa para o sistema.</br>&emsp;&emsp;Os casos de uso deste sistema estão listados abaixo. Aqueles destacados em <strong>negrito</strong> possuem impacto significativo na arquitetura e são descritos posteriormente neste mesmo tópico.</p>
+
+* **UC01 - Cadastro/Login**
+* **UC02 - Visualizar lista de grupos**
+* **UC03 - Acessar grupo**
+* UC04 - Visualizar informações do grupo
+* **UC05 - Responder formulário**
+* UC06 - Editar perfil
+
+[![diagrama_case_de_uso_paciente](./img/patient_use_case.png)](./img/patient_use_case.png)
+<div align="center">Figura 1: diagrama dos casos de uso para o autor "paciente"</div>
+
 ## Visão Lógica
+
+### Visão Geral
+
+<p align="justify">&emsp;&emsp;</p>
 
 ## Tamanho e Performance
 
