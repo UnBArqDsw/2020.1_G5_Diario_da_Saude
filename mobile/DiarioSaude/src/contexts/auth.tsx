@@ -4,6 +4,7 @@ import AsyncStorage from "@react-native-community/async-storage";
 
 interface AuthContextData {
   singed: boolean;
+  pacient: boolean;
   user: object | null;
   loading: boolean;
   singIn(cpf: number, password: string): Promise<void>;
@@ -15,6 +16,7 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 export const AuthProvider: React.FC = ({ children }) => {
   const [user, setUser] = useState<object | null>(null);
   const [loading, setLoading] = useState(false);
+  const [pacient, setPacient] = useState(false);
 
   useEffect(() => {
     async function loadStorageData() {
@@ -37,6 +39,10 @@ export const AuthProvider: React.FC = ({ children }) => {
 
     setUser(response);
 
+    if (response.roles !== "HEALTHPROFESSIONAL") {
+      setPacient(true);
+    }
+
     await AsyncStorage.setItem("@DiarioSaude:user", JSON.stringify(response));
     await AsyncStorage.setItem("@DiarioSaude:token", response.accessToken);
   }
@@ -45,12 +51,13 @@ export const AuthProvider: React.FC = ({ children }) => {
     // console.log(user);
     AsyncStorage.clear().then(() => {
       setUser(null);
+      setPacient(false);
     });
   }
 
   return (
     <AuthContext.Provider
-      value={{ singed: !!user, user, loading, singIn, singOut }}
+      value={{ singed: !!user, user, loading, singIn, singOut, pacient }}
     >
       {children}
     </AuthContext.Provider>

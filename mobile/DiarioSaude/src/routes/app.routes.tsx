@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
 import Medico from "../pages/Medico";
+import Pacient from "../pages/Pacient";
+import MedicRoutes from "../routes/medic.routes";
+import PacientRoutes from "../routes/pacient.routes";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import { Button, Text, Image } from "react-native";
@@ -11,38 +14,13 @@ const AppStack = createStackNavigator();
 
 const AppRoutes: React.FC = () => {
   const { singOut } = useContext(AuthContext);
+  const { pacient } = useContext(AuthContext);
 
   function handleSingOut() {
     singOut();
   }
 
-  return (
-    <AppStack.Navigator>
-      <AppStack.Screen
-        name="Medico"
-        component={Medico}
-        options={{
-          headerTitle: "DiarioSaude",
-          headerTitleStyle: { alignSelf: "center" },
-          headerStyle: {
-            backgroundColor: "#0124A2"
-          },
-          headerTintColor: "#fff",
-          headerLeft: () => (
-            <RectButton style={{ marginLeft: 20 }} onPress={handleSingOut}>
-              <Text style={{ color: "#fff" }}>Sair</Text>
-            </RectButton>
-          ),
-          headerRight: () => (
-            <Image
-              source={logoB}
-              style={{ width: 44, height: 52, marginRight: 5 }}
-            />
-          )
-        }}
-      />
-    </AppStack.Navigator>
-  );
+  return pacient ? <PacientRoutes /> : <MedicRoutes />;
 };
 
 export default AppRoutes;

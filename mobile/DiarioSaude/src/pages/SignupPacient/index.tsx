@@ -114,13 +114,13 @@ function SignupPacient() {
           style={styles.textInputUsuario}
           placeholder="Gender"
           value={Gender}
-          onChangeText={ubs => setGender(ubs)}
+          onChangeText={gender => setGender(gender)}
         ></TextInput>
         <TextInput
           style={styles.textInputUsuario}
           placeholder="Birth"
           value={Birth}
-          onChangeText={cargo => setBirth(cargo)}
+          onChangeText={birth => setBirth(birth)}
         ></TextInput>
       </View>
       <View style={styles.buttonsContainer}>
