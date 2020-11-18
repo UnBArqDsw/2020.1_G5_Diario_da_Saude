@@ -5,12 +5,12 @@ import { RectButton } from "react-native-gesture-handler";
 import AuthContext from "../../contexts/auth";
 import AsyncStorage from "@react-native-community/async-storage";
 
-function Medico() {
+function Pacient() {
   const storagedUser = AsyncStorage.getItem("@DiarioSaude:user");
 
   return (
     <View style={styles.container}>
-      <Text>Medico</Text>
+      <Text>Paciente</Text>
       <RectButton>
         <Text>Sair</Text>
       </RectButton>
@@ -18,4 +18,4 @@ function Medico() {
   );
 }
 
-export default Medico;
+export default Pacient;

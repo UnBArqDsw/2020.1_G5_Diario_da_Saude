@@ -8,20 +8,20 @@ import {
   TouchableWithoutFeedback,
   TouchableHighlight
 } from "react-native";
-//import API from "../../services/api"
+import DatePicker from "react-datepicker";
 import { RectButton, TextInput } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 import picture from "../../assets/camera.png";
 
-function SignupMedic() {
+function SignupPacient() {
   const [modalVisible, setModalVisible] = useState(false);
   const [CPF, setCPF] = useState("");
   const [Senha, setSenha] = useState("");
   const [ConfirmarSenha, setConfirmarSenha] = useState("");
-  const [Cargo, setCargo] = useState("");
+  const [Birth, setBirth] = useState("");
   const [Nome, setNome] = useState("");
-  // const [UBS, setUBS] = useState('');
+  const [Gender, setGender] = useState("");
   const [msgModal, setmsgModal] = useState("");
 
   const { navigate } = useNavigation();
@@ -32,8 +32,9 @@ function SignupMedic() {
         cpf: parseInt(CPF),
         password: Senha,
         name: Nome,
-        role: Cargo,
-        roles: ["healthProfessional"]
+        birthDate: Birth,
+        gender: Gender,
+        roles: []
       })
       .then(res => {
         console.log(res.data);
@@ -109,17 +110,17 @@ function SignupMedic() {
           value={ConfirmarSenha}
           onChangeText={confirmarsenha => setConfirmarSenha(confirmarsenha)}
         ></TextInput>
-        {/* <TextInput
-          style={styles.textInputUsuario}
-          placeholder="UBS"
-          value={UBS}
-          onChangeText={ubs => setUBS(ubs)}
-        ></TextInput> */}
         <TextInput
           style={styles.textInputUsuario}
-          placeholder="Cargo"
-          value={Cargo}
-          onChangeText={cargo => setCargo(cargo)}
+          placeholder="Gender"
+          value={Gender}
+          onChangeText={gender => setGender(gender)}
+        ></TextInput>
+        <TextInput
+          style={styles.textInputUsuario}
+          placeholder="Birth"
+          value={Birth}
+          onChangeText={birth => setBirth(birth)}
         ></TextInput>
       </View>
       <View style={styles.buttonsContainer}>
@@ -128,10 +129,11 @@ function SignupMedic() {
           onPress={() => {
             if (
               CPF == "" ||
+              Gender == "" ||
               Nome == "" ||
               Senha == "" ||
               ConfirmarSenha == "" ||
-              Cargo == ""
+              Birth == ""
             ) {
               setModalVisible(true);
               setmsgModal("Preencha todos os campos");
@@ -153,4 +155,4 @@ function SignupMedic() {
   );
 }
 
-export default SignupMedic;
+export default SignupPacient;
