@@ -6,7 +6,8 @@
 | 14/11/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
 | 16/11/2020 | 0.2 | Adição do tópico de Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
 | 16/11/2020 | 0.3 | Adição do tópico de Escopo | [Murilo Loiola](https://github.com/murilo-dan) |
-| 16/11/2020 | 0.4 | Adição do tópico de Visão Geral na Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
+| 17/11/2020 | 0.4 | Adição do tópico de Visão Geral na Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
+| 18/11/2020 | 0.5 | Adição do tópico de Tecnologias | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -34,14 +35,26 @@
 
 #### Front-End
 
-* Javascript:
-
-* Node Js:
+* <p align="justify"><strong>Node.js</strong>: é um ambiente de execução JavaScript <i>server-side</i>, sem dependência com navegadores web. Sua utilização apresenta vantagens como alto fator de escalabilidade, taxa de transferência e flexibilidade</p>
 
 #### Back-End
 
-* React Native:
+* <p align="justify"><strong>React Native</strong>: é um <i>framework</i> JavaScript para aplicações <i>mobile</i> desenvolvido pelo Facebook. Ele é utilizado para desenvolver aplicações móveis de forma nativa, permitindo aos desenvolvedores levar a aplicação para sistemas Android e iOS simultaneamente.</p>
 
 #### Banco de Dados
 
-* 
+* <p align="justify"><strong>MongoDB</strong>: é um programa de banco de dados não relacional. Utiliza documentos semelhantes ao JSON par organizar os dados, oferecendo alta variedade e flexibilidade.</p>
+
+#### Outros
+
+* <p align="justify"><strong>Docker</strong>: é uma ferramenta que utiliza virtualização de SO para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e possuem seus prórpios softwares, bibliotecas e arquivos de configuração. Está sendo utilizado tanto no back-end quanto no front-end, com o objetivo de facilitar o desenvolvimento em grupo.</p>
+
+## Metas e Restrições Arquiteturais
+
+## Visão de Casos de Uso
+
+## Visão Lógica
+
+## Tamanho e Performance
+
+## Qualidade
