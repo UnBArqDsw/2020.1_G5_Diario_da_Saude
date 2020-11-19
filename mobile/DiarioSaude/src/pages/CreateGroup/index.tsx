@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { View, Text } from "react-native";
-import { TextInput } from "react-native-gesture-handler";
+import { TextInput, RectButton } from "react-native-gesture-handler";
 import styles from "./styles";
 
 function CreateGroup() {
-  const [CPF, setCPF] = useState("");
-  const [Senha, setSenha] = useState("");
-  const [ConfirmarSenha, setConfirmarSenha] = useState("");
-  const [Cargo, setCargo] = useState("");
+  const [Ubs, setUbs] = useState("");
+  const [Questionario, setQuestionario] = useState("");
+  const [Usuarios, setUsuarios] = useState("");
   const [Nome, setNome] = useState("");
 
   return (
@@ -19,40 +18,33 @@ function CreateGroup() {
           value={Nome}
           onChangeText={nome => setNome(nome)}
         ></TextInput>
+
         <TextInput
           style={styles.textInputUsuario}
-          placeholder="CPF"
-          maxLength={11}
-          keyboardType="number-pad"
-          value={CPF}
-          onChangeText={cpf => setCPF(cpf)}
-        ></TextInput>
-        <TextInput
-          style={styles.textInputUsuario}
-          placeholder="Senha"
+          placeholder="Ubs"
           secureTextEntry={true}
-          value={Senha}
-          onChangeText={senha => setSenha(senha)}
+          value={Ubs}
+          onChangeText={ubs => setUbs(ubs)}
         ></TextInput>
         <TextInput
           style={styles.textInputUsuario}
-          placeholder="Confirmar Senha"
+          placeholder="Questionário"
           secureTextEntry={true}
-          value={ConfirmarSenha}
-          onChangeText={confirmarsenha => setConfirmarSenha(confirmarsenha)}
+          value={Questionario}
+          onChangeText={questionario => setQuestionario(questionario)}
         ></TextInput>
-        {/* <TextInput
-          style={styles.textInputUsuario}
-          placeholder="UBS"
-          value={UBS}
-          onChangeText={ubs => setUBS(ubs)}
-        ></TextInput> */}
+
         <TextInput
           style={styles.textInputUsuario}
-          placeholder="Cargo"
-          value={Cargo}
-          onChangeText={cargo => setCargo(cargo)}
+          placeholder="Usuários"
+          value={Usuarios}
+          onChangeText={usuarios => setUsuarios(usuarios)}
         ></TextInput>
+        <View style={styles.buttonsContainer}>
+          <RectButton style={styles.buttonCadastrar}>
+            <Text style={styles.textButton}>Cadastrar</Text>
+          </RectButton>
+        </View>
       </View>
     </View>
   );

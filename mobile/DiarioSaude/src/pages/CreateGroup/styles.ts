@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 
   buttonCadastrar: {
     backgroundColor: "#0124A2",
-    marginTop: -40,
+    marginTop: 16,
     height: 40,
     width: 200,
     borderRadius: 20,
@@ -34,7 +34,9 @@ const styles = StyleSheet.create({
   },
 
   textContainer: {
-    marginBottom: 40
+    marginBottom: 40,
+    marginTop: 8,
+    alignItems: "center"
   },
 
   textInputUsuario: {
