@@ -12,6 +12,7 @@
 | 18/11/2020 | 0.7 | Adição do tópico de Visão de Casos de Uso | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.8 | Adição do tópico de Visão Lógica | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.9 | Adição do tópico de Visão de Dados | [Murilo Loiola](https://github.com/murilo-dan) |
+| 19/11/2020 | 0.9.1 | Correção no tópico de tecnologias | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 
 ## Introdução
 
@@ -39,11 +40,11 @@
 
 ### Tecnologias
 
-#### Front-End
+#### Back-End
 
 * <p align="justify"><strong>Node.js</strong>: é um ambiente de execução JavaScript <i>server-side</i>, sem dependência com navegadores web. Sua utilização apresenta vantagens como alto fator de escalabilidade, taxa de transferência e flexibilidade.</p>
 
-#### Back-End
+#### Front-End
 
 * <p align="justify"><strong>React Native</strong>: é um <i>framework</i> JavaScript para aplicações <i>mobile</i> desenvolvido pelo Facebook. Ele é utilizado para desenvolver aplicações móveis de forma nativa, permitindo aos desenvolvedores levar a aplicação para sistemas Android e iOS simultaneamente.</p>
 
