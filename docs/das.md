@@ -13,6 +13,7 @@
 | 18/11/2020 | 0.8 | Adição do tópico de Visão Lógica | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.9 | Adição do tópico de Visão de Dados | [Murilo Loiola](https://github.com/murilo-dan) |
 | 19/11/2020 | 0.9.1 | Correção no tópico de tecnologias | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 19/11/2020 | 0.9.2 | Adição do diagrama de arquitetura geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 ## Introdução
 
