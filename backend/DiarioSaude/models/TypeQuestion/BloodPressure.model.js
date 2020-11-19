@@ -4,9 +4,8 @@ const Question = require('../Question.model')
 const Patient = require('../patient.model')
 
 const BloodPressureSchema = new Schema({
-  answer: {type: {diastolic: Number, systolic:Number}},
-  patient: {type: Number, ref: Patient},
-  date: {type:Date, require:true}
+  answer: {type: [{diastolic: Number, systolic:Number, patient_id: {type: mongoose.ObjectId, ref:Patient},date: {type:Date, require:true}}], default:[]},
+  
 })
 
 class BloodPressureClass extends Question.QuestionClass{
@@ -18,13 +17,28 @@ class BloodPressureClass extends Question.QuestionClass{
     })
   }
 
-  static setAnswer(glucose, callback){
-    this.save({
-      answer: glucose.answer,
-      patient: glucose.cpf,
-      date: new Date()
-    })
+  static createQuestion(){
+    this.create(function (err){
+      if(err) res.json({status:500,message:"Could not create"})
 
+    })
+  }
+
+  static setAnswer(bloodPressure, callback){
+    console.log("PELO AMOR DE DEUS")
+      const answer = {
+        diastolic: bloodPressure.diastolic,
+        systolic: bloodPressure.systolic,
+        patient_id: bloodPressure.patient_id,
+        date: new Date()
+      }
+      console.log(answer)
+      this.findByIdAndUpdate(bloodPressure.question_id,
+        { $push: {"answer": answer}}, {upsert:true}, 
+        (err, question) => {
+          if(err) res.json({status:403, message:"Could not update"})
+          callback(err, question)
+      })
   }
 
 } 
