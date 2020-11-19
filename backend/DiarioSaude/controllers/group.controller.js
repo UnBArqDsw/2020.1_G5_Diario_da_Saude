@@ -122,3 +122,21 @@ exports.delete = (req, res) => {
         });
     });
 };
+
+exports.addForm = (req, res) => {
+  Group.findByIdAndUpdate(req.body.group_id, 
+                          { $set: {"form": req.body.form_id}}, 
+                          (err, group) => {
+                            if (err) res.json({status: 400, message: "Could not update group"})
+                            res.json({status:200, message: "Group updated"})
+                          })
+}
+
+exports.addMember = (req, res) => {
+  Group.findByIdAndUpdate(req.body.group_id,
+                          { $push: {"users": req.body.member_id} },
+                          (err, group) => {
+                            if(err) res.json({status:400, message: "Could not add member"})
+                            res.json({status: 200, message: "Member added"})
+                          })
+}
