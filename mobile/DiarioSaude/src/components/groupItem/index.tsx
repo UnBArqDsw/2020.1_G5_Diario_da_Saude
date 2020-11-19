@@ -3,12 +3,24 @@ import { View, Image, Text } from "react-native";
 import styles from "./styles";
 import { RectButton } from "react-native-gesture-handler";
 
-function GroupItem() {
+export interface Group {
+  users: [];
+  _id: String;
+  groupName: String;
+  idUBS: Number;
+  __v: Number;
+}
+
+interface GroupProp {
+  group: Group;
+}
+
+const GroupItem: React.FC<GroupProp> = ({ group }) => {
   return (
     <View style={styles.container}>
       <View style={styles.profile}>
         <View style={styles.profileInfo}>
-          <Text style={styles.name}>Nome Grupo</Text>
+          <Text style={styles.name}>{group.groupName}</Text>
         </View>
       </View>
 
@@ -23,6 +35,6 @@ function GroupItem() {
       </View>
     </View>
   );
-}
+};
 
 export default GroupItem;

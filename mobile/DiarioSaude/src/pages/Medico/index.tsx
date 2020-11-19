@@ -1,22 +1,42 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Text, View, Image, ScrollView } from "react-native";
 import styles from "./styles";
 import { RectButton } from "react-native-gesture-handler";
 import AuthContext from "../../contexts/auth";
 import AsyncStorage from "@react-native-community/async-storage";
-import GroupItem from "../../components/groupItem";
+import GroupItem, { Group } from "../../components/groupItem";
 import { useNavigation } from "@react-navigation/native";
+import Axios from "axios";
+import api from "../../services/api";
 
 function Medico() {
-  const storagedUser = AsyncStorage.getItem("@DiarioSaude:user");
+  const [isLoading, setLoading] = useState(true);
+  const [Groups, setGroups] = useState([]);
+
+  useEffect(() => {
+    api.get("/group").then(response => {
+      setGroups(response.data);
+
+      setLoading(false);
+    });
+  }, []);
 
   const { navigate } = useNavigation();
 
+  if (isLoading) {
+    return (
+      <View>
+        <Text>Carregando</Text>
+      </View>
+    );
+  }
+
   return (
     <ScrollView>
-      <GroupItem />
-      <GroupItem />
-      <GroupItem />
+      {Groups.map((group: Group, index) => {
+        return <GroupItem group={group} key={index} />;
+      })}
+
       <RectButton
         style={styles.contactButton}
         onPress={() => {
