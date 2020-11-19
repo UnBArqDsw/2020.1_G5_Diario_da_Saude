@@ -5,13 +5,12 @@ exports.create = (req, res, next) => {
     groupid: req.body.group
   })
 
-  form.save((err, user) => {
+  form.save((err, form) => {
     if(err){
       res.status(500).send({message:err})
       return;
     }
-
-    res.send({message: "Form created"})
+    res.send({message: "Form created", id: form._id})
   })
 }
 
