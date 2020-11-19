@@ -30,20 +30,35 @@ exports.getGlucose = (req, res, next) => {
 }
 
 exports.createBloodPressure = (req, res, next) => {
-  const question = new BloodPressure({
-    answer: req.body.answer ? req.body.answer : {},
-    patient: req.body.patient ? req.body.patient: '',
-    date: new Date(),
-  })
-
-  question.save((err, question) => {
-    if(err){
-      res.status(500).send({message: err})
-      return;
+  if(Object.keys(req.body).length !== 0){
+    const question = {
+      answer: {
+        diastolic: req.body.diastolic,
+        systolic: req.body.systolic,
+        patient_id: req.body.patient_id
+      }
     }
 
-    res.send({message: "question registered"})
-  })
+    BloodPressure.setAnswer(question.answer, (err, question) => {
+      if(err){
+        res.status(500).send({message: err})
+      }
+
+      console.log(question)
+
+      res.send({message: "Answer registered"})
+    })
+  }
+  else{
+    const question = new BloodPressure()
+    console.log("ELSE CONTROLLER")
+    question.save((err, question) => {
+      if(err){
+        res.status(500).send({message: err})
+      }
+      res.json({status:200, message:"Question registered", id_question: question._id})
+    })
+  }
 }
 
 exports.createWellBeing = (req, res, next) => {
