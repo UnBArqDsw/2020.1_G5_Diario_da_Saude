@@ -36,7 +36,7 @@
 
 ### Visão Geral
 
-*Inserir diagrama representando macro níveis do sistema.*
+[![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_geral_de_arquitetura.png)](./img/diagrama_geral_de_arquitetura.png)
 
 ### Tecnologias
 
