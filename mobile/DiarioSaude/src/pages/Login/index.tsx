@@ -22,9 +22,6 @@ function Login() {
   const [cpf, setCpf] = useState(0);
   const [password, setPassword] = useState("");
 
-  console.log(singed);
-  console.log(user);
-
   async function handleSingIn() {
     singIn(cpf, password);
   }
