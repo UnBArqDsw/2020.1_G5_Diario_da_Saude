@@ -15,4 +15,9 @@ module.exports = (app) => {
 
     // Delete a Group with groupId
     app.delete('/group/:groupId', group.delete);
+
+  // Add Member
+  app.post('/group/member', group.addMember);
+  // Add Form
+  app.post('/group/form', group.addForm);
 }
