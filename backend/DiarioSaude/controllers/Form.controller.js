@@ -22,3 +22,11 @@ exports.addQuestion = (req, res, next) => {
       res.send(res_form)
     })
 }
+
+exports.getAll = (req, res) => {
+  Form.find().exec((err, forms) => {
+    if(err) res.json({status:400, message:"Could not get Forms"})
+
+    res.json({status:200, form_list:forms})
+  })
+}
