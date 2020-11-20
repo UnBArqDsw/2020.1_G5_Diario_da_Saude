@@ -67,6 +67,8 @@ nav:
   - Arquitetura de Software & Reutilização:
     - Módulo Estilos e Padrões Arquiteturais:
       - Documento de Arquitetura de Software (DAS): das.md 
+    - Módulo Reutilização de Software:
+      - Documento de Reutilização: reutilizacao.md
     - Iniciativas Extras:
       - Mapeamento de Rotas API: endpoints.md
 

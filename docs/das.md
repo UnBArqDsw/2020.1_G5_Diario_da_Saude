@@ -12,9 +12,13 @@
 | 19/11/2020 | 0.7 | Adição do diagrama de arquitetura geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 19/11/2020 | 0.8 | Adição do diagrama de pacotes geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
 | 19/11/2020 | 0.9 | Adição do tópico de Visão de Processos | [Murilo Loiola](https://github.com/murilo-dan) |
-| 19/11/2020 | 0.9.1 | Adição da descrição do diagrama de pacotes e descrição dos processos | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
-| 20/11/2020 | 0.9.2 | Adição de acrônimos e abreviações | [Rodrigo Dadamos](https://github.com/Rdadamos) |
-| 20/11/2020 | 0.9.3 | Adição de diagrama de classes focado nas mais relevantes | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 19/11/2020 | 0.10 | Adição da descrição do diagrama de pacotes e descrição dos processos | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
+| 20/11/2020 | 0.11 | Adição de acrônimos e abreviações | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.12 | Adição de diagrama de classes focado nas mais relevantes | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.13 | Adição de diagrama de comunicação e da Visão de Implementação | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.14 | Revisão da visão da dados | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.15 | Adicionando referências  | [Murilo Loiola](https://github.com/murilo-dan) |
+| 20/11/2020 | 0.16 | Adição do estilo arquitetural  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
@@ -32,6 +36,9 @@
  * <p align="justify"><strong>FGA</strong>: Faculdade UnB Gama</p>
  * <p align="justify"><strong>UBS</strong>: Unidades Básicas de Saúde</p>
  * <p align="justify"><strong>UML</strong>: Unified Modeling Language (Linguagem de Modelagem Unificada)</p>
+ * <p align="justify"><strong>REST</strong>: Representational State Transfer (Transferência Representacional de Estado)</p>
+ * <p align="justify"><strong>HTTP</strong>: HyperText Transfer Protocol (Protocolo de Transferência de Hipertexto)</p>
+ * <p align="justify"><strong>JSON</strong>: JavaScript Object Notation (Notação de Objetos JavaScript)</p>
 
 ### Referências
 
@@ -42,15 +49,31 @@
 
 ### Visão Geral
 
-<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica, Visão de Processos e Visão de Dados. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
+<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica, Visão de Processos, Visão de Implantação, Visão de Implementação e Visão de Dados. Por último, o tópico de Qualidade.</p>
 
 ## Representação Arquitetural
 
 <p align="justify">&emsp;&emsp;Este documento apresenta a arquitetura como uma série de visões: Visão de Casos de Uso, Visão Lógica. Essas visões são descritas e detalhadas através de diagramas UML acompanhados de descrições curtas.</p>
 
-### Visão Geral
+### Estilos arquiteturais
+
+<p align="justify">&emsp;&emsp; Estilo arquitetural é uma forma de expressar a organização de uma estrutura e o conjunto pré-definido de subsistemas e suas responsabilidades.</p>
+
+<p align="justify">&emsp;&emsp; Considerando o desenvolvimento incremental e a modelagem de interfaces de subsistemas, o estilo arquitetural utilizado é uma adaptação do N-Camadas, junto a uma adaptação do padrão arquitetural MVC, com N igual a 4. Para a comunicação entre as camadas de backend e frontend é utilizado o estilo REST.</p>
+
+#### Camadas
+
+* **Aplicação mobile** - camada frontend onde os dados são apresentados para o usuário final atuando como a camada de view do MVC. É sua responsabilidade disponibilizar as funcionalidades e apresentar os dados para os usuários. As requisições são feitas em estilo **REST** com o uso dos verbos HTTP (GET, POST, DELETE, PUT).
+
+* **Controller** - camada backend que recebe as requisições do frontend (através das routes). É sua responsabilidade disponibilizar os endpoints em estilo REST que serão consumidos pelo frontend. As respostas às requisições são em formatos JSON.
+
+* **Model** - camada backend que comunica com a controller e com o banco de dados. É sua responsabilidade implementar os modelos fazendo a comunicação com o banco de dados
+
+* **Banco de dados** - camada de persistência dos dados. Sua responsabilidade é armazanar e garantir o acesso adequado aos dados.
 
 [![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_geral_de_arquitetura.png)](./img/diagrama_geral_de_arquitetura.png)
+
+<p align="justify">&emsp;&emsp; O estilo N-Camadas permite a alteração dos dados independentemente da sua representação, assim como permite alterar a representação independentemente dos dados. Dessa forma, os dados podem ser apresentados de maneiras diferentes e de forma sincronizada. Nota-se uma tendência de acoplamento entre as controllers e as models no backend.</p>
 
 ### Tecnologias
 
@@ -68,7 +91,7 @@
 
 #### Outros
 
-* <p align="justify"><strong>Docker</strong>: é uma ferramenta que utiliza virtualização de SO para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e possuem seus prórpios softwares, bibliotecas e arquivos de configuração. Está sendo utilizado tanto no back-end quanto no front-end, com o objetivo de facilitar o desenvolvimento em grupo.</p>
+* <p align="justify"><strong>Docker</strong>: é uma ferramenta que utiliza virtualização de SO para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e possuem seus próprios softwares, bibliotecas e arquivos de configuração. Está sendo utilizado tanto no back-end quanto no front-end, com o objetivo de facilitar o desenvolvimento em grupo.</p>
 
 ## Metas e Restrições Arquiteturais
 
@@ -133,7 +156,7 @@
 
 ## Visão Lógica
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_classes/">Classe</a> e <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_pacotes/">Pacotes</a>.</p>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Classe</a> e <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_pacotes/">Pacotes</a>.</p>
 
 #### Diagrama de Classes
 
@@ -162,9 +185,16 @@
 <i>Controllers</i> é a pasta que onde se encontram os arquivos de "ações", que são responsáveis por recuperar os dados do banco atráves das <i>models</i>. Os <i>scripts</i> de controller são utilizados dentro dos arquivos de <i>routes</i>.</p>
 * <p align="justify"><strong>Camada Mongo</strong>: A camada do Mongo é onde ficam os arquivos de configuração do banco de dados MongoDB.</p>
 
+#### Diagrama de comunicação
+
+<p align="justify">&emsp;&emsp;Uma importante interação entre objetos é a interação entre <i>Profissional de Saúde</i> e o <i>Grupo</i> descrita no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_comunicacao/">Diagrama de Comunicação</a>:</p>
+
+[![diagrama_comunicação_profissional](./img/diagrama_comunicacao_profissional.jpg)](./img/diagrama_comunicacao_profissional.jpg)
+
+
 ## Visão de Processos
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição dos principais processos que ocorrem durante a utilização do sistema. Para acompanhar a descrição dos principais processos, seguem os <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_sequencia/">Diagramas de Sequência</a> pertinentes.</p>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição dos principais processos que ocorrem durante a utilização do sistema. Para acompanhar a descrição dos principais processos, seguem os <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_sequencia/">Diagramas de Sequência</a> pertinentes.</p>
 
 #### Diagramas de Sequência
 
@@ -184,22 +214,24 @@
 
 * <p align="justify"><i><strong>sendAnswers</i>()</strong>: processo essencial para a principal função da aplicação: manter contato entre paciente e profissional da saúde. Este processo recebe e salva as respostas de cada paciente para que o profissional da saúde possa realizar uma avaliação posteriormente.</p>
 
+## Visão de Implantação
+
+#### Diagrama de Implantação
+
+## Visão de Implementação
+
+<p align="justify">&emsp;&emsp;Após a autenticação, pacientes podem responder as questões dos formulários dos grupos aos quais pertencem, fornecendo os dados para a geração de relatórios individuais. Profissionais de saúde, após a autenticação, podem gerenciar grupos e gerar relatórios individuias e gerais. Uma representação de como esses importantes componentes do sistema são conectados pode ser vista no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_componente/">diagramas de componentes</a>.</p>
+
+#### Diagrama de Componentes
+
+[![diagrama_de_componente](./img/diagrama_de_componente.jpg)](./img/diagrama_de_componente.jpg)
+
 ## Visão de Dados
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema. Para a descrição do comportamento das entidades do sistema, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a>. Para definir as regras de negócio entre cada tabela armazenada no banco de dados, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.</p>
-
-
-<!-- #### DE-R -->
-
-<!-- [![diagrama_entidade_relacionamento](./img/diagrama_entidade_relacionamento.png)](./img/diagrama_entidade_relacionamento.png) -->
-
-<!-- #### Diagrama Lógico -->
-
-<!-- [![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png) -->
-
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema, representando como os modelos são persistidos no banco de dados não-relacional MongoDB.</p>
 
 ### Modelo Grupo
-#### Formato do dados
+#### Formato dos dados
 - **_id**
 	* Tipo: Number;
 	* Obrigatoriedade: Sim.
@@ -217,7 +249,7 @@
 - **users**
 	* Tipo: Array de dados do tipo Number;
 
-#### Representação do objeto json em como os objetos são persistidos em banco de dados
+#### Exemplo
 
 ```json
   {
@@ -230,7 +262,7 @@
 ```
 
 ### Modelo Profissional da Saúde
-#### Formato do dados
+#### Formato dos dados
 - **_id**
 	* Tipo: Number;
 	* Obrigatoriedade: Sim.
@@ -250,7 +282,7 @@
 	* Tipo: String;
     * Obrigatoriedade: Sim.
 
-#### Representação do objeto json em como os objetos são persistidos em banco de dados
+#### Exemplo
 
 ```json
  {
@@ -258,17 +290,16 @@
    "name":"Ipsolum",
    "password":"76bb1ff3699e0af3750e9fa119dea44e",
    "cpf":1234567890,
-   "role":"healthProfessional", 
+   "role":"healthProfessional",
  }
 ```
 
-## Tamanho e Performance
-
-
+<p align="justify">&emsp;&emsp; Considerando o paradigma de orientação a objetos, temos a descrição do comportamento das entidades do sistema utilizando o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/der/">DE-R</a> e para definir as regras de negócio entre as entidades temos o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/dl/">Diagrama Lógico</a>.
+</p>
 
 ## Qualidade
 
-* <p align="justify">Usabilidade: a interface, conforme descrito anteriormente, segue uma estilização simples e intuitiva, utilizando fontes e cores adequadas. Estas definições podem ser visualizadas no documento de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#identidade_visual/">Identidade Visual</a>.</p>
+* <p align="justify">Usabilidade: a interface, conforme descrito anteriormente, segue uma estilização simples e intuitiva, utilizando fontes e cores adequadas. Estas definições podem ser visualizadas no documento de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/identidade_visual/">Identidade Visual</a>.</p>
 
 * <p align="justify">Segurança: cada sessão do usuário recebe um token temporário, utilizado para realizar a autenticação do usuário e resgatar dados privados do banco.</p>
 
