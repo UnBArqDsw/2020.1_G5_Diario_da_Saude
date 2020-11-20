@@ -143,6 +143,11 @@
 
 [![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_de_pacotes_geral.png)](./img/diagrama_de_pacotes_geral.png)
 
+* <p align="justify"><i><strong>Camada Mobile</i></strong>: .</p>
+* <p align="justify"><i><strong>Camada Backend </i></strong>:A camada do backend é onde se encontra o projeto da API feita em <i>Node.Js</i> e <i>Express</i>. Ele segue uma estrutura MVC. A pasta <i>index</i> é o diretório que guarda o código iniciliazador da aplicação, e é a partir dele que todos os outros códigos são inicializados. <i>Routes</i> é o diretório que guarda os arquivos de rotas da aplicação, onde toda e qualquer requisição http feita à API passa pelos códigos contidos dentro dessa pasta.
+<i>Controllers</i> é a pasta que se encontra os arquivos de "ações" e são responsáveis por recuperar os dados do banco atráves das <i>models</i>. Os <i>scripts</i> de controller são utilizados dentro dos arquivos de <i>routes</i></p>
+* <p align="justify"><i><strong>Camada Mongo</i></strong>: A camada do Mongo é onde fica os arquivos de configuração do banco de dados MongoDB.</p>
+
 ## Visão de Dados
 
 <p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema. Para a descrição do comportamento das entidades do sistema, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a>. Para definir as regras de negócio entre cada tabela armazenada no banco de dados, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.</p>
