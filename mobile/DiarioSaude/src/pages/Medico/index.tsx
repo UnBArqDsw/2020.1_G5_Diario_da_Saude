@@ -5,7 +5,7 @@ import { RectButton } from "react-native-gesture-handler";
 import AuthContext from "../../contexts/auth";
 import AsyncStorage from "@react-native-community/async-storage";
 import GroupItem, { Group } from "../../components/groupItem";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import Axios from "axios";
 import api from "../../services/api";
 
@@ -13,13 +13,13 @@ function Medico() {
   const [isLoading, setLoading] = useState(true);
   const [Groups, setGroups] = useState([]);
 
-  useEffect(() => {
+  useFocusEffect(() => {
     api.get("/group").then(response => {
       setGroups(response.data);
 
       setLoading(false);
     });
-  }, []);
+  });
 
   const { navigate } = useNavigation();
 

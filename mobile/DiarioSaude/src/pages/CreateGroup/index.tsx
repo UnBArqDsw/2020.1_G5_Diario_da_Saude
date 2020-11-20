@@ -15,7 +15,7 @@ function CreateGroup() {
   const [msgModal, setmsgModal] = useState("");
   const [modalVisible, setModalVisible] = useState(false);
 
-  const { navigate } = useNavigation();
+  const { navigate, goBack } = useNavigation();
 
   function submit() {
     api
@@ -24,14 +24,14 @@ function CreateGroup() {
         idUBS: Ubs
       })
       .then(res => {
-        console.log(res);
+        console.log(res.data);
         res = res.data;
       })
       .catch(error => console.log(error));
 
     console.log("mandou");
 
-    navigate("Medico");
+    goBack();
   }
 
   return (
