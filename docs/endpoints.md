@@ -109,23 +109,49 @@
 ##### Retorno enviado
   
   * ```message``` - Mensagem de sucesso/falha
-  * ``` 
+  * ```json
      user{
-       id
-       name
-       cpf
-       roles
-       accessToken
+       "id":1,
+       "name":"Ipsolum",
+       "cpf":1234567890,
+       "roles":"healthProfessional",
+       "accessToken":"a15s1eASDwtnvb09D8dfgsdf8015EWRcA#123ASFSDv"
      }
     ``` 
 ### Grupo
-#### Criar/listar grupo
+#### Listar todos os grupos
 
-  * POST/GET - '/group'
+  * GET - '/group'
 
 ##### Parâmetros recebidos
 
   - Método GET não necessita de parâmetros
+
+##### Retorno enviado
+
+  * ```json
+    {
+      "users":[12,23,56,12]
+      "_id":1,
+      "groupName":"Lorem Ipsum",
+      "idUBS":1
+    },
+    {
+      "users":[12,23,56,12]
+      "_id":1,
+      "groupName":"Lorem Ipsum",
+      "idUBS":1
+    },
+    ...
+    ..
+    .
+    ```
+
+#### Criar grupo
+
+  * POST - '/group'
+
+##### Parâmetros recebidos
   
   * ```groupName``` - Nome do grupo
   * ```idUBS``` - ID da UBS ao qual o grupo é vinculado
@@ -135,17 +161,16 @@
 ##### Retorno enviado
   
   * ```message``` - Mensagen de sucesso/falha
-    - Caso seja de cadastro
   * ```id``` - ID do grupo criado
-    - Caso seja de listar
-  * ```
+  * ```json
     {
-      users
-      _id
-      groupName
-      idUBS
+      "users":[12,45,67,12],
+      "_id":2,
+      "groupName":"Lorem Ipson",
+      "idUBS":12
     }
     ```
+
 ### Listar grupo específico
   
   * GET - '/group/:id'
