@@ -18,6 +18,7 @@
 | 20/11/2020 | 0.13 | Adição de diagrama de comunicação e da Visão de Implementação | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.14 | Revisão da visão da dados | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.15 | Adicionando referências  | [Murilo Loiola](https://github.com/murilo-dan) |
+| 20/11/2020 | 0.16 | Adição do estilo arquitetural  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
