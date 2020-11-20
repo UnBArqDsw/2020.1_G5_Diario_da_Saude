@@ -12,7 +12,7 @@
 | 19/11/2020 | 0.7 | Adição do diagrama de arquitetura geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 19/11/2020 | 0.8 | Adição do diagrama de pacotes geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
 | 19/11/2020 | 0.9 | Adição do tópico de Visão de Processos | [Murilo Loiola](https://github.com/murilo-dan) |
-| 19/11/2020 | 0.9.1 | Adição da descrição do diagrama de pacotes | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 19/11/2020 | 0.9.1 | Adição da descrição do diagrama de pacotes e descrição dos processos | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -105,7 +105,7 @@
 
 * <p align="justify">UC02 - Visualizar lista de grupos: este caso de uso ocorre assim que o usuário loga no aplicativo. A tela inicial apresenta a lista de grupos aos quais o usuário pertence (no caso de paciente) ou que o usuário possui (no caso de profissional da saúde).
 
-* <p align="justify">UC03 - Acessar grupo: este caso de uso ocorre quando o usuário seleciona algum grupo específico da lista de grupos. Serão apresentadas informações do grupo e diferentes ações a serem tomadas, de acordo com o tipo de usuário.</p>
+* <p align="justify">UC03 - Acessar grupo: este caso de uso é exclusivo para o ator profissional da saúde e ocorre quando o usuário seleciona algum grupo específico da lista de grupos. Serão apresentadas informações do grupo e diferentes ações a serem tomadas para gerenciamento dos membros.</p>
 
 * <p align="justify">UC05 - Responder formulário: este caso de uso é exclusivo para o ator paciente e consiste em responder o formulário de determinado grupo. É importante notar que é possível responder o formulário tanto a partir da lista de grupos, quanto a partir da seleção de um grupo específico.</p>
 
@@ -141,10 +141,10 @@
 
 [![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_de_pacotes_geral.png)](./img/diagrama_de_pacotes_geral.png)
 
-* <p align="justify"><i><strong>Camada Mobile</i></strong>: A camada de frontend é composta pelos diretório <i>Context, Routes, Pages, Services e Components. O primeiro dos diretório, é responsável por prover informações e contexto para toda a aplicação. O segundo, tem como papel definir os caminhos de acesso do usuário as várias telas da aplicação. O direório <i>Pages</i> guarda as telas da aplicação. A pasta <i>service</i> contem os script com as regras de negócios e métodos como os de requisições HTTPs. Por último, a pasta <i>Components</i> guarda arquivos responsáveis por renderizar partes específicas normalmente repetidas das telas.</p>
-* <p align="justify"><i><strong>Camada Backend </i></strong>:A camada do backend é onde se encontra o projeto da API feita em <i>Node.Js</i> e <i>Express</i>. Ele segue uma estrutura MVC. A pasta <i>index</i> é o diretório que guarda o código iniciliazador da aplicação, e é a partir dele que todos os outros códigos são inicializados. <i>Routes</i> é o diretório que guarda os arquivos de rotas da aplicação, onde toda e qualquer requisição http feita à API passa pelos códigos contidos dentro dessa pasta.
-<i>Controllers</i> é a pasta que se encontra os arquivos de "ações" e são responsáveis por recuperar os dados do banco atráves das <i>models</i>. Os <i>scripts</i> de controller são utilizados dentro dos arquivos de <i>routes</i></p>
-* <p align="justify"><i><strong>Camada Mongo</i></strong>: A camada do Mongo é onde fica os arquivos de configuração do banco de dados MongoDB.</p>
+* <p align="justify"><strong>Camada <i>Mobile</i></strong>: a camada de frontend é composta pelos diretórios <i>Context, Routes, Pages, Services e Components</i>. O primeiro, respectivamente, é responsável por prover informações e contexto para toda a aplicação. O segundo tem como papel definir os caminhos de acesso do usuário às várias telas da aplicação. O diretório <i>Pages</i> guarda as telas da aplicação. O diretório <i>Services</i> contém os scripts com as regras de negócios e métodos como os de requisições HTTPs. Por último, a pasta <i>Components</i> guarda arquivos responsáveis por renderizar partes específicas, normalmente repetidas, das telas.</p>
+* <p align="justify"><strong>Camada <i>Backend </i></strong>: a camada do backend é onde se encontra o projeto da API feita em <i>Node.Js</i> e <i>Express</i>. Ele segue uma estrutura MVC. A pasta <i>index</i> é o diretório que guarda o código iniciliazador da aplicação e é a partir dele que todos os outros códigos são inicializados. <i>Routes</i> é o diretório que guarda os arquivos de rotas da aplicação, por onde passam todas as requisições http feitas à API.
+<i>Controllers</i> é a pasta que onde se encontram os arquivos de "ações", que são responsáveis por recuperar os dados do banco atráves das <i>models</i>. Os <i>scripts</i> de controller são utilizados dentro dos arquivos de <i>routes</i>.</p>
+* <p align="justify"><strong>Camada Mongo</strong>: A camada do Mongo é onde ficam os arquivos de configuração do banco de dados MongoDB.</p>
 
 ## Visão de Processos
 
@@ -157,6 +157,16 @@
 [![diagrama_de_sequência_2](./img/diagrama_de_sequencia_create_group.jpg)](./img/diagrama_de_sequencia_create_group.jpg)
 
 [![diagrama_de_sequência_3](./img/diagrama_de_sequencia_answering_form.jpg)](./img/diagrama_de_sequencia_answering_form.jpg)
+
+#### Principais processos
+
+* <p align="justify"><i><strong>showAll</i>()</strong>: processo responsável por retornar conjuntos de informações, a depender do argumento fornecido (sobrecarga). É muito utilizado durante todo a execução do aplicativo, principalmente para apresentar todos os grupos ao qual o usuário está atrelado.</p>
+
+* <p align="justify"><i><strong>getAllPatients</i>()</strong>: processo responsável por retornar lista de pacientes pertecentes a um grupo. Muito utilizado pelo usuário profissional da saúde para gerenciar os membros de um grupo.</p>
+
+* <p align="justify"><i><strong>getQuestions</i>()</strong>: utilizado durante a criação e o acesso a formulários, retorna as questões que um determinado formulário possui.</p>
+
+* <p align="justify"><i><strong>sendAnswers</i>()</strong>: processo essencial para a principal função da aplicação: manter contato entre paciente e profissional da saúde. Este processo recebe e salva as respostas de cada paciente para que o profissional da saúde possa realizar uma avaliação posteriormente.</p>
 
 ## Visão de Dados
 
