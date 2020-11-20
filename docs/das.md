@@ -14,6 +14,7 @@
 | 19/11/2020 | 0.9 | Adição do tópico de Visão de Processos | [Murilo Loiola](https://github.com/murilo-dan) |
 | 19/11/2020 | 0.9.1 | Adição da descrição do diagrama de pacotes e descrição dos processos | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
 | 20/11/2020 | 0.9.2 | Adição de acrônimos e abreviações | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.9.3 | Adição de diagrama de classes focado nas mais relevantes | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
@@ -27,13 +28,10 @@
 
 ### Acrônimos e Abreviações
 
-<p align="justify">&emsp;&emsp;
-  UnB: Universidade de Brasília<br>
-  FGA: Faculdade UnB Gama<br>
-  UBS: Unidades Básicas de Saúde<br>
-  UML: Unified Modeling Language (Linguagem de Modelagem Unificada)
-</p>
-
+* **UnB**: Universidade de Brasília
+* **FGA**: Faculdade UnB Gama
+* **UBS**: Unidades Básicas de Saúde
+* **UML**: Unified Modeling Language (Linguagem de Modelagem Unificada)
 
 ### Referências
 
@@ -134,7 +132,9 @@
 
 #### Diagrama de Classes
 
-[![diagrama_de_classe](./img/class_diagram_gof_2.png)](./img/class_diagram_gof_2.png)
+<p align="justify">&emsp;&emsp;O diagrama de classes sem métodos e atributos colapsados pode ser visto no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/img/class_diagram_gof_2.png"> diagrama de classe completo</a>.</p>
+
+[![diagrama_de_classe](./img/class_diagram_resume.png)](./img/class_diagram_resume.png)
 
 #### Principais classes
 
