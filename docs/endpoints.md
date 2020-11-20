@@ -4,7 +4,8 @@
 |:----:|:------:|:---------:|:---------:|
 | 18/11/2020 | 0.1 | Criação do Documento | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 19/11/2020 | 0.2 | Adição do mapeamento de Form, Question, Autenticação | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
-| 19/11/2020 | 0.3 | Adição do mapeamento de Form, Question, Autenticação | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 19/11/2020 | 0.3 | Adição do mapeamento de Group | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 19/11/2020 | 0.4 | Adição do mapeamento de UBS | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 ## Definição
 
@@ -231,6 +232,56 @@
   ```json
     {
       "message":"Lorem ipsulu atmus cretos lirus"
+    }
+  ```
+
+### UBS
+#### Listar todas as UBS
+
+  * GET - '/ubs'
+
+##### Parâmetros recebidos
+
+  - Não necessita de parâmetros
+
+##### Retorno enviado
+
+  * ```json
+    {
+      "ubsName":"Posto de Saúde Nº 2",
+      "city":"Samambaia",
+      "state":"Distrito Federal",
+      "cep":"70444250",
+      "_id":1
+    },
+    {
+      "ubsName":"Posto de Saúde Nº 8",
+      "city":"Gama",
+      "state":"Distrito Federal",
+      "cep":"70000000",
+      "_id":2
+    },
+    ...
+    ..
+    .
+    ```
+#### Listar UBS específica
+
+  * GET - '/ubs/:ubsId'
+
+##### Parâmetros recebidos
+
+  * ```ubsId``` - Id da UBS
+
+##### Retorno enviado
+
+   ```json
+    {
+      "ubsName":"Posto de Saúde Nº 2",
+      "city":"Samambaia",
+      "state":"Distrito Federal",
+      "cep":"70444250",
+      "_id":1
     }
   ```
 
