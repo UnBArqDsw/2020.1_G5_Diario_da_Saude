@@ -34,6 +34,9 @@
  * <p align="justify"><strong>FGA</strong>: Faculdade UnB Gama</p>
  * <p align="justify"><strong>UBS</strong>: Unidades Básicas de Saúde</p>
  * <p align="justify"><strong>UML</strong>: Unified Modeling Language (Linguagem de Modelagem Unificada)</p>
+ * <p align="justify"><strong>REST</strong>: Representational State Transfer (Transferência Representacional de Estado)</p>
+ * <p align="justify"><strong>HTTP</strong>: HyperText Transfer Protocol (Protocolo de Transferência de Hipertexto)</p>
+ * <p align="justify"><strong>JSON</strong>: JavaScript Object Notation (Notação de Objetos JavaScript)</p>
 
 ### Referências
 
@@ -50,9 +53,25 @@
 
 <p align="justify">&emsp;&emsp;Este documento apresenta a arquitetura como uma série de visões: Visão de Casos de Uso, Visão Lógica. Essas visões são descritas e detalhadas através de diagramas UML acompanhados de descrições curtas.</p>
 
-### Visão Geral
+### Estilos arquiteturais
+
+<p align="justify">&emsp;&emsp; Estilo arquitetural é uma forma de expressar a organização de uma estrutura e o conjunto pré-definido de subsistemas e suas responsabilidades.</p>
+
+<p align="justify">&emsp;&emsp; Considerando o desenvolvimento incremental e a modelagem de interfaces de subsistemas, o estilo arquitetural utilizado é uma adaptação do N-Camadas, junto a uma adaptação do padrão arquitetural MVC, com N igual a 4. Para a comunicação entre as camadas de backend e frontend é utilizado o estilo REST.</p>
+
+#### Camadas
+
+* **Aplicação mobile** - camada frontend onde os dados são apresentados para o usuário final atuando como a camada de view do MVC. É sua responsabilidade disponibilizar as funcionalidades e apresentar os dados para os usuários. As requisições são feitas em estilo **REST** com o uso dos verbos HTTP (GET, POST, DELETE, PUT).
+
+* **Controller** - camada backend que recebe as requisições do frontend (através das routes). É sua responsabilidade disponibilizar os endpoints em estilo REST que serão consumidos pelo frontend. As respostas às requisições são em formatos JSON.
+
+* **Model** - camada backend que comunica com a controller e com o banco de dados. É sua responsabilidade implementar os modelos fazendo a comunicação com o banco de dados
+
+* **Banco de dados** - camada de persistência dos dados. Sua responsabilidade é armazanar e garantir o acesso adequado aos dados.
 
 [![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_geral_de_arquitetura.png)](./img/diagrama_geral_de_arquitetura.png)
+
+<p align="justify">&emsp;&emsp; O estilo N-Camadas permite a alteração dos dados independentemente da sua representação, assim como permite alterar a representação independentemente dos dados. Dessa forma, os dados podem ser apresentados de maneiras diferentes e de forma sincronizada. Nota-se uma tendência de acoplamento entre as controllers e as models no backend.</p>
 
 ### Tecnologias
 
@@ -70,7 +89,7 @@
 
 #### Outros
 
-* <p align="justify"><strong>Docker</strong>: é uma ferramenta que utiliza virtualização de SO para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e possuem seus prórpios softwares, bibliotecas e arquivos de configuração. Está sendo utilizado tanto no back-end quanto no front-end, com o objetivo de facilitar o desenvolvimento em grupo.</p>
+* <p align="justify"><strong>Docker</strong>: é uma ferramenta que utiliza virtualização de SO para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e possuem seus próprios softwares, bibliotecas e arquivos de configuração. Está sendo utilizado tanto no back-end quanto no front-end, com o objetivo de facilitar o desenvolvimento em grupo.</p>
 
 ## Metas e Restrições Arquiteturais
 
