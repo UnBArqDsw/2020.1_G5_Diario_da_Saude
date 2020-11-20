@@ -34,8 +34,6 @@ const GroupItemPacient: React.FC<GroupProp> = ({ group }) => {
         </View>
       </View>
 
-      <Text style={styles.bio}>Informações sobre o grupo</Text>
-
       <View style={styles.footer}>
         <View style={styles.buttonsContainer}>
           <RectButton
@@ -44,7 +42,7 @@ const GroupItemPacient: React.FC<GroupProp> = ({ group }) => {
               handleNavigation();
             }}
           >
-            <Text style={styles.contactButtonText}>Detalhe do Grupo</Text>
+            <Text style={styles.contactButtonText}>Responder</Text>
           </RectButton>
         </View>
       </View>

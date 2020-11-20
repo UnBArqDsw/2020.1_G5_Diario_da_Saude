@@ -36,8 +36,6 @@ const GroupItem: React.FC<GroupProp> = ({ group }) => {
         </View>
       </View>
 
-      <Text style={styles.bio}>Informações sobre o grupo</Text>
-
       <View style={styles.footer}>
         <View style={styles.buttonsContainer}>
           <RectButton
