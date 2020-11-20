@@ -7,6 +7,7 @@
 | 20/11/2020 | 0.2 | Adição de frameworks  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.3 | Adição de bibliotecas  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.4 | Adição de ferramentas  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.5 | Adição de middlewares  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
@@ -51,6 +52,12 @@
 <p align="justify"> &emsp;&emsp; Axios é uma biblioteca JavaScript útil para realizar solicitações HTTP. É baseado em <i>promise</i> permitindo escrever código assíncrono.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[8]</a></sup></p>
 
 
+## Middlewares
+
+#### Body-parser
+
+<p align="justify"> &emsp;&emsp; Body-parser é um Middleware que faz uma análise das solicitações recebidas antes dos manipuladores. Facilita na padronização das respostas em formato JSON da API Rest do backend.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[9]</a></sup></p>
+
 ## Referências
 
 1. FRAKES, William B.; KANG, Kyo. <a href="https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=F81286E552CB9153A6C3AF0C943DCB08?doi=10.1.1.75.635&rep=rep1&type=pdf"><srong>Software Reuse Research</strong>: Status and Future</a>. IEEE Transactions on Software Engineering. Vol. 31, Julho de 2005.
@@ -68,3 +75,5 @@
 7. <a href="https://blog.rocketseat.com.br/expo-react-native/">Expo: o que é, para que serve e quando utilizar?</a>. Acessado em 20/11/2020.
 
 8. <a href="https://flaviocopes.com/node-axios/">HTTP requests in Node using Axios</a>. Acessado em 20/11/2020.
+
+9. <a href="https://www.npmjs.com/package/body-parser">Body-parser</a>. Acessado em 20/11/2020.
