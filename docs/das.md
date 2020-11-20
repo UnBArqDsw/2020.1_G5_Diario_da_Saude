@@ -17,6 +17,7 @@
 | 20/11/2020 | 0.12 | Adição de diagrama de classes focado nas mais relevantes | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.13 | Adição de diagrama de comunicação e da Visão de Implementação | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.14 | Revisão da visão da dados | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.15 | Adicionando referências  | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -44,7 +45,7 @@
 
 ### Visão Geral
 
-<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica, Visão de Processos e Visão de Dados. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
+<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica, Visão de Processos, Visão de Implantação, Visão de Implementação e Visão de Dados. Por último, o tópico de Qualidade.</p>
 
 ## Representação Arquitetural
 
@@ -166,7 +167,7 @@
 
 #### Diagrama de comunicação
 
-<p align="justify">&emsp;&emsp;Uma importante interação entre objetos é a interação entre <i>Profissional de Saúde</i> e o <i>Grupo</i>:</p>
+<p align="justify">&emsp;&emsp;Uma importante interação entre objetos é a interação entre <i>Profissional de Saúde</i> e o <i>Grupo</i> descrita no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_comunicacao/">Diagrama de Comunicação</a>:</p>
 
 [![diagrama_comunicação_profissional](./img/diagrama_comunicacao_profissional.jpg)](./img/diagrama_comunicacao_profissional.jpg)
 
@@ -199,7 +200,7 @@
 
 ## Visão de Implementação
 
-<p align="justify">&emsp;&emsp;Após a autenticação, pacientes podem responder as questões dos formulários dos grupos aos quais pertencem e podem gerar relatórios individuais. Profissionais de saúde, após a autenticação, podem gerenciar grupos e gerar relatórios individuias e gerais. Uma representação de como esses importantes componentes do sistema são conectados pode ser vista no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_componente/">diagramas de componentes</a>.</p>
+<p align="justify">&emsp;&emsp;Após a autenticação, pacientes podem responder as questões dos formulários dos grupos aos quais pertencem, fornecendo os dados para a geração de relatórios individuais. Profissionais de saúde, após a autenticação, podem gerenciar grupos e gerar relatórios individuias e gerais. Uma representação de como esses importantes componentes do sistema são conectados pode ser vista no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_componente/">diagramas de componentes</a>.</p>
 
 #### Diagrama de Componentes
 
@@ -207,7 +208,7 @@
 
 ## Visão de Dados
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema representando como os modelos são persistidos no banco de dados não-relacional MongoDB.</p>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema, representando como os modelos são persistidos no banco de dados não-relacional MongoDB.</p>
 
 ### Modelo Grupo
 #### Formato dos dados
@@ -275,10 +276,6 @@
 
 <p align="justify">&emsp;&emsp; Considerando o paradigma de orientação a objetos, temos a descrição do comportamento das entidades do sistema utilizando o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a> e para definir as regras de negócio entre as entidades temos o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.
 </p>
-
-## Tamanho e Performance
-
-
 
 ## Qualidade
 
