@@ -16,6 +16,7 @@
 | 20/11/2020 | 0.11 | Adição de acrônimos e abreviações | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.12 | Adição de diagrama de classes focado nas mais relevantes | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.13 | Adição de diagrama de comunicação e da Visão de Implementação | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.14 | Revisão da visão da dados | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
@@ -206,20 +207,10 @@
 
 ## Visão de Dados
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema. Para a descrição do comportamento das entidades do sistema, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a>. Para definir as regras de negócio entre cada tabela armazenada no banco de dados, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.</p>
-
-
-<!-- #### DE-R -->
-
-<!-- [![diagrama_entidade_relacionamento](./img/diagrama_entidade_relacionamento.png)](./img/diagrama_entidade_relacionamento.png) -->
-
-<!-- #### Diagrama Lógico -->
-
-<!-- [![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png) -->
-
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema representando como os modelos são persistidos no banco de dados não-relacional MongoDB.</p>
 
 ### Modelo Grupo
-#### Formato do dados
+#### Formato dos dados
 - **_id**
 	* Tipo: Number;
 	* Obrigatoriedade: Sim.
@@ -237,7 +228,7 @@
 - **users**
 	* Tipo: Array de dados do tipo Number;
 
-#### Representação do objeto json em como os objetos são persistidos em banco de dados
+#### Exemplo
 
 ```json
   {
@@ -250,7 +241,7 @@
 ```
 
 ### Modelo Profissional da Saúde
-#### Formato do dados
+#### Formato dos dados
 - **_id**
 	* Tipo: Number;
 	* Obrigatoriedade: Sim.
@@ -270,7 +261,7 @@
 	* Tipo: String;
     * Obrigatoriedade: Sim.
 
-#### Representação do objeto json em como os objetos são persistidos em banco de dados
+#### Exemplo
 
 ```json
  {
@@ -278,9 +269,12 @@
    "name":"Ipsolum",
    "password":"76bb1ff3699e0af3750e9fa119dea44e",
    "cpf":1234567890,
-   "role":"healthProfessional", 
+   "role":"healthProfessional",
  }
 ```
+
+<p align="justify">&emsp;&emsp; Considerando o paradigma de orientação a objetos, temos a descrição do comportamento das entidades do sistema utilizando o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a> e para definir as regras de negócio entre as entidades temos o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.
+</p>
 
 ## Tamanho e Performance
 
