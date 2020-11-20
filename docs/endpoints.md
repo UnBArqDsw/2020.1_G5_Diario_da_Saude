@@ -79,7 +79,7 @@
 ### Autenticação
 #### Fazer cadastro
   
-  * POST - '/auth/signup'
+  * POST - ```/auth/signup```
 
 ##### Parâmetros recebidos
 
@@ -101,7 +101,7 @@
 
 #### Fazer Login
 
-  * POST - '/auth/signin'
+  * POST - ```/auth/signin```
 
 ##### Parâmetros recebidos
 
@@ -123,7 +123,7 @@
 ### Grupo
 #### Listar todos os grupos
 
-  * GET - '/group'
+  * GET - ```/group```
 
 ##### Parâmetros recebidos
 
@@ -151,7 +151,7 @@
 
 #### Criar grupo
 
-  * POST - '/group'
+  * POST - ```/group```
 
 ##### Parâmetros recebidos
   
@@ -175,7 +175,7 @@
 
 ### Listar grupo específico
   
-  * GET - '/group/:id'
+  * GET - ```/group/:id```
 
 ##### Parâmetros recebidos
   
@@ -194,7 +194,7 @@
 
 ### Atualizar grupo
   
-  * PUT - '/group/:groupId'
+  * PUT - ```/group/:groupId```
 
 ##### Parâmetros recebidos
   
@@ -221,7 +221,7 @@
 
 ### Deletar grupo
   
-  * DELETE - '/group/:groupId'
+  * DELETE - ```/group/:groupId```
 
 ##### Parâmetros recebidos
   
@@ -238,7 +238,7 @@
 ### UBS
 #### Listar todas as UBS
 
-  * GET - '/ubs'
+  * GET - ```/ubs```
 
 ##### Parâmetros recebidos
 
@@ -267,7 +267,7 @@
     ```
 #### Listar UBS específica
 
-  * GET - '/ubs/:ubsId'
+  * GET - ```/ubs/:ubsId```
 
 ##### Parâmetros recebidos
 
