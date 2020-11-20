@@ -28,7 +28,7 @@
 
 ### Visão Geral
 
-<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica e Visão de Dados. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
+<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica, Visão de Processos e Visão de Dados. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
 
 ## Representação Arquitetural
 
@@ -183,5 +183,10 @@
 ## Tamanho e Performance
 
 
-
 ## Qualidade
+
+* <p align="justify">Usabilidade: a interface, conforme descrito anteriormente, segue uma estilização simples e intuitiva, utilizando fontes e cores adequadas. Estas definições podem ser visualizadas no documento de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#identidade_visual/">Identidade Visual</a>.</p>
+
+* <p align="justify">Segurança: cada sessão do usuário recebe um token temporário, utilizado para realizar a autenticação do usuário e resgatar dados privados do banco.</p>
+
+* <p align="justify">Manutenibilidade: todo o desenvolvimento do projeto foi documentado no repositório do grupo: <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude">Diário da Saúde</a>. O fácil acesso a documentação facilita na compreensão e apoia a manutenibilidade do código.</p>
