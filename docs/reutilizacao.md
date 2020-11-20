@@ -5,6 +5,7 @@
 |:----:|:------:|:---------:|:---------:|
 | 20/11/2020 | 0.1 | Criação do documento e adição do tópico de Introdução  | [Murilo Loiola](https://github.com/murilo-dan) |
 | 20/11/2020 | 0.2 | Adição de frameworks  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.3 | Adição de bibliotecas  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
@@ -23,6 +24,18 @@
 
 <p align="justify"> &emsp;&emsp; Um framework para desenvolvimento de aplicações nativas utilizando o React. Oferece um rápido desenvolvimento mobile e facilita o compartilhamento do código para Android, iOS e web sem comprometer a experiência do usuário ou a qualidade da aplicação.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[3]</a></sup></p>
 
+
+## Bibliotecas
+
+#### React
+
+<p align="justify"> &emsp;&emsp; React é uma biblioteca uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário. É utilizada no frontend pelo framework React Native<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[4]</a></sup></p>
+
+#### Bcrypt
+
+<p align="justify"> &emsp;&emsp; Bcrypt é uma biblioteca que ajuda a fazer hash para as senhas.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[5]</a></sup></p>
+
+
 ## Referências
 
 1. FRAKES, William B.; KANG, Kyo. <a href="https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=F81286E552CB9153A6C3AF0C943DCB08?doi=10.1.1.75.635&rep=rep1&type=pdf"><srong>Software Reuse Research</strong>: Status and Future</a>. IEEE Transactions on Software Engineering. Vol. 31, Julho de 2005.
@@ -30,3 +43,7 @@
 2. <a href="https://expressjs.com/pt-br/">Espress</a>. Acessado em 20/11/2020.
 
 3. <a href="https://reactnative.dev/">React Native</a>. Acessado em 20/11/2020.
+
+4. <a href="https://tableless.com.br/react-o-que-e-e-como-funciona-essa-ferramenta/">React: o que é e como funciona essa ferramenta?</a>. Acessado em 20/11/2020.
+
+5. <a href="https://www.npmjs.com/package/bcrypt">Bcrypt</a>. Acessado em 20/11/2020.
