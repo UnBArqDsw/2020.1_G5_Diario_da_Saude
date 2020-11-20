@@ -13,6 +13,7 @@
 | 19/11/2020 | 0.8 | Adição do diagrama de pacotes geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
 | 19/11/2020 | 0.9 | Adição do tópico de Visão de Processos | [Murilo Loiola](https://github.com/murilo-dan) |
 | 19/11/2020 | 0.9.1 | Adição da descrição do diagrama de pacotes e descrição dos processos | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
+| 20/11/2020 | 0.9.2 | Adição de acrônimos e abreviações | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
@@ -22,7 +23,17 @@
 
 ### Escopo
 
-<p align="justify">&emsp;&emsp;Este Documento de Arquitetura de Software fornece uma visão arquitetural abrangente do sistema Diário da Saúde. O sistema em questão está sendo desenvolvido por alunos da UnB-FGA com o intuito de facilitar a comunicação entre paciente e profissional da saúde em grupos de acompanhamento de Unidades Básicas de Saúde (UBS).</p>
+<p align="justify">&emsp;&emsp;Este Documento de Arquitetura de Software fornece uma visão arquitetural abrangente do sistema Diário da Saúde. O sistema em questão está sendo desenvolvido por alunos da UnB-FGA com o intuito de facilitar a comunicação entre paciente e profissional da saúde em grupos de acompanhamento de UBS.</p>
+
+### Acrônimos e Abreviações
+
+<p align="justify">&emsp;&emsp;
+  UnB: Universidade de Brasília<br>
+  FGA: Faculdade UnB Gama<br>
+  UBS: Unidades Básicas de Saúde<br>
+  UML: Unified Modeling Language (Linguagem de Modelagem Unificada)
+</p>
+
 
 ### Referências
 
@@ -32,7 +43,7 @@
 
 ## Representação Arquitetural
 
-<p align="justify">&emsp;&emsp;Este documento apresenta a arquitetura como uma série de visões: Visão de Casos de Uso, Visão Lógica. Essas visões são descritas e detalhadas através de diagramas UML (<i>Unified Modeling Language</i>) acompanhados de descrições curtas.</p>
+<p align="justify">&emsp;&emsp;Este documento apresenta a arquitetura como uma série de visões: Visão de Casos de Uso, Visão Lógica. Essas visões são descritas e detalhadas através de diagramas UML acompanhados de descrições curtas.</p>
 
 ### Visão Geral
 
