@@ -140,3 +140,11 @@ exports.addMember = (req, res) => {
                             res.json({status: 200, message: "Member added"})
                           })
 }
+
+exports.listMember = (req, res) => {
+  Group.findById(req.body.group_id, (err, group) => {
+    if(err) res.json({status:400, message: err})
+
+    res.json({status:200, members: group.users})
+  })
+}
