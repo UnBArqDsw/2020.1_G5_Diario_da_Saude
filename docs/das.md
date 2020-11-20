@@ -15,6 +15,7 @@
 | 19/11/2020 | 0.9.1 | Correção no tópico de tecnologias | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 19/11/2020 | 0.9.2 | Adição do diagrama de arquitetura geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 19/11/2020 | 0.9.3 | Adição do diagrama de pacotes geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
+| 19/11/2020 | 0.9.4 | Adição do tópico de Visão de Processos | [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -121,7 +122,7 @@
 
 ## Visão Lógica
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas.</p>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_classes/">Classe</a> e <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_pacotes/">Pacotes</a>.</p>
 
 #### Diagrama de Classes
 
@@ -143,6 +144,18 @@
 
 [![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_de_pacotes_geral.png)](./img/diagrama_de_pacotes_geral.png)
 
+## Visão de Processos
+
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição dos principais processos que ocorrem durante a utilização do sistema. Para acompanhar a descrição dos principais processos, seguem os <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_sequencia/">Diagramas de Sequência</a> pertinentes.</p>
+
+#### Diagramas de Sequência
+
+[![diagrama_de_sequência_1](./img/diagrama_de_sequencia_show_group.jpg)](./img/diagrama_de_sequencia_show_group.jpg)
+
+[![diagrama_de_sequência_2](./img/diagrama_de_sequencia_create_group.jpg)](./img/diagrama_de_sequencia_create_group.jpg)
+
+[![diagrama_de_sequência_3](./img/diagrama_de_sequencia_answering_form.jpg)](./img/diagrama_de_sequencia_answering_form.jpg)
+
 ## Visão de Dados
 
 <p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema. Para a descrição do comportamento das entidades do sistema, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a>. Para definir as regras de negócio entre cada tabela armazenada no banco de dados, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.</p>
@@ -156,5 +169,7 @@
 [![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png)
 
 ## Tamanho e Performance
+
+
 
 ## Qualidade
