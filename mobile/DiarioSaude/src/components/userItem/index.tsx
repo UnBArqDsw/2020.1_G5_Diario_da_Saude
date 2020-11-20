@@ -7,12 +7,16 @@ export interface User {
   Name: string;
 }
 
+interface UserProp {
+  user: User;
+}
+
 const UserItem: React.FC<User> = ({ Name }) => {
   return (
     <View style={styles.container}>
       <View style={styles.profile}>
         <View style={styles.profileInfo}>
-          <Text style={styles.name}>André Goretti</Text>
+          <Text style={styles.name}>{Name}</Text>
         </View>
         <View style={styles.buttonsContainer}>
           <RectButton style={styles.favoriteButton}>

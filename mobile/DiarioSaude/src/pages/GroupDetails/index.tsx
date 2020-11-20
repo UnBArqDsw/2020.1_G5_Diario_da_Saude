@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, TouchableHighlight, Modal, TextInput } from "react-native";
+import {
+  View,
+  Text,
+  TouchableHighlight,
+  Modal,
+  TextInput,
+  Group
+} from "react-native";
 import UserItem, { User } from "../../components/userItem";
 import {
   RectButton,
@@ -9,14 +16,31 @@ import { useNavigation, useFocusEffect } from "@react-navigation/core";
 import AsyncStorage from "@react-native-community/async-storage";
 import api from "../../services/api";
 import styles from "./styles";
+import { any } from "prop-types";
 
 function GroupDeatils() {
   const [id, setId] = useState();
   const [group, setGroup] = useState();
   const [modalVisible, setModalVisible] = useState(false);
   const [CuserID, setCuserid] = useState();
+  const [users, setUsers] = useState([]);
+  const [usersNames, setUsersNames] = useState([]);
 
   const { goBack } = useNavigation();
+
+  useEffect(() => {
+    if (users.length > 0) {
+      var temp = [];
+      users.map(user => {
+        // console.log(user);
+        if (group.users.includes(user._id)) {
+          temp.push(user.name);
+        }
+      });
+      setUsersNames(temp);
+      console.log(usersNames);
+    }
+  }, [users]);
 
   useEffect(() => {
     async function loadStorageData() {
@@ -24,20 +48,31 @@ function GroupDeatils() {
 
       setId(storagedId);
     }
+    loadStorageData();
 
     api
       .get(`/group/${id}`)
       .then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         setGroup(response.data);
+        return 1;
+      })
+      .then(response => {
+        api.get("/users").then(response => {
+          // console.log(typeof response.data.users);
+          setUsers(response.data.users);
+        });
       })
       .catch(error => {});
 
-    loadStorageData();
+    // api.get("/users").then(response => {
+    //   console.log(response.data.users);
+    //   setUsers(response.data.users);
+    // });
   }, [id]);
 
   function handleTest() {
-    console.log(group);
+    console.log(usersNames);
     setModalVisible(true);
   }
 
@@ -103,8 +138,8 @@ function GroupDeatils() {
           </TouchableHighlight>
         </Modal>
         <Text>{group.groupName}</Text>
-        {group.users.map((name: string, index: number) => {
-          return <UserItem name={name} key={index} />;
+        {usersNames.map((name: string, index: number) => {
+          return <UserItem Name={name} key={index} />;
         })}
         <RectButton
           onPress={() => {
