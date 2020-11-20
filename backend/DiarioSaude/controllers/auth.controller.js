@@ -1,5 +1,6 @@
 const config = require("../config/auth.config");
 const db = require("../models");
+const Person = db.person
 const healthProfessional = db.healthProfessional;
 const Patient = db.patient
 const Role = db.role;
@@ -137,3 +138,11 @@ exports.signin = (req, res) => {
       });
     });
 };
+
+exports.getUser = (req, res) => {
+  console.log(req)
+  Person.getPerson(req.params.cpf, (err, user) => {
+    if(err) res.json({status: 400, message: err})
+    res.json({status:200, user: {name: user.name, id: user.id, birthDate: user.birthDate, gender: user.gender}})
+  })
+}
