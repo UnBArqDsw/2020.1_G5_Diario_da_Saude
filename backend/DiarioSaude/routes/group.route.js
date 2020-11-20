@@ -20,4 +20,7 @@ module.exports = (app) => {
   app.post('/group/member', group.addMember);
   // Add Form
   app.post('/group/form', group.addForm);
+
+  // List member
+  app.get('/members', group.listMember)
 }
