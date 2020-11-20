@@ -3,12 +3,16 @@ import { View, Text } from "react-native";
 import styles from "./styles";
 import { RectButton } from "react-native-gesture-handler";
 
-function UserItem() {
+export interface User {
+  Name: string;
+}
+
+const UserItem: React.FC<User> = ({ Name }) => {
   return (
     <View style={styles.container}>
       <View style={styles.profile}>
         <View style={styles.profileInfo}>
-          <Text style={styles.name}>Nome</Text>
+          <Text style={styles.name}>André Goretti</Text>
         </View>
         <View style={styles.buttonsContainer}>
           <RectButton style={styles.favoriteButton}>
@@ -18,6 +22,6 @@ function UserItem() {
       </View>
     </View>
   );
-}
+};
 
 export default UserItem;
