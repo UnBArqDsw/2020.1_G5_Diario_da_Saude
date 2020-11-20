@@ -29,12 +29,17 @@
 
 ### Acrônimos e Abreviações
 
-* **UnB**: Universidade de Brasília
-* **FGA**: Faculdade UnB Gama
-* **UBS**: Unidades Básicas de Saúde
-* **UML**: Unified Modeling Language (Linguagem de Modelagem Unificada)
+ * <p align="justify"><strong>UnB</strong>: Universidade de Brasília</p>
+ * <p align="justify"><strong>FGA</strong>: Faculdade UnB Gama</p>
+ * <p align="justify"><strong>UBS</strong>: Unidades Básicas de Saúde</p>
+ * <p align="justify"><strong>UML</strong>: Unified Modeling Language (Linguagem de Modelagem Unificada)</p>
 
 ### Referências
+
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/templates/software_architecture_document_CE85F5AC.html">Documento de Arquitetura de Software - Template</a>;
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm">Documento de Arquitetura de Software - SPEU</a>;
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm">Documento de Arquitetura de Software - C-Registration System</a>;
+* <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/">Wiki - Diário da Saúde</a>;
 
 ### Visão Geral
 
@@ -212,6 +217,7 @@
 [![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png)
 
 ## Tamanho e Performance
+
 
 
 ## Qualidade
