@@ -20,5 +20,6 @@ module.exports = function(app) {
   );
 
   app.post("/auth/signin", controller.signin);
+  app.get('/user/:cpf', controller.getUser)
 };
 
