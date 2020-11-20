@@ -12,7 +12,9 @@
 | 19/11/2020 | 0.7 | Adição do diagrama de arquitetura geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 | 19/11/2020 | 0.8 | Adição do diagrama de pacotes geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
 | 19/11/2020 | 0.9 | Adição do tópico de Visão de Processos | [Murilo Loiola](https://github.com/murilo-dan) |
-| 19/11/2020 | 0.9.1 | Adição da descrição do diagrama de pacotes | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 19/11/2020 | 0.9.1 | Adição da descrição do diagrama de pacotes e descrição dos processos | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
+| 20/11/2020 | 0.9.2 | Adição de acrônimos e abreviações | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.9.3 | Adição de diagrama de classes focado nas mais relevantes | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
@@ -22,17 +24,29 @@
 
 ### Escopo
 
-<p align="justify">&emsp;&emsp;Este Documento de Arquitetura de Software fornece uma visão arquitetural abrangente do sistema Diário da Saúde. O sistema em questão está sendo desenvolvido por alunos da UnB-FGA com o intuito de facilitar a comunicação entre paciente e profissional da saúde em grupos de acompanhamento de Unidades Básicas de Saúde (UBS).</p>
+<p align="justify">&emsp;&emsp;Este Documento de Arquitetura de Software fornece uma visão arquitetural abrangente do sistema Diário da Saúde. O sistema em questão está sendo desenvolvido por alunos da UnB-FGA com o intuito de facilitar a comunicação entre paciente e profissional da saúde em grupos de acompanhamento de UBS.</p>
+
+### Acrônimos e Abreviações
+
+ * <p align="justify"><strong>UnB</strong>: Universidade de Brasília</p>
+ * <p align="justify"><strong>FGA</strong>: Faculdade UnB Gama</p>
+ * <p align="justify"><strong>UBS</strong>: Unidades Básicas de Saúde</p>
+ * <p align="justify"><strong>UML</strong>: Unified Modeling Language (Linguagem de Modelagem Unificada)</p>
 
 ### Referências
 
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/templates/software_architecture_document_CE85F5AC.html">Documento de Arquitetura de Software - Template</a>;
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm">Documento de Arquitetura de Software - SPEU</a>;
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm">Documento de Arquitetura de Software - C-Registration System</a>;
+* <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/">Wiki - Diário da Saúde</a>;
+
 ### Visão Geral
 
-<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica e Visão de Dados. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
+<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica, Visão de Processos e Visão de Dados. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
 
 ## Representação Arquitetural
 
-<p align="justify">&emsp;&emsp;Este documento apresenta a arquitetura como uma série de visões: Visão de Casos de Uso, Visão Lógica. Essas visões são descritas e detalhadas através de diagramas UML (<i>Unified Modeling Language</i>) acompanhados de descrições curtas.</p>
+<p align="justify">&emsp;&emsp;Este documento apresenta a arquitetura como uma série de visões: Visão de Casos de Uso, Visão Lógica. Essas visões são descritas e detalhadas através de diagramas UML acompanhados de descrições curtas.</p>
 
 ### Visão Geral
 
@@ -105,7 +119,7 @@
 
 * <p align="justify">UC02 - Visualizar lista de grupos: este caso de uso ocorre assim que o usuário loga no aplicativo. A tela inicial apresenta a lista de grupos aos quais o usuário pertence (no caso de paciente) ou que o usuário possui (no caso de profissional da saúde).
 
-* <p align="justify">UC03 - Acessar grupo: este caso de uso ocorre quando o usuário seleciona algum grupo específico da lista de grupos. Serão apresentadas informações do grupo e diferentes ações a serem tomadas, de acordo com o tipo de usuário.</p>
+* <p align="justify">UC03 - Acessar grupo: este caso de uso é exclusivo para o ator profissional da saúde e ocorre quando o usuário seleciona algum grupo específico da lista de grupos. Serão apresentadas informações do grupo e diferentes ações a serem tomadas para gerenciamento dos membros.</p>
 
 * <p align="justify">UC05 - Responder formulário: este caso de uso é exclusivo para o ator paciente e consiste em responder o formulário de determinado grupo. É importante notar que é possível responder o formulário tanto a partir da lista de grupos, quanto a partir da seleção de um grupo específico.</p>
 
@@ -123,7 +137,9 @@
 
 #### Diagrama de Classes
 
-[![diagrama_de_classe](./img/class_diagram_gof_2.png)](./img/class_diagram_gof_2.png)
+<p align="justify">&emsp;&emsp;O diagrama de classes sem métodos e atributos colapsados pode ser visto no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/img/class_diagram_gof_2.png"> diagrama de classe completo</a>.</p>
+
+[![diagrama_de_classe](./img/class_diagram_resume.png)](./img/class_diagram_resume.png)
 
 #### Principais classes
 
@@ -141,10 +157,10 @@
 
 [![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_de_pacotes_geral.png)](./img/diagrama_de_pacotes_geral.png)
 
-* <p align="justify"><i><strong>Camada Mobile</i></strong>: A camada de frontend é composta pelos diretório <i>Context, Routes, Pages, Services e Components. O primeiro dos diretório, é responsável por prover informações e contexto para toda a aplicação. O segundo, tem como papel definir os caminhos de acesso do usuário as várias telas da aplicação. O direório <i>Pages</i> guarda as telas da aplicação. A pasta <i>service</i> contem os script com as regras de negócios e métodos como os de requisições HTTPs. Por último, a pasta <i>Components</i> guarda arquivos responsáveis por renderizar partes específicas normalmente repetidas das telas.</p>
-* <p align="justify"><i><strong>Camada Backend </i></strong>:A camada do backend é onde se encontra o projeto da API feita em <i>Node.Js</i> e <i>Express</i>. Ele segue uma estrutura MVC. A pasta <i>index</i> é o diretório que guarda o código iniciliazador da aplicação, e é a partir dele que todos os outros códigos são inicializados. <i>Routes</i> é o diretório que guarda os arquivos de rotas da aplicação, onde toda e qualquer requisição http feita à API passa pelos códigos contidos dentro dessa pasta.
-<i>Controllers</i> é a pasta que se encontra os arquivos de "ações" e são responsáveis por recuperar os dados do banco atráves das <i>models</i>. Os <i>scripts</i> de controller são utilizados dentro dos arquivos de <i>routes</i></p>
-* <p align="justify"><i><strong>Camada Mongo</i></strong>: A camada do Mongo é onde fica os arquivos de configuração do banco de dados MongoDB.</p>
+* <p align="justify"><strong>Camada <i>Mobile</i></strong>: a camada de frontend é composta pelos diretórios <i>Context, Routes, Pages, Services e Components</i>. O primeiro, respectivamente, é responsável por prover informações e contexto para toda a aplicação. O segundo tem como papel definir os caminhos de acesso do usuário às várias telas da aplicação. O diretório <i>Pages</i> guarda as telas da aplicação. O diretório <i>Services</i> contém os scripts com as regras de negócios e métodos como os de requisições HTTPs. Por último, a pasta <i>Components</i> guarda arquivos responsáveis por renderizar partes específicas, normalmente repetidas, das telas.</p>
+* <p align="justify"><strong>Camada <i>Backend </i></strong>: a camada do backend é onde se encontra o projeto da API feita em <i>Node.Js</i> e <i>Express</i>. Ele segue uma estrutura MVC. A pasta <i>index</i> é o diretório que guarda o código iniciliazador da aplicação e é a partir dele que todos os outros códigos são inicializados. <i>Routes</i> é o diretório que guarda os arquivos de rotas da aplicação, por onde passam todas as requisições http feitas à API.
+<i>Controllers</i> é a pasta que onde se encontram os arquivos de "ações", que são responsáveis por recuperar os dados do banco atráves das <i>models</i>. Os <i>scripts</i> de controller são utilizados dentro dos arquivos de <i>routes</i>.</p>
+* <p align="justify"><strong>Camada Mongo</strong>: A camada do Mongo é onde ficam os arquivos de configuração do banco de dados MongoDB.</p>
 
 ## Visão de Processos
 
@@ -157,6 +173,16 @@
 [![diagrama_de_sequência_2](./img/diagrama_de_sequencia_create_group.jpg)](./img/diagrama_de_sequencia_create_group.jpg)
 
 [![diagrama_de_sequência_3](./img/diagrama_de_sequencia_answering_form.jpg)](./img/diagrama_de_sequencia_answering_form.jpg)
+
+#### Principais processos
+
+* <p align="justify"><i><strong>showAll</i>()</strong>: processo responsável por retornar conjuntos de informações, a depender do argumento fornecido (sobrecarga). É muito utilizado durante todo a execução do aplicativo, principalmente para apresentar todos os grupos ao qual o usuário está atrelado.</p>
+
+* <p align="justify"><i><strong>getAllPatients</i>()</strong>: processo responsável por retornar lista de pacientes pertecentes a um grupo. Muito utilizado pelo usuário profissional da saúde para gerenciar os membros de um grupo.</p>
+
+* <p align="justify"><i><strong>getQuestions</i>()</strong>: utilizado durante a criação e o acesso a formulários, retorna as questões que um determinado formulário possui.</p>
+
+* <p align="justify"><i><strong>sendAnswers</i>()</strong>: processo essencial para a principal função da aplicação: manter contato entre paciente e profissional da saúde. Este processo recebe e salva as respostas de cada paciente para que o profissional da saúde possa realizar uma avaliação posteriormente.</p>
 
 ## Visão de Dados
 
@@ -241,3 +267,9 @@
 
 
 ## Qualidade
+
+* <p align="justify">Usabilidade: a interface, conforme descrito anteriormente, segue uma estilização simples e intuitiva, utilizando fontes e cores adequadas. Estas definições podem ser visualizadas no documento de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#identidade_visual/">Identidade Visual</a>.</p>
+
+* <p align="justify">Segurança: cada sessão do usuário recebe um token temporário, utilizado para realizar a autenticação do usuário e resgatar dados privados do banco.</p>
+
+* <p align="justify">Manutenibilidade: todo o desenvolvimento do projeto foi documentado no repositório do grupo: <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude">Diário da Saúde</a>. O fácil acesso a documentação facilita na compreensão e apoia a manutenibilidade do código.</p>
