@@ -162,13 +162,79 @@
 
 <p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema. Para a descrição do comportamento das entidades do sistema, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a>. Para definir as regras de negócio entre cada tabela armazenada no banco de dados, utilizou-se o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.</p>
 
-#### DE-R
 
-[![diagrama_entidade_relacionamento](./img/diagrama_entidade_relacionamento.png)](./img/diagrama_entidade_relacionamento.png)
+<!-- #### DE-R -->
 
-#### Diagrama Lógico
+<!-- [![diagrama_entidade_relacionamento](./img/diagrama_entidade_relacionamento.png)](./img/diagrama_entidade_relacionamento.png) -->
 
-[![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png)
+<!-- #### Diagrama Lógico -->
+
+<!-- [![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png) -->
+
+
+### Modelo Grupo
+#### Formato do dados
+- **_id**
+	* Tipo: Number;
+	* Obrigatoriedade: Sim.
+- **groupName**
+	* Tipo: String;
+	* Obrigatoriedade: Sim.
+
+- **idForm**
+	* Tipo: Number.
+
+- **idUBS**
+	* Tipo: Number;
+	* Obrigatoriedade: Sim.
+
+- **users**
+	* Tipo: Array de dados do tipo Number;
+
+#### Representação do objeto json em como os objetos são persistidos em banco de dados
+
+```json
+  {
+    "_id":1,
+    "groupName":"Grupo de Hipertensos",
+    "idForm":1,
+    "idUBS":1,
+    "users":[12,23,56,12]
+  }
+```
+
+### Modelo Profissional da Saúde
+#### Formato do dados
+- **_id**
+	* Tipo: Number;
+	* Obrigatoriedade: Sim.
+- **name**
+	* Tipo: String;
+	* Obrigatoriedade: Sim.
+
+- **password**
+	* Tipo: String.
+    * Obrigatoriedade: Sim.
+
+- **cpf**
+	* Tipo: Number;
+	* Obrigatoriedade: Sim.
+
+- **role**
+	* Tipo: String;
+    * Obrigatoriedade: Sim.
+
+#### Representação do objeto json em como os objetos são persistidos em banco de dados
+
+```json
+ {
+   "id":1,
+   "name":"Ipsolum",
+   "password":"76bb1ff3699e0af3750e9fa119dea44e",
+   "cpf":1234567890,
+   "role":"healthProfessional", 
+ }
+```
 
 ## Tamanho e Performance
 
