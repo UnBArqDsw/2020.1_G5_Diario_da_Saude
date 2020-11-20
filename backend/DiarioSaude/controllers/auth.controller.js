@@ -140,9 +140,16 @@ exports.signin = (req, res) => {
 };
 
 exports.getUser = (req, res) => {
-  console.log(req)
   Person.getPerson(req.params.cpf, (err, user) => {
     if(err) res.json({status: 400, message: err})
     res.json({status:200, user: {name: user.name, id: user.id, birthDate: user.birthDate, gender: user.gender}})
+  })
+}
+
+exports.getAll = (req, res) => {
+  Person.find((err, users) => {
+    if (err) res.json({status:400, message:err})
+
+    res.json({status: 200, users: users})
   })
 }
