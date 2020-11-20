@@ -133,13 +133,13 @@
 
   * ```json
     {
-      "users":[12,23,56,12]
+      "users":[12,23,56,12],
       "_id":1,
       "groupName":"Lorem Ipsum",
       "idUBS":1
     },
     {
-      "users":[12,23,56,12]
+      "users":[12,23,56,12],
       "_id":1,
       "groupName":"Lorem Ipsum",
       "idUBS":1
@@ -284,6 +284,4 @@
       "_id":1
     }
   ```
-
-## Referência
 

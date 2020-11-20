@@ -3,18 +3,16 @@
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
-| 14/11/2020 | 0.1 | Criação do Documento | [Murilo Loiola](https://github.com/murilo-dan) |
-| 16/11/2020 | 0.2 | Adição do tópico de Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
-| 16/11/2020 | 0.3 | Adição do tópico de Escopo | [Murilo Loiola](https://github.com/murilo-dan) |
-| 17/11/2020 | 0.4 | Adição do tópico de Visão Geral na Introdução | [Murilo Loiola](https://github.com/murilo-dan) |
-| 18/11/2020 | 0.5 | Adição do tópico de Tecnologias | [Murilo Loiola](https://github.com/murilo-dan) |
-| 18/11/2020 | 0.6 | Adição do tópico de Metas e Restrições Arquiteturais | [Murilo Loiola](https://github.com/murilo-dan) |
-| 18/11/2020 | 0.7 | Adição do tópico de Visão de Casos de Uso | [Murilo Loiola](https://github.com/murilo-dan) |
-| 18/11/2020 | 0.8 | Adição do tópico de Visão Lógica | [Murilo Loiola](https://github.com/murilo-dan) |
-| 18/11/2020 | 0.9 | Adição do tópico de Visão de Dados | [Murilo Loiola](https://github.com/murilo-dan) |
-| 19/11/2020 | 0.9.1 | Correção no tópico de tecnologias | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
-| 19/11/2020 | 0.9.2 | Adição do diagrama de arquitetura geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
-| 19/11/2020 | 0.9.3 | Adição do diagrama de pacotes geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
+| 14/11/2020 | 0.1 | Criação do documento e adição do tópico de Introdução  | [Murilo Loiola](https://github.com/murilo-dan) |
+| 17/11/2020 | 0.2 | Adição do tópico de Visão Geral na Introdução e Adição do tópico de Escopo | [Murilo Loiola](https://github.com/murilo-dan) |
+| 18/11/2020 | 0.3 | Adição do tópico de Tecnologias | [André Goretti](https://github.com/AGoretti) |
+| 18/11/2020 | 0.4 | Adição do tópico de Metas e Restrições Arquiteturais | [Murilo Loiola](https://github.com/murilo-dan) |
+| 18/11/2020 | 0.5 | Adição do tópico de Visão Lógica, Visão de Dados, Visão de Casos de Uso | [Murilo Loiola](https://github.com/murilo-dan), [Gabriel Tiveron](https://github.com/GabrielTiveron), [André Goretti](https://github.com/AGoretti) |
+| 19/11/2020 | 0.6 | Correção no tópico de tecnologias | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 19/11/2020 | 0.7 | Adição do diagrama de arquitetura geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 19/11/2020 | 0.8 | Adição do diagrama de pacotes geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
+| 19/11/2020 | 0.9 | Adição do tópico de Visão de Processos | [Murilo Loiola](https://github.com/murilo-dan) |
+| 19/11/2020 | 0.9.1 | Adição da descrição do diagrama de pacotes | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 ## Introdução
 
@@ -121,7 +119,7 @@
 
 ## Visão Lógica
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas.</p>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_classes/">Classe</a> e <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_pacotes/">Pacotes</a>.</p>
 
 #### Diagrama de Classes
 
@@ -143,10 +141,22 @@
 
 [![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_de_pacotes_geral.png)](./img/diagrama_de_pacotes_geral.png)
 
-* <p align="justify"><i><strong>Camada Mobile</i></strong>: .</p>
+* <p align="justify"><i><strong>Camada Mobile</i></strong>: A camada de frontend é composta pelos diretório <i>Context, Routes, Pages, Services e Components. O primeiro dos diretório, é responsável por prover informações e contexto para toda a aplicação. O segundo, tem como papel definir os caminhos de acesso do usuário as várias telas da aplicação. O direório <i>Pages</i> guarda as telas da aplicação. A pasta <i>service</i> contem os script com as regras de negócios e métodos como os de requisições HTTPs. Por último, a pasta <i>Components</i> guarda arquivos responsáveis por renderizar partes específicas normalmente repetidas das telas.</p>
 * <p align="justify"><i><strong>Camada Backend </i></strong>:A camada do backend é onde se encontra o projeto da API feita em <i>Node.Js</i> e <i>Express</i>. Ele segue uma estrutura MVC. A pasta <i>index</i> é o diretório que guarda o código iniciliazador da aplicação, e é a partir dele que todos os outros códigos são inicializados. <i>Routes</i> é o diretório que guarda os arquivos de rotas da aplicação, onde toda e qualquer requisição http feita à API passa pelos códigos contidos dentro dessa pasta.
 <i>Controllers</i> é a pasta que se encontra os arquivos de "ações" e são responsáveis por recuperar os dados do banco atráves das <i>models</i>. Os <i>scripts</i> de controller são utilizados dentro dos arquivos de <i>routes</i></p>
 * <p align="justify"><i><strong>Camada Mongo</i></strong>: A camada do Mongo é onde fica os arquivos de configuração do banco de dados MongoDB.</p>
+
+## Visão de Processos
+
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição dos principais processos que ocorrem durante a utilização do sistema. Para acompanhar a descrição dos principais processos, seguem os <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_sequencia/">Diagramas de Sequência</a> pertinentes.</p>
+
+#### Diagramas de Sequência
+
+[![diagrama_de_sequência_1](./img/diagrama_de_sequencia_show_group.jpg)](./img/diagrama_de_sequencia_show_group.jpg)
+
+[![diagrama_de_sequência_2](./img/diagrama_de_sequencia_create_group.jpg)](./img/diagrama_de_sequencia_create_group.jpg)
+
+[![diagrama_de_sequência_3](./img/diagrama_de_sequencia_answering_form.jpg)](./img/diagrama_de_sequencia_answering_form.jpg)
 
 ## Visão de Dados
 
@@ -161,5 +171,7 @@
 [![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png)
 
 ## Tamanho e Performance
+
+
 
 ## Qualidade
