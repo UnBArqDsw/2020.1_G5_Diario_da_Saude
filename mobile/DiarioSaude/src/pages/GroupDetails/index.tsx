@@ -16,7 +16,6 @@ import { useNavigation, useFocusEffect } from "@react-navigation/core";
 import AsyncStorage from "@react-native-community/async-storage";
 import api from "../../services/api";
 import styles from "./styles";
-import { any } from "prop-types";
 
 function GroupDeatils() {
   const [id, setId] = useState();
@@ -137,7 +136,6 @@ function GroupDeatils() {
             </TouchableWithoutFeedback>
           </TouchableHighlight>
         </Modal>
-        <Text>{group.groupName}</Text>
         {usersNames.map((name: string, index: number) => {
           return <UserItem Name={name} key={index} />;
         })}
