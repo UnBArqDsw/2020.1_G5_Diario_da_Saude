@@ -28,10 +28,10 @@
 
 ### Acrônimos e Abreviações
 
-* **UnB**: Universidade de Brasília
-* **FGA**: Faculdade UnB Gama
-* **UBS**: Unidades Básicas de Saúde
-* **UML**: Unified Modeling Language (Linguagem de Modelagem Unificada)
+ * <p align="justify"><strong>UnB</strong>: Universidade de Brasília</p>
+ * <p align="justify"><strong>FGA</strong>: Faculdade UnB Gama</p>
+ * <p align="justify"><strong>UBS</strong>: Unidades Básicas de Saúde</p>
+ * <p align="justify"><strong>UML</strong>: Unified Modeling Language (Linguagem de Modelagem Unificada)</p>
 
 ### Referências
 
@@ -192,6 +192,7 @@
 [![diagrama_lógico](./img/diagrama_logico.png)](./img/diagrama_logico.png)
 
 ## Tamanho e Performance
+
 
 
 ## Qualidade
