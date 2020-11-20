@@ -35,6 +35,11 @@
 
 ### Referências
 
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/templates/software_architecture_document_CE85F5AC.html">Documento de Arquitetura de Software - Template</a>;
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm">Documento de Arquitetura de Software - SPEU</a>;
+* <a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm">Documento de Arquitetura de Software - C-Registration System</a>;
+* <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/">Wiki - Diário da Saúde</a>;
+
 ### Visão Geral
 
 <p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica, Visão de Processos e Visão de Dados. Por último, os tópicos de Tamanho e Performance e Qualidade.</p>
