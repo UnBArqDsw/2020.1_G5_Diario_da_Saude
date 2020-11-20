@@ -1,12 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Text, View, Image, ScrollView } from "react-native";
+import React, { useEffect, useState } from "react";
+import { Text, View, ScrollView } from "react-native";
 import styles from "./styles";
 import { RectButton } from "react-native-gesture-handler";
-import AuthContext from "../../contexts/auth";
-import AsyncStorage from "@react-native-community/async-storage";
 import GroupItem, { Group } from "../../components/groupItem";
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
-import Axios from "axios";
 import api from "../../services/api";
 
 function Medico() {
