@@ -7,7 +7,7 @@
 
 ## Introdução
 
-<p align="justify">&emsp;&emsp;Reutilização de software trata do uso de software ou conhecimentos de software já existentes para construir novos softwares. Componentes reutilizáveis podem ser tanto software reutilizável quanto conhecimento de software. Reusabilidade é a propriedade de um componente de software que indica a sua probabilidade de ser reutilizado<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#reutilizacao/referencias">[1]</a></sup>.</p>
+<p align="justify">&emsp;&emsp;Reutilização de software trata do uso de software ou conhecimentos de software já existentes para construir novos softwares. Componentes reutilizáveis podem ser tanto software reutilizável quanto conhecimento de software. Reusabilidade é a propriedade de um componente de software que indica a sua probabilidade de ser reutilizado<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[1]</a></sup>.</p>
 
 <p align="justify">&emsp;&emsp;O propósito da reutilização de software é mehorar a produtividade e qualidade de software ao dispor de soluções já implementadas e que são reutilizáveis em diferentes contextos. No projeto Diário da Saúde, as áreas que contam com reutilização são descritas a seguir.</p>
 

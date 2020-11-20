@@ -156,7 +156,7 @@
 
 ## Visão Lógica
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_classes/">Classe</a> e <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_pacotes/">Pacotes</a>.</p>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Classe</a> e <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_pacotes/">Pacotes</a>.</p>
 
 #### Diagrama de Classes
 
@@ -187,14 +187,14 @@
 
 #### Diagrama de comunicação
 
-<p align="justify">&emsp;&emsp;Uma importante interação entre objetos é a interação entre <i>Profissional de Saúde</i> e o <i>Grupo</i> descrita no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_comunicacao/">Diagrama de Comunicação</a>:</p>
+<p align="justify">&emsp;&emsp;Uma importante interação entre objetos é a interação entre <i>Profissional de Saúde</i> e o <i>Grupo</i> descrita no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_comunicacao/">Diagrama de Comunicação</a>:</p>
 
 [![diagrama_comunicação_profissional](./img/diagrama_comunicacao_profissional.jpg)](./img/diagrama_comunicacao_profissional.jpg)
 
 
 ## Visão de Processos
 
-<p align="justify">&emsp;&emsp;Neste tópico há uma descrição dos principais processos que ocorrem durante a utilização do sistema. Para acompanhar a descrição dos principais processos, seguem os <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_sequencia/">Diagramas de Sequência</a> pertinentes.</p>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição dos principais processos que ocorrem durante a utilização do sistema. Para acompanhar a descrição dos principais processos, seguem os <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_sequencia/">Diagramas de Sequência</a> pertinentes.</p>
 
 #### Diagramas de Sequência
 
@@ -220,7 +220,7 @@
 
 ## Visão de Implementação
 
-<p align="justify">&emsp;&emsp;Após a autenticação, pacientes podem responder as questões dos formulários dos grupos aos quais pertencem, fornecendo os dados para a geração de relatórios individuais. Profissionais de saúde, após a autenticação, podem gerenciar grupos e gerar relatórios individuias e gerais. Uma representação de como esses importantes componentes do sistema são conectados pode ser vista no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#diagrama_de_componente/">diagramas de componentes</a>.</p>
+<p align="justify">&emsp;&emsp;Após a autenticação, pacientes podem responder as questões dos formulários dos grupos aos quais pertencem, fornecendo os dados para a geração de relatórios individuais. Profissionais de saúde, após a autenticação, podem gerenciar grupos e gerar relatórios individuias e gerais. Uma representação de como esses importantes componentes do sistema são conectados pode ser vista no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_componente/">diagramas de componentes</a>.</p>
 
 #### Diagrama de Componentes
 
@@ -294,12 +294,12 @@
  }
 ```
 
-<p align="justify">&emsp;&emsp; Considerando o paradigma de orientação a objetos, temos a descrição do comportamento das entidades do sistema utilizando o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#der/">DE-R</a> e para definir as regras de negócio entre as entidades temos o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#dl/">Diagrama Lógico</a>.
+<p align="justify">&emsp;&emsp; Considerando o paradigma de orientação a objetos, temos a descrição do comportamento das entidades do sistema utilizando o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/der/">DE-R</a> e para definir as regras de negócio entre as entidades temos o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/dl/">Diagrama Lógico</a>.
 </p>
 
 ## Qualidade
 
-* <p align="justify">Usabilidade: a interface, conforme descrito anteriormente, segue uma estilização simples e intuitiva, utilizando fontes e cores adequadas. Estas definições podem ser visualizadas no documento de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#identidade_visual/">Identidade Visual</a>.</p>
+* <p align="justify">Usabilidade: a interface, conforme descrito anteriormente, segue uma estilização simples e intuitiva, utilizando fontes e cores adequadas. Estas definições podem ser visualizadas no documento de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/identidade_visual/">Identidade Visual</a>.</p>
 
 * <p align="justify">Segurança: cada sessão do usuário recebe um token temporário, utilizado para realizar a autenticação do usuário e resgatar dados privados do banco.</p>
 
