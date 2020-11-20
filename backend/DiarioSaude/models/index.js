@@ -9,6 +9,8 @@ db.healthProfessional = require("./healthProfessional.model");
 db.patient = require("./patient.model")
 db.role = require("./role.model");
 db.group = require("./group.model")
+person = require("./Person.model")
+db.person = person.PersonModel
 
 db.ROLES = ["patient", "healthProfessional"];
 
