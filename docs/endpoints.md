@@ -2,8 +2,9 @@
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 |:----:|:------:|:---------:|:---------:|
-| 19/11/2020 | 0.1 | Criação do Documento | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 18/11/2020 | 0.1 | Criação do Documento | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
 | 19/11/2020 | 0.2 | Adição do mapeamento de Form, Question, Autenticação | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 19/11/2020 | 0.3 | Adição do mapeamento de Form, Question, Autenticação | [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
 
 ## Definição
 
@@ -175,7 +176,63 @@
   
   * GET - '/group/:id'
 
-#### 
+##### Parâmetros recebidos
+  
+  * ```id``` - Id do grupo
+
+##### Retorno enviado
+
+  ```json
+    {
+      "users":[12,23,56,12]
+      "_id":1,
+      "groupName":"Lorem Ipsum",
+      "idUBS":1
+    }
+  ```
+
+### Atualizar grupo
+  
+  * PUT - '/group/:groupId'
+
+##### Parâmetros recebidos
+  
+  * ```groupId``` - Id do grupo
+  * Objeto do tipo grupo do body da requisição:
+   ```json
+    {
+      "groupName":"Lorem Ipsum",
+      "idUBS":1,
+      "idForm":1
+    }
+  ```
+
+##### Retorno enviado
+
+  ```json
+    {
+      "_id":1,
+      "groupName":"Lorem Ipsum",
+      "idUBS":1,
+      "users":[12,23,56,12]
+    }
+  ```
+
+### Deletar grupo
+  
+  * DELETE - '/group/:groupId'
+
+##### Parâmetros recebidos
+  
+  * ```groupId``` - Id do grupo
+
+##### Retorno enviado
+
+  ```json
+    {
+      "message":"Lorem ipsulu atmus cretos lirus"
+    }
+  ```
 
 ## Referência
 
