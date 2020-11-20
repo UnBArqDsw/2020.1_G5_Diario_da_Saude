@@ -13,6 +13,8 @@
 | 18/11/2020 | 0.8 | Adição do tópico de Visão Lógica | [Murilo Loiola](https://github.com/murilo-dan) |
 | 18/11/2020 | 0.9 | Adição do tópico de Visão de Dados | [Murilo Loiola](https://github.com/murilo-dan) |
 | 19/11/2020 | 0.9.1 | Correção no tópico de tecnologias | [Gabriel Tiveron](https://github.com/GabrielTiveron) |
+| 19/11/2020 | 0.9.2 | Adição do diagrama de arquitetura geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002) |
+| 19/11/2020 | 0.9.3 | Adição do diagrama de pacotes geral| [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Murilo Loiola](https://github.com/murilo-dan) |
 
 ## Introdução
 
@@ -36,7 +38,7 @@
 
 ### Visão Geral
 
-*Inserir diagrama representando macro níveis do sistema.*
+[![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_geral_de_arquitetura.png)](./img/diagrama_geral_de_arquitetura.png)
 
 ### Tecnologias
 
@@ -138,6 +140,8 @@
 * <p align="justify"><i><strong>Report</i></strong>: a classe <i>Report</i> representa os relatórios individuais ou gerais.
 
 #### Diagrama de Pacotes
+
+[![diagrama_caso_de_uso_profissional_da_saude](./img/diagrama_de_pacotes_geral.png)](./img/diagrama_de_pacotes_geral.png)
 
 ## Visão de Dados
 
