@@ -10,7 +10,7 @@
 | 27/09/2020 | 1.1 | Removendo antiga US15 e atualizando US07 | [Ian Rocha](https://github.com/IanPSRocha) |
 
 ## Introdução
-<p align="justify">&emsp;&emsp;Em termos gerais, o Product Backlog é uma listagem de todos os afazeres pendentes no projeto. Ele substitui o modelo tradicional de especificação de artefatos. Cada elemento da listagem é elicitado por meio de interação da equipe de desenvolvimento com o cliente, podendo ser apenas um representante, o que torna os elementos levantados muito arbitrários; ou podendo ser uma equipe representante do cliente, representando as diversas áreas que utilizarão o produto.
+<p align="justify">&emsp;&emsp;Em termos gerais, o Product Backlog é uma listagem de todos os afazeres pendentes no projeto. Ele substitui o modelo tradicional de especificação de artefatos. Cada elemento da listagem é elicitado por meio de interação da equipe de desenvolvimento com o cliente, podendo ser apenas um representante, o que torna os elementos levantados muito arbitrários; ou podendo ser uma equipe representante do cliente, representando as diversas áreas que utilizarão o produto.</p>
 
 ## Backlog
 
@@ -312,8 +312,3 @@ Eu, como usuário, quero entrar em contato com os desenvolvedores do aplicativo 
 ##### Critérios de Aceitação:
 - Ter um botão de "entre em contato".
 - Direcionar esse botão para whatsapp ou area de sugestões.
-
-
-
-
-

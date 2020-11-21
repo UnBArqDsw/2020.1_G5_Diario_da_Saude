@@ -64,6 +64,13 @@ nav:
     - Módulo Padrões de Projeto Extras:
       - Middleware: middleware.md
       - Atualizações: iniciativas_extras_entrega3.md
+  - Arquitetura de Software & Reutilização:
+    - Módulo Estilos e Padrões Arquiteturais:
+      - Documento de Arquitetura de Software (DAS): das.md 
+    - Módulo Reutilização de Software:
+      - Documento de Reutilização: reutilizacao.md
+    - Iniciativas Extras:
+      - Mapeamento de Rotas API: endpoints.md
 
 repo_url: https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude
 extra:
