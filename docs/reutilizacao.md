@@ -8,6 +8,7 @@
 | 20/11/2020 | 0.3 | Adição de bibliotecas  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.4 | Adição de ferramentas  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.5 | Adição de middlewares  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.6 | Correções gerais       | [Gabriel Tiveron](https://github.com/GabrielTiveron), [André Goretti](https://github.com/AGoretti) |
 
 ## Introdução
 
@@ -19,44 +20,44 @@
 
 #### Express
 
-<p align="justify"> &emsp;&emsp; O Express é um framework para aplicativos Node.js de software livre e de código aberto sob a Licença MIT. Ele fornece um conjunto de recursos para aplicativos web e mobile que facilita a criação de APIs robustas rapidamente.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[2]</a></sup></p>
+<p align="justify"> &emsp;&emsp;O Express é um framework para aplicativos Node.js de software livre e de código aberto sob a Licença MIT. Ele fornece um conjunto de recursos para aplicativos web e mobile que facilita a criação de APIs robustas rapidamente.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[2]</a></sup></p>
 
 
 #### React Native
 
-<p align="justify"> &emsp;&emsp; Um framework para desenvolvimento de aplicações nativas utilizando o React. Oferece um rápido desenvolvimento mobile e facilita o compartilhamento do código para Android, iOS e web sem comprometer a experiência do usuário ou a qualidade da aplicação.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[3]</a></sup></p>
+<p align="justify">&emsp;&emsp;Um framework para desenvolvimento de aplicações nativas utilizando o React. Oferece um rápido desenvolvimento mobile e facilita o compartilhamento do código para Android, iOS e web sem comprometer a experiência do usuário ou a qualidade da aplicação.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[3]</a></sup></p>
 
 
 ## Bibliotecas
 
 #### React
 
-<p align="justify"> &emsp;&emsp; React é uma biblioteca uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário. É utilizada no frontend pelo framework React Native<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[4]</a></sup></p>
+<p align="justify">&emsp;&emsp;React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário. É utilizada no frontend pelo framework React Native<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[4]</a></sup>.</p>
 
 #### Bcrypt
 
-<p align="justify"> &emsp;&emsp; Bcrypt é uma biblioteca que ajuda a fazer hash para as senhas.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[5]</a></sup></p>
+<p align="justify">&emsp;&emsp;Bcrypt é uma biblioteca que ajuda a fazer hash para as senhas.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[5]</a></sup></p>
 
 ## Ferramentas
 
 #### Nodemon
 
-<p align="justify"> &emsp;&emsp; nodemon é uma ferramenta que ajuda no desenvolvimento de aplicativos baseados em node.js ao reiniciar automaticamente o aplicativo quando mudanças em arquivos são detectadas sem a necessidade de reiniciar o servidor. O nodemon não requer nenhuma mudança adicional no código ou método de desenvolvimento funcionando como um wrapper.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[6]</a></sup></p>
+<p align="justify">&emsp;&emsp;O nodemon é uma ferramenta que ajuda no desenvolvimento de aplicativos baseados em node.js ao reiniciar automaticamente o aplicativo quando mudanças em arquivos são detectadas sem a necessidade de reiniciar o servidor. O nodemon não requer nenhuma mudança adicional no código ou método de desenvolvimento funcionando como um wrapper.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[6]</a></sup></p>
 
 #### Expo
 
-<p align="justify"> &emsp;&emsp; O Expo é uma ferramenta que facilita o acesso a aplicações nativas no dispositivo durante o desenvolvimento mobile com React Native sem precisar instalar dependências ou alterar código.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[7]</a></sup></p>
+<p align="justify">&emsp;&emsp;O Expo é uma ferramenta que facilita o acesso a aplicações nativas no dispositivo durante o desenvolvimento mobile com React Native sem precisar instalar dependências ou alterar código.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[7]</a></sup></p>
 
 #### Axios
 
-<p align="justify"> &emsp;&emsp; Axios é uma biblioteca JavaScript útil para realizar solicitações HTTP. É baseado em <i>promise</i> permitindo escrever código assíncrono.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[8]</a></sup></p>
+<p align="justify">&emsp;&emsp;Axios é uma biblioteca JavaScript útil para realizar solicitações HTTP. É baseado em <i>promise</i> permitindo escrever código assíncrono.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[8]</a></sup></p>
 
 
 ## Middlewares
 
 #### Body-parser
 
-<p align="justify"> &emsp;&emsp; Body-parser é um Middleware que faz uma análise das solicitações recebidas antes dos manipuladores. Facilita na padronização das respostas em formato JSON da API Rest do backend.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[9]</a></sup></p>
+<p align="justify">&emsp;&emsp;Body-parser é um Middleware que faz uma análise das solicitações recebidas antes dos manipuladores. Facilita na padronização das respostas em formato JSON da API Rest do backend.<sup><a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/reutilizacao/#referencias">[9]</a></sup></p>
 
 ## Referências
 
