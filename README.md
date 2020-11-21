@@ -21,7 +21,21 @@
 O **Diário da Saúde** é uma aplicação que busca auxiliar Unidades Básicas de Saúde (UBS) que possuam grupos de risco (diabéticos, hipertensos, etc). A aplicação permite que os profissionais da unidade possam acompanhar a condição do paciente à distância, através de medições realizadas de casa pelo próprio paciente.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
+
+Segue abaixo 3 exemplos de telas da aplicação desenvolvida. 
+
+### Tela inicial
+![tela_inicial](docs/img/tela_inicial.jpg)
+
+### Tela de cadastro
+![tela_lista_de_grupos](docs/img/tela_lista_de_grupos.jpg)
+
+### Tela de listagem dos grupos
+![tela_de_cadastro](docs/img/tela_de_cadastro.jpg)
+
+### Tela do questinário de pressão arterial
+![tela_pergunta_sobre_pressao](docs/img/tela_pergunta_sobre_pressao.jpg)
+
 
 ## Instalação 
 **Linguagens**: xxxxxx<br>
