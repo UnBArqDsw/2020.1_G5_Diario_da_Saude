@@ -22,16 +22,16 @@ O **Diário da Saúde** é uma aplicação que busca auxiliar Unidades Básicas 
 
 ## Screenshots
 
-Segue abaixo 3 exemplos de telas da aplicação desenvolvida. 
+Segue abaixo 4 exemplos de telas da aplicação desenvolvida. 
 
 ### Tela inicial
 ![tela_inicial](docs/img/tela_inicial.jpg)
 
 ### Tela de cadastro
-![tela_lista_de_grupos](docs/img/tela_lista_de_grupos.jpg)
+![tela_lista_de_grupos](docs/img/tela_de_cadastro.jpg)
 
 ### Tela de listagem dos grupos
-![tela_de_cadastro](docs/img/tela_de_cadastro.jpg)
+![tela_de_cadastro](docs/img/tela_lista_de_grupos.jpg)
 
 ### Tela do questinário de pressão arterial
 ![tela_pergunta_sobre_pressao](docs/img/tela_pergunta_sobre_pressao.jpg)
@@ -53,6 +53,3 @@ Acesse o Mongo-Express em http://localhost:8081
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto final.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
