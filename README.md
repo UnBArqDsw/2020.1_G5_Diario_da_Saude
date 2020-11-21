@@ -17,12 +17,12 @@
 | 17/0163571 | Murilo Loiola Dantas |
 | 15/0064535 | Rodrigo Dadamos Lopes da Silva |
 
-## Sobre 
+## Sobre
 O **Diário da Saúde** é uma aplicação que busca auxiliar Unidades Básicas de Saúde (UBS) que possuam grupos de risco (diabéticos, hipertensos, etc). A aplicação permite que os profissionais da unidade possam acompanhar a condição do paciente à distância, através de medições realizadas de casa pelo próprio paciente.
 
 ## Screenshots
 
-Segue abaixo 4 exemplos de telas da aplicação desenvolvida. 
+Segue abaixo 4 exemplos de telas da aplicação desenvolvida.
 
 ### Tela inicial
 ![tela_inicial](docs/img/tela_inicial.jpg)
@@ -37,7 +37,7 @@ Segue abaixo 4 exemplos de telas da aplicação desenvolvida.
 ![tela_pergunta_sobre_pressao](docs/img/tela_pergunta_sobre_pressao.jpg)
 
 
-## Instalação 
+## Instalação
 **Linguagens**: JavaScript, TypeScript<br>
 **Tecnologias**: NODE.js, React Native, Docker<br>
 Com o Docker e o docker-compose instalados, execute os comandos:
@@ -47,9 +47,10 @@ Com o Docker e o docker-compose instalados, execute os comandos:
 docker-compose up --build
 ```
 
-## Uso 
+## Uso
 No desenvolvimento, para executar a aplicação front, instale e abra o aplicativo Expo e aponte a câmera para o QR Code que apareceu no terminal.
 Acesse o Mongo-Express em http://localhost:8081
 
 ## Vídeo
-Adicione 1 ou mais vídeos com a execução do projeto final.
+
+[![Vídeo de apresentação](https://img.youtube.com/vi/Y92U26Ayby4/0.jpg)](https://www.youtube.com/watch?v=Y92U26Ayby4)
