@@ -19,6 +19,7 @@
 | 20/11/2020 | 0.14 | Revisão da visão da dados | [Gustavo Carvalho](https://github.com/gustavocarvalho1002), [Rodrigo Dadamos](https://github.com/Rdadamos) |
 | 20/11/2020 | 0.15 | Adicionando referências  | [Murilo Loiola](https://github.com/murilo-dan) |
 | 20/11/2020 | 0.16 | Adição do estilo arquitetural  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
+| 20/11/2020 | 0.17 | Adição da visão de implantação  | [Rodrigo Dadamos](https://github.com/Rdadamos) |
 
 ## Introdução
 
@@ -39,6 +40,9 @@
  * <p align="justify"><strong>REST</strong>: Representational State Transfer (Transferência Representacional de Estado)</p>
  * <p align="justify"><strong>HTTP</strong>: HyperText Transfer Protocol (Protocolo de Transferência de Hipertexto)</p>
  * <p align="justify"><strong>JSON</strong>: JavaScript Object Notation (Notação de Objetos JavaScript)</p>
+ * <p align="justify"><strong>AWS</strong>: Amazon Web Services</p>
+ * <p align="justify"><strong>EC2</strong>: Amazon Elastic Compute Cloud</p>
+ * <p align="justify"><strong>LAN</strong>: Local Area Network (Rede de Área Local)</p>
 
 ### Referências
 
@@ -67,7 +71,7 @@
 
 * **Controller** - camada backend que recebe as requisições do frontend (através das routes). É sua responsabilidade disponibilizar os endpoints em estilo REST que serão consumidos pelo frontend. As respostas às requisições são em formatos JSON.
 
-* **Model** - camada backend que comunica com a controller e com o banco de dados. É sua responsabilidade implementar os modelos fazendo a comunicação com o banco de dados
+* **Model** - camada backend que comunica com a controller e com o banco de dados. É sua responsabilidade implementar os modelos fazendo a comunicação com o banco de dados.
 
 * **Banco de dados** - camada de persistência dos dados. Sua responsabilidade é armazanar e garantir o acesso adequado aos dados.
 
@@ -216,7 +220,11 @@
 
 ## Visão de Implantação
 
+<p align="justify">&emsp;&emsp;O aplicativo mobile fica hospedado na Google Play Store disponível para download no celular do usuário com sistema operacional Android. O aplicativo comunica-se com o backend atráves da internet com uma conexão wireless ou conexão móvel (3G/4G). O backend fica hospedado em uma instância EC2 da AWS com servidor ubuntu. A base de dados também fica hospedada na instância Amazon EC2. A comunicação do backend com a base de dados é feita pela rede local (LAN).</p>
+
 #### Diagrama de Implantação
+
+[![diagrama_de_implatação](./img/diagrama_de_implantacao.png)](./img/diagrama_de_implantacao.png)
 
 ## Visão de Implementação
 
