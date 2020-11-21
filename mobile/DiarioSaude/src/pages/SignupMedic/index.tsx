@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import api from "../../services/api";
 import {
   View,
   Text,
@@ -8,29 +9,39 @@ import {
   TouchableHighlight
 } from "react-native";
 //import API from "../../services/api"
-import {
-  RectButton,
-  TextInput,
-} from "react-native-gesture-handler";
+import { RectButton, TextInput } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 import picture from "../../assets/camera.png";
 
 function SignupMedic() {
   const [modalVisible, setModalVisible] = useState(false);
-  const [CPF, setCPF] = useState('');
-  const [Senha, setSenha] = useState('');
-  const [ConfirmarSenha, setConfirmarSenha] = useState('');
-  const [Cargo, setCargo] = useState('');
-  const [Nome, setNome] = useState('');
-  const [UBS, setUBS] = useState('');
-  const [msgModal, setmsgModal] = useState('');
+  const [CPF, setCPF] = useState("");
+  const [Senha, setSenha] = useState("");
+  const [ConfirmarSenha, setConfirmarSenha] = useState("");
+  const [Cargo, setCargo] = useState("");
+  const [Nome, setNome] = useState("");
+  // const [UBS, setUBS] = useState('');
+  const [msgModal, setmsgModal] = useState("");
 
   const { navigate } = useNavigation();
 
-  /*function submit(){
-    API.post("/create", )
-  }*/
+  async function submit() {
+    await api
+      .post("/auth/signup", {
+        cpf: parseInt(CPF),
+        password: Senha,
+        name: Nome,
+        role: Cargo,
+        roles: ["healthProfessional"]
+      })
+      .then(res => {
+        console.log(res.data);
+      })
+      .catch(error => console.log(error));
+
+    navigate("landing");
+  }
 
   return (
     <View style={styles.container}>
@@ -42,7 +53,13 @@ function SignupMedic() {
           setModalVisible(false);
         }}
       >
-        <TouchableHighlight style={styles.centeredView} underlayColor="none" onPressOut={() => { setModalVisible(!modalVisible) }}>
+        <TouchableHighlight
+          style={styles.centeredView}
+          underlayColor="none"
+          onPressOut={() => {
+            setModalVisible(!modalVisible);
+          }}
+        >
           <TouchableWithoutFeedback>
             <View style={styles.modalView}>
               <Text style={styles.modalText}>{msgModal}</Text>
@@ -92,12 +109,12 @@ function SignupMedic() {
           value={ConfirmarSenha}
           onChangeText={confirmarsenha => setConfirmarSenha(confirmarsenha)}
         ></TextInput>
-        <TextInput
+        {/* <TextInput
           style={styles.textInputUsuario}
           placeholder="UBS"
           value={UBS}
           onChangeText={ubs => setUBS(ubs)}
-        ></TextInput>
+        ></TextInput> */}
         <TextInput
           style={styles.textInputUsuario}
           placeholder="Cargo"
@@ -109,21 +126,23 @@ function SignupMedic() {
         <RectButton
           style={styles.buttonCadastrar}
           onPress={() => {
-            if (CPF == "" || Nome == "" || Senha == "" || ConfirmarSenha == "" || UBS == "" || Cargo == "") {
-              setModalVisible(true)
-              setmsgModal("Preencha todos os campos")
-            }
-            else if (Senha != ConfirmarSenha) {
-              setModalVisible(true)
-              setmsgModal("Senhas não correspondem")
-            }
-            else if (CPF.length != 11){
-              setModalVisible(true)
-              setmsgModal("CPF inválido")
-            }
-            else {
-              navigate("Landing")
-              //submit()
+            if (
+              CPF == "" ||
+              Nome == "" ||
+              Senha == "" ||
+              ConfirmarSenha == "" ||
+              Cargo == ""
+            ) {
+              setModalVisible(true);
+              setmsgModal("Preencha todos os campos");
+            } else if (Senha != ConfirmarSenha) {
+              setModalVisible(true);
+              setmsgModal("Senhas não correspondem");
+            } else if (CPF.length != 11) {
+              setModalVisible(true);
+              setmsgModal("CPF inválido");
+            } else {
+              submit();
             }
           }}
         >

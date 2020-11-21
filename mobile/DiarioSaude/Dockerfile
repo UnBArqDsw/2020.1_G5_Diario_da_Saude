@@ -9,6 +9,7 @@ COPY package.json /usr/src/app/package.json
 COPY app.json /usr/src/app/app.json
 
 RUN npm install --global expo-cli
+RUN npm install
 
 COPY . /usr/src/app
 

@@ -1,5 +1,6 @@
 const config = require("../config/auth.config");
 const db = require("../models");
+const Person = db.person
 const healthProfessional = db.healthProfessional;
 const Patient = db.patient
 const Role = db.role;
@@ -100,16 +101,12 @@ exports.signin = (req, res) => {
               expiresIn: 86400 // 24 hours
             });
 
-            var authorities = [];
 
-            for (let i = 0; i < user.roles.length; i++) {
-              authorities.push("ROLE_" + user.roles[i].name.toUpperCase());
-            }
             res.status(200).send({
               id: user._id,
-              username: user.username,
-              email: user.email,
-              roles: authorities,
+              name: user.name,
+              cpf: user.cpf,
+              roles: user.__t.toUpperCase(),
               accessToken: token
             });
         });
@@ -132,17 +129,27 @@ exports.signin = (req, res) => {
         expiresIn: 86400 // 24 hours
       });
 
-      var authorities = [];
-
-      for (let i = 0; i < user.roles.length; i++) {
-        authorities.push("ROLE_" + user.roles[i].name.toUpperCase());
-      }
       res.status(200).send({
         id: user._id,
-        username: user.username,
-        email: user.email,
-        roles: authorities,
+        name: user.name,
+        cpf: user.cpf,
+        roles: user.__t.toUpperCase(),
         accessToken: token
       });
     });
 };
+
+exports.getUser = (req, res) => {
+  Person.getPerson(req.params.cpf, (err, user) => {
+    if(err) res.json({status: 400, message: err})
+    res.json({status:200, user: {name: user.name, id: user.id, birthDate: user.birthDate, gender: user.gender}})
+  })
+}
+
+exports.getAll = (req, res) => {
+  Person.find((err, users) => {
+    if (err) res.json({status:400, message:err})
+
+    res.json({status: 200, users: users})
+  })
+}

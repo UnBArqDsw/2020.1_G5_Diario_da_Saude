@@ -5,13 +5,12 @@ exports.create = (req, res, next) => {
     groupid: req.body.group
   })
 
-  form.save((err, user) => {
+  form.save((err, form) => {
     if(err){
       res.status(500).send({message:err})
       return;
     }
-
-    res.send({message: "Form created"})
+    res.send({message: "Form created", id: form._id})
   })
 }
 
@@ -22,4 +21,12 @@ exports.addQuestion = (req, res, next) => {
       }
       res.send(res_form)
     })
+}
+
+exports.getAll = (req, res) => {
+  Form.find().exec((err, forms) => {
+    if(err) res.json({status:400, message:"Could not get Forms"})
+
+    res.json({status:200, form_list:forms})
+  })
 }
