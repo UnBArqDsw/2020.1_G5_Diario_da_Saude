@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Módulo Padrões de Projeto GoFs Estruturais - Diário da Saúde</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link href="../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "GOF's Estruturais", url: "#_top", children: [
+              {title: "Versionamento", url: "#versionamento" },
+              {title: "Introdu\u00e7\u00e3o", url: "#introducao" },
+              {title: "Composite", url: "#composite" },
+              {title: "Refer\u00eancia", url: "#referencia" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../gofs_comportamentais/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../gofs_comportamentais/" class="btn btn-xs btn-link">
+        Módulo Padrões de Projeto GoFs Comportamentais
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../gofs_criacionais/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../gofs_criacionais/" class="btn btn-xs btn-link">
+        Módulo Padrões de Projeto GoFs Criacionais
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="gofs-estruturais">GOF's Estruturais</h1>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">22/10/2020</td>
+<td align="center">0.1</td>
+<td align="center">Criação do Documento</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">24/10/2020</td>
+<td align="center">0.2</td>
+<td align="center">Adição do tópico Introdução</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">24/10/2020</td>
+<td align="center">0.3</td>
+<td align="center">Adição do tópico Composite</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a>, <a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">25/10/2020</td>
+<td align="center">0.4</td>
+<td align="center">Adição do diagrama e hyperlinks no tópico Composite</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a>, <a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">25/10/2020</td>
+<td align="center">0.5</td>
+<td align="center">Adição de referências em relação ao padrão da tecnologia utilizada</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">1.0</td>
+<td align="center">Adicionando código</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a>, <a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="introducao">Introdução</h2>
+<p align="justify">&emsp;&emsp;Padrões de projeto estruturais se preocupam com a composição de objetos e normalmente identificam maneiras mais simples de estabelecer relacionamentos entre diferentes objetos. Estes padrões ajudam a garantir que, quando uma parte do sistema for alterada, o restanto do sistema também não precise fazer o mesmo. Em resumo, os padrões estruturais buscam reduzir o acoplamento entre objetos de um sistema orientado a objetos. Os principais GOF's estruturais são:</p>
+
+<ul>
+<li>Adapter;</li>
+<li>Bridge;</li>
+<li>Composite;</li>
+<li>Decorator;</li>
+<li>Facade;</li>
+<li>Flyweight;</li>
+<li>Proxy;</li>
+</ul>
+<p align="justify">&emsp;&emsp;A seguir, estão descritos somente os padrões aplicados no projeto, escolhidos pelo grupo quanto a contribuição que a aplicação do padrão traria para o desenvolvimento do projeto.</p>
+
+<h2 id="composite">Composite</h2>
+<h4 id="definicao">Definição</h4>
+<p align="justify">&emsp;&emsp;O padrão Composite permite a criação de objetos com propriedades que são de itens primitivos ou de uma coleção de objetos. Cada item da coleção pode conter outras coleções, gerando estruturas profundamente aninhadas. Uma árvore é o exemplo perfeito de um padrão Composite. Os nós da árvore representam ou um único objeto (nós folha) ou um grupo de objeto (sub-árvores de nós).</p>
+
+<h4 id="aplicacao-no-projeto">Aplicação no projeto</h4>
+<p align="justify">&emsp;&emsp;Para o projeto, foi decidido aplicar o padrão Composite na relação Pergunta-Formulário. Nessa relação, os objetos Pergunta são considerados objetos individuais, enquanto o objeto Formulário é uma coleção de Perguntas. Dessa forma, essa estrutura encaixa-se perfeitamente no padrão Composite. Segue o diagrama representando a estrutura Composite Pergunta-Formulário e hyperlinks para os arquivos de código onde o padrão Composite foi implementado:</p>
+
+<h4 id="motivacao">Motivação</h4>
+<p align="justify">&emsp;&emsp;O padrão Composite foi aplicado na relação Pergunta-Formulário devido ao fato de que o Formulário é uma coleção de Perguntas. Essa estrutura nos permite dar ao Profissional da Saúde a capacidade de personalizar o Formulário com o conjunto de perguntas que ele julgar necessário para o grupo em questão, ao mesmo tempo que oferece a facilidade de tratar ambos os objetos de maneira uniforme.</p>
+
+<p><strong>Diagrama</strong>
+<a href="../img/composite_diagram.png"><img alt="composite_diagram" src="../img/composite_diagram.png" /></a></p>
+<p><strong>Código</strong></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/Question.model.js">Interface - Question</a></li>
+</ul>
+<pre><code>const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
+
+const QuestionSchema = new Schema({
+
+})
+
+class QuestionClass{
+
+  static getAnswer(){}
+
+  setAnswer(){};
+
+}
+
+QuestionSchema.loadClass(QuestionClass)
+
+const QuestionModel = mongoose.model('Question', QuestionSchema);
+
+module.exports = {QuestionModel, QuestionClass} 
+</code></pre>
+<p></br></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/BloodPressure.model.js">Leaf - BloodPressure</a></li>
+</ul>
+<pre><code>const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const Question = require('../Question.model')
+const Patient = require('../patient.model')
+
+const BloodPressureSchema = new Schema({
+  answer: {type: {diastolic: Number, systolic:Number}},
+  patient: {type: Number, ref: Patient},
+  date: {type:Date, require:true}
+})
+
+class BloodPressureClass extends Question.QuestionClass{
+  getAnswerByPatient(cpf, callback){
+    this.find({patient:cpf}, (err, answers) =&gt; {
+      if(err) throw err;
+
+      callback(err, answer)
+    })
+  }
+
+  static setAnswer(glucose, callback){
+    this.save({
+      answer: glucose.answer,
+      patient: glucose.cpf,
+      date: new Date()
+    })
+
+  }
+
+} 
+
+BloodPressureSchema.loadClass(BloodPressureClass);
+
+module.exports = Question.QuestionModel.discriminator('BloodPressure', BloodPressureSchema);
+</code></pre>
+<p></br></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/Glucose.model.js">Leaf - Glucose</a></li>
+</ul>
+<pre><code>const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const Question = require('../Question.model')
+const Patient = require('../patient.model')
+
+const GlucoseSchema = new Schema({
+  answer: {type: Number},
+  patient: {type: Number, ref: Patient},
+  date: {type:Date, require:true}
+})
+
+class GlucoseClass extends Question.QuestionClass{
+
+  static getAnswer(cpf, callback){
+    this.find({patient:cpf}, (err, answers) =&gt; {
+      if(err) throw err;
+
+      callback(err, answers)
+    })
+  }
+
+  static setAnswer(glucose, callback){
+    this.save({
+      answer: glucose.answer,
+      patient: glucose.cpf,
+      type: &quot;GLUCOSE&quot;,
+      date: new Date()
+    })
+
+  }
+
+} 
+
+GlucoseSchema.loadClass(GlucoseClass);
+
+module.exports = Question.QuestionModel.discriminator('Glucose', GlucoseSchema);
+</code></pre>
+<p></br></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/TypeQuestion/WellBeing.model.js">Leaf - WellBeing</a></li>
+</ul>
+<pre><code>const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const Question = require('../Question.model')
+const Patient = require('../patient.model')
+
+const WellBeingSchema = new Schema({
+  answer: {type: String, enum:[&quot;Y&quot;, &quot;N&quot;, &quot;&quot;]},
+  patient: {type: Number, ref: Patient},
+  date: {type:Date, require:true}
+})
+
+class WellBeingClass extends Question.QuestionClass{
+  getAnswerByPatient(cpf, callback){
+    this.find({patient:cpf}, (err, answers) =&gt; {
+      if(err) throw err;
+
+      callback(err, answer)
+    })
+  }
+
+  static setAnswer(glucose, callback){
+    this.save({
+      answer: glucose.answer,
+      patient: glucose.cpf,
+      date: new Date()
+    })
+
+  }
+
+} 
+
+WellBeingSchema.loadClass(WellBeingClass);
+
+module.exports = Question.QuestionModel.discriminator('WellBeing', WellBeingSchema);
+</code></pre>
+<p></br></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/backend/DiarioSaude/models/Form.model.js">Composite - Form</a></li>
+</ul>
+<pre><code>const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
+const Question = require('./Question.model')
+const Group = require('./group.model')
+
+const FormSchema = new Schema({
+  questions: [{type: mongoose.Schema.Types.ObjectId, ref: 'Question'}],
+  groupId: {type: mongoose.Schema.Types.ObjectId, ref: 'Group',require:true}
+})
+
+class FormClass extends Question.QuestionClass{
+
+  static addQuestion(form, callback){
+    console.log(&quot;ID: &quot;, form.id)
+    console.log(&quot;QUESTION: &quot;, form.question_id)
+
+    this.update({_id:form.id}, { $addToSet: {questions: [form.question_id]}}, function(err, result) {
+      if(err)throw err
+      callback(err, result)
+    })
+  }
+
+  static rmQuestion(form, callback){
+    this.update({_id: form.id}, { $pullAll: {questions: [form.question_id]}}, (err, result) {
+      if(err) throw err
+
+      callback(err, result)
+    })
+  }
+}
+
+FormSchema.loadClass(FormClass);
+
+module.exports = Question.QuestionModel.discriminator('Form', FormSchema);
+</code></pre>
+<h2 id="referencia">Referência</h2>
+<ol>
+<li>Craig, L. <b>Utilizando UML e Padrões</b>. Grupo A, 2011. 9788577800476. Disponível em: <a>https://integrada.minhabiblioteca.com.br/#/books/9788577800476/</a>. Acesso em: 22 Outubro 2020.</li>
+<li>Composite pattern - Wikipedia. Disponível em: <a>https://en.wikipedia.org/wiki/Composite_pattern</a>. Acesso em: 24 Outubro 2020.</li>
+<li>Composite pattern - dofactory. Disponível em: <a>https://www.dofactory.com/javascript/design-patterns/composite</a>. Acesso em: 24 Outubro 2020.</li>
+<li>Inheritance Pattern with Mongoose - Disponível em: <a>https://mongoosejs.com/docs/discriminators.html#the-model-discriminator-function</a>. Acesso em: 25 Outubro 2020.</li>
+<li>Using ES6 Class with Mongoose Schema - Disponível em: <a>https://mongoosejs.com/docs/advanced_schemas.html#creating-from-es6-classes-using-loadclass</a> Acesso em: 25 Outubro 2020.</li>
+</ol>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../gofs_comportamentais/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../gofs_comportamentais/" class="btn btn-xs btn-link">
+        Módulo Padrões de Projeto GoFs Comportamentais
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../gofs_criacionais/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../gofs_criacionais/" class="btn btn-xs btn-link">
+        Módulo Padrões de Projeto GoFs Criacionais
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/edit/master/docs/gofs_estruturais.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Risco - Diário da Saúde</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link href="../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Plano de An\u00e1lise de Risco", url: "#_top", children: [
+              {title: "Versionamento", url: "#versionamento" },
+              {title: "Introdu\u00e7\u00e3o", url: "#introducao" },
+              {title: "Estrutura Anal\u00edtica de Riscos", url: "#estrutura-analitica-de-riscos" },
+              {title: "An\u00e1lise quantitativa dos riscos", url: "#analise-quantitativa-dos-riscos" },
+              {title: "Matrizes de Impacto", url: "#matrizes-de-impacto" },
+              {title: "Caminho Cr\u00edtico com PERT/CPM", url: "#caminho-critico-com-pertcpm" },
+              {title: "Diagrama PERT", url: "#diagrama-pert" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../plano_esforco_tempo/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../plano_esforco_tempo/" class="btn btn-xs btn-link">
+        Esforço e Tempo
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../diagrama_de_causa_e_efeito/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../diagrama_de_causa_e_efeito/" class="btn btn-xs btn-link">
+        Diagrama Causa-Efeito
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="plano-de-analise-de-risco">Plano de Análise de Risco</h1>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">03/08/2020</td>
+<td align="center">0.1</td>
+<td align="center">Criação do Documento</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+<tr>
+<td align="center">03/08/2020</td>
+<td align="center">0.2</td>
+<td align="center">Padronização do documento</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">09/09/2020</td>
+<td align="center">0.3</td>
+<td align="center">Complementação nas descrições da EAR</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+<tr>
+<td align="center">09/09/2020</td>
+<td align="center">0.4</td>
+<td align="center">Atualização da imagem de EAR</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+<tr>
+<td align="center">09/09/2020</td>
+<td align="center">0.5</td>
+<td align="center">Adição nas matrizes de impacto</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+<tr>
+<td align="center">10/09/2020</td>
+<td align="center">0.6</td>
+<td align="center">Criação da Tabela do PERT/CPM</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+<tr>
+<td align="center">11/09/2020</td>
+<td align="center">0.7</td>
+<td align="center">Adição do diagrama PERT</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+<tr>
+<td align="center">11/09/2020</td>
+<td align="center">1.0</td>
+<td align="center">Adição da segunda versão do diagrama PERT</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="introducao">Introdução</h2>
+<p align="justify">&emsp;&emsp;Este documento tem como objetivo explorar possíveis casos de risco para o projeto, bem como seu gerenciamento. O gerenciamento de risco está contido no gerenciamento do projeto e se baseia em prazos de entrega e nas ocasiões em que este pode ser afetado. Sendo assim, o documento tratará da identificação desses riscos, como serão identificados, ter a solução/prevenção priorizada.</p>
+
+<h2 id="estrutura-analitica-de-riscos">Estrutura Analítica de Riscos</h2>
+<p><a href="../img/EAR.png"><img alt="EAR" src="../img/EAR.png" /></a></p>
+<h3 id="descricao-da-estrutura-analitica-de-risco">Descrição da Estrutura Analítica de Risco</h3>
+<h4 id="gerencia-de-projeto"><strong>Gerência de Projeto</strong></h4>
+<ul>
+<li>
+<p><strong>Planejamento:</strong> se baseia no cronograma para ter prazos de desenvolvimento e conclusão de tarefas, onde podem ocorrer imprevistos que atrasem o cronograma.</p>
+</li>
+<li>
+<p><strong>Estimativa:</strong> também muito relacionada ao planejamento para tentar prever qual o período de execução de cada tarefa, muito importante para a confecção do PERT/CPM.</p>
+</li>
+<li>
+<p><strong>Comunicação:</strong> estar a par com toda a equipe de desenvolvimento para ter sempre um acompanhamento do desenvolvimento. Falhas na comunicação podem trazer desmotivação dos membros resultando em queda de desempenho.</p>
+</li>
+<li>
+<p><strong>Controle:</strong> controlar as atividades que estão sendo desenvolvidas e dividir o backlog de forma parelha. Um controle feito de forma errônea pode sobrecarregar algum membro fazendo com que os prazos não sejam cumpridos.</p>
+</li>
+</ul>
+<h4 id="tecnico"><strong>Técnico</strong></h4>
+<ul>
+<li>
+<p><strong>Requisitos:</strong> levantamento de requisitos para que ao final do desenvolvimento o produto atenda as expectativas dos clientes e <em>stakeholders</em>.</p>
+</li>
+<li>
+<p><strong>Performance:</strong> componente essencial para o projeto, pois visa atender clientes com possível carência tecnológica.</p>
+</li>
+<li>
+<p><strong>Aplicação:</strong> o projeto desenvolvido deve se adequar ao propósito proposto.</p>
+</li>
+</ul>
+<h4 id="externo"><strong>Externo</strong></h4>
+<ul>
+<li>
+<p><strong>Regulamento:</strong> Deve seguir a regulamentação necessária para o porte de dados dos usuários.</p>
+</li>
+<li>
+<p><strong>Cliente:</strong> usuários do produto podem ou não aprovar sua utilidade e eficiência.</p>
+</li>
+<li>
+<p><strong>Dados:</strong> necessário o acesso à uma base de dados ou o desenvolvimento de uma caso não seja possível.</p>
+</li>
+</ul>
+<h4 id="organizacional"><strong>Organizacional</strong></h4>
+<ul>
+<li>
+<p><strong>Priorização:</strong> A priorização deve visar a entrega primeiramente daquilo que é necessário para o funcionamento do produto.</p>
+</li>
+<li>
+<p><strong>Dependências do projeto:</strong> Visa o gerenciamento dos integrantes da equipe de desenvolvimento do projeto.</p>
+</li>
+</ul>
+<h4 id="qualidade"><strong>Qualidade</strong></h4>
+<ul>
+<li>
+<p><strong>Usabilidade:</strong> acesso as informações contidas devem ser intuitivas e fornecer feedbacks ao usuário.</p>
+</li>
+<li>
+<p><strong>Confiabilidade:</strong> trazer segurança para os dados armazenados e manipulados.</p>
+</li>
+<li>
+<p><strong>Manutenabilidade:</strong> Deve haver uma preocupação em manter uma padronização para melhor futura     manutenção do produto.</p>
+</li>
+<li>
+<p><strong>Eficiencia:</strong> O produto deve atender as expectativas nas quais foi fundada sua ideia.</p>
+</li>
+<li>
+<p><strong>Usabilidade:</strong> Deve ter uma boa interação e experiência com o usuário.</p>
+</li>
+</ul>
+<h2 id="analise-quantitativa-dos-riscos">Análise quantitativa dos riscos</h2>
+<p align="justify">&emsp;&emsp;Utilizando a matriz de probabilidade de ocorrência e impacto será feita uma análise para a priorização de prevenção de riscos. Dessa forma, tendo feito a priorização, poderá, então, ser feita uma visualização melhor de cada elemento de risco. As possíveis categorizações estão descritas abaixo:</p>
+
+<h4 id="probabilidade"><strong>Probabilidade</strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Probabilidade</th>
+<th align="center">Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Muito Baixa</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Baixa</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">Média</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">Alta</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">Muito Alta</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="impacto"><strong>Impacto</strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Impacto</th>
+<th align="center">Descrição</th>
+<th align="center">Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Muito Baixo</td>
+<td align="center">Praticamente não impacta o projeto</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Baixo</td>
+<td align="center">Tem algum impacto sobre o projeto</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">Médio</td>
+<td align="center">Impacta de forma considerável, porém recuperável</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">Alto</td>
+<td align="center">Tem grande impacto sobre o projeto</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">Muito Alto</td>
+<td align="center">Interrompe o desenvolvimento/execução do projeto</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="prioridade"><strong>Prioridade</strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center">P/I</th>
+<th align="center">Muito Baixo</th>
+<th align="center">Baixo</th>
+<th align="center">Médio</th>
+<th align="center">Alto</th>
+<th align="center">Muito Alto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Muito Baixa</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">Baixa</td>
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center">6</td>
+<td align="center">8</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">Média</td>
+<td align="center">3</td>
+<td align="center">6</td>
+<td align="center">9</td>
+<td align="center">12</td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td align="center">Alta</td>
+<td align="center">4</td>
+<td align="center">8</td>
+<td align="center">12</td>
+<td align="center">16</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td align="center">Muito Alta</td>
+<td align="center">5</td>
+<td align="center">10</td>
+<td align="center">15</td>
+<td align="center">20</td>
+<td align="center">25</td>
+</tr>
+</tbody>
+</table>
+<h2 id="matrizes-de-impacto">Matrizes de Impacto</h2>
+<h4 id="riscos-organizacionais"><strong>Riscos organizacionais</strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Risco</th>
+<th align="center">Impacto</th>
+<th align="center">Probabilidade</th>
+<th align="center">Prevenção</th>
+<th align="center">Resposta</th>
+<th align="center">Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Falta de comprometimento ou desistência da disciplina por algum integrante da equipe</td>
+<td align="center">Muito Alto</td>
+<td align="center">Baixa</td>
+<td align="center">Reuniões informais</td>
+<td align="center">Realocação da carga de trabalho para os membros restantes</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">Priorização de atividades pouco relevantes</td>
+<td align="center">Alto</td>
+<td align="center">Baixa</td>
+<td align="center">Manter um bom planejamento</td>
+<td align="center">Reforçar o empenho nas tarefas mais necessárias</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">Falta de comunicação entre os membros da equipe</td>
+<td align="center">Muito Alto</td>
+<td align="center">Muito Baixa</td>
+<td align="center">Padronização dos meios de comunicação</td>
+<td align="center">Aumentar o engajamento entre os membros</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="riscos-tecnicos"><strong>Riscos técnicos</strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Risco</th>
+<th align="center">Impacto</th>
+<th align="center">Probabilidade</th>
+<th align="center">Prevenção</th>
+<th align="center">Resposta</th>
+<th align="center">Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Dificuldade de identificar requisitos</td>
+<td align="center">Muito Alto</td>
+<td align="center">Baixa</td>
+<td align="center">Fazer uma boa elicitação de requisitos</td>
+<td align="center">Revisitar os artefatos de elicitação</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">Baixo domínio das tecnologias</td>
+<td align="center">Alto</td>
+<td align="center">Média</td>
+<td align="center">Estudar individualmente as tecnologias utilizadas</td>
+<td align="center">Pareamento entre pessoas com maior domínio</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">Atraso na conclusão das atividades</td>
+<td align="center">Alto</td>
+<td align="center">Média</td>
+<td align="center">Seguir o cronograma proposto cumprindo o backlog de cada sprint</td>
+<td align="center">Rever o planejamento do backlog para que seja alcançada a entrega prevista</td>
+<td align="center">12</td>
+</tr>
+</tbody>
+</table>
+<h4 id="riscos-externos"><strong>Riscos Externos</strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Risco</th>
+<th align="center">Impacto</th>
+<th align="center">Probabilidade</th>
+<th align="center">Prevenção</th>
+<th align="center">Resposta</th>
+<th align="center">Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Não conseguir atender as expectativas dos usuários</td>
+<td align="center">Alto</td>
+<td align="center">Baixa</td>
+<td align="center">Realizar questionários e validações das funcionalidades do projeto</td>
+<td align="center">Rever as formas de validação e verificar se requisitos elicitados foram realmente satisfeitos</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">Não assegurar os dados do usuário</td>
+<td align="center">Muito Alto</td>
+<td align="center">Baixa</td>
+<td align="center">Ter um banco de dados consistente para armazenar de forma segura os dados</td>
+<td align="center">Rever as requisições e armazenamento interno para previnir possíveis falhas de segurança</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">Dados da saúde do paciente serem acessiveis por terceiros</td>
+<td align="center">Alto</td>
+<td align="center">Baixo</td>
+<td align="center">Definir que apenas os responsáveis por cada grupo possam acessar tais informações</td>
+<td align="center">Rever a forma de como são manipuladas as informações em cada grupo</td>
+<td align="center">8</td>
+</tr>
+</tbody>
+</table>
+<h4 id="gerencia-de-projeto_1"><strong>Gerência de Projeto</strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Risco</th>
+<th align="center">Impacto</th>
+<th align="center">Probabilidade</th>
+<th align="center">Prevenção</th>
+<th align="center">Resposta</th>
+<th align="center">Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Erro no planejamento do sprint backlog</td>
+<td align="center">Alto</td>
+<td align="center">Baixa</td>
+<td align="center">Analisar a capacidade de desenvolvimento de cada integrante para não sobrecarregar e nem criar folgas desnecessárias</td>
+<td align="center">Revisar o planejamento e utilizar metodologias para melhoria do desempenho, como pareamento e XP</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">Falha na estimativa de entrega de funcionalidades</td>
+<td align="center">Alto</td>
+<td align="center">Média</td>
+<td align="center">Ter o conhecimento da experiência dos desenvolvedores com as tecnologias e frameworks que serão utilizadas</td>
+<td align="center">Recalcular as datas de entrega e aumento no empenho</td>
+<td align="center">12</td>
+</tr>
+</tbody>
+</table>
+<h4 id="qualidade_1"><strong>Qualidade</strong></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Risco</th>
+<th align="center">Impacto</th>
+<th align="center">Probabilidade</th>
+<th align="center">Prevenção</th>
+<th align="center">Resposta</th>
+<th align="center">Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Não manter uma padronização de código no projeto seguindo folha de estilo</td>
+<td align="center">Muito Alto</td>
+<td align="center">Muito  Baixa</td>
+<td align="center">Utilização de folhas de estilos para que sejam aceitas apenas contribuições de acordo com a folha de estilo</td>
+<td align="center">Refatorar todo o código que não está de acordo com o padrão do projeto</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">Não dar feedback das ações de usuário</td>
+<td align="center">Alto</td>
+<td align="center">Média</td>
+<td align="center">Verificar funcionalidades com análises de usuário</td>
+<td align="center">Refatorar tarefas feitas por usuários para melhorar sua experiência</td>
+<td align="center">12</td>
+</tr>
+</tbody>
+</table>
+<h2 id="caminho-critico-com-pertcpm">Caminho Crítico com PERT/CPM</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Atividade</th>
+<th align="center">Descrição</th>
+<th align="center">Precedentes</th>
+<th align="center">Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A</td>
+<td align="center">Configuração do ambiente de desenvolvimento</td>
+<td align="center">-</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">Diagrama BPMN</td>
+<td align="center">-</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center">Modelos UML</td>
+<td align="center">B</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center">Padrões Emergentes</td>
+<td align="center">C</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="center">Padrões GoFs</td>
+<td align="center">D</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center">Documento de Arquitetura</td>
+<td align="center">E</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">G</td>
+<td align="center">Documento de visão</td>
+<td align="center">-</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">H</td>
+<td align="center">Protótipo</td>
+<td align="center">-</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">I</td>
+<td align="center">Escolha das Frameworks</td>
+<td align="center">-</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">J</td>
+<td align="center">Modelagem do Banco de Dados</td>
+<td align="center">-</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">K</td>
+<td align="center">Conectar o Banco de Dados à aplicação</td>
+<td align="center">J, A</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">L</td>
+<td align="center">Criação da API</td>
+<td align="center">A</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">M</td>
+<td align="center">Coletar as informações de cadastro do usuário</td>
+<td align="center">K</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">N</td>
+<td align="center">Criação de papeis de usuário na aplicação</td>
+<td align="center">K</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">O</td>
+<td align="center">Criação de grupo entre usuários pacientes</td>
+<td align="center">N</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">P</td>
+<td align="center">Coletar informações frequentemente</td>
+<td align="center">N</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">Q</td>
+<td align="center">Criação de estatísticas para administradores do grupo</td>
+<td align="center">P</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">R</td>
+<td align="center">Tela de Login</td>
+<td align="center">H, I</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">S</td>
+<td align="center">Tela de coleta de informações</td>
+<td align="center">H</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">T</td>
+<td align="center">Tela de Grupos</td>
+<td align="center">H, I</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">U</td>
+<td align="center">Tela de Estatísticas</td>
+<td align="center">H, I, Q</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center">Tela de FAQ</td>
+<td align="center">H, I</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">X</td>
+<td align="center">Menu lateral</td>
+<td align="center">H, I</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">W</td>
+<td align="center">Administradores poderem adicionar participantes para grupos</td>
+<td align="center">O</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Y</td>
+<td align="center">Criar sistemas de notificação para lembrar os usuários</td>
+<td align="center">P</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">Z</td>
+<td align="center">Revisar Artefatos desenvolvidos</td>
+<td align="center">F</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="diagrama-pert">Diagrama PERT</h2>
+<h4 id="v1">v.1</h4>
+<p><a href="../img/PERT-1.png"><img alt="PERT-v1" src="../img/PERT-1.png" /></a></p>
+<h4 id="v2">v.2</h4>
+<p>[<img alt="PERT-v2" src="../img/PERT-2.png" />]((./img/PERT-2.png)</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../plano_esforco_tempo/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../plano_esforco_tempo/" class="btn btn-xs btn-link">
+        Esforço e Tempo
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../diagrama_de_causa_e_efeito/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../diagrama_de_causa_e_efeito/" class="btn btn-xs btn-link">
+        Diagrama Causa-Efeito
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/edit/master/docs/plano_risco.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

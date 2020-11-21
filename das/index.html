@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Documento de Arquitetura de Software (DAS) - Diário da Saúde</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link href="../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Documento de Arquitetura de Software", url: "#_top", children: [
+              {title: "Versionamento", url: "#versionamento" },
+              {title: "Introdu\u00e7\u00e3o", url: "#introducao" },
+              {title: "Representa\u00e7\u00e3o Arquitetural", url: "#representacao-arquitetural" },
+              {title: "Metas e Restri\u00e7\u00f5es Arquiteturais", url: "#metas-e-restricoes-arquiteturais" },
+              {title: "Vis\u00e3o de Casos de Uso", url: "#visao-de-casos-de-uso" },
+              {title: "Vis\u00e3o L\u00f3gica", url: "#visao-logica" },
+              {title: "Vis\u00e3o de Processos", url: "#visao-de-processos" },
+              {title: "Vis\u00e3o de Implanta\u00e7\u00e3o", url: "#visao-de-implantacao" },
+              {title: "Vis\u00e3o de Implementa\u00e7\u00e3o", url: "#visao-de-implementacao" },
+              {title: "Vis\u00e3o de Dados", url: "#visao-de-dados" },
+              {title: "Qualidade", url: "#qualidade" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../reutilizacao/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../reutilizacao/" class="btn btn-xs btn-link">
+        Documento de Reutilização
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../iniciativas_extras_entrega3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../iniciativas_extras_entrega3/" class="btn btn-xs btn-link">
+        Atualizações
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="documento-de-arquitetura-de-software">Documento de Arquitetura de Software</h1>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">14/11/2020</td>
+<td align="center">0.1</td>
+<td align="center">Criação do documento e adição do tópico de Introdução</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">17/11/2020</td>
+<td align="center">0.2</td>
+<td align="center">Adição do tópico de Visão Geral na Introdução e Adição do tópico de Escopo</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">18/11/2020</td>
+<td align="center">0.3</td>
+<td align="center">Adição do tópico de Tecnologias</td>
+<td align="center"><a href="https://github.com/AGoretti">André Goretti</a></td>
+</tr>
+<tr>
+<td align="center">18/11/2020</td>
+<td align="center">0.4</td>
+<td align="center">Adição do tópico de Metas e Restrições Arquiteturais</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">18/11/2020</td>
+<td align="center">0.5</td>
+<td align="center">Adição do tópico de Visão Lógica, Visão de Dados, Visão de Casos de Uso</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a>, <a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a>, <a href="https://github.com/AGoretti">André Goretti</a></td>
+</tr>
+<tr>
+<td align="center">19/11/2020</td>
+<td align="center">0.6</td>
+<td align="center">Correção no tópico de tecnologias</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+<tr>
+<td align="center">19/11/2020</td>
+<td align="center">0.7</td>
+<td align="center">Adição do diagrama de arquitetura geral</td>
+<td align="center"><a href="https://github.com/gustavocarvalho1002">Gustavo Carvalho</a></td>
+</tr>
+<tr>
+<td align="center">19/11/2020</td>
+<td align="center">0.8</td>
+<td align="center">Adição do diagrama de pacotes geral</td>
+<td align="center"><a href="https://github.com/gustavocarvalho1002">Gustavo Carvalho</a>, <a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">19/11/2020</td>
+<td align="center">0.9</td>
+<td align="center">Adição do tópico de Visão de Processos</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">19/11/2020</td>
+<td align="center">0.10</td>
+<td align="center">Adição da descrição do diagrama de pacotes e descrição dos processos</td>
+<td align="center"><a href="https://github.com/gustavocarvalho1002">Gustavo Carvalho</a>, <a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">20/11/2020</td>
+<td align="center">0.11</td>
+<td align="center">Adição de acrônimos e abreviações</td>
+<td align="center"><a href="https://github.com/Rdadamos">Rodrigo Dadamos</a></td>
+</tr>
+<tr>
+<td align="center">20/11/2020</td>
+<td align="center">0.12</td>
+<td align="center">Adição de diagrama de classes focado nas mais relevantes</td>
+<td align="center"><a href="https://github.com/Rdadamos">Rodrigo Dadamos</a></td>
+</tr>
+<tr>
+<td align="center">20/11/2020</td>
+<td align="center">0.13</td>
+<td align="center">Adição de diagrama de comunicação e da Visão de Implementação</td>
+<td align="center"><a href="https://github.com/Rdadamos">Rodrigo Dadamos</a></td>
+</tr>
+<tr>
+<td align="center">20/11/2020</td>
+<td align="center">0.14</td>
+<td align="center">Revisão da visão da dados</td>
+<td align="center"><a href="https://github.com/gustavocarvalho1002">Gustavo Carvalho</a>, <a href="https://github.com/Rdadamos">Rodrigo Dadamos</a></td>
+</tr>
+<tr>
+<td align="center">20/11/2020</td>
+<td align="center">0.15</td>
+<td align="center">Adicionando referências</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">20/11/2020</td>
+<td align="center">0.16</td>
+<td align="center">Adição do estilo arquitetural</td>
+<td align="center"><a href="https://github.com/Rdadamos">Rodrigo Dadamos</a></td>
+</tr>
+<tr>
+<td align="center">20/11/2020</td>
+<td align="center">0.17</td>
+<td align="center">Adição da visão de implantação</td>
+<td align="center"><a href="https://github.com/Rdadamos">Rodrigo Dadamos</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="introducao">Introdução</h2>
+<h3 id="finalidade">Finalidade</h3>
+<p align="justify">&emsp;&emsp;Este documento fornece uma visão arquitetural abrangente do sistema, utilizando-se de um número de diferentes visões arquiteturais para descrever diferentes aspectos do sistema. Seu propósito é capturar e transmitir as decisões arquiteturais mais importantes que foram tomadas em relação ao sistema.</p>
+
+<h3 id="escopo">Escopo</h3>
+<p align="justify">&emsp;&emsp;Este Documento de Arquitetura de Software fornece uma visão arquitetural abrangente do sistema Diário da Saúde. O sistema em questão está sendo desenvolvido por alunos da UnB-FGA com o intuito de facilitar a comunicação entre paciente e profissional da saúde em grupos de acompanhamento de UBS.</p>
+
+<h3 id="acronimos-e-abreviacoes">Acrônimos e Abreviações</h3>
+<ul>
+<li><p align="justify"><strong>UnB</strong>: Universidade de Brasília</p></li>
+<li><p align="justify"><strong>FGA</strong>: Faculdade UnB Gama</p></li>
+<li><p align="justify"><strong>UBS</strong>: Unidades Básicas de Saúde</p></li>
+<li><p align="justify"><strong>UML</strong>: Unified Modeling Language (Linguagem de Modelagem Unificada)</p></li>
+<li><p align="justify"><strong>REST</strong>: Representational State Transfer (Transferência Representacional de Estado)</p></li>
+<li><p align="justify"><strong>HTTP</strong>: HyperText Transfer Protocol (Protocolo de Transferência de Hipertexto)</p></li>
+<li><p align="justify"><strong>JSON</strong>: JavaScript Object Notation (Notação de Objetos JavaScript)</p></li>
+<li><p align="justify"><strong>AWS</strong>: Amazon Web Services</p></li>
+<li><p align="justify"><strong>EC2</strong>: Amazon Elastic Compute Cloud</p></li>
+<li><p align="justify"><strong>LAN</strong>: Local Area Network (Rede de Área Local)</p></li>
+</ul>
+<h3 id="referencias">Referências</h3>
+<ul>
+<li><a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/templates/software_architecture_document_CE85F5AC.html">Documento de Arquitetura de Software - Template</a>;</li>
+<li><a href="https://www.cin.ufpe.br/~gta/rup-vc/core.informal_resources/guidances/examples/resources/ex_sad.htm">Documento de Arquitetura de Software - SPEU</a>;</li>
+<li><a href="https://www.cin.ufpe.br/~gta/rup-vc/extend.formal_resources/guidances/examples/resources/sadoc_v1.htm">Documento de Arquitetura de Software - C-Registration System</a>;</li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/">Wiki - Diário da Saúde</a>;</li>
+</ul>
+<h3 id="visao-geral">Visão Geral</h3>
+<p align="justify">&emsp;&emsp;Este documento busca informar de maneira compreensiva a arquitetura geral, bem como prover links para especificações mais detalhadas, do aplicativo <strong>Diário da Saúde</strong>. O documento traz, primeiramente, uma visão geral do sistema no tópico de Representação Arquitetural, demonstrando uma relação de macro nível entre os módulos do sistema, onde também são descritas as tecnologias utilizadas. Em seguida, há o tópico de Metas e Restrições da Arquitetura, descrevendo os requisitos e objetivos que geram impacto significativo na arquitetura. Logo após, são descritas as visões pertinentes para a compreensão da arquitetura, sendo elas: Visão de Casos de Uso, Visão Lógica, Visão de Processos, Visão de Implantação, Visão de Implementação e Visão de Dados. Por último, o tópico de Qualidade.</p>
+
+<h2 id="representacao-arquitetural">Representação Arquitetural</h2>
+<p align="justify">&emsp;&emsp;Este documento apresenta a arquitetura como uma série de visões: Visão de Casos de Uso, Visão Lógica. Essas visões são descritas e detalhadas através de diagramas UML acompanhados de descrições curtas.</p>
+
+<h3 id="estilos-arquiteturais">Estilos arquiteturais</h3>
+<p align="justify">&emsp;&emsp; Estilo arquitetural é uma forma de expressar a organização de uma estrutura e o conjunto pré-definido de subsistemas e suas responsabilidades.</p>
+
+<p align="justify">&emsp;&emsp; Considerando o desenvolvimento incremental e a modelagem de interfaces de subsistemas, o estilo arquitetural utilizado é uma adaptação do N-Camadas, junto a uma adaptação do padrão arquitetural MVC, com N igual a 4. Para a comunicação entre as camadas de backend e frontend é utilizado o estilo REST.</p>
+
+<h4 id="camadas">Camadas</h4>
+<ul>
+<li>
+<p><strong>Aplicação mobile</strong> - camada frontend onde os dados são apresentados para o usuário final atuando como a camada de view do MVC. É sua responsabilidade disponibilizar as funcionalidades e apresentar os dados para os usuários. As requisições são feitas em estilo <strong>REST</strong> com o uso dos verbos HTTP (GET, POST, DELETE, PUT).</p>
+</li>
+<li>
+<p><strong>Controller</strong> - camada backend que recebe as requisições do frontend (através das routes). É sua responsabilidade disponibilizar os endpoints em estilo REST que serão consumidos pelo frontend. As respostas às requisições são em formatos JSON.</p>
+</li>
+<li>
+<p><strong>Model</strong> - camada backend que comunica com a controller e com o banco de dados. É sua responsabilidade implementar os modelos fazendo a comunicação com o banco de dados.</p>
+</li>
+<li>
+<p><strong>Banco de dados</strong> - camada de persistência dos dados. Sua responsabilidade é armazanar e garantir o acesso adequado aos dados.</p>
+</li>
+</ul>
+<p><a href="../img/diagrama_geral_de_arquitetura.png"><img alt="diagrama_caso_de_uso_profissional_da_saude" src="../img/diagrama_geral_de_arquitetura.png" /></a></p>
+<p align="justify">&emsp;&emsp; O estilo N-Camadas permite a alteração dos dados independentemente da sua representação, assim como permite alterar a representação independentemente dos dados. Dessa forma, os dados podem ser apresentados de maneiras diferentes e de forma sincronizada. Nota-se uma tendência de acoplamento entre as controllers e as models no backend.</p>
+
+<h3 id="tecnologias">Tecnologias</h3>
+<h4 id="back-end">Back-End</h4>
+<ul>
+<li><p align="justify"><strong>Node.js</strong>: é um ambiente de execução JavaScript <i>server-side</i>, sem dependência com navegadores web. Sua utilização apresenta vantagens como alto fator de escalabilidade, taxa de transferência e flexibilidade.</p></li>
+</ul>
+<h4 id="front-end">Front-End</h4>
+<ul>
+<li><p align="justify"><strong>React Native</strong>: é um <i>framework</i> JavaScript para aplicações <i>mobile</i> desenvolvido pelo Facebook. Ele é utilizado para desenvolver aplicações móveis de forma nativa, permitindo aos desenvolvedores levar a aplicação para sistemas Android e iOS simultaneamente.</p></li>
+</ul>
+<h4 id="banco-de-dados">Banco de Dados</h4>
+<ul>
+<li><p align="justify"><strong>MongoDB</strong>: é uma ferramenta de banco de dados não relacional. Utiliza documentos semelhantes ao JSON par organizar os dados, oferecendo alta variedade e flexibilidade.</p></li>
+</ul>
+<h4 id="outros">Outros</h4>
+<ul>
+<li><p align="justify"><strong>Docker</strong>: é uma ferramenta que utiliza virtualização de SO para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e possuem seus próprios softwares, bibliotecas e arquivos de configuração. Está sendo utilizado tanto no back-end quanto no front-end, com o objetivo de facilitar o desenvolvimento em grupo.</p></li>
+</ul>
+<h2 id="metas-e-restricoes-arquiteturais">Metas e Restrições Arquiteturais</h2>
+<h3 id="restricoes">Restrições</h3>
+<ul>
+<li>É necessário ter conexão com a Internet para utilizar o aplicativo;</li>
+<li>A aplicação oferecerá suporte para Android e iOS;</li>
+<li>O escopo proposto deve ser terminado até a data estipulada para entrega;</li>
+<li>O software deve ser desenvolvido utilizando as tecnologias mencionadas anteriormente;</li>
+</ul>
+<h3 id="metas">Metas</h3>
+<ul>
+<li><strong>Usabilidade</strong>: o software deve ser de fácil utilização, com foco em aprendibilidade e simplicidade, buscando atender ao público (maioria de idade avançada) para o qual o software está sendo desenvolvido;</li>
+<li><strong>Segurança</strong>: o software deve garantir a segurança dos dados dos usuários.</li>
+<li><strong>Manutenibilidade</strong>: o software deve ser de fácil modificação posterior a finalização do trabalho, facilitando continuação;</li>
+</ul>
+<h2 id="visao-de-casos-de-uso">Visão de Casos de Uso</h2>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição da visualização dos casos de uso da arquitetura de software. Aqui são descritos cenários e/ou casos de uso que representam uma funcionalidade significativa para o sistema.</br>&emsp;&emsp;Os casos de uso deste sistema estão listados abaixo. Aqueles destacados em <strong>negrito</strong> possuem impacto significativo na arquitetura e são descritos posteriormente neste mesmo tópico.</p>
+
+<ul>
+<li><strong>UC01 - Cadastro/Login</strong></li>
+<li><strong>UC02 - Visualizar lista de grupos</strong></li>
+<li><strong>UC03 - Acessar grupo</strong></li>
+<li>UC04 - Visualizar informações do grupo</li>
+<li><strong>UC05 - Responder formulário</strong></li>
+<li>UC06 - Editar perfil</li>
+<li><strong>UC07 - Gerenciar pacientes</strong></li>
+<li>UC08 - Adicionar pacientes</li>
+<li>UC09 - Excluir pacientes</li>
+<li><strong>UC10 - Gerar relatório</strong></li>
+<li>UC11 - Gerar relatório individual</li>
+<li>UC12 - Gerar relatório geral</li>
+<li><strong>UC13 - Criar grupo</strong></li>
+<li><strong>UC14 - Criar formulário</strong></li>
+<li>UC15 - Escolher perguntas</li>
+</ul>
+<p></br></p>
+<h4 id="casos-de-uso-paciente">Casos de uso - Paciente</h4>
+<p><a href="../img/patient_use_case.png"><img alt="diagrama_caso_de_uso_paciente" src="../img/patient_use_case.png" /></a></p>
+<h4 id="casos-de-uso-profissional-da-saude">Casos de uso - Profissional da Saúde</h4>
+<p><a href="../img/health_professional_use_case.png"><img alt="diagrama_caso_de_uso_profissional_da_saude" src="../img/health_professional_use_case.png" /></a></p>
+<h4 id="descricao-dos-casos-de-uso-significativos">Descrição dos casos de uso significativos</h4>
+<ul>
+<li>
+<p><p align="justify">UC01 - Cadastro/Login: este caso de uso ocorre quando o usuário realiza o cadastro ou login no sistema. Como há permanência de dados, o cadastro precisa ser realizado somente uma vez para cada usuário. É importante notar que o paciente e o profissional da saúde compartilham este caso de uso, sendo necessário a diferenciação (realizada pelo próprio usuário) para qual tipo de ator a conta se refere durante o cadastro.</p></p>
+</li>
+<li>
+<p><p align="justify">UC02 - Visualizar lista de grupos: este caso de uso ocorre assim que o usuário loga no aplicativo. A tela inicial apresenta a lista de grupos aos quais o usuário pertence (no caso de paciente) ou que o usuário possui (no caso de profissional da saúde).</p>
+</li>
+<li>
+<p><p align="justify">UC03 - Acessar grupo: este caso de uso é exclusivo para o ator profissional da saúde e ocorre quando o usuário seleciona algum grupo específico da lista de grupos. Serão apresentadas informações do grupo e diferentes ações a serem tomadas para gerenciamento dos membros.</p></p>
+</li>
+<li>
+<p><p align="justify">UC05 - Responder formulário: este caso de uso é exclusivo para o ator paciente e consiste em responder o formulário de determinado grupo. É importante notar que é possível responder o formulário tanto a partir da lista de grupos, quanto a partir da seleção de um grupo específico.</p></p>
+</li>
+<li>
+<p><p align="justify">UC07 - Gerenciar pacientes: este caso de uso é exclusivo para o ator profissional da saúde e consiste em gerenciar os pacientes de um grupo qualquer. É possível adicionar ou remover pacientes.</p></p>
+</li>
+<li>
+<p><p align="justify">UC10 - Gerar relatório: este caso de uso é exclusivo para o ator profissional da saúde e consiste em gerar um relatório dos dados obtidos a partir dos formulários. É possível gerar um relatório geral do grupo ou selecionar um paciente específico para obter um reltório individual.</p></p>
+</li>
+<li>
+<p><p align="justify">UC13 - Criar grupo: este caso de uso é exclusivo para o ator profissional da saúde e consiste em criar um novo grupo. Não é possível criar um grupo sem adicionar um formulário.</p></p>
+</li>
+<li>
+<p><p align="justify">UC14 - Criar formulário: este caso de uso é exclusivo para o ator profissional da saúde e consiste em criar o formulário de um grupo. O formulário é customizável a partir de uma gama de questões pré-existentes.</p></p>
+</li>
+</ul>
+<h2 id="visao-logica">Visão Lógica</h2>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição das principais classes e pacotes que compõem o sistema. As descrições estão posicionadas logo após os diagramas de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Classe</a> e <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_pacotes/">Pacotes</a>.</p>
+
+<h4 id="diagrama-de-classes">Diagrama de Classes</h4>
+<p align="justify">&emsp;&emsp;O diagrama de classes sem métodos e atributos colapsados pode ser visto no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/img/class_diagram_gof_2.png"> diagrama de classe completo</a>.</p>
+
+<p><a href="../img/class_diagram_resume.png"><img alt="diagrama_de_classe" src="../img/class_diagram_resume.png" /></a></p>
+<h4 id="principais-classes">Principais classes</h4>
+<ul>
+<li>
+<p><p align="justify"><i><strong>Person</i></strong>: a classe <i>Person</i> representa o usuário do sistema. Duas outras classes herdam dela, a classe <i>Patient</i> e a classe <i>HealthProfessional</i>. Essa estrutura de herança foi estabalecida devido a semelhança que as duas classes filhas possuem entre si, facilitando a modularização. Na classe pai estão descritos os atributos e métodos que ambas as classes filhas compartilham, enquanto em cada uma das classes filhas estão descritos os atributos e métodos exclusivos daquele tipo de usuário.</p></p>
+</li>
+<li>
+<p><p align="justify"><i><strong>Group</i></strong>: a classe <i>Group</i> representa os grupos. Os grupos são contituídos de vários usuários do tipo <i>Patient</i> e estão associados a um único <i>Form</i>.</p>
+</li>
+<li>
+<p><p align="justify"><i><strong>Form</i></strong>: a classe <i>Form</i> representa os formulários de perguntas de cada grupo.</p>
+</li>
+<li>
+<p><p align="justify"><i><strong>Question</i></strong>: a classe <i>Question</i> representa as perguntas existentes no sistema. Esta classe é uma interface, de forma que seu comportamento é definido de acordo com as classes filhas. As classes filhas são as perguntas registradas no sistema e que constituem um formulário.</p></p>
+</li>
+<li>
+<p><p align="justify"><i><strong>Report</i></strong>: a classe <i>Report</i> representa os relatórios individuais ou gerais.</p>
+</li>
+</ul>
+<h4 id="diagrama-de-pacotes">Diagrama de Pacotes</h4>
+<p><a href="../img/diagrama_de_pacotes_geral.png"><img alt="diagrama_caso_de_uso_profissional_da_saude" src="../img/diagrama_de_pacotes_geral.png" /></a></p>
+<ul>
+<li><p align="justify"><strong>Camada <i>Mobile</i></strong>: a camada de frontend é composta pelos diretórios <i>Context, Routes, Pages, Services e Components</i>. O primeiro, respectivamente, é responsável por prover informações e contexto para toda a aplicação. O segundo tem como papel definir os caminhos de acesso do usuário às várias telas da aplicação. O diretório <i>Pages</i> guarda as telas da aplicação. O diretório <i>Services</i> contém os scripts com as regras de negócios e métodos como os de requisições HTTPs. Por último, a pasta <i>Components</i> guarda arquivos responsáveis por renderizar partes específicas, normalmente repetidas, das telas.</p></li>
+<li><p align="justify"><strong>Camada <i>Backend </i></strong>: a camada do backend é onde se encontra o projeto da API feita em <i>Node.Js</i> e <i>Express</i>. Ele segue uma estrutura MVC. A pasta <i>index</i> é o diretório que guarda o código iniciliazador da aplicação e é a partir dele que todos os outros códigos são inicializados. <i>Routes</i> é o diretório que guarda os arquivos de rotas da aplicação, por onde passam todas as requisições http feitas à API.
+<i>Controllers</i> é a pasta que onde se encontram os arquivos de "ações", que são responsáveis por recuperar os dados do banco atráves das <i>models</i>. Os <i>scripts</i> de controller são utilizados dentro dos arquivos de <i>routes</i>.</p></li>
+<li><p align="justify"><strong>Camada Mongo</strong>: A camada do Mongo é onde ficam os arquivos de configuração do banco de dados MongoDB.</p></li>
+</ul>
+<h4 id="diagrama-de-comunicacao">Diagrama de comunicação</h4>
+<p align="justify">&emsp;&emsp;Uma importante interação entre objetos é a interação entre <i>Profissional de Saúde</i> e o <i>Grupo</i> descrita no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_comunicacao/">Diagrama de Comunicação</a>:</p>
+
+<p><a href="../img/diagrama_comunicacao_profissional.jpg"><img alt="diagrama_comunicação_profissional" src="../img/diagrama_comunicacao_profissional.jpg" /></a></p>
+<h2 id="visao-de-processos">Visão de Processos</h2>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição dos principais processos que ocorrem durante a utilização do sistema. Para acompanhar a descrição dos principais processos, seguem os <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_sequencia/">Diagramas de Sequência</a> pertinentes.</p>
+
+<h4 id="diagramas-de-sequencia">Diagramas de Sequência</h4>
+<p><a href="../img/diagrama_de_sequencia_show_group.jpg"><img alt="diagrama_de_sequência_1" src="../img/diagrama_de_sequencia_show_group.jpg" /></a></p>
+<p><a href="../img/diagrama_de_sequencia_create_group.jpg"><img alt="diagrama_de_sequência_2" src="../img/diagrama_de_sequencia_create_group.jpg" /></a></p>
+<p><a href="../img/diagrama_de_sequencia_answering_form.jpg"><img alt="diagrama_de_sequência_3" src="../img/diagrama_de_sequencia_answering_form.jpg" /></a></p>
+<h4 id="principais-processos">Principais processos</h4>
+<ul>
+<li>
+<p><p align="justify"><i><strong>showAll</i>()</strong>: processo responsável por retornar conjuntos de informações, a depender do argumento fornecido (sobrecarga). É muito utilizado durante todo a execução do aplicativo, principalmente para apresentar todos os grupos ao qual o usuário está atrelado.</p></p>
+</li>
+<li>
+<p><p align="justify"><i><strong>getAllPatients</i>()</strong>: processo responsável por retornar lista de pacientes pertecentes a um grupo. Muito utilizado pelo usuário profissional da saúde para gerenciar os membros de um grupo.</p></p>
+</li>
+<li>
+<p><p align="justify"><i><strong>getQuestions</i>()</strong>: utilizado durante a criação e o acesso a formulários, retorna as questões que um determinado formulário possui.</p></p>
+</li>
+<li>
+<p><p align="justify"><i><strong>sendAnswers</i>()</strong>: processo essencial para a principal função da aplicação: manter contato entre paciente e profissional da saúde. Este processo recebe e salva as respostas de cada paciente para que o profissional da saúde possa realizar uma avaliação posteriormente.</p></p>
+</li>
+</ul>
+<h2 id="visao-de-implantacao">Visão de Implantação</h2>
+<p align="justify">&emsp;&emsp;O aplicativo mobile fica hospedado na Google Play Store disponível para download no celular do usuário com sistema operacional Android. O aplicativo comunica-se com o backend atráves da internet com uma conexão wireless ou conexão móvel (3G/4G). O backend fica hospedado em uma instância EC2 da AWS com servidor ubuntu. A base de dados também fica hospedada na instância Amazon EC2. A comunicação do backend com a base de dados é feita pela rede local (LAN).</p>
+
+<h4 id="diagrama-de-implantacao">Diagrama de Implantação</h4>
+<p><a href="../img/diagrama_de_implantacao.png"><img alt="diagrama_de_implatação" src="../img/diagrama_de_implantacao.png" /></a></p>
+<h2 id="visao-de-implementacao">Visão de Implementação</h2>
+<p align="justify">&emsp;&emsp;Após a autenticação, pacientes podem responder as questões dos formulários dos grupos aos quais pertencem, fornecendo os dados para a geração de relatórios individuais. Profissionais de saúde, após a autenticação, podem gerenciar grupos e gerar relatórios individuias e gerais. Uma representação de como esses importantes componentes do sistema são conectados pode ser vista no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_componente/">diagramas de componentes</a>.</p>
+
+<h4 id="diagrama-de-componentes">Diagrama de Componentes</h4>
+<p><a href="../img/diagrama_de_componente.jpg"><img alt="diagrama_de_componente" src="../img/diagrama_de_componente.jpg" /></a></p>
+<h2 id="visao-de-dados">Visão de Dados</h2>
+<p align="justify">&emsp;&emsp;Neste tópico há uma descrição do modelo de persistência de dados utilizado no sistema, representando como os modelos são persistidos no banco de dados não-relacional MongoDB.</p>
+
+<h3 id="modelo-grupo">Modelo Grupo</h3>
+<h4 id="formato-dos-dados">Formato dos dados</h4>
+<ul>
+<li><strong>_id</strong><ul>
+<li>Tipo: Number;</li>
+<li>Obrigatoriedade: Sim.</li>
+</ul>
+</li>
+<li>
+<p><strong>groupName</strong></p>
+<ul>
+<li>Tipo: String;</li>
+<li>Obrigatoriedade: Sim.</li>
+</ul>
+</li>
+<li>
+<p><strong>idForm</strong></p>
+<ul>
+<li>Tipo: Number.</li>
+</ul>
+</li>
+<li>
+<p><strong>idUBS</strong></p>
+<ul>
+<li>Tipo: Number;</li>
+<li>Obrigatoriedade: Sim.</li>
+</ul>
+</li>
+<li>
+<p><strong>users</strong></p>
+<ul>
+<li>Tipo: Array de dados do tipo Number;</li>
+</ul>
+</li>
+</ul>
+<h4 id="exemplo">Exemplo</h4>
+<pre><code class="language-json">  {
+    &quot;_id&quot;:1,
+    &quot;groupName&quot;:&quot;Grupo de Hipertensos&quot;,
+    &quot;idForm&quot;:1,
+    &quot;idUBS&quot;:1,
+    &quot;users&quot;:[12,23,56,12]
+  }
+</code></pre>
+<h3 id="modelo-profissional-da-saude">Modelo Profissional da Saúde</h3>
+<h4 id="formato-dos-dados_1">Formato dos dados</h4>
+<ul>
+<li><strong>_id</strong><ul>
+<li>Tipo: Number;</li>
+<li>Obrigatoriedade: Sim.</li>
+</ul>
+</li>
+<li>
+<p><strong>name</strong></p>
+<ul>
+<li>Tipo: String;</li>
+<li>Obrigatoriedade: Sim.</li>
+</ul>
+</li>
+<li>
+<p><strong>password</strong></p>
+<ul>
+<li>Tipo: String.</li>
+<li>Obrigatoriedade: Sim.</li>
+</ul>
+</li>
+<li>
+<p><strong>cpf</strong></p>
+<ul>
+<li>Tipo: Number;</li>
+<li>Obrigatoriedade: Sim.</li>
+</ul>
+</li>
+<li>
+<p><strong>role</strong></p>
+<ul>
+<li>Tipo: String;</li>
+<li>Obrigatoriedade: Sim.</li>
+</ul>
+</li>
+</ul>
+<h4 id="exemplo_1">Exemplo</h4>
+<pre><code class="language-json"> {
+   &quot;id&quot;:1,
+   &quot;name&quot;:&quot;Ipsolum&quot;,
+   &quot;password&quot;:&quot;76bb1ff3699e0af3750e9fa119dea44e&quot;,
+   &quot;cpf&quot;:1234567890,
+   &quot;role&quot;:&quot;healthProfessional&quot;,
+ }
+</code></pre>
+<p align="justify">&emsp;&emsp; Considerando o paradigma de orientação a objetos, temos a descrição do comportamento das entidades do sistema utilizando o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/der/">DE-R</a> e para definir as regras de negócio entre as entidades temos o <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/dl/">Diagrama Lógico</a>.
+</p>
+
+<h2 id="qualidade">Qualidade</h2>
+<ul>
+<li>
+<p><p align="justify">Usabilidade: a interface, conforme descrito anteriormente, segue uma estilização simples e intuitiva, utilizando fontes e cores adequadas. Estas definições podem ser visualizadas no documento de <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/identidade_visual/">Identidade Visual</a>.</p></p>
+</li>
+<li>
+<p><p align="justify">Segurança: cada sessão do usuário recebe um token temporário, utilizado para realizar a autenticação do usuário e resgatar dados privados do banco.</p></p>
+</li>
+<li>
+<p><p align="justify">Manutenibilidade: todo o desenvolvimento do projeto foi documentado no repositório do grupo: <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude">Diário da Saúde</a>. O fácil acesso a documentação facilita na compreensão e apoia a manutenibilidade do código.</p></p>
+</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../reutilizacao/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../reutilizacao/" class="btn btn-xs btn-link">
+        Documento de Reutilização
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../iniciativas_extras_entrega3/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../iniciativas_extras_entrega3/" class="btn btn-xs btn-link">
+        Atualizações
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/edit/master/docs/das.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

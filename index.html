@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Diário da Saúde</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <link href="css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "Sobre", url: "#_top", children: [
+          ]},
+          {title: "Equipe", url: "#equipe", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+        <img class="wm-top-logo" src="./img/logo_branca.png"/>
+      
+      <div class="wm-top-title">
+        Diário da Saúde<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+    <ul class="wm-toctree wm-toc-repo">
+      <li class="wm-toc-li wm-toc-lev1">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/">
+        <i class="fa fa-github"></i>
+
+        GitHub
+      </a>
+      </li>
+    </ul>
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Home</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Reuniões</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_1/" class="wm-article-link wm-toc-text">Ata 1 (31/08/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_2/" class="wm-article-link wm-toc-text">Ata 2 (02/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_3/" class="wm-article-link wm-toc-text">Ata 3 (04/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_4/" class="wm-article-link wm-toc-text">Ata 4 (06/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_5/" class="wm-article-link wm-toc-text">Ata 5 (09/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_6/" class="wm-article-link wm-toc-text">Ata 6 (10/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_7/" class="wm-article-link wm-toc-text">Ata 7 (11/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_8/" class="wm-article-link wm-toc-text">Ata 8 (23/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_9/" class="wm-article-link wm-toc-text">Ata 9 (25/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_10/" class="wm-article-link wm-toc-text">Ata 10 (26/09/2020)</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ata_11/" class="wm-article-link wm-toc-text">Ata 11 (28/09/2020)</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Desenho de Software (Base)</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Módulo Projeto não Orientado a Abordagens Específicas</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="5w2h/" class="wm-article-link wm-toc-text">5W2H</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="diagrama_de_causa_e_efeito/" class="wm-article-link wm-toc-text">Diagrama Causa-Efeito</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 wm-toc-opener"><span class="wm-toc-text">Plano de Análise</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev4 "><a href="plano_risco/" class="wm-article-link wm-toc-text">Risco</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev4 "><a href="plano_esforco_tempo/" class="wm-article-link wm-toc-text">Esforço e Tempo</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev4 "><a href="plano_custo/" class="wm-article-link wm-toc-text">Custo</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev3 wm-toc-opener"><span class="wm-toc-text">Design Sprint</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev4 "><a href="design_sprint/" class="wm-article-link wm-toc-text">Design Sprint</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev4 "><a href="brainstorm/" class="wm-article-link wm-toc-text">Brainstorm</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev4 "><a href="mapa_mental/" class="wm-article-link wm-toc-text">Mapa Mental</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev4 "><a href="rich_picture/" class="wm-article-link wm-toc-text">RichPictures</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev4 "><a href="story_board/" class="wm-article-link wm-toc-text">Storyboard</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev4 "><a href="prototipo/" class="wm-article-link wm-toc-text">Protótipo</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev4 "><a href="questionario/" class="wm-article-link wm-toc-text">Questionário</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Módulo Processos/Metodologia/Abordagens (Apresentação)</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="metodologia/" class="wm-article-link wm-toc-text">Metodologia</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Módulo Processos/Metodologia/Abordagens (Modelagem)</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="BPMN/" class="wm-article-link wm-toc-text">BPMN</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Iniciativas extras</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="argumentacao/" class="wm-article-link wm-toc-text">Argumentação</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="introspeccao/" class="wm-article-link wm-toc-text">Introspecção</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="priorizacao/" class="wm-article-link wm-toc-text">Priorização</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="backlog_produto/" class="wm-article-link wm-toc-text">Backlog</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="identidade_visual/" class="wm-article-link wm-toc-text">Identidade Visual</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Desenho de Software (Modelagem)</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Notação UML - Diagramas Estáticos</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="diagrama_de_classes/" class="wm-article-link wm-toc-text">Diagrama de Classes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="diagrama_de_pacotes/" class="wm-article-link wm-toc-text">Diagrama de Pacotes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="diagrama_de_componentes/" class="wm-article-link wm-toc-text">Diagrama de Componentes</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Notação UML - Diagramas Dinâmicos</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="diagrama_de_sequencia/" class="wm-article-link wm-toc-text">Diagrama de Sequência</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="diagrama_de_comunicacao/" class="wm-article-link wm-toc-text">Diagrama de Comunicação</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="diagrama_de_atividades/" class="wm-article-link wm-toc-text">Diagrama de Atividades</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="diagrama_de_estado/" class="wm-article-link wm-toc-text">Diagrama de Estados</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Iniciativas extras</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="der/" class="wm-article-link wm-toc-text">DE-R</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="dl/" class="wm-article-link wm-toc-text">Diagrama Lógico</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="iniciativas_extras_entrega2/" class="wm-article-link wm-toc-text">Atualizações</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Desenho de Software (Padrões de Projeto)</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="grasps/" class="wm-article-link wm-toc-text">Módulo Padrões de Projeto GRASPs</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="gofs_criacionais/" class="wm-article-link wm-toc-text">Módulo Padrões de Projeto GoFs Criacionais</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="gofs_estruturais/" class="wm-article-link wm-toc-text">Módulo Padrões de Projeto GoFs Estruturais</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="gofs_comportamentais/" class="wm-article-link wm-toc-text">Módulo Padrões de Projeto GoFs Comportamentais</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Módulo Padrões de Projeto Extras</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="middleware/" class="wm-article-link wm-toc-text">Middleware</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="iniciativas_extras_entrega3/" class="wm-article-link wm-toc-text">Atualizações</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Arquitetura de Software & Reutilização</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Módulo Estilos e Padrões Arquiteturais</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="das/" class="wm-article-link wm-toc-text">Documento de Arquitetura de Software (DAS)</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Módulo Reutilização de Software</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="reutilizacao/" class="wm-article-link wm-toc-text">Documento de Reutilização</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Iniciativas Extras</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="endpoints/" class="wm-article-link wm-toc-text">Mapeamento de Rotas API</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="ata_1/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="ata_1/" class="btn btn-xs btn-link">
+        Ata 1 (31/08/2020)
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>Repositório da disciplina de Arquitetura e Desenho de Software 2020.1.</p>
+<h1 id="sobre">Sobre</h1>
+<p><img src="./img/logo.png" alt="Logo" style="margin: 0 auto; display:block; border-radius: 50%"></p>
+<p align="justify">&emsp;&emsp;O Diário da Saúde é uma aplicação que busca auxiliar Unidades Básicas de Saúde (UBS) que possuam grupos de risco (diabéticos, hipertensos, etc). A aplicação permite que os profissionais da unidade possam acompanhar a condição do paciente à distância, através de medições realizadas de casa pelo próprio paciente.</p>
+
+<h1 id="equipe">Equipe</h1>
+<div class="table_middle_align">
+  <table>
+    <tr>
+     <th>Foto</th>
+     <th>Nome</th>
+     <th>Email</th>
+     <th>GitHub</th>
+    </tr>
+    <tr>
+     <td><img width="125" height="125" style="border-radius: 50%" src="https://avatars2.githubusercontent.com/u/40605515?s=460&v=4"></td>
+     <td> André Goretti</td>
+     <td>andremotta96@gmail.com</td>
+     <td><a href="https://github.com/Agoretti">@Agoretti</a></td>
+    </tr>
+    <tr>
+     <td><img width="125" height="125" style="border-radius: 50%" src="https://avatars3.githubusercontent.com/u/38288533?s=400&u=e35ada40392695b7a1fa060fc187d97245ad394e&v=4"></td>
+     <td> Gabriel Tiveron</td>
+     <td>gabrielmtiveron@gmail.com</td>
+     <td><a href="https://github.com/GabrielTiveron">@GabrielTiveron</a></td>
+    </tr>
+    <tr>
+     <td><img width="125" height="125" style="border-radius: 50%" src="https://avatars1.githubusercontent.com/u/23438547?s=400&u=cc927734d57a99e6e1a4c72cfe371617ef52ffc0&v=4"></td>
+     <td> Gustavo Carvalho</td>
+     <td>gustavocarvalho1002@gmail.com</td>
+     <td><a href="https://github.com/gustavocarvalho1002">@gustavocarvalho1002</a></td>
+    </tr>
+    <tr>
+     <td><img width="125" height="125" style="border-radius: 50%" src="https://avatars2.githubusercontent.com/u/42422835?s=460&v=4"></td>
+     <td> Ian Rocha</td>
+     <td>ianrocha.df@gmail.com</td>
+     <td><a href="https://github.com/IanPSRocha">@IanPSRocha</a></td>
+    </tr>
+    <tr>
+     <td><img width="125" height="125" style="border-radius: 50%" src="https://avatars2.githubusercontent.com/u/48605413?s=460&v=4"></td>
+     <td> Murilo Loiola</td>
+     <td>murilo.loiola.dan@gmail.com</td>
+     <td><a href="https://github.com/murilo-dan">@murilo-dan</a></td>
+    </tr>
+    <tr>
+     <td><img width="125" height="125" style="border-radius: 50%" src="https://avatars0.githubusercontent.com/u/17864231?s=460&v=4"></td>
+     <td>  Rodrigo Dadamos</td>
+     <td>rodrigodadamos@gmail.com</td>
+     <td><a href="https://github.com/Rdadamos">@Rdadamos</a></td>
+    </tr>
+  </table>    
+</div>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="ata_1/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="ata_1/" class="btn btn-xs btn-link">
+        Ata 1 (31/08/2020)
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/edit/master/docs/index.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2020-11-21 02:26:44.812309+00:00
+-->

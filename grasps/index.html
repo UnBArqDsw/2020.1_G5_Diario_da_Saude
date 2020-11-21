@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Módulo Padrões de Projeto GRASPs - Diário da Saúde</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link href="../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "GRASP's", url: "#_top", children: [
+              {title: "Versionamento", url: "#versionamento" },
+              {title: "Introdu\u00e7\u00e3o", url: "#introducao" },
+              {title: "Creator", url: "#creator" },
+              {title: "Especialista", url: "#especialista" },
+              {title: "Controladora", url: "#controladora" },
+              {title: "Refer\u00eancia", url: "#referencia" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../gofs_criacionais/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../gofs_criacionais/" class="btn btn-xs btn-link">
+        Módulo Padrões de Projeto GoFs Criacionais
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../iniciativas_extras_entrega2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../iniciativas_extras_entrega2/" class="btn btn-xs btn-link">
+        Atualizações
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="grasps">GRASP's</h1>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">22/10/2020</td>
+<td align="center">0.1</td>
+<td align="center">Criação do Documento</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">22/10/2020</td>
+<td align="center">0.2</td>
+<td align="center">Adição do tópico Introdução</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">0.3</td>
+<td align="center">Adição de hyperlink para Factory Method</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">0.4</td>
+<td align="center">Adição do Especialista</td>
+<td align="center"><a href="https://github.com/Rdadamos">Rodrigo Dadamos</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">0.5</td>
+<td align="center">Consertando hyperlinks</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">1.0</td>
+<td align="center">Adição do tópico Controladora</td>
+<td align="center"><a href="https://github.com/GabrielTiveron">Gabriel Tiveron</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="introducao">Introdução</h2>
+<p align="justify">&emsp;&emsp;O <b>GRASP</b> (Padrões de Software para Atribuição de Responsabilidades Gerais, em tradução livre) consiste de diretrizes que ajudam na atribuição de responsabilidades para classes e objetos em <i>design</i> orientado a objeto. O GRASP é constituído por nove padrões ou princípios, sendo eles:</p>
+
+<ul>
+<li>Especialista;</li>
+<li>Criador;</li>
+<li>Controladora;</li>
+<li>Indireção;</li>
+<li>Baixo acoplamento;</li>
+<li>Polimorfismo;</li>
+<li>Alta Coesão;</li>
+<li>Fabricação própria;</li>
+<li>Variações Protegidas;</li>
+</ul>
+<h2 id="creator">Creator</h2>
+<p align="justify">&emsp;&emsp;A criação de objetos é uma das atividades mais comuns em um sistema orientado a objetos. Consequentemente, é útil ter um princípio geral para a atribuição de responsabilidades de criação. Sendo essas responsabilidades bem atribuídas, o projeto apresentará acoplamento baixo, mais clareza, encapsulamento e reutilização.</br>&emsp;&emsp;Dessa forma, o padrão Criador busca determinar quem deve ser responsável pela criação de uma nova instância de uma classe. No projeto, o princípio Creator pode ser observado nas relações de composição Grupo-Formulário e Formulário-Questão. Nestas relações, a primeira classe, que é composta pela segunda e portanto não pode existir sem ela, é responsável por instanciar objetos da segunda classe, conforme observado no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Diagrama de Classes</a>.</p>
+
+<h2 id="especialista">Especialista</h2>
+<p align="justify">&emsp;&emsp;Quando temos uma relação de composição (todo-parte) entre duas entidades, o padrão criador atribui a responsabilidade de instanciação de partes para a classe todo. Assim, a classe todo é especialista em termos de criação de suas partes. Isso se justifica pois, na relação de composição o todo não existe sem suas partes sendo responsável por intanciar suas partes ao ser ele mesmo instanciado. Ao aplicar o GRASP Criador, o Especialista também foi aplicado no sentido em que o Criador é um Especialista na criação de instâncias.</p>
+
+<p align="justify">&emsp;&emsp;O GRASP Especialista é um padrão que preocupa-se em atribuir responsabilidades para a entidade mais especialista em um dado aspecto do sistema, não apenas na criação de instâncias. Devemos perguntar quem é a melhor entidade para realizar para realizar determinada responsabilidade recorrente no sistema.</p>
+
+<p align="justify">&emsp;&emsp;No Diário da Saúde, podemos observar no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Diagrama de Classes</a> uma relação de todo-parte entre as classes Grupo e Forms, sendo essa uma relação de composição, pois os formulários compõem os grupos de acompanhamento que não podem existir sem esses formulários, já que a intenção dos grupos é acompanhar o estado de saúde dos pacientes que respondem seus respectivos formulários para indicar sua condição naquele dia.</p>
+
+<h2 id="controladora">Controladora</h2>
+<p align="justify">&emsp;&emsp;Para obter um controle melhor sobre os formulários que contribuem para o funcionamento íntegro do Diário da Saúde, é necessário que haja a recuperação das questões, bem como respostas, referentes a cada formulário como é definido no <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/diagrama_de_classes/">Diagrama de Classes</a>. Para isso, implementamos controladoras para distribuir a carga de encontrar resposta do formulário cadastradas no banco de dados, ou seja, cada questão recupera a resposta do formulário relacionada a sí, para então ter o conjunto de respostas do usuário em questão.</p>
+
+<p align="justify">&emsp;&emsp;Essa aplicação de padrão corrobora para uma maior coesão do projeto e uma menor complexidade para o formulário, visto que não terá que fazer buscas em todas as classes de questões. Esse padrão pôde ser realizado pela utilização do <a href="https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/gofs_estruturais">GoF Estrutural</a> que especializou cada tipo de questão existente no projeto, e, dessa forma, as controladoras poderam ser aplicadas para assistir no desempenho de buscas do formulário</p>
+
+<h2 id="referencia">Referência</h2>
+<ol>
+<li>Craig, L. <b>Utilizando UML e Padrões</b>. Grupo A, 2011. 9788577800476. Disponível em: <a>https://integrada.minhabiblioteca.com.br/#/books/9788577800476/</a>. Acesso em: 22 Outubro 2020.</li>
+<li>GRASP (object-oriented-design) - Wikipedia. Disponível em: <a>https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)</a>. Aceesso em: 22 Outubro 2020.</li>
+</ol>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../gofs_criacionais/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../gofs_criacionais/" class="btn btn-xs btn-link">
+        Módulo Padrões de Projeto GoFs Criacionais
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../iniciativas_extras_entrega2/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../iniciativas_extras_entrega2/" class="btn btn-xs btn-link">
+        Atualizações
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/edit/master/docs/grasps.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

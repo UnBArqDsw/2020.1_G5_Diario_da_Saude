@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Backlog - Diário da Saúde</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link href="../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Backlog do Produto", url: "#_top", children: [
+              {title: "Versionamento", url: "#versionamento" },
+              {title: "Introdu\u00e7\u00e3o", url: "#introducao" },
+              {title: "Backlog", url: "#backlog" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../identidade_visual/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../identidade_visual/" class="btn btn-xs btn-link">
+        Identidade Visual
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../priorizacao/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../priorizacao/" class="btn btn-xs btn-link">
+        Priorização
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="backlog-do-produto">Backlog do Produto</h1>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/09/2020</td>
+<td>0.1</td>
+<td>Criação do Backlog do Produto</td>
+<td><a href="https://github.com/IanPSRocha">Ian Rocha</a></td>
+</tr>
+<tr>
+<td>11/09/2020</td>
+<td>0.2</td>
+<td>Formatação da Planilha</td>
+<td><a href="https://github.com/IanPSRocha">Ian Rocha</a></td>
+</tr>
+<tr>
+<td>11/09/2020</td>
+<td>0.3</td>
+<td>Adicionando Critérios de Aceitação e Rastreabilidade por US</td>
+<td><a href="https://github.com/IanPSRocha">Ian Rocha</a></td>
+</tr>
+<tr>
+<td>11/09/2020</td>
+<td>1.0</td>
+<td>Adicionando US da introspecção e formatações</td>
+<td><a href="https://github.com/AGoretti">André Goretti</a></td>
+</tr>
+<tr>
+<td>27/09/2020</td>
+<td>1.1</td>
+<td>Removendo antiga US15 e atualizando US07</td>
+<td><a href="https://github.com/IanPSRocha">Ian Rocha</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="introducao">Introdução</h2>
+<p align="justify">&emsp;&emsp;Em termos gerais, o Product Backlog é uma listagem de todos os afazeres pendentes no projeto. Ele substitui o modelo tradicional de especificação de artefatos. Cada elemento da listagem é elicitado por meio de interação da equipe de desenvolvimento com o cliente, podendo ser apenas um representante, o que torna os elementos levantados muito arbitrários; ou podendo ser uma equipe representante do cliente, representando as diversas áreas que utilizarão o produto.</p>
+
+<h2 id="backlog">Backlog</h2>
+<p><a href="../img/backlog.png"><img alt="backlog" src="../img/backlog.png" /></a></p>
+<h3 id="ep01-cadastro">EP01: Cadastro</h3>
+<h4 id="us01-fazer-cadastro-a-plataforma">US01: Fazer cadastro à plataforma</h4>
+<h5 id="origem-brainstorm">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como um usuário, desejo fazer cadastro à plataforma para que eu consiga utilizar o serviço</p>
+<h5 id="criterios-de-aceitacao">Critérios de Aceitação:</h5>
+<ul>
+<li>Deve apresentar o botão de cadastro na Landing</li>
+<li>Deve diferenciar o cadastro de profissional da saúde e do paciente</li>
+<li>Deve possuir os seguintes campos para o paciente:<ul>
+<li>Nome</li>
+<li>Senha</li>
+<li>CPF</li>
+<li>Data de Nascimento</li>
+<li>Sexo</li>
+</ul>
+</li>
+<li>Deve possuir os seguintes campos para o profissional da saúde:<ul>
+<li>Nome</li>
+<li>Senha</li>
+<li>CPF</li>
+<li>Cargo</li>
+<li>UBS</li>
+</ul>
+</li>
+<li>Deve armazenar os dados no banco de dados</li>
+</ul>
+<h3 id="ep02-login">EP02: Login</h3>
+<h4 id="us02-fazer-login-na-plataforma">US02: Fazer login na plataforma</h4>
+<h5 id="origem-brainstorm_1">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como um usuário, desejo fazer login à plataforma para que eu consiga utilizar o serviço</p>
+<h5 id="criterios-de-aceitacao_1">Critérios de Aceitação:</h5>
+<ul>
+<li>Deve apresentar o botão de login na Landing</li>
+<li>Deve apresentar os seguintes campos para o usuário logar:<ul>
+<li>CPF</li>
+<li>Senha</li>
+</ul>
+</li>
+<li>Deve fazer a verificação dos dados com o banco de dados</li>
+<li>Apresentar mensagem de erro caso os dados não estejam corretos</li>
+<li>Efetuar o login caso tudo esteja correto</li>
+</ul>
+<h4 id="us03-armazenar-as-credenciais">US03: Armazenar as credenciais</h4>
+<h5 id="origem-brainstorm_2">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como um usuário, desejo ter minhas credenciais armazenads para que eu consiga efetuar o login automaticamente nas próximas vezes</p>
+<h5 id="criterios-de-aceitacao_2">Critérios de Aceitação:</h5>
+<ul>
+<li>Armazenar as credenciais em Cache no celular do usuário</li>
+</ul>
+<h3 id="ep03-perfil-de-usuario">EP03: Perfil de Usuário</h3>
+<h4 id="us04-armazenar-foto-de-perfil">US04: Armazenar foto de perfil</h4>
+<h5 id="origem-brainstorm_3">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como um usuário, desejo ter minha foto de perfil armazenada para que eu consiga reconher e ser reconhecido mais facilmente dentro da aplicação</p>
+<h5 id="criterios-de-aceitacao_3">Critérios de Aceitação:</h5>
+<ul>
+<li>Possuir um Campo extra no cadastro e edição de perfil somente para foto</li>
+<li>Receber fotos exclusivamente da galeria do celular do usuário</li>
+<li>Armazenar a foto no banco de dados</li>
+</ul>
+<h4 id="us05-atualizar-dados">US05: Atualizar dados</h4>
+<h5 id="origem-brainstorm_4">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como um usuário, desejo atualizar meus dados para que eu consiga sempre manter meu perfil atualizado</p>
+<h5 id="criterios-de-aceitacao_4">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para editar o perfil quando o usuário estiver logado</li>
+<li>Atualizar os dados no banco de dados</li>
+</ul>
+<h4 id="us06-excluir-meu-perfil">US06: Excluir meu Perfil</h4>
+<h5 id="origem-introspeccao">Origem: <a href="../introspeccao/">Introspecção</a></h5>
+<p>Eu como um usuário, desejo remover meu perfil para que eu consiga retirar meus dados da aplicação</p>
+<h5 id="criterios-de-aceitacao_5">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para usuário remover conta na página de perfil</li>
+<li>Botão de confirmação para remover a conta</li>
+<li>Retirar os dados do usuário do banco de dados</li>
+</ul>
+<h3 id="ep04-grupo">EP04: Grupo</h3>
+<h4 id="us07-criar-grupo">US07: Criar grupo</h4>
+<h5 id="origem-brainstorm_5">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como um profissional da saúde, desejo criar grupos para que eu consiga gerenciar meus pacientes</p>
+<h5 id="criterios-de-aceitacao_6">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para criar grupos na Home do profissional da saúde</li>
+<li>Deve possuir os seguintes campos:<ul>
+<li>Nome do Grupo</li>
+<li>UBS</li>
+</ul>
+</li>
+<li>Associar o grupo à algum quadro clínico</li>
+<li>Associar um Questionário referente ao quadro clínico do grupo</li>
+<li>Armazenar as informações do grupo no banco de dados</li>
+</ul>
+<h4 id="us08-adicionar-pacientes-ao-grupo">US08: Adicionar pacientes ao grupo</h4>
+<h5 id="origem-brainstorm_6">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo adicionar pacientes ao grupo para que eu consiga gerenciar meus pacientes</p>
+<h5 id="criterios-de-aceitacao_7">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão de adicionar pacientes na página do grupo</li>
+<li>Adicionar pelo CPF do paciente</li>
+<li>Adicionar o grupo na Home do paciente</li>
+</ul>
+<h4 id="us09-adicionar-outro-profissional-da-saude-ao-grupo">US09: Adicionar outro profissional da saúde ao grupo</h4>
+<h5 id="origem-brainstorm_7">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo adicionar outros profissionais da saúde ao grupo para que eu consiga distribuir os cuidados e responsabilidades</p>
+<h5 id="criterios-de-aceitacao_8">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para adicionar outros profissionais ao grupo</li>
+<li>Adicionar pelo CPF do profissional</li>
+<li>Adicionar o grupo na Home do outro profissional</li>
+</ul>
+<h4 id="us10-remover-pacientes-do-grupo">US10: Remover pacientes do grupo</h4>
+<h5 id="origem-brainstorm_8">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo remover pacientes do grupo para que eu consiga manter somente os pacientes necessários</p>
+<h5 id="criterios-de-aceitacao_9">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para remover o paciente do grupo</li>
+<li>Botão para confirmar a remoção</li>
+<li>Remover o grupo na Home do paciente</li>
+<li>Remover a relação do paciente com o grupo no banco de dados</li>
+</ul>
+<h4 id="us11-visualizar-pacientes-do-grupo">US11: Visualizar pacientes do grupo</h4>
+<h5 id="origem-brainstorm_9">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo visualizar quais são os pacientes participantes do grupo para que eu consiga ter facilidade em gerenciar meus pacientes</p>
+<h5 id="criterios-de-aceitacao_10">Critérios de Aceitação:</h5>
+<ul>
+<li>Lista de pacientes na página do grupo</li>
+<li>Mostrar nome de cada paciente</li>
+</ul>
+<h4 id="us12-realizar-uma-chamada-de-pacientes">US12: Realizar uma chamada de pacientes</h4>
+<h5 id="origem-questionario">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como profissional da saúde, desejo realizar uma chamada de pacientes por grupo para que eu consiga controlar a participação dos pacientes nos encontros presenciais</p>
+<h5 id="criterios-de-aceitacao_11">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para começar a chamada</li>
+<li>Botão para marcar se a presença está confirmada ou não</li>
+<li>Armazenar informações da chamada no banco de dados</li>
+</ul>
+<h3 id="ep05-questionario">EP05: Questionário</h3>
+<h4 id="us13-responder-questionario">US13: Responder Questionário</h4>
+<h5 id="origem-introspeccao_1">Origem: <a href="../introspeccao/">Introspecção</a></h5>
+<p>Eu, como paciente, desejo responder o questionário para que o meu médico tenha as minhas informações diárias.</p>
+<h5 id="criterios-de-aceitacao_12">Critérios de Aceitação:</h5>
+<ul>
+<li>Ter botão de acesso ao questionário</li>
+<li>Ter uma tela de quastionário</li>
+<li>salvar respostas do paciente</li>
+</ul>
+<h4 id="us14-questionario-especifico-para-cada-quadro-clinico">US14: Questionário específico para cada quadro clínico</h4>
+<h5 id="origem-brainstorm_10">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo fornecer um questionário que seja coerente com cada quadro clínico/grupo para que consiga manter o controle da saúde dos meus pacientes</p>
+<h5 id="criterios-de-aceitacao_13">Critérios de Aceitação:</h5>
+<ul>
+<li>Lista de questionários específicos</li>
+<li>Validação de cada questionário por um profissional da saúde</li>
+</ul>
+<h4 id="us15-nao-responder-ao-mesmo-questionario-mais-de-1-vez-por-dia">US15: Não responder ao mesmo questionário mais de 1 vez por dia</h4>
+<h5 id="origem-brainstorm_11">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como paciente, desejo não responder ao questionário correspondente do grupo mais de uma vez por dia, para que eu consiga não poluir os dados</p>
+<h5 id="criterios-de-aceitacao_14">Critérios de Aceitação:</h5>
+<ul>
+<li>Bloquear o botão de responder o questionário caso ele ja tenha sido respondido</li>
+<li>Adicionar timer no botão para que ele reinicie e aceite novas respostas após 00h</li>
+</ul>
+<h4 id="us16-aba-de-atividade-fisica-no-questionario">US16: Aba de atividade física no questionário</h4>
+<h5 id="origem-questionario_1">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como profissional da saúde, desejo visualizar uma aba de atividade física por questionário para que eu consiga saber se meus pacientes estão sedentários ou não</p>
+<h5 id="criterios-de-aceitacao_15">Critérios de Aceitação:</h5>
+<ul>
+<li>Perguntar ao paciente:<ul>
+<li>Quantas vezes por semana ele pratica exercício físico</li>
+<li>Quais exercícios ele faz</li>
+<li>Duração de cada exercício por dia</li>
+</ul>
+</li>
+</ul>
+<h3 id="ep06-relatorio">EP06: Relatório</h3>
+<h4 id="us17-relatorio-geral-por-grupo">US17: Relatório geral por grupo</h4>
+<h5 id="origem-brainstorm_12">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo visualizar os dados dos pacientes de maneira geral por forma de um relatório para que eu consiga entender como anda a saúde do grupo todo</p>
+<h5 id="criterios-de-aceitacao_16">Critérios de Aceitação:</h5>
+<ul>
+<li>Gerar relatório geral do grupo com base nas respostas de cada questionário</li>
+<li>Botão para visualizar relatório</li>
+<li>Armazenar um relatório geral por grupo no banco de dados</li>
+</ul>
+<h4 id="us18-relatorio-especifico-do-paciente">US18: Relatório específico do paciente</h4>
+<h5 id="origem-brainstorm_13">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo visualizar os dados de um único paciente da minha escolha para que eu consiga saber de maneira mais específica como anda a saúde dele</p>
+<h5 id="criterios-de-aceitacao_17">Critérios de Aceitação:</h5>
+<ul>
+<li>Gerar relatório de cada paciente com base nas respectivas respostas ao questionário</li>
+<li>Botão para visualizar relatório específico do paciente</li>
+<li>Armazenar um relatório por grupo para cada paciente no banco de dados</li>
+</ul>
+<h4 id="us19-exportar-dados-dos-relatorios">US19: Exportar dados dos Relatórios</h4>
+<h5 id="origem-questionario_2">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como profissional da saúde, desejo exportar os dados obtidos dos relatórios para que eu consiga salvar em outro lugar de minha preferência</p>
+<h5 id="criterios-de-aceitacao_18">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para exportar relatório geral do grupo</li>
+<li>Botão para exportar relatório específico de cada paciente</li>
+<li>Disponibilizar exportação no formato PDF</li>
+</ul>
+<h4 id="us20-relatorios-personalizados-criados-apos-processo-de-machine-learning">US20: Relatórios personalizados criados após processo de Machine Learning</h4>
+<h5 id="origem-questionario_3">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como profissional da saúde, desejo visualizar relatórios que foram criados após Machine Learning para que eu consiga ver informações mais precisas sobre a saúde dos meus pacientes</p>
+<h5 id="criterios-de-aceitacao_19">Critérios de Aceitação:</h5>
+<ul>
+<li>Machine Learning capaz de:<ul>
+<li>Aprender com base nos relatórios ja respondidos</li>
+<li>Entender padrões de respostas</li>
+<li>Fornecer relatórios mais precisos</li>
+</ul>
+</li>
+</ul>
+<h3 id="ep07-notificacao">EP07: Notificação</h3>
+<h4 id="us21-notificacao-sobre-consultas-remedios-e-orientacoes">US21: Notificação sobre consultas, remédios e orientações</h4>
+<h5 id="origem-questionario_4">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como paciente, desejo receber notificações sobre minhas consultas, remédios a serem tomados e orientações médicos para que eu consiga seguir de maneira correta a instrução do profissional da saúde</p>
+<h5 id="criterios-de-aceitacao_20">Critérios de Aceitação:</h5>
+<ul>
+<li>Permitir que o profissional da saúde personalize uma ou mais notificação de acordo com cada paciente</li>
+<li>Botão para o profissional criar/personalizar uma notificação</li>
+<li>Botão para o profissional excluir uma notificação</li>
+<li>Botão para o paciente ativar/desativar uma notificação</li>
+</ul>
+<h4 id="us22-notificacoes-personalizadas">US22: Notificações personalizadas</h4>
+<h5 id="origem-questionario_5">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como profissional da saúde, desejo enviar notificações com base nas respostas dos meus pacientes em seus questionários para que eu consiga automatizar certas mensagens de alerta</p>
+<h5 id="criterios-de-aceitacao_21">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para o profissional ativar notificações para cada resposta</li>
+<li>Fornecer uma lista de respostas que podem ativar a notificação</li>
+</ul>
+<h4 id="us23-notificacao-por-questionario">US23: Notificação por Questionário</h4>
+<h5 id="origem-brainstorm_14">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como paciente, desejo receber uma notificação cada vez que for necessário que eu responda meu questionário para que eu consiga me lembrar de respondê-lo frequentemente</p>
+<h5 id="criterios-de-aceitacao_22">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para o paciente ativar/desativar notificações de questionário</li>
+<li>Enviar notificação no horário escolhido pelo paciente</li>
+<li>Permitir personalização do horário da notificação pelo usuário</li>
+</ul>
+<h3 id="ep08-controle-de-pacientes">EP08: Controle de pacientes</h3>
+<h4 id="us24-lista-de-pacientes-prioritarios">US24: Lista de pacientes prioritários</h4>
+<h5 id="origem-brainstorm_15">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo visualizar uma lista de pacientes prioritários por grupo para que eu consiga dar atenção primeiro a quem mais precisa</p>
+<h5 id="criterios-de-aceitacao_23">Critérios de Aceitação:</h5>
+<ul>
+<li>Gerar uma lista de pacientes com base nas respostas de cada questionário</li>
+<li>Botão para visualizar a lista na página do grupo</li>
+<li>Atualizar a lista sempre que receber uma nova resposta de questionário</li>
+</ul>
+<h4 id="us25-exames-dos-pacientes">US25: Exames dos pacientes</h4>
+<h5 id="origem-questionario_6">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como profissional da saúde, desejo ter controle sobre os exames e seus resultados dos meus pacientes para que eu consiga dar uma atendimento melhor e mais específico.</p>
+<h5 id="criterios-de-aceitacao_24">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para adicionar exames a serem feitos na página de detalhes de cada paciente</li>
+<li>Botão para visualizar resultados de exames já feitos na página de detalhes de cada paciente</li>
+</ul>
+<h4 id="us26-buscar-pacientes-que-se-ausentarem">US26: Buscar pacientes que se ausentarem</h4>
+<h5 id="origem-questionario_7">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como profissional da saúde, desejo poder buscar por grupo os pacientes que se ausentarem nas reuniões presenciais ou não responderam seus questionários recentemente para que eu consiga entrar em contato com eles</p>
+<h5 id="criterios-de-aceitacao_25">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para informar pacientes que não responderam o questionário recentemente na página do grupo</li>
+<li>Botão para visualizar a chamada realizada no encontro presencial</li>
+<li>Resgatar a chamada no banco de dados</li>
+<li>Marcar pacientes que não estiveram na chamada</li>
+</ul>
+<h4 id="us27-medicacoes-a-serem-tomadas-diariamente">US27: Medicações a serem tomadas diariamente</h4>
+<h5 id="origem-questionario_8">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como paciente, desejo poder visualizar quais foram os medicamentos prescritos pelo profissional da saúde para que eu consiga lembrar sempre que eu precisar</p>
+<h5 id="criterios-de-aceitacao_26">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão para o profissional da saúde adicionar os medicamentos prescritos</li>
+<li>Armazenar os medicamentos no banco de dados</li>
+<li>Botão para o paciente visualizar os medicamentos</li>
+</ul>
+<h4 id="us28-aplicacao-web">US28: Aplicação WEB</h4>
+<h5 id="origem-brainstorm_16">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como profissional da saúde, desejo ter acesso a todos os dados por meio da WEB, para que eu consiga vê-los de maneira maior e mais clara.</p>
+<h5 id="criterios-de-aceitacao_27">Critérios de Aceitação:</h5>
+<ul>
+<li>Versão web tem que ser responsiva</li>
+<li>Permitir acesso somente aos profissionais da saúde</li>
+<li>Ter todas as funcionalidades já listadas para os profissionais</li>
+</ul>
+<h3 id="ep09-faq">EP09: FAQ</h3>
+<h4 id="us29-local-para-duvidas-e-sugestoes">US29: Local para dúvidas e sugestões</h4>
+<h5 id="origem-questionario_9">Origem: <a href="../questionario/">Questionário</a></h5>
+<p>Eu, como paciente, desejo ter uma página na qual eu possa poder anotar minhas dúvidas e sugestões para que eu consiga esclarecer algum assunto que não tinha ficado claro</p>
+<h5 id="criterios-de-aceitacao_28">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão na SideBar para acessar a página</li>
+<li>Campo para paciente escolher entre dúvida ou sugestão</li>
+<li>Campo para paciente falar qual é sua dúvida/sugestão</li>
+<li>Enviar dúvida/sugestão para os profissionais na UBS</li>
+</ul>
+<h4 id="us30-aba-de-duvidas-frequentes">US30: Aba de dúvidas frequentes</h4>
+<h5 id="origem-brainstorm_17">Origem: <a href="../brainstorm/">Brainstorm</a></h5>
+<p>Eu, como paciente, desejo visualizar uma página com as dúvidas mais frequentes de outros pacientes para que eu consiga ver se minha própria dúvida ja foi respondida</p>
+<h5 id="criterios-de-aceitacao_29">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão na SideBar para acessar a página</li>
+<li>Página contendo as dúvidas mais frequentes e suas respostas</li>
+<li>Validação de um profissional para cada resposta</li>
+</ul>
+<h3 id="ep10-usabilidde">EP10: Usabilidde</h3>
+<h4 id="us31-realizar-o-logout">US31: Realizar o Logout</h4>
+<h5 id="origem-introspeccao_2">Origem: <a href="../introspeccao/">Introspecção</a></h5>
+<p>Eu, como um usuário, desejo sair da minha conta por questões de segurança e para mais de uma pessoa pode usar o celular.</p>
+<h5 id="criterios-de-aceitacao_30">Critérios de Aceitação:</h5>
+<ul>
+<li>Botão de Sair da conta</li>
+<li>Voltar a pagina inicial ao sair</li>
+</ul>
+<h4 id="us32-recuperar-senha">US32: Recuperar Senha</h4>
+<h5 id="origem-introspeccao_3">Origem: <a href="../introspeccao/">Introspecção</a></h5>
+<p>Eu, como usuário, desejo recuperar minha senha que esqueci, recebendo por email ou sms para conseguir entrar de novo.</p>
+<h5 id="criterios-de-aceitacao_31">Critérios de Aceitação:</h5>
+<ul>
+<li>Ter um botão de recuperar senha</li>
+<li>Criar e informar uma senha nova prar o usuário</li>
+<li>Conseguir logar logo depois</li>
+</ul>
+<h4 id="us33-acessar-uma-sidebar">US33: Acessar uma Sidebar</h4>
+<h5 id="origem-introspeccao_4">Origem: <a href="../introspeccao/">Introspecção</a></h5>
+<p>Eu, como usuário, quero acessar funcionalidades por uma sidebar para facilitar o uso.</p>
+<h5 id="criterios-de-aceitacao_32">Critérios de Aceitação:</h5>
+<ul>
+<li>Ter uma sidebar</li>
+<li>Ter Funcionalidades na sidebar</li>
+</ul>
+<h4 id="us34-entrar-em-contato-com-os-desenvolvedores">US34: Entrar em contato com os desenvolvedores</h4>
+<h5 id="origem-introspeccao_5">Origem: <a href="../introspeccao/">Introspecção</a></h5>
+<p>Eu, como usuário, quero entrar em contato com os desenvolvedores do aplicativo para sugerir melhorias e poder tirar dúvidas.</p>
+<h5 id="criterios-de-aceitacao_33">Critérios de Aceitação:</h5>
+<ul>
+<li>Ter um botão de "entre em contato".</li>
+<li>Direcionar esse botão para whatsapp ou area de sugestões.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../identidade_visual/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../identidade_visual/" class="btn btn-xs btn-link">
+        Identidade Visual
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../priorizacao/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../priorizacao/" class="btn btn-xs btn-link">
+        Priorização
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/edit/master/docs/backlog_produto.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Módulo Padrões de Projeto GoFs Comportamentais - Diário da Saúde</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <link href="../css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "GOF's Comportamentais", url: "#_top", children: [
+              {title: "Versionamento", url: "#versionamento" },
+              {title: "Introdu\u00e7\u00e3o", url: "#introducao" },
+              {title: "Observer", url: "#observer" },
+              {title: "Refer\u00eancias", url: "#referencias" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../middleware/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../middleware/" class="btn btn-xs btn-link">
+        Middleware
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../gofs_estruturais/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../gofs_estruturais/" class="btn btn-xs btn-link">
+        Módulo Padrões de Projeto GoFs Estruturais
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="gofs-comportamentais">GOF's Comportamentais</h1>
+<h2 id="versionamento">Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">22/10/2020</td>
+<td align="center">0.1</td>
+<td align="center">Criação do Documento</td>
+<td align="center"><a href="https://github.com/murilo-dan">Murilo Loiola</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">0.2</td>
+<td align="center">Adição da Introdução</td>
+<td align="center"><a href="https://github.com/IanPSRocha">Ian Rocha</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">0.3</td>
+<td align="center">Adição do Template Method</td>
+<td align="center"><a href="https://github.com/IanPSRocha">Ian Rocha</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">0.4</td>
+<td align="center">Remoção do Template Method e adição do Observer</td>
+<td align="center"><a href="https://github.com/IanPSRocha">Ian Rocha</a>, <a href="https://github.com/Agoretti">André Goretti</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">0.5</td>
+<td align="center">Adicionando Hyperlinks</td>
+<td align="center"><a href="https://github.com/IanPSRocha">Ian Rocha</a>, <a href="https://github.com/Agoretti">André Goretti</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">0.6</td>
+<td align="center">Adicionando Diagrama Observer</td>
+<td align="center"><a href="https://github.com/IanPSRocha">Ian Rocha</a>, <a href="https://github.com/Agoretti">André Goretti</a></td>
+</tr>
+<tr>
+<td align="center">26/10/2020</td>
+<td align="center">1.0</td>
+<td align="center">Adicionando Código Origem</td>
+<td align="center"><a href="https://github.com/IanPSRocha">Ian Rocha</a>, <a href="https://github.com/Agoretti">André Goretti</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="introducao">Introdução</h2>
+<p align="justify">&emsp;&emsp;Padrões de projeto comportamentais
+auxiliam bastante quando é necessário utilizar vários algoritmos diferentes, cada um para algum contexto. Permitem, nesse caso, usar mecanismos/recursos para facilitar tanto a incorporação de novos algoritmos para novos contextos, quanto a seleção de qual algoritmo usar
+dado um contexto. Auxiliam também alterando o tempo de execução que certo algoritmo tenha. Os principais GOF's comportamentais são:</p>
+
+<ul>
+<li>Command;</li>
+<li>Iterator;</li>
+<li>Mediator;</li>
+<li>Observer;</li>
+<li>State;</li>
+<li>Strategy;</li>
+<li>Template Method;</li>
+<li>Visitor;</li>
+<li>Memento;</li>
+<li>Chain Of Responsability;</li>
+</ul>
+<p align="justify">&emsp;&emsp;A seguir, estão descritos somente os padrões aplicados no projeto, escolhidos pelo grupo quanto a contribuição que a aplicação do padrão traria para o desenvolvimento do projeto.</p>
+
+<h2 id="observer">Observer</h2>
+<h4 id="definicao">Definição</h4>
+<p align="justify">&emsp;&emsp;O padrão Observer oferece um modelo no qual os objetos tem um evento e são notificados quando o evento ocorre. Esse padrão é a base da programação orientada a eventos, incluindo JavaScript. O padrão Observer facilita um bom design orientado a objetos e promove uma fácil integração. O paradigma de eventos e do manipulador de eventos em JavaScript é a manifestação do Observer.</p>
+
+<h4 id="aplicacao-no-projeto">Aplicação no Projeto</h4>
+<p align="justify">&emsp;&emsp;A aplicação Diário da Saúde é completamente feita em javascript, linguagem que mais se beneficia do padrão comportamental Observer. Precisamos mudar as views de acordo com o usuário estar ou não logado e, caso esteje logado, identificar qual usuário.</p>
+
+<h4 id="diagrama">Diagrama</h4>
+<p><a href="../img/Observer.png"><img alt="Observer_0.1" src="../img/Observer.png" /></a></p>
+<h4 id="codigo">Código</h4>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/contexts/auth.tsx">Observer - Subject</a></li>
+</ul>
+<pre><code class="language-tsx">import React, { createContext, useState, useEffect } from &quot;react&quot;;
+import * as auth from &quot;../services/auth&quot;;
+import AsyncStorage from &quot;@react-native-community/async-storage&quot;;
+
+interface AuthContextData {
+  singed: boolean;
+  user: object | null;
+  loading: boolean;
+  singIn(): Promise&lt;void&gt;;
+  singOut(): void;
+}
+
+const AuthContext = createContext&lt;AuthContextData&gt;({} as AuthContextData);
+
+export const AuthProvider: React.FC = ({ children }) =&gt; {
+  const [user, setUser] = useState&lt;object | null&gt;(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() =&gt; {
+    async function loadStorageData() {
+      const storagedUser = await AsyncStorage.getItem(&quot;@DiarioSaude:user&quot;);
+      const storagedToken = await AsyncStorage.getItem(&quot;@DiarioSaude:token&quot;);
+
+      if (storagedUser &amp;&amp; storagedToken) {
+        setUser(JSON.parse(storagedUser));
+        setLoading(false);
+      }
+    }
+
+    loadStorageData();
+  }, []);
+
+  async function singIn() {
+    const response = await auth.singIn();
+
+    console.log(response);
+
+    setUser(response.user);
+
+    await AsyncStorage.setItem(
+      &quot;@DiarioSaude:user&quot;,
+      JSON.stringify(response.user)
+    );
+    await AsyncStorage.setItem(&quot;@DiarioSaude:token&quot;, response.token);
+  }
+
+  function singOut() {
+    AsyncStorage.clear().then(() =&gt; {
+      setUser(null);
+    });
+  }
+
+  return (
+    &lt;AuthContext.Provider
+      value={{ singed: !!user, user, loading, singIn, singOut }}
+    &gt;
+      {children}
+    &lt;/AuthContext.Provider&gt;
+  );
+};
+
+export default AuthContext;
+</code></pre>
+<p></br></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/blob/master/mobile/DiarioSaude/src/routes/index.tsx">Observer - Controller</a></li>
+</ul>
+<pre><code class="language-tsx">import React, { useContext } from &quot;react&quot;;
+import { View, ActivityIndicator } from &quot;react-native&quot;;
+
+import AuthContext from &quot;../contexts/auth&quot;;
+
+import AppRoutes from &quot;./app.routes&quot;;
+import AuthRoutes from &quot;./auth.routes&quot;;
+
+const Routes: React.FC = () =&gt; {
+  const { singed, loading } = useContext(AuthContext);
+
+  if (loading) {
+    return (
+      &lt;View style={{ flex: 1, justifyContent: &quot;center&quot;, alignItems: &quot;center&quot; }}&gt;
+        &lt;ActivityIndicator size=&quot;large&quot; color=&quot;#666&quot; /&gt;
+      &lt;/View&gt;
+    );
+  }
+
+  return singed ? &lt;AppRoutes /&gt; : &lt;AuthRoutes /&gt;;
+};
+
+export default Routes;
+</code></pre>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>Observer - dofactory. Disponível em: <a>https://www.dofactory.com/javascript/design-patterns/observer</a>. Acesso em: 26 Outubro 2020.</li>
+<li>Observer Design Pattern. Disponível em: <a>https://sourcemaking.com/design_patterns/observer</a>. Acesso em: 26 Outubro 2020.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../middleware/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../middleware/" class="btn btn-xs btn-link">
+        Middleware
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../gofs_estruturais/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../gofs_estruturais/" class="btn btn-xs btn-link">
+        Módulo Padrões de Projeto GoFs Estruturais
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/UnBArqDsw/2020.1_G5_Diario_da_Saude/edit/master/docs/gofs_comportamentais.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
