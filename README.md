@@ -40,7 +40,7 @@ Segue abaixo 3 exemplos de telas da aplicação desenvolvida.
 ## Instalação 
 **Linguagens**: JavaScript, TypeScript<br>
 **Tecnologias**: NODE.js, React Native, Docker<br>
-Com o Docker e o docker-compose instalados, execute os comandos
+Com o Docker e o docker-compose instalados, execute os comandos:
 
 ```bash
 ./setenv.sh
@@ -48,7 +48,7 @@ docker-compose up --build
 ```
 
 ## Uso 
-No desenvolvimento, para executar a aplicação front, instale e abre o aplicativo Expo e aponte a câmera para o QR Code que apareceu no terminal.
+No desenvolvimento, para executar a aplicação front, instale e abra o aplicativo Expo e aponte a câmera para o QR Code que apareceu no terminal.
 Acesse o Mongo-Express em http://localhost:8081
 
 ## Vídeo
